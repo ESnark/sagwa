@@ -1,7 +1,3 @@
----
-description: iOS / tvOS App의 시각적인 이벤트 기반의 유저 인터페이스를 구축하고 관리하세요
----
-
 # UIKit
 
 ## 개요
