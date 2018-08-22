@@ -4,6 +4,9 @@ description: UIKit 앱의 View 계층구조를 관리하는 객체
 
 # UIViewController
 
+> 원본출처  
+> [https://developer.apple.com/documentation/uikit/uiviewcontroller](https://developer.apple.com/documentation/uikit/uiviewcontroller)
+
 ## 개요
 
 UIViewController 클래스는 모든 view controller에 공통적인 동작을 정의합니다.  

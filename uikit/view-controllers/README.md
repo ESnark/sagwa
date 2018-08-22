@@ -4,6 +4,9 @@ description: View Controller로 인터페이스를 관리하고 앱 컨텐츠 �
 
 # View Controllers
 
+> 원본출처[  
+> https://developer.apple.com/documentation/uikit/view\_controllers](https://developer.apple.com/documentation/uikit/view_controllers)
+
 ## 개요
 
 View Controller는 UIKit 앱의 인터페이스를 관리합니다. View Controller는 단일 루트 뷰를 관리하고 단일 뷰에는 여러 개의 하위 뷰가 포함될 수 있습니다.  
