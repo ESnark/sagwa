@@ -4,9 +4,11 @@
 
 본 문서는 Xcode Developer Documentation을 번역합니다. [Apple 홈페이지](https://developer.apple.com/documentation/)에도 Documentation이 있긴 하던데 내용이 완전히 같은지는 잘 모르겠습니다.
 
+Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하고 있습니다.
+
 구글 번역 + 네이버 파파고로 초벌 번역 후 보기 쉽게 다듬고 있는데 의역이 많습니다. 참고하시기 바랍니다.
 
-오역 제보나 번역 제안은 github으로 문의 부탁드립니다.
+오역 제보나 번역 제안은 [github](https://github.com/ESnark/sagwa)으로 문의 부탁드립니다.
 
 ## 목차
 
