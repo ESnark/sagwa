@@ -161,78 +161,127 @@ view controller의 [restorationIdentifier](https://melodyarchive.gitbook.io/sagw
 
 ### View 이벤트에 응답하기
 
-* _func_ viewWillAppear\(Bool\) view controller가 view 계층에 추가될 것임을 알린다.
-* _func_ viewDidAppear\(Bool\) view controller가 view 계층에 추가되었음을 알린다.
-* _func_ viewWillDisappear\(Bool\) view controller가 view 계층에서 제거될 것임을 알린다.
-* _func_ viewDidDisappear\(Bool\) view controller가 view 계층에서 제거되었음을 알린다.
-* _var_ isBeingDismissed: Bool view controller가 해제되는 중인지를 알려주는 
-* _var_ isBeingPresented: Bool view controller가 나타나는 중인지를 알려주는 
+* _func_ viewWillAppear\(Bool\) view controller가 view 계층에 추가될 것임을 알립다.
+* _func_ viewDidAppear\(Bool\) view controller가 view 계층에 추가되었음을 알립니다.
+* _func_ viewWillDisappear\(Bool\) view controller가 view 계층에서 제거될 것임을 알립니다.
+* _func_ viewDidDisappear\(Bool\) view controller가 view 계층에서 제거되었음을 알립니다.
+* _var_ isBeingDismissed: Bool view controller가 해제되는 중인지를 알려주는 값
+* _var_ isBeingPresented: Bool view controller가 나타나는 중인지를 알려주는 값
 * _var_ isMovingFromParentViewController: Bool view controller가 상위 view controller에서 제거되는 중인지를 나타내는 값
 * _var_ isMovingToParentViewController: Bool view controller가 상위 view controller로 들어가고 있는지를 나타내는 값
 
 ### View Safe Area 확장
 
-
+* [Positioning Content Relative to the Safe Area](https://melodyarchive.gitbook.io/sagwa/not-found) view가 다른 컨텐츠에 가려지지 않도록 배치하기.
+* _var_ additionalSafeAreaInsets: UIEdgeInsets view controller의 safe area를 수정하기 위해 명시하는 Custom insets
+* _func_ viewSafeAreaInsetsDidChange\(\) view controller의 root view safe area가 변경되었음을 해당 view controller에 알리기 위해서 호출됩니다.
 
 ### View Margin 관리하기
 
-
+* [레이아웃 여백 범위 내에서 컨텐츠 배치하기](https://melodyarchive.gitbook.io/sagwa/not-found) 다른 view의 컨텐츠 때문에 view가 혼잡해지지 않도록 배치하세요,
+* _var_ viewRespectsSystemMinimumLayoutMargins: Bool view가 시스템 정의된 최소 레이아웃 여백을 사용중인지 나타내는 값
+* _var_ systemMinimumLayoutMargins: NSDirectionalEdgeInsets view controller의 root view에 대한 최소 레이아웃 여백
+* _func_ viewLayoutMarginsDidChange\(\) view controller의 root view 레이아웃 여백이 바뀌었을때 해당 view controller에 알리기 위해서 호출됩니다.
 
 ### View 레이아웃 동작 설정
 
-
+* _var_ edgesForExtendedLayout: UIRectEdge view controller를 확장하는 가장자리
+* _var_ extendedLayoutIncludesOpaqueBars: Bool 확장 레이아웃에 불투명 바를 포함할 것인지를 나타내는 값
+* _func_ viewWillLayoutSubviews\(\) view controller의 view가 하위 view를 배치하려고 한다는 것을 알리기 위해 호출됩니다.
+* _func_ viewDidLayoutSubviews\(\) view controller의 view가 방금 하위 view를 배치했음을 알리기 위해 호출됩니다.
+* _func_ updateViewConstraints\(\) view controller의 view가 제약조건을 업데이트해야 할 때 호출됩니다.
 
 ### View 회전 설정
 
-
+* _var_ shouldAutorotate: Bool view controller의 컨텐츠가 자동으로 회전해야 할지를 나타내는 값
+* _var_ supportedInterfaceOrientations: UIInterfaceOrientationMask view controller가 지원하는 모든 인터페이스 방향
+* _var_ preferredInterfaceOrientationForPresentation: UIInterfaceOrientation view controller를 표시할 때 사용할 인터페이스 방향을 반환합니다.
+* _class func_ attemptRotationToDeviceOrientation\(\) 모든 window를 기기 방향으로 회전시킵니다.
 
 ### 환경 변화에 적응하기
 
-
+* _func_ collapseSecondaryViewController\(UIViewController, for: UISplitViewController\) compact 사이즈의 너비로 split view controller 전환이 일어날 때 호출됩니다.
+* _func_ separateSecondaryViewController\(for: UISplitViewController\) regular 사이즈의 너비로 split view controller 전환이 일어날 때 호출됩니다.
 
 ### 인터페이스 스타일 조정
 
-
+* _var_ preferredUserInterfaceStyle: UIUserInterfaceStyle 해당 view controller에 대한 기본 인터페이스 스타일
+* _var_ childViewControllerForUserInterfaceStyle: UIViewController? 기본 사용자 인터페이스 스타일을 지원하는 하위 보기 컨트롤러.
+* _func_ setNeedsUserInterfaceAppearanceUpdate\(\) 기본 인터페이스 스타일에 영향을 줄 수 있는 변경 사항이 발생했을 때 view controller에 알립니다.
+* _enum_ UIUserInterfaceStyle 앱의 인터페이스 스타일을 나타내는 상수
 
 ### 커스텀 컨테이너 내의 하위 View Controller 관리
 
+* _var_ childViewControllers: \[UIViewController\] 현재 view controller의 하위 view controller 배열
+* _func_ addChildViewController\(UIViewController\) 특정 view controller를 현재 view controller의 하위 view controller로 추가합니다.
+* _func_ removeFromParentViewController\(\) view controller를 상위 view controller로부터 제거합니다.
+* _func_ transition\(from: UIViewController, to: UIViewController, duration: TimeInterval, options: UIViewAnimationOptions = \[\], animations: \(\(\) -&gt; Void\)?, completion: \(\(Bool\) -&gt; Void\)? = nil\) 두 개의 하위 view controller간의 전환
+* _var_ shouldAutomaticallyForwardAppearanceMethods: Bool appearance 메서드가 하위 view controller로 전달될지를 나타내는 값
+* _func_ beginAppearanceTransition\(Bool, animated: Bool\) 하위 컨트롤러에 appearance가 곧 바뀔것임을 알립니다.
+* _func_ endAppearanceTransition\(\) 하위 컨트롤러에 appearance가 방금 바뀌었음을 알립니다.
+* _func_ setOverrideTraitCollection\(UITraitCollection?, forChildViewController: UIViewController\) 특정 하위 view controller에 적용되어있는 제약사항을 변경합니다. Changes the traits assigned to the specified child view controller.
+* _func_ overrideTraitCollection\(forChildViewController: UIViewController\) 하위 view controller의 제약조건 컬렉션을 불러옵니다.
 
+### Containment 이벤트에 응답
 
-### 컨테이너에 포함하는 이벤트에 응답
-
-
+* _func_ willMove\(toParentViewController: UIViewController?\) view controller가 컨테이너 뷰 컨트롤러에 추가되거나 제거되기 직전에 호출됩니다. Called just before the view controller is added or removed from a container view controller.
+* _func_ didMove\(toParentViewController: UIViewController?\) view controller가 컨테이너 뷰 컨트롤러에 추가되거나 제거된 후에 호출됩니다.
 
 ### 연관된 다른 View Controller 얻기
 
-
+* _var_ presentingViewController: UIViewController? 해당 view controller를 표시한 view controller
+* _var_ presentedViewController: UIViewController? 해당 view controller나 view controller 계층의 상위 항목중 하나가 표시하는 view controller
+* _var_ parent: UIViewController? 상위 view controller
+* _var_ navigationController: UINavigationController? view controller 계층에서 가장 가까운 navigation controller
+* _var_ splitViewController: UISplitViewController? view controller 계층에서 가장 가까운 split view controller
+* _var_ tabBarController: UITabBarController? view controller 계층에서 가장 가까운 tab bar controller
 
 ### 메모리 경고 처리
 
-
+* _func_ didReceiveMemoryWarning\(\) 앱이 메모리 경고를 받았을때 view controller로 보냅니다.
 
 ### 상태 복구 관리
 
-
+* _var_ restorationIdentifier: String? view controller 상태 복원 지원을 결정하는 식별자
+* _var_ restorationClass: UIViewControllerRestoration.Type? 앱의 상태를 복원할 때 view controller를 재생성하는 클래스
+* _func_ encodeRestorableState\(with: NSCoder\) view controller에 대한 상태 관련 정보를 인코딩합니다.
+* _func_ decodeRestorableState\(with: NSCoder\) view controller에 대한 상태 관련 정보를 디코딩하고 복원합니다.
+* _func_ applicationFinishedRestoringState\(\) 다른 객체의 디코딩이 완료된 후 복원된 view controller에서 호출됩니다.
 
 ### 앱 확장 지원
 
-
+* _var_ extensionContext: NSExtensionContext? view controller의 확장 컨텍스트 
 
 ### 3D터치 미리보기, 미리보기 퀵 액션과 작업하기
 
+이 작업 그룹의 메서드들은 3D 터치를 지원하는 기기에서 사용가능합니다.  
+압력기반 터치 중 나타나는 view를 최종 사용자 용어로는 peek과 pop이라고 부릅니다. 명확한 서술 및 API 명칭과의 일치를 위해서 이 문서에서는 preview와 commit view라는 용어를 사용합니다. 3D 터치에 대해서 더 자세히 알고 싶다면 [iPhone에서 3D 터치 사용하기](https://melodyarchive.gitbook.io/sagwa/not-found)를 읽어보세요
 
+* _func_ registerForPreviewing\(with: UIViewControllerPreviewingDelegate, sourceView: UIView\) 3D 터치 미리보기\(peek\)와 커밋\(pop\)을 사용할 view controller를 등록합니다.
+* _func_ unregisterForPreviewing\(withContext: UIViewControllerPreviewing\) 컨텍스트 객체로 식별된 view controller의 이전 등록을 해제합니다.
+* _var_ previewActionItems: \[UIPreviewActionItem\] 사용자가 3D터치 미리보기에서 위쪽으로 스와이프 할때 보여지는 퀵 액션들
 
 ### 시스템 제스처 인식기로 조정
 
-
+* func preferredScreenEdgesDeferringSystemGestures\(\) The screen edges for which you want your gestures to take precedence over the system gestures
+* func childViewControllerForScreenEdgesDeferringSystemGestures\(\) Returns the child view controller that should be queried to see if its gestures should take precedence.
+* func setNeedsUpdateOfScreenEdgesDeferringSystemGestures\(\) Call this method when you change the screen edges that you use for deferring system gestures.
 
 ### 상태바 관리
 
-
+* var childViewControllerForStatusBarHidden: UIViewController? 시스템이 view controller를 사용하여 상태 표시줄 숨김/숨기지 않음 상태를 확인해야 할 때 호출됩니다.
+* var childViewControllerForStatusBarStyle: UIViewController? 상태 표시줄 스타일을 결정하기 위해 보기 컨트롤러를 사용해야 할 때 호출됩니다.
+* var preferredStatusBarStyle: UIStatusBarStyle 뷰 컨트롤러에 대한 기본 상태 표시줄 스타일
+* var prefersStatusBarHidden: Bool view controller 상태 표시줄의 기본 숨김 상태
+* var modalPresentationCapturesStatusBarAppearance: Bool 전체화면이 아닌 view controller에 상태표시줄의 appearance 제어를 넘길것인지를 나타냅니다.
+* var preferredStatusBarUpdateAnimation: UIStatusBarAnimation view controller의 상태 표시줄을 숨기고 표시하는 애니메이션 스타일
+* func setNeedsStatusBarAppearanceUpdate\(\) view controller의 상태 표시줄 속성이 변경되었음을 시스템에 알립니다.
 
 ### 제스처 설정
 
-
+* func prefersHomeIndicatorAutoHidden\(\) 홈 화면으로 돌아가는 인디케이터를 숨길 수 있도록 시스템으로부터 허가 받았는지를 반환합니다.
+* func childViewControllerForHomeIndicatorAutoHidden\(\) 홈 화면으로 돌아가는 인디케이터의 표시 설정을 참조하는 하위 view controller를 반환합니다.
+* func setNeedsUpdateOfHomeIndicatorAutoHidden\(\) view controller가 홈 화면으로 돌아가기 위한 인디케이터에 대한 기본 설정을 업데이트했음을 UIKit에 알립니다.
 
 ### 네비게이션 인터페이스 설정
 
