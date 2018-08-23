@@ -263,65 +263,86 @@ view controller의 [restorationIdentifier](https://melodyarchive.gitbook.io/sagw
 
 ### 시스템 제스처 인식기로 조정
 
-* func preferredScreenEdgesDeferringSystemGestures\(\) The screen edges for which you want your gestures to take precedence over the system gestures
-* func childViewControllerForScreenEdgesDeferringSystemGestures\(\) Returns the child view controller that should be queried to see if its gestures should take precedence.
-* func setNeedsUpdateOfScreenEdgesDeferringSystemGestures\(\) Call this method when you change the screen edges that you use for deferring system gestures.
+* _func_ preferredScreenEdgesDeferringSystemGestures\(\) The screen edges for which you want your gestures to take precedence over the system gestures
+* _func_ childViewControllerForScreenEdgesDeferringSystemGestures\(\) Returns the child view controller that should be queried to see if its gestures should take precedence.
+* _func_ setNeedsUpdateOfScreenEdgesDeferringSystemGestures\(\) Call this method when you change the screen edges that you use for deferring system gestures.
 
 ### 상태바 관리
 
-* var childViewControllerForStatusBarHidden: UIViewController? 시스템이 view controller를 사용하여 상태 표시줄 숨김/숨기지 않음 상태를 확인해야 할 때 호출됩니다.
-* var childViewControllerForStatusBarStyle: UIViewController? 상태 표시줄 스타일을 결정하기 위해 보기 컨트롤러를 사용해야 할 때 호출됩니다.
-* var preferredStatusBarStyle: UIStatusBarStyle 뷰 컨트롤러에 대한 기본 상태 표시줄 스타일
-* var prefersStatusBarHidden: Bool view controller 상태 표시줄의 기본 숨김 상태
-* var modalPresentationCapturesStatusBarAppearance: Bool 전체화면이 아닌 view controller에 상태표시줄의 appearance 제어를 넘길것인지를 나타냅니다.
-* var preferredStatusBarUpdateAnimation: UIStatusBarAnimation view controller의 상태 표시줄을 숨기고 표시하는 애니메이션 스타일
-* func setNeedsStatusBarAppearanceUpdate\(\) view controller의 상태 표시줄 속성이 변경되었음을 시스템에 알립니다.
+* _var_ childViewControllerForStatusBarHidden: UIViewController? 시스템이 view controller를 사용하여 상태 표시줄 숨김/숨기지 않음 상태를 확인해야 할 때 호출됩니다.
+* _var_ childViewControllerForStatusBarStyle: UIViewController? 상태 표시줄 스타일을 결정하기 위해 보기 컨트롤러를 사용해야 할 때 호출됩니다.
+* _var_ preferredStatusBarStyle: UIStatusBarStyle 뷰 컨트롤러에 대한 기본 상태 표시줄 스타일
+* _var_ prefersStatusBarHidden: Bool view controller 상태 표시줄의 기본 숨김 상태
+* _var_ modalPresentationCapturesStatusBarAppearance: Bool 전체화면이 아닌 view controller에 상태표시줄의 appearance 제어를 넘길것인지를 나타냅니다.
+* _var_ preferredStatusBarUpdateAnimation: UIStatusBarAnimation view controller의 상태 표시줄을 숨기고 표시하는 애니메이션 스타일
+* _func_ setNeedsStatusBarAppearanceUpdate\(\) view controller의 상태 표시줄 속성이 변경되었음을 시스템에 알립니다.
 
 ### 제스처 설정
 
-* func prefersHomeIndicatorAutoHidden\(\) 홈 화면으로 돌아가는 인디케이터를 숨길 수 있도록 시스템으로부터 허가 받았는지를 반환합니다.
-* func childViewControllerForHomeIndicatorAutoHidden\(\) 홈 화면으로 돌아가는 인디케이터의 표시 설정을 참조하는 하위 view controller를 반환합니다.
-* func setNeedsUpdateOfHomeIndicatorAutoHidden\(\) view controller가 홈 화면으로 돌아가기 위한 인디케이터에 대한 기본 설정을 업데이트했음을 UIKit에 알립니다.
+* _func_ prefersHomeIndicatorAutoHidden\(\) 홈 화면으로 돌아가는 인디케이터를 숨길 수 있도록 시스템으로부터 허가 받았는지를 반환합니다.
+* _func_ childViewControllerForHomeIndicatorAutoHidden\(\) 홈 화면으로 돌아가는 인디케이터의 표시 설정을 참조하는 하위 view controller를 반환합니다.
+* _func_ setNeedsUpdateOfHomeIndicatorAutoHidden\(\) view controller가 홈 화면으로 돌아가기 위한 인디케이터에 대한 기본 설정을 업데이트했음을 UIKit에 알립니다.
 
 ### 네비게이션 인터페이스 설정
 
-
+* _var_ navigationItem: UINavigationItem 상위 네비게이션 바에서 view controller를 나타내는데 사용되는 네비게이션 항목
+* _var_ hidesBottomBarWhenPushed: Bool view controller가 네비게이션 컨트롤러에 푸시될 때 화면 아래쪽의 도구 모음이 숨겨져 있는지를 나타내는 값
+* _func_ setToolbarItems\(\[UIBarButtonItem\]?, animated: Bool\) view controller와 함께 표시할 툴바 항목을 설정합니다.
+* _var_ toolbarItems: \[UIBarButtonItem\]? 해당 view controller와 연관된 툴바 항목
 
 ### 탭바 아이템 설정
 
-
+* _var_ tabBarItem: UITabBarItem! 탭 바 컨트롤러에 추가 될 때 view controller를 나타내는 탭 바 항목입니다.
 
 ### 뷰 컨트롤러에 에디팅 동작 추가하기
 
-
+* _var_ isEditing: Bool view controller가 현재 뷰 내용을 편집할 수 있는지를 나타내는 값
+* _func_ setEditing\(Bool, animated: Bool\) 뷰 컨트롤러에 편집 가능한 뷰를 표시할지 여부를 설정합니다.
+* _var_ editButtonItem: UIBarButtonItem 제목 및 편집/완료 상태를 전환하는 bar button item을 반환합니다.
 
 ### 사용가능한 키 커맨드에 접근
 
-
+* _func_ addKeyCommand\(UIKeyCommand\) 지정된 바로 가기 키를 view controller에 연결합니다.
+* _func_ removeKeyCommand\(UIKeyCommand\) view controller에서 바로가기 키 커맨드를 제거합니다.
 
 ### Nib 파일 정보 얻기
 
-
+* _var_ nibName: String? view controller의 nib 파일의 이름\(지정된 경우\)
+* _var_ nibBundle: Bundle? view controller의 nib bundle\(존재하는 경우\)
 
 ### 상수Constants
 
-
+* _enum_ UIModalPresentationStyle view controller가 모달 방식으로 나타날때 사용가능한 표시 스타일
+* _enum_ UIModalTransitionStyle view controller가 모달 방식으로 나타날때 사용가능한 전환 스타일
+* ~~_enum_ ADInterstitialPresentationPolicy~~ **Deprecated** Policy options governing how and when interstitial ads may be presented from a view controller. 
+* Exceptions view controller에서 발생하는 예외
+* _struct_ UIRectEdge 사각형 테두리를 가리키는 상수
 
 ### 알림Notification
 
-
+* _static let_ UIViewControllerShowDetailTargetDidChange: NSNotification.Name 분할 뷰 컨트롤러를 확장하거나 축소할 때 발생합니다.
 
 ### 지원중단Deprecated
 
-
+> 생략
 
 ## 연관 문서
 
 ### 상속받은 상위 클래스
 
-
+* `UIResponder`
 
 ### 준수하는 프로토콜
 
-### 
+* `CVarArg`
+* `Equatable`
+* `Hashable`
+* `NSCoding`
+* `NSExtensionRequestHandling`
+* `UIAppearanceContainer`
+* `UIContentContainer`
+* `UIFocusEnvironment`
+* `UIPasteConfigurationSupporting`
+* `UIStateRestoring`
+* `UITraitEnvironment`
 
