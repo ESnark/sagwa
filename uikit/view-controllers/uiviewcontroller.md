@@ -10,7 +10,7 @@ description: UIKit 앱의 View 계층구조를 관리하는 객체
 ## 개요
 
 UIViewController 클래스는 모든 view controller에 공통적인 동작을 정의합니다.  
-UIViewController 클래스의 인스턴스를 직접 만드는 경우는 거의 없습니다. 대신 UIViewController를 하위 클래스로 만들고 view controller의 뷰 계층 구조를 관리하는 데 필요한 메서드와 속성을 추가하세요.
+UIViewController 클래스의 인스턴스를 직접 만드는 경우는 거의 없습니다. 대신 UIViewController를 하위 클래스로 만들고 view controller의 뷰 계층 구조를 관리하는 데 필요한 메서드와 프로퍼티를 추가하세요.
 
 view controller의 주요 임무는 다음과 같습니다.
 
@@ -30,12 +30,23 @@ view controller가 단독적으로 사용되는 일은 거의 없습니다. 대�
 
 ### 뷰 관리
 
-각 view controller는 view 계층 구조를 관리하며 루트 뷰는 이 클래스의 view 속성에 저장됩니다. 루트 뷰는 주로 나머지 view 계층 구조의 컨테이너 역할을 합니다. 루트 뷰의 크기와 위치는 해당 view를 소유한 객체\(상위 view controller 또는 앱의 window\)에 의해 결정됩니다. window가 소유하고있는 view controller는 앱의 루트 뷰 컨트롤러이며 view의 크기는 window를 채울 수 있는 정도로 조정됩니다.
+각 view controller는 view 계층 구조를 관리하며 루트 뷰는 이 클래스의 view 프로퍼티에 저장됩니다. 루트 뷰는 주로 나머지 view 계층 구조의 컨테이너 역할을 합니다. 루트 뷰의 크기와 위치는 해당 view를 소유한 객체\(상위 view controller 또는 앱의 window\)에 의해 결정됩니다. window가 소유하고있는 view controller는 앱의 루트 뷰 컨트롤러이며 view의 크기는 window를 채울 수 있는 정도로 조정됩니다.
 
-view controller는 소유한 view를 곧바로 로드하지 않습니다. view는 해당 속성에 처음 액세스할때 로드 또는 생성됩니다. view controller의 view를 지정하는 방법에는 여러가지가 있습니다.
+view controller는 소유한 view를 곧바로 로드하지 않습니다. view는 해당 프로퍼에 처음 액세스할때 로드 또는 생성됩니다. view controller의 view를 지정하는 방법에는 여러가지가 있습니다.
 
-* [스토리보드](https://melodyarchive.gitbook.io/sagwa/not-found)에 view controller와 view를 지정하세요. 스토리보드는 view를 지정하는 기본 방법입니다. 스토리보드를 사용해서 view와 view controller에 대한 해당 관계를 설정할 수 있습니다. 또한 view controller 사이의 관계와 하위 뷰를 지정하면 앱 동작을 보고 수정하는 것이 더 쉬워집니다.
-* 
+* [스토리보드](https://melodyarchive.gitbook.io/sagwa/not-found)에 view controller와 view를 지정하세요. 스토리보드는 view를 지정하는 기본 방법입니다. 스토리보드를 사용해서 view와 view controller에 대한 해당 관계를 설정할 수 있습니다. 또한 view controller 사이의 관계와 하위 뷰를 지정하면 앱 동작을 보고 수정하는 것이 더 쉬워집니다.  스토리보드에서 view controller를 로드하려면 [UIStoryboard](https://melodyarchive.gitbook.io/sagwa/not-found) 객체의 [instantiateViewController \(withIdentifier :\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 호출하십시오. UIStoryboard 객체는 view controller를 생성하여 코드에 반환합니다.
+* [Nib 파일](https://melodyarchive.gitbook.io/sagwa/not-found)을 사용하여 view controller에 대한 view를 지정하세요. nib 파일을 사용하면 단일 view controller의 view를 지정할 수 있지만 view controller 사이의 segue 또는 관계를 정의할 수는 없습니다. nib 파일은 view controller 자체에 대한 최소한의 정보만 저장합니다.  nib 파일을 사용하여 view controller 객체를 초기화하려면 view controller 클래스를 프로그래밍 방식으로 만들고 [init \(nibName : bundle :\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 사용하여 초기화하세요. view가 요청되면 view controller는 nib 파일에서 view를 로드합니다.
+* [loadView\(\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 사용하여 view controller의 view를 지정하세요. 이 방법에서는 뷰 계층 구조를 프로그래밍 방식으로 만들고 해당 계층 구조의 루트 뷰를 view controller의 view 프로퍼티에 할당합니다.
+
+이러한 모든 방법은 적절한 view의 집합을 만들어 view 프로퍼티를 통해 노출한다는 점에서 같은 결과를 만들어냅니다.
+
+{% hint style="warning" %}
+중요
+
+view controller는 view와 view가 생성하는 모든 하위 뷰의 유일한 소유자입니다. 또한 view controller는 view를 생성하거나 \(view controller 자체가 릴리즈 될 때와 같이\) 소유권을 반환하는 일에 있어서 책임이 있습니다. view 객체를 스토리보드나 nib 파일에 저장하는 경우 각 view controller 객체는 view 객체를 요청받을때 자동적으로 해당 뷰의 사본을 가져옵니다.  
+하지만 view를 수동적으로 생성한다면 각 view controller는 반드시 고유한 view 집합을 소유하고 있어야 합니다. view controller간에는 view를 공유할 수 없습니다.
+{% endhint %}
+
 ## 뷰 관련 Notification 처리
 
 
