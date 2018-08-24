@@ -326,7 +326,7 @@ view controller의 [restorationIdentifier](https://melodyarchive.gitbook.io/sagw
 
 > 생략
 
-## 연관 문서
+## 관련 문서
 
 ### 상속받은 상위 클래스
 
