@@ -39,7 +39,7 @@ UIKit은 앱과 시스템의 상호작용을 관리하고 앱의 데이터 및 �
 View는 화면에 내용을 표시하고 사용자 상호 작용을 용이하게 합니다. View Controller는 뷰와 인터페이스 구조를 관리하는데 도움이 됩니다.
 
 * 뷰와 컨트롤 화면에 컨텐츠를 표시하고 해당 컨텐츠에 상호작용을 지정하세요
-* View Controllers View Controller로 인터페이스를 관리하고 앱 컨텐츠 탐색을 수월하게 만드세요
+* [View Controllers](https://melodyarchive.gitbook.io/sagwa/uikit/view-controllers) View Controller로 인터페이스를 관리하고 앱 컨텐츠 탐색을 수월하게 만드세요
 * 뷰 레이아웃 Stack View를 사용해서 인터페이스를 자동으로 배치하고 View를 정교하게 배치해야 하는 경우 자동 레이아웃을 사용하세요
 * 애니메이션과 햅틱 뷰 기반 애니메이션 및 햅틱을 사용하여 사용자에게 피드백을 제공합니다.
 * 윈도우와 스크린   뷰 계층 구조 및 기타 컨텐츠를 위한 컨테이너를 제공합니다

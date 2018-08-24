@@ -263,9 +263,9 @@ view controller의 [restorationIdentifier](https://melodyarchive.gitbook.io/sagw
 
 ### 시스템 제스처 인식기로 조정
 
-* _func_ preferredScreenEdgesDeferringSystemGestures\(\) The screen edges for which you want your gestures to take precedence over the system gestures
-* _func_ childViewControllerForScreenEdgesDeferringSystemGestures\(\) Returns the child view controller that should be queried to see if its gestures should take precedence.
-* _func_ setNeedsUpdateOfScreenEdgesDeferringSystemGestures\(\) Call this method when you change the screen edges that you use for deferring system gestures.
+* _func_ preferredScreenEdgesDeferringSystemGestures\(\) 스크린 가장자리를 스와이프하는 시스템 제스처보다 앱 상의 제스처가 우선적으로 동작하게 합니다.
+* _func_ childViewControllerForScreenEdgesDeferringSystemGestures\(\) 하위 뷰 컨트롤러의 제스처가 우선되어야 할지 확인하기 위해서 쿼리해야 하는 하위 뷰 컨트롤러를 반환합니다.
+* _func_ setNeedsUpdateOfScreenEdgesDeferringSystemGestures\(\) 시스템 제스처 동작을 지연시키는 스크린 가장자리를 변경할때 호출되는 메서드입니다.
 
 ### 상태바 관리
 
