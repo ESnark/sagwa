@@ -24,7 +24,7 @@ UIKit 프레임워크는 iOS 또는 tvOS 앱에 필요한 인프라를 제공합
 
 ### 첫 시작
 
-* UIKit으로 앱 개발 iOS/tvOS 앱 개발을 위해 UIKit과 Xcode가 제공하는 기본기능에 대해서 알아보세요
+* [UIKit으로 앱 개발](https://melodyarchive.gitbook.io/sagwa/uikit/uikit-article-1) iOS/tvOS 앱 개발을 위해 UIKit과 Xcode가 제공하는 기본기능에 대해서 알아보세요
 
 ### 앱 구조
 
