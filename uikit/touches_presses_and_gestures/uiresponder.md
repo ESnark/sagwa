@@ -4,6 +4,9 @@ description: 이벤트에 응답하고 이벤트를 처리하기 위한 추상 �
 
 # UIResponder
 
+> 원본출처  
+> [https://developer.apple.com/documentation/uikit/uiresponder](https://developer.apple.com/documentation/uikit/uiresponder)
+
 ## 개요
 
 응답자\(Responder\) 객체 \(즉, [UIResponder](https://melodyarchive.gitbook.io/sagwa/not-found)의 인스턴스\)는 UIKit 응용 프로그램의 이벤트 처리 백본을 구성합니다. [UIApplication](https://melodyarchive.gitbook.io/sagwa/not-found), [UIViewController](https://melodyarchive.gitbook.io/sagwa/not-found) 및 모든 [UIView](https://melodyarchive.gitbook.io/sagwa/not-found) 객체 \([UIWindow](https://melodyarchive.gitbook.io/sagwa/not-found) 포함\)를 포함한 중요 객체들도 응답자입니다. 이벤트가 발생하면 UIKit은 이를 처리 할 수 ​​있도록 앱의 응답 객체에 전달합니다.

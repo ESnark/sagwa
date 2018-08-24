@@ -4,6 +4,9 @@ description: iOS/tvOS 앱 개발을 위해 UIKit과 Xcode가 제공하는 기본
 
 # UIKit으로 앱 개발
 
+> 원본출처  
+> [https://developer.apple.com/documentation/uikit/about\_app\_development\_with\_uikit](https://developer.apple.com/documentation/uikit/about_app_development_with_uikit)
+
 ## 개요
 
 UIKit 프레임워크는 iOS 및 TVOS용 앱을 만드는 데 필요한 핵심 객체를 제공합니다. 이러한 객체를 사용하여 콘텐츠를 화면에 표시하고, 콘텐츠와 상호 작용하며, 시스템과의 상호 작용을 관리할 수 있습니다. 앱은 기본 동작을 UIKit에 의존하며 UIKit은 특정 요구에 맞게 동작을 커스터마이즈 할 수 있는 다양한 방법을 제공합니다.

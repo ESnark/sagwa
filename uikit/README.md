@@ -24,7 +24,7 @@ UIKit 프레임워크는 iOS 또는 tvOS 앱에 필요한 인프라를 제공합
 
 ### 첫 시작
 
-* [UIKit으로 앱 개발](https://melodyarchive.gitbook.io/sagwa/uikit/uikit-article-1) iOS/tvOS 앱 개발을 위해 UIKit과 Xcode가 제공하는 기본기능에 대해서 알아보세요
+* [UIKit으로 앱 개발](https://melodyarchive.gitbook.io/sagwa/uikit/about_app_development_with_uikit) iOS/tvOS 앱 개발을 위해 UIKit과 Xcode가 제공하는 기본기능에 대해서 알아보세요
 
 ### 앱 구조
 
@@ -48,7 +48,7 @@ View는 화면에 내용을 표시하고 사용자 상호 작용을 용이하게
 
 Responder와 gesture recognizer는 터치, 키보드 입력 또는 다른 이벤트의 처리를 돕습니다. 드래그앤 드롭, 포커스, peek&pop 또는 접근성 도구들을 사용해서 다른 유형의 상호작용을 처리하세요
 
-* [터치, 누르기, 제스쳐](https://melodyarchive.gitbook.io/sagwa/uikit/touchpressgesture) 제스처 인식기에서 앱의 이벤트 처리 로직을 캡슐화하여 앱 전체에서 해당 코드를 재사용 할 수 있습니다.
+* [터치, 누르기, 제스쳐](https://melodyarchive.gitbook.io/sagwa/uikit/touches_presses_and_gestures) 제스처 인식기에서 앱의 이벤트 처리 로직을 캡슐화하여 앱 전체에서 해당 코드를 재사용 할 수 있습니다.
 * 드래그 앤 드롭 View와 상호작용 API를 사용해서 앱에서 드래그 앤 드롭 기능을 사용하세요
 * 포커스   원격 또는 게임 컨트롤러를 사용해서 UIKit 앱 인터페이스를 탐색합니다.
 * Peek and Pop 3D 터치 입력을 사용해서 커스텀 액션이나 미리보기를 사용하세요
