@@ -5,7 +5,7 @@
   * [UIKit으로 앱 개발](uikit/uikit-1.md)
   * [View Controllers](uikit/view-controllers/README.md)
     * [UIViewController](uikit/view-controllers/uiviewcontroller.md)
-  * [뷰와 컨트롤](uikit/undefined-1.md)
-  * [터치, 누르기 , 제스처](uikit/undefined.md)
+  * [뷰와 컨트롤](uikit/viewctrl.md)
+  * [터치, 누르기 , 제스처](uikit/touchpressgesture.md)
 * [Not Found](not-found.md)
 
