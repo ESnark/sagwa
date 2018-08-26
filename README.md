@@ -18,7 +18,7 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 * Foundation
 * Objective-C
 * Swift Standard Library
-* [UIKit](https://melodyarchive.gitbook.io/sagwa/uikit)
+* [UIKit](./uikit)
 
 ### App Service
 
