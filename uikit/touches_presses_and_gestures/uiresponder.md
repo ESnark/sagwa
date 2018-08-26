@@ -5,16 +5,16 @@
 
 ## 개요
 
-응답자\(Responder\) 객체 \(즉, [UIResponder](https://melodyarchive.gitbook.io/sagwa/not-found)의 인스턴스\)는 UIKit 응용 프로그램의 이벤트 처리 백본을 구성합니다. [UIApplication](https://melodyarchive.gitbook.io/sagwa/not-found), [UIViewController](https://melodyarchive.gitbook.io/sagwa/not-found) 및 모든 [UIView](https://melodyarchive.gitbook.io/sagwa/not-found) 객체 \([UIWindow](https://melodyarchive.gitbook.io/sagwa/not-found) 포함\)를 포함한 중요 객체들도 응답자입니다. 이벤트가 발생하면 UIKit은 이를 처리 할 수 ​​있도록 앱의 응답 객체에 전달합니다.
+응답자\(Responder\) 객체 \(즉, [UIResponder](/not-found)의 인스턴스\)는 UIKit 응용 프로그램의 이벤트 처리 백본을 구성합니다. [UIApplication](/not-found), [UIViewController](/not-found) 및 모든 [UIView](/not-found) 객체 \([UIWindow](/not-found) 포함\)를 포함한 중요 객체들도 응답자입니다. 이벤트가 발생하면 UIKit은 이를 처리 할 수 ​​있도록 앱의 응답 객체에 전달합니다.
 
 터치 이벤트, 모션 이벤트, 원격 제어 이벤트 및 프레스 이벤트를 비롯한 여러 종류의 이벤트가 있습니다. 특정 유형의 이벤트를 처리하려면 응답자가 해당 메서드를 오버라이드해야 합니다.  
-예를 들어, 터치 이벤트를 처리하기 위해 응답자는 [touchesBegan \( : with :\)](https://melodyarchive.gitbook.io/sagwa/not-found), [touchesMoved \( : with :\)](https://melodyarchive.gitbook.io/sagwa/not-found), [touchesEnded \( : with :\)](https://melodyarchive.gitbook.io/sagwa/not-found) 및 [touchesCancelled \( : with :\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 구현합니다. 터치가 일어났을때 응답자는 UIKit에서 제공한 이벤트 정보를 사용하여 해당 터치의 변경 사항을 추적하고 앱의 인터페이스를 적절하게 업데이트합니다.
+예를 들어, 터치 이벤트를 처리하기 위해 응답자는 [touchesBegan \( : with :\)](/not-found), [touchesMoved \( : with :\)](/not-found), [touchesEnded \( : with :\)](/not-found) 및 [touchesCancelled \( : with :\)](/not-found) 메서드를 구현합니다. 터치가 일어났을때 응답자는 UIKit에서 제공한 이벤트 정보를 사용하여 해당 터치의 변경 사항을 추적하고 앱의 인터페이스를 적절하게 업데이트합니다.
 
 이벤트 처리 외에도 UIKit 응답자는 처리되지 않은 이벤트를 앱의 다른 부분으로 전달하는 작업을 관리합니다. 주어진 응답자가 이벤트를 처리하지 않으면 응답자 체인의 다음 이벤트로 해당 이벤트를 전달합니다. UIKit은 미리 정의된 규칙으로 이벤트를 수신하려면 다음에 어떤 개체가 있어야 하는지 확인하여 응답자 체인을 동적으로 관리합니다. 예를 들어 뷰는 이벤트를 수퍼 뷰로 전달하고 계층 구조의 루트 뷰는 해당 뷰 컨트롤러로 이벤트를 전달합니다.
 
-응답자는 [UIEvent](https://melodyarchive.gitbook.io/sagwa/not-found) 개체를 처리하기도 하지만 input view를 통해 custom input을 허용할 수도 있습니다. 시스템의 키보드는  input view의 가장 명확한 예입니다. 사용자가 화면에서 [UITextField](https://melodyarchive.gitbook.io/sagwa/not-found) 및 [UITextView](https://melodyarchive.gitbook.io/sagwa/not-found) 개체를 탭하면 해당 view가 첫 번째 응답자가 되어 시스템 키보드인 input view를 표시합니다. 마찬가지로 custom input view를 생성하고 다른 응답자가 활성화될 때 이를 표시할 수 있습니다. custom input view를 응답자와 연결하려면 해당 view를 응답자의 inputView 속성에 할당합니다.
+응답자는 [UIEvent](/not-found) 개체를 처리하기도 하지만 input view를 통해 custom input을 허용할 수도 있습니다. 시스템의 키보드는  input view의 가장 명확한 예입니다. 사용자가 화면에서 [UITextField](/not-found) 및 [UITextView](/not-found) 개체를 탭하면 해당 view가 첫 번째 응답자가 되어 시스템 키보드인 input view를 표시합니다. 마찬가지로 custom input view를 생성하고 다른 응답자가 활성화될 때 이를 표시할 수 있습니다. custom input view를 응답자와 연결하려면 해당 view를 응답자의 inputView 속성에 할당합니다.
 
-응답자 및 응답자 체인에 대한 자세한 내용은 [UIKit 앱에 대한 이벤트 처리 가이드](https://melodyarchive.gitbook.io/sagwa/not-found)를 참조하십시오.
+응답자 및 응답자 체인에 대한 자세한 내용은 [UIKit 앱에 대한 이벤트 처리 가이드](/not-found)를 참조하십시오.
 
 ## 주제
 

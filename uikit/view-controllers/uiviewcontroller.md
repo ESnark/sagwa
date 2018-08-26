@@ -1,6 +1,7 @@
 # UIViewController
 
-> 원본출처  
+> 원본출처
+  
 > [https://developer.apple.com/documentation/uikit/uiviewcontroller](https://developer.apple.com/documentation/uikit/uiviewcontroller)
 
 ## 개요
@@ -22,7 +23,7 @@ view controller가 단독적으로 사용되는 일은 거의 없습니다. 대�
 
 ## SubClassing Notes
 
-대부분의 앱에는 UIViewController의 커스텀 하위 클래스가 적어도 하나 이상 포함되어 있습니다. 커스텀 view controller는 앱의 생김새와 사용자 상호작용에 응답하는 방법을 포함하여 앱의 전반적인 동작을 정의합니다. 다음 섹션에서는 사용자 정의 하위 클래스에서 수행하는 몇 가지 작업에 대한 간략한 개요를 제공합니다. view controller의 사용 및 구현에 대한 자세한 내용은 [iOS용 뷰 컨트롤러 프로그래밍 가이드](https://melodyarchive.gitbook.io/sagwa/not-found)를 참조하십시오.
+대부분의 앱에는 UIViewController의 커스텀 하위 클래스가 적어도 하나 이상 포함되어 있습니다. 커스텀 view controller는 앱의 생김새와 사용자 상호작용에 응답하는 방법을 포함하여 앱의 전반적인 동작을 정의합니다. 다음 섹션에서는 사용자 정의 하위 클래스에서 수행하는 몇 가지 작업에 대한 간략한 개요를 제공합니다. view controller의 사용 및 구현에 대한 자세한 내용은 [iOS용 뷰 컨트롤러 프로그래밍 가이드](/not-found)를 참조하십시오.
 
 ### 뷰 관리
 
@@ -30,9 +31,9 @@ view controller가 단독적으로 사용되는 일은 거의 없습니다. 대�
 
 view controller는 소유한 view를 곧바로 로드하지 않습니다. view는 해당 프로퍼에 처음 액세스할때 로드 또는 생성됩니다. view controller의 view를 지정하는 방법에는 여러가지가 있습니다.
 
-* [스토리보드](https://melodyarchive.gitbook.io/sagwa/not-found)에 view controller와 view를 지정하세요. 스토리보드는 view를 지정하는 기본 방법입니다. 스토리보드를 사용해서 view와 view controller에 대한 해당 관계를 설정할 수 있습니다. 또한 view controller 사이의 관계와 하위 뷰를 지정하면 앱 동작을 보고 수정하는 것이 더 쉬워집니다.  스토리보드에서 view controller를 로드하려면 [UIStoryboard](https://melodyarchive.gitbook.io/sagwa/not-found) 객체의 [instantiateViewController \(withIdentifier :\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 호출하십시오. UIStoryboard 객체는 view controller를 생성하여 코드에 반환합니다.
-* [Nib 파일](https://melodyarchive.gitbook.io/sagwa/not-found)을 사용하여 view controller에 대한 view를 지정하세요. nib 파일을 사용하면 단일 view controller의 view를 지정할 수 있지만 view controller 사이의 segue 또는 관계를 정의할 수는 없습니다. nib 파일은 view controller 자체에 대한 최소한의 정보만 저장합니다.  nib 파일을 사용하여 view controller 객체를 초기화하려면 view controller 클래스를 프로그래밍 방식으로 만들고 [init \(nibName : bundle :\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 사용하여 초기화하세요. view가 요청되면 view controller는 nib 파일에서 view를 로드합니다.
-* [loadView\(\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 사용하여 view controller의 view를 지정하세요. 이 방법에서는 뷰 계층 구조를 프로그래밍 방식으로 만들고 해당 계층 구조의 루트 뷰를 view controller의 view 프로퍼티에 할당합니다.
+* [스토리보드](/not-found)에 view controller와 view를 지정하세요. 스토리보드는 view를 지정하는 기본 방법입니다. 스토리보드를 사용해서 view와 view controller에 대한 해당 관계를 설정할 수 있습니다. 또한 view controller 사이의 관계와 하위 뷰를 지정하면 앱 동작을 보고 수정하는 것이 더 쉬워집니다.  스토리보드에서 view controller를 로드하려면 [UIStoryboard](/not-found) 객체의 [instantiateViewController \(withIdentifier :\)](/not-found) 메서드를 호출하십시오. UIStoryboard 객체는 view controller를 생성하여 코드에 반환합니다.
+* [Nib 파일](/not-found)을 사용하여 view controller에 대한 view를 지정하세요. nib 파일을 사용하면 단일 view controller의 view를 지정할 수 있지만 view controller 사이의 segue 또는 관계를 정의할 수는 없습니다. nib 파일은 view controller 자체에 대한 최소한의 정보만 저장합니다.  nib 파일을 사용하여 view controller 객체를 초기화하려면 view controller 클래스를 프로그래밍 방식으로 만들고 [init \(nibName : bundle :\)](/not-found) 메서드를 사용하여 초기화하세요. view가 요청되면 view controller는 nib 파일에서 view를 로드합니다.
+* [loadView\(\)](/not-found) 메서드를 사용하여 view controller의 view를 지정하세요. 이 방법에서는 뷰 계층 구조를 프로그래밍 방식으로 만들고 해당 계층 구조의 루트 뷰를 view controller의 view 프로퍼티에 할당합니다.
 
 이러한 모든 방법은 적절한 view의 집합을 만들어 view 프로퍼티를 통해 노출한다는 점에서 같은 결과를 만들어냅니다.
 
@@ -43,11 +44,11 @@ view controller는 view와 view가 생성하는 모든 하위 뷰의 유일한 �
 하지만 view를 수동적으로 생성한다면 각 view controller는 반드시 고유한 view 집합을 소유하고 있어야 합니다. view controller간에는 view를 공유할 수 없습니다.
 {% endhint %}
 
-view controller의 루트 뷰는 항상 할당된 공간에 딱 맞게 크기가 조정됩니다. 인터페이스 빌더를 통해 자동 레이아웃 제약 조건을 지정하면 계층 구조상의 각 view가 상위 뷰의 범위 내에서 배치되고 크기가 조정되는 방식을 제어할 수 있습니다. 또한 제약 조건을 프로그래밍적으로 생성하고 적절한 때에 추가하는 것도 가능합니다. 제약 조건을 만드는 방법에 대한 자세한 내용은 [자동 레이아웃 가이드](https://melodyarchive.gitbook.io/sagwa/not-found)를 참조하십시오.
+view controller의 루트 뷰는 항상 할당된 공간에 딱 맞게 크기가 조정됩니다. 인터페이스 빌더를 통해 자동 레이아웃 제약 조건을 지정하면 계층 구조상의 각 view가 상위 뷰의 범위 내에서 배치되고 크기가 조정되는 방식을 제어할 수 있습니다. 또한 제약 조건을 프로그래밍적으로 생성하고 적절한 때에 추가하는 것도 가능합니다. 제약 조건을 만드는 방법에 대한 자세한 내용은 [자동 레이아웃 가이드](/not-found)를 참조하십시오.
 
 ## 뷰 관련 Notification 처리
 
-View가 나타나거나 사라지면 컨트롤러는 자동적으로 자체 메서드를 호출하여 하위 클래스가 변동사항에 응답할 수 있도록 합니다. [viewWillAppear \( :\)](https://melodyarchive.gitbook.io/sagwa/not-found)와 같은 메서드를 사용하여 화면에 표시 할 뷰를 준비하고 [viewWillDisappear \( :\)](https://melodyarchive.gitbook.io/sagwa/not-found)를 사용하여 변경 내용이나 다른 상태 정보를 저장합니다. 상황에 따라 적절한 메서드를 사용하세요.  
+View가 나타나거나 사라지면 컨트롤러는 자동적으로 자체 메서드를 호출하여 하위 클래스가 변동사항에 응답할 수 있도록 합니다. [viewWillAppear \( :\)](/not-found)와 같은 메서드를 사용하여 화면에 표시 할 뷰를 준비하고 [viewWillDisappear \( :\)](/not-found)를 사용하여 변경 내용이나 다른 상태 정보를 저장합니다. 상황에 따라 적절한 메서드를 사용하세요.  
   
 그림 1은 view에서 가능한 visibility 상태와 상태 전환을 보여줍니다.  
 모든 'will' 콜백 메서드가 'done' 콜백 메서드와 쌍을 이루는 것은 아닙니다. 'will'콜백 메서드로 프로세스를 시작하면 해당 'did'와 반대 'will'콜백 메서드 모두에서 프로세스를 종료해야합니다.
@@ -56,18 +57,18 @@ View가 나타나거나 사라지면 컨트롤러는 자동적으로 자체 메�
 
 ## 뷰 회전 처리
 
-iOS 8부터 모든 회전 관련 메서드는 더 이상 사용되지 않습니다. 대신에 회전은 view controller의 view 크기가 변경되는 이벤트로 간주되므로 [viewWillTransition\(to:with:\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 통해 보고됩니다. 인터페이스 방향이 변경되면 UIKit은 윈도우의 루트 view controller에서 이 메서드를 호출합니다. 그런 다음 해당보기 컨트롤러는 하위 view controller에 알리고 view controller 계층 전체에 메시지를 전파합니다.
+iOS 8부터 모든 회전 관련 메서드는 더 이상 사용되지 않습니다. 대신에 회전은 view controller의 view 크기가 변경되는 이벤트로 간주되므로 [viewWillTransition\(to:with:\)](/not-found) 메서드를 통해 보고됩니다. 인터페이스 방향이 변경되면 UIKit은 윈도우의 루트 view controller에서 이 메서드를 호출합니다. 그런 다음 해당보기 컨트롤러는 하위 view controller에 알리고 view controller 계층 전체에 메시지를 전파합니다.
 
-iOS 6 및 iOS 7에서 앱은 Info.plist 파일에 정의된 인터페이스 방향을 지원합니다. view controller는 [supportedInterfaceOrientations](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 오버라이드하여 지원하는 방향 리스트를 제한할 수 있습니다. 일반적으로 시스템은 이 메서드를 윈도우의 루트 view controller 또는 전체 화면을 채우기 위해 제공된 view controller에서만 호출합니다. 하위 view controller는 상위 view controller가 화면상에서 제공하는 부분을 사용할 뿐 회전모드의 지원 여부에는 영향을 줄 수 없습니다. 앱의 오리엔테이션 마스크와 view controller의 오리엔테이션 마스크의 교차점은 view controller를 어느 방향으로 회전시킬지 결정하는데 사용됩니다.
+iOS 6 및 iOS 7에서 앱은 Info.plist 파일에 정의된 인터페이스 방향을 지원합니다. view controller는 [supportedInterfaceOrientations](/not-found) 메서드를 오버라이드하여 지원하는 방향 리스트를 제한할 수 있습니다. 일반적으로 시스템은 이 메서드를 윈도우의 루트 view controller 또는 전체 화면을 채우기 위해 제공된 view controller에서만 호출합니다. 하위 view controller는 상위 view controller가 화면상에서 제공하는 부분을 사용할 뿐 회전모드의 지원 여부에는 영향을 줄 수 없습니다. 앱의 오리엔테이션 마스크와 view controller의 오리엔테이션 마스크의 교차점은 view controller를 어느 방향으로 회전시킬지 결정하는데 사용됩니다.
 
-특정 방향으로 화면을 표시하고 싶은 경우 해당 view controller의 [preferredInterfaceOrientationForPresentation](https://melodyarchive.gitbook.io/sagwa/not-found)를 오버라이드하면 됩니다.
+특정 방향으로 화면을 표시하고 싶은 경우 해당 view controller의 [preferredInterfaceOrientationForPresentation](/not-found)를 오버라이드하면 됩니다.
 
-표시중인 view controller에 대해 회전이 발생하면 [willRotate\(to:datation:\)](https://melodyarchive.gitbook.io/sagwa/not-found), [willAnimateRotation\(to:duration:\)](https://melodyarchive.gitbook.io/sagwa/not-found) 및 [doneRotate\(from:\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드가 회전 중에 호출됩니다. [viewWillLayoutSubviews\(\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드는 view의 크기가 조정되고 상위 항목에 의해 배치된 후에 호출됩니다. 회전시 view controller가 표시되지 않으면 회전 메서드가 호출되지 않습니다. 그러나 view가 표시되는 중이라면 [viewWillLayoutSubviews\(\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드가 호출됩니다. 이 메서드를 구현하면 [statusBarOrientation](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 호출하여 기기 방향을 결정할 수 있습니다.
+표시중인 view controller에 대해 회전이 발생하면 [willRotate\(to:datation:\)](/not-found), [willAnimateRotation\(to:duration:\)](/not-found) 및 [doneRotate\(from:\)](/not-found) 메서드가 회전 중에 호출됩니다. [viewWillLayoutSubviews\(\)](/not-found) 메서드는 view의 크기가 조정되고 상위 항목에 의해 배치된 후에 호출됩니다. 회전시 view controller가 표시되지 않으면 회전 메서드가 호출되지 않습니다. 그러나 view가 표시되는 중이라면 [viewWillLayoutSubviews\(\)](/not-found) 메서드가 호출됩니다. 이 메서드를 구현하면 [statusBarOrientation](/not-found) 메서드를 호출하여 기기 방향을 결정할 수 있습니다.
 
 {% hint style="info" %}
 알림
 
-앱이 시작될 때 앱은 반드시 세로 방향으로 인터페이스를 설정해야 합니다. 앱이 상술된 메커니즘에 따라 화면을 회전시키는 것은 [application\(\_:didFinishLaunchingWithOptions:\)](https://melodyarchive.gitbook.io/sagwa/not-found)가 값을 리턴한 이후부터 적용됩니다.
+앱이 시작될 때 앱은 반드시 세로 방향으로 인터페이스를 설정해야 합니다. 앱이 상술된 메커니즘에 따라 화면을 회전시키는 것은 [application\(\_:didFinishLaunchingWithOptions:\)](/not-found)가 값을 리턴한 이후부터 적용됩니다.
 {% endhint %}
 
 ### 컨테이너 뷰 컨트롤러 구현
@@ -80,10 +81,10 @@ UIViewController의 하위 커스텀 클래스는 컨테이너 뷰 컨트롤러�
 
 자주 사용되는 필수 메서드들:
 
-* [addChildViewController\(\_:\)](https://melodyarchive.gitbook.io/sagwa/not-found)
-* [removeFromParentViewController\(\)](https://melodyarchive.gitbook.io/sagwa/not-found)
-* [willMove\(toParentViewController:\)](https://melodyarchive.gitbook.io/sagwa/not-found)
-* [didMove\(toParentViewController:\)](https://melodyarchive.gitbook.io/sagwa/not-found)
+* [addChildViewController\(\_:\)](/not-found)
+* [removeFromParentViewController\(\)](/not-found)
+* [willMove\(toParentViewController:\)](/not-found)
+* [didMove\(toParentViewController:\)](/not-found)
 
 {% hint style="info" %}
 알림
@@ -91,18 +92,18 @@ UIViewController의 하위 커스텀 클래스는 컨테이너 뷰 컨트롤러�
 컨테이너 뷰 컨트롤러를 만들때 필수적으로 오버라이드 해야 할 메서드가 있는 것은 아닙니다.
 
 기본적으로 회전 및 appearance 콜백은 자동적으로 하위 항목에 전달됩니다.  
-선택적으로 [whichAutomaticallyForwardRotationMethods\(\)](https://melodyarchive.gitbook.io/sagwa/not-found) 및 [automaticallyForwardAppearanceMethods](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 오버라이드하여 이 동작을 직접 제어할 수 있습니다.
+선택적으로 [whichAutomaticallyForwardRotationMethods\(\)](/not-found) 및 [automaticallyForwardAppearanceMethods](/not-found) 메서드를 오버라이드하여 이 동작을 직접 제어할 수 있습니다.
 {% endhint %}
 
 ### 메모리 관리
 
-메모리는 iOS에서 중요한 리소스이며, view controller는 중요한 시간에 메모리 공간을 줄일 수 있는 built-in 기능을 지원합니다. UIViewController 클래스는 불필요한 메모리를 해제하는 [didReceeMemoryWarning\(\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 통해 낮은 메모리 상태를 자동으로 처리합니다.
+메모리는 iOS에서 중요한 리소스이며, view controller는 중요한 시간에 메모리 공간을 줄일 수 있는 built-in 기능을 지원합니다. UIViewController 클래스는 불필요한 메모리를 해제하는 [didReceeMemoryWarning\(\)](/not-found) 메서드를 통해 낮은 메모리 상태를 자동으로 처리합니다.
 
 ### 상태 보존과 복구
 
-view controller의 [restorationIdentifier](https://melodyarchive.gitbook.io/sagwa/not-found)\(복원 식별자\) 속성에 값을 할당하면, 앱이 백그라운드로 전환될 때 시스템이 view controller에 인코딩을 요청할 수 있습니다. 요청에 따라 보존이 일어나는 경우 view controller는 restorationIdentifier가 있는 뷰 계층의 뷰를 보존합니다. view controller는 다른 상태를 자동으로 저장하지 않습니다. 커스텀 컨테이너 뷰 컨트롤러를 구현한다면 모든 하위 뷰 컨트롤러를 직접 인코딩해야 하고 인코딩될 각 하위 항목은 고유한 restorationIdentifier가 있어야 합니다.
+view controller의 [restorationIdentifier](/not-found)\(복원 식별자\) 속성에 값을 할당하면, 앱이 백그라운드로 전환될 때 시스템이 view controller에 인코딩을 요청할 수 있습니다. 요청에 따라 보존이 일어나는 경우 view controller는 restorationIdentifier가 있는 뷰 계층의 뷰를 보존합니다. view controller는 다른 상태를 자동으로 저장하지 않습니다. 커스텀 컨테이너 뷰 컨트롤러를 구현한다면 모든 하위 뷰 컨트롤러를 직접 인코딩해야 하고 인코딩될 각 하위 항목은 고유한 restorationIdentifier가 있어야 합니다.
 
-시스템이 보존 또는 복원할 view controller를 결정하는 방법에 대한 자세한 내용은 [iOS용 앱 프로그래밍 가이드](https://melodyarchive.gitbook.io/sagwa/not-found)를 참조하십시오.
+시스템이 보존 또는 복원할 view controller를 결정하는 방법에 대한 자세한 내용은 [iOS용 앱 프로그래밍 가이드](/not-found)를 참조하십시오.
 
 ## 주제
 
@@ -168,13 +169,13 @@ view controller의 [restorationIdentifier](https://melodyarchive.gitbook.io/sagw
 
 ### View Safe Area 확장
 
-* [Safe Area에 상대적인 컨텐츠 위치 지정](https://melodyarchive.gitbook.io/sagwa/not-found) view가 다른 컨텐츠에 가려지지 않도록 배치하기.
+* [Safe Area에 상대적인 컨텐츠 위치 지정](/not-found) view가 다른 컨텐츠에 가려지지 않도록 배치하기.
 * _var_ additionalSafeAreaInsets: UIEdgeInsets view controller의 safe area를 수정하기 위해 명시하는 Custom insets
 * _func_ viewSafeAreaInsetsDidChange\(\) view controller의 root view safe area가 변경되었음을 해당 view controller에 알리기 위해서 호출됩니다.
 
 ### View Margin 관리하기
 
-* [레이아웃 여백 범위 내에서 컨텐츠 배치하기](https://melodyarchive.gitbook.io/sagwa/not-found) 다른 view의 컨텐츠 때문에 view가 혼잡해지지 않도록 배치하세요,
+* [레이아웃 여백 범위 내에서 컨텐츠 배치하기](/not-found) 다른 view의 컨텐츠 때문에 view가 혼잡해지지 않도록 배치하세요,
 * _var_ viewRespectsSystemMinimumLayoutMargins: Bool view가 시스템 정의된 최소 레이아웃 여백을 사용중인지 나타내는 값
 * _var_ systemMinimumLayoutMargins: NSDirectionalEdgeInsets view controller의 root view에 대한 최소 레이아웃 여백
 * _func_ viewLayoutMarginsDidChange\(\) view controller의 root view 레이아웃 여백이 바뀌었을때 해당 view controller에 알리기 위해서 호출됩니다.
@@ -251,7 +252,7 @@ view controller의 [restorationIdentifier](https://melodyarchive.gitbook.io/sagw
 ### 3D터치 미리보기, 미리보기 퀵 액션과 작업하기
 
 이 작업 그룹의 메서드들은 3D 터치를 지원하는 기기에서 사용가능합니다.  
-압력기반 터치 중 나타나는 view를 최종 사용자 용어로는 peek과 pop이라고 부릅니다. 명확한 서술 및 API 명칭과의 일치를 위해서 이 문서에서는 preview와 commit view라는 용어를 사용합니다. 3D 터치에 대해서 더 자세히 알고 싶다면 [iPhone에서 3D 터치 사용하기](https://melodyarchive.gitbook.io/sagwa/not-found)를 읽어보세요
+압력기반 터치 중 나타나는 view를 최종 사용자 용어로는 peek과 pop이라고 부릅니다. 명확한 서술 및 API 명칭과의 일치를 위해서 이 문서에서는 preview와 commit view라는 용어를 사용합니다. 3D 터치에 대해서 더 자세히 알고 싶다면 [iPhone에서 3D 터치 사용하기](/not-found)를 읽어보세요
 
 * _func_ registerForPreviewing\(with: UIViewControllerPreviewingDelegate, sourceView: UIView\) 3D 터치 미리보기\(peek\)와 커밋\(pop\)을 사용할 view controller를 등록합니다.
 * _func_ unregisterForPreviewing\(withContext: UIViewControllerPreviewing\) 컨텍스트 객체로 식별된 view controller의 이전 등록을 해제합니다.
@@ -326,7 +327,7 @@ view controller의 [restorationIdentifier](https://melodyarchive.gitbook.io/sagw
 
 ### 상속받은 대상
 
-* [UIResponder](https://melodyarchive.gitbook.io/sagwa/uikit/touches_presses_and_gestures/uiresponder)
+* [UIResponder](/uikit/touches_presses_and_gestures/uiresponder)
 
 ### 준수하는 프로토콜
 

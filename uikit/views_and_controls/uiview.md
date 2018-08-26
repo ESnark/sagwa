@@ -29,7 +29,7 @@ description: 화면상의 직사각형 영역에 대한 컨텐츠를 관리하�
 
 각 뷰의 범위는 그 frame과 경계\(bounds\) 속성에 의해 결정됩니다. frame 속성은 수퍼 뷰 좌표계의 안에서 원점과 크기로 정해집니다. bounds 속성은 뷰의 내부적인 수치를 의미하며 커스텀 그리기 코드 내에서 배타적으로 사용됩니다. center 속성을 사용하면 frame이나 bounds 특성을 직접 변경하지 않고도 뷰의 위치를 쉽게 변경할 수 있습니다.
 
-UIView 클래스를 사용하는 방법에 대한 자세한 내용은 [iOS용 View 프로그래밍 가이드](https://melodyarchive.gitbook.io/sagwa/not-found)를 참조하세요
+UIView 클래스를 사용하는 방법에 대한 자세한 내용은 [iOS용 View 프로그래밍 가이드](/not-found)를 참조하세요
 
 ## 뷰 생성하기
 
@@ -40,9 +40,9 @@ let rect = CGRect(x: 10, y: 10, width: 100, height: 100)
 let myView = UIView(frame: rect)
 ```
 
-다른 뷰에 하위 뷰를 추가하려면 수퍼 뷰에서 [addSubview \(\_ :\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 호출하세요. 뷰에 하위 뷰를 여러 개 추가할 수 있으며, 형제 뷰는 iOS에서 아무 문제없이 서로 겹칠 수 있습니다. addSubview \(\_ :\) 메소드를 호출 할 때마다 새 뷰가 다른 기존 형제 뷰 위에 놓입니다. [insertSubview \(\_ : aboveSubview :\)](https://melodyarchive.gitbook.io/sagwa/not-found) 및 [insertSubview \(\_ : belowSubview :\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 사용하여 하위 뷰의 상대 z 순서를 지정할 수 있습니다. [exchangeSubview \(at : withSubviewAt :\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 사용하여 이미 추가 된 하위 뷰의 위치를 ​​교환할 수도 있습니다.
+다른 뷰에 하위 뷰를 추가하려면 수퍼 뷰에서 [addSubview \(\_ :\)](/not-found) 메서드를 호출하세요. 뷰에 하위 뷰를 여러 개 추가할 수 있으며, 형제 뷰는 iOS에서 아무 문제없이 서로 겹칠 수 있습니다. addSubview \(\_ :\) 메소드를 호출 할 때마다 새 뷰가 다른 기존 형제 뷰 위에 놓입니다. [insertSubview \(\_ : aboveSubview :\)](/not-found) 및 [insertSubview \(\_ : belowSubview :\)](/not-found) 메서드를 사용하여 하위 뷰의 상대 z 순서를 지정할 수 있습니다. [exchangeSubview \(at : withSubviewAt :\)](/not-found) 메서드를 사용하여 이미 추가 된 하위 뷰의 위치를 ​​교환할 수도 있습니다.
 
-뷰를 생성한 후 자동 레이아웃 규칙을 작성하여 나머지 뷰 계층 구조의 변화에 따라 뷰의 크기와 위치가 변경되는 방법을 제어할 수 있습니다. 자세한 내용은 [자동 레이아웃 가이드](https://melodyarchive.gitbook.io/sagwa/not-found)를 참조하세요.
+뷰를 생성한 후 자동 레이아웃 규칙을 작성하여 나머지 뷰 계층 구조의 변화에 따라 뷰의 크기와 위치가 변경되는 방법을 제어할 수 있습니다. 자세한 내용은 [자동 레이아웃 가이드](/not-found)를 참조하세요.
 
 ## 뷰 드로잉 사이클
 
@@ -50,16 +50,16 @@ let myView = UIView(frame: rect)
 UIKit 또는 Core Graphics가 사용된 커스텀 컨텐츠가 포함된 뷰의 경우 시스템은 뷰의 draw \(\_ :\) 메서드를 호출하느데 이 메서드는 그래픽 컨텍스트에 뷰 컨텐츠를 그리는 방식으로 구현됩니다. \(그래픽 컨텍스트는 메서드 실행 전에 시스템이 자동적으로 설정하게 됩니다.\)  
 이렇게 함으로써 뷰 컨텐츠가 화면상에 시각적으로 나타납니다.
 
-뷰의 컨텐츠가 변경되면 다시 그려져야 한다고 시스템에 알리는 것은 개발자의 책임입니다. 뷰의 [setNeedsDisplay\(\)](https://melodyarchive.gitbook.io/sagwa/not-found) 또는 [setNeedsDisplay\(\_ :\)](https://melodyarchive.gitbook.io/sagwa/not-found) 메서드를 호출하여 작업을 수행할 수 있습니다.이 메서드는 다음 드로잉 사이클동안 뷰를 업데이트해야 한다고 시스템에 알립니다.  
+뷰의 컨텐츠가 변경되면 다시 그려져야 한다고 시스템에 알리는 것은 개발자의 책임입니다. 뷰의 [setNeedsDisplay\(\)](/not-found) 또는 [setNeedsDisplay\(\_ :\)](/not-found) 메서드를 호출하여 작업을 수행할 수 있습니다.이 메서드는 다음 드로잉 사이클동안 뷰를 업데이트해야 한다고 시스템에 알립니다.  
 뷰가 업데이트되는 것은 다음 드로잉 사이클까지 기다려야 하는 일이기 때문에 여러 뷰에서 이 메서드를 호출하고 동시에 업데이트 하는 것이 가능합니다.
 
 {% hint style="info" %}
 알림
 
-OpenGL ES를 사용하여 그리는 경우 UIView의 하위 클래스 대신 [GLKView](https://melodyarchive.gitbook.io/sagwa/not-found) 클래스를 사용해야 합니다. OpenGL ES를 사용하여 그리는 방법에 대한 자세한 내용은 [OpenGL ES 프로그래밍 가이드](https://melodyarchive.gitbook.io/sagwa/not-found)를 참조하십시오.
+OpenGL ES를 사용하여 그리는 경우 UIView의 하위 클래스 대신 [GLKView](/not-found) 클래스를 사용해야 합니다. OpenGL ES를 사용하여 그리는 방법에 대한 자세한 내용은 [OpenGL ES 프로그래밍 가이드](/not-found)를 참조하십시오.
 {% endhint %}
 
-뷰 드로잉 사이클과 이 사이클에서 뷰가 맡는 역할에 대한 더 자세한 정보는 [iOS용 View 프로그래밍 가이드](https://melodyarchive.gitbook.io/sagwa/not-found)를 참조하세요.
+뷰 드로잉 사이클과 이 사이클에서 뷰가 맡는 역할에 대한 더 자세한 정보는 [iOS용 View 프로그래밍 가이드](/not-found)를 참조하세요.
 
 ## 애니메이션 {#animations}
 
@@ -72,8 +72,8 @@ OpenGL ES를 사용하여 그리는 경우 UIView의 하위 클래스 대신 [GL
 * alpha
 * backgroundColor
 
-변경사항을 애니메이션화하려면 [UIViewPropertyAnimator](https://melodyarchive.gitbook.io/sagwa/not-found) 객체를 만들고 객체의 핸들러 블럭을 사용하여 뷰 프로퍼티를 변경합니다. UIViewPropertyAnimator의 클래스 메서드를 사용하여 애니메이션의 지속시간이나 타이밍을 설정할 수 있지만 이 경우에는 애니메이션이 그 즉시 실행됩니다. 또한 프로퍼티 기반 애니메이터는 실행 중에 멈추거나 대화형으로 구동될 수 있습니다.  
-자세한 내용은 [UIViewPropertyAnimator](https://melodyarchive.gitbook.io/sagwa/not-found)를 참조하세요.
+변경사항을 애니메이션화하려면 [UIViewPropertyAnimator](/not-found) 객체를 만들고 객체의 핸들러 블럭을 사용하여 뷰 프로퍼티를 변경합니다. UIViewPropertyAnimator의 클래스 메서드를 사용하여 애니메이션의 지속시간이나 타이밍을 설정할 수 있지만 이 경우에는 애니메이션이 그 즉시 실행됩니다. 또한 프로퍼티 기반 애니메이터는 실행 중에 멈추거나 대화형으로 구동될 수 있습니다.  
+자세한 내용은 [UIViewPropertyAnimator](/not-found)를 참조하세요.
 
 ## 스레딩 고려사항
 
@@ -83,21 +83,21 @@ OpenGL ES를 사용하여 그리는 경우 UIView의 하위 클래스 대신 [GL
 
 UIView 클래스는 시각적 컨텐츠와 더불어 유저 상호작용 제공을 위한 중요한 서브클래싱 지점입니다. UIView를 서브클래싱해야 할 이유야 많겠지만 상속은 기본 UIView 클래스나 표준 시스템 뷰가 필요한 기능을 제공하지 못할 때 하는 것을 권장합니다. 서브클래싱을 사용하면 뷰를 구현하고 성능을 최적화하는데 더 많은 작업이 필요합니다.
 
-서브클래싱을 피하는 방법에 대한 정보는 [서브클래싱의 대안](https://melodyarchive.gitbook.io/sagwa/not-found)을 참조하세요
+서브클래싱을 피하는 방법에 대한 정보는 [서브클래싱의 대안](/not-found)을 참조하세요
 
 ### 오버라이드할 메서드
 
-UIView를 서브클래싱할 때 반드시 오버라이드 해야하는 메서드는 몇 없고 대다수는 필요에 따라서만 하면 됩니다. UIView는 상당히 유연하게 설정 가능한 클래스이기 때문에 커스텀 메서드를 오버라이드하지 않고도 정교한 뷰 동작을 구현할 수 있는 방법들이 많이 있습니다. 그 방법들은 [서브클래싱의 대안](https://melodyarchive.gitbook.io/sagwa/uikit/view_and_controls/uiview#alternatives_to_subclassing) 섹션에서 논의하도록 하고 여기서는 UIView의 하위 클래스에서 오버라이드 할 수 있는 메서드를 보겠습니다:
+UIView를 서브클래싱할 때 반드시 오버라이드 해야하는 메서드는 몇 없고 대다수는 필요에 따라서만 하면 됩니다. UIView는 상당히 유연하게 설정 가능한 클래스이기 때문에 커스텀 메서드를 오버라이드하지 않고도 정교한 뷰 동작을 구현할 수 있는 방법들이 많이 있습니다. 그 방법들은 [서브클래싱의 대안](/uikit/view_and_controls/uiview#alternatives_to_subclassing) 섹션에서 논의하도록 하고 여기서는 UIView의 하위 클래스에서 오버라이드 할 수 있는 메서드를 보겠습니다:
 
 * 초기화
   * init\(frame:\) - 이 메서드는 구현하는 것이 권장됩니다. 커스텀 메서드를 추가구현하거나 아예 대체하는 메서드를 구현하는 것 또한 가능합니다.
   * init\(coder:\) - 스토리보드나 nib 파일에서 커스텀 초기화가 필요한 뷰를 불러오는 경우 이 메서드를 구현하세요.
-  * [layerClass](https://melodyarchive.gitbook.io/sagwa/not-found) 이 프로퍼티는 백업 저장소에서 뷰가 다른 Core Animation 레이어를 사용하게 하려는 경우에 사용하세요. 예를 들어 하나의 뷰를 스크롤 가능한 넓은 영역에 타일방식으로 디스플레이하고자 한다면 이 프로퍼티를 [CATiledLayer](https://melodyarchive.gitbook.io/sagwa/not-found) 클래스로 설정하는 것이 좋습니다.
+  * [layerClass](/not-found) 이 프로퍼티는 백업 저장소에서 뷰가 다른 Core Animation 레이어를 사용하게 하려는 경우에 사용하세요. 예를 들어 하나의 뷰를 스크롤 가능한 넓은 영역에 타일방식으로 디스플레이하고자 한다면 이 프로퍼티를 [CATiledLayer](/not-found) 클래스로 설정하는 것이 좋습니다.
 * 드로잉과 프린팅
   * draw\(\_:\) - 뷰가 커스텀 컨텐츠를 그리는 경우 이 메서드를 구현하세요. 뷰가 커스텀 드로잉을 수행하는 경우가 아니라면 이 메서드는 오버라이드하지 않는 것이 좋습니다.
   * draw\(\_:for:\) - 프린팅 중에 뷰를 다르게 그리고자 하는 경우에만 이 메서드를 구현하세요.
 * 레이아웃과 제약조건
-  * [requiresConstraintBasedLayout](https://melodyarchive.gitbook.io/sagwa/not-found)  뷰 클래스가 제대로 동작하기 위해서 제약조건을 필요로 하는 경우 이 프로퍼티를 사용하세요.
+  * [requiresConstraintBasedLayout](/not-found)  뷰 클래스가 제대로 동작하기 위해서 제약조건을 필요로 하는 경우 이 프로퍼티를 사용하세요.
   * updateConstraints\(\) - 뷰와 하위 뷰 간에 커스텀 제약조건을 작성해야 하는 경우 이 메서드를 구현하세요
   * alignmentRect\(forFrame:\), frame\(forAlignmentRect:\) - 뷰와 다른 뷰 간의 정렬방법을 오버라이드하려면 이 메서드들을 구현하세요.
   * didAddSubview\(\_:\), willRemoveSubview\(\_:\) - 하위 뷰의 생성과 제거를 추적해야 할 필요가 있다면 이 메서드들을 구현하세요.
@@ -121,7 +121,7 @@ UIView를 서브클래싱할 때 반드시 오버라이드 해야하는 메서�
 * Image-based backgrounds - 상대적으로 정적인 컨텐츠를 표시하는 뷰에는 서브클래싱을 이용해서 직접 이미지를 그리기보다 UIImageView 객체와 제스처 인식기를 사용하는 것이 좋을 수 있습니다. 또는 일반 UIView 객체를 사용하고 이미지를 뷰의 CALayer 컨텐츠로 지정할수도 있습니다.
 
 애니메이션은 복잡한 드로잉 코드의 서브클래싱과 구현없이 시각적 변화를 줄 수 있는 또 다른 방법입니다.  
-UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이러한 프로퍼티의 변경으로 시스템에서 생성된 애니메이션이 트리거될 수 있습니다. 애니메이션을 시작하려면 뒤따르는 변경사항을 애니메이션으로 표현해야 한다는 코드 한 줄만 있으면 됩니다. 뷰의 애니메이션 지원에 대한 자세한 내용은 [애니메이션](https://melodyarchive.gitbook.io/sagwa/uikit/view_and_controls/uiview#animation)을 참조하세요.
+UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이러한 프로퍼티의 변경으로 시스템에서 생성된 애니메이션이 트리거될 수 있습니다. 애니메이션을 시작하려면 뒤따르는 변경사항을 애니메이션으로 표현해야 한다는 코드 한 줄만 있으면 됩니다. 뷰의 애니메이션 지원에 대한 자세한 내용은 [애니메이션](/uikit/view_and_controls/uiview#animation)을 참조하세요.
 
 ## 주제
 
@@ -189,7 +189,7 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 ### 컨텐츠 여백 설정하기
 
-* [레이아웃 여백 범위 내에서 컨텐츠 배치하기](https://melodyarchive.gitbook.io/sagwa/not-found) 다른 view의 컨텐츠 때문에 view가 혼잡해지지 않도록 배치하세요.
+* [레이아웃 여백 범위 내에서 컨텐츠 배치하기](/not-found) 다른 view의 컨텐츠 때문에 view가 혼잡해지지 않도록 배치하세요.
 * _var_ directionalLayoutMargins: NSDirectionalEdgeInsets 현재 언어 방향을 고려하여 뷰에서 컨텐츠를 배치할 때 사용할 기본 간격
 * _var_ layoutMargins: UIEdgeInsets 뷰에 컨텐츠를 배치할 때 사용할 기본 간격
 * _var_ preservesSuperviewLayoutMargins: Bool
@@ -200,7 +200,7 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 ### Safe Area 얻기
 
-* [Safe Area에 상대적인 컨텐츠 위치 지정](https://melodyarchive.gitbook.io/sagwa/not-found) view가 다른 컨텐츠에 가려지지 않도록 배치하기.
+* [Safe Area에 상대적인 컨텐츠 위치 지정](/not-found) view가 다른 컨텐츠에 가려지지 않도록 배치하기.
 * _var_ safeAreaInsets: UIEdgeInsets 이 뷰의 Safe Area를 결정하는데 사용되는 inset
 * _var_ safeAreaLayoutGuide: UILayoutGuide 바 또는 기타 컨텐츠에 의해 가려지지 않는 뷰 영역을 나타내는 레이아웃 가이드
 * _func_ safeAreaInsetsDidChange\(\) 뷰의 Safe Area가 변경되었을 때 호출됩니다.
@@ -292,7 +292,7 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 ### 자동 레이아웃 디버깅
 
-제약조건 기반의 레이아웃 디버깅에 대한 자세한 내용은 [자동 레이아웃 가이드](https://melodyarchive.gitbook.io/sagwa/not-found)를 참조하세요.
+제약조건 기반의 레이아웃 디버깅에 대한 자세한 내용은 [자동 레이아웃 가이드](/not-found)를 참조하세요.
 
 * _func_ constraintsAffectingLayout\(for: UILayoutConstraintAxis\) 지정된 축에 대한 뷰 레이아웃에 영향을 미치는 제약조건을 반환합니다.
 * _var_ hasAmbiguousLayout: Bool 뷰 레이아웃에 영향을 미치는 제약조건이 뷰의 위치를 불완전하게 지정하는지를 나타내는 Boolean 값
@@ -662,7 +662,7 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 ### 상속받은 대상
 
-* [UIResponder](https://melodyarchive.gitbook.io/sagwa/uikit/touches_presses_and_gestures/uiresponder)
+* [UIResponder](/uikit/touches_presses_and_gestures/uiresponder)
 
 ### 준수하는 프로토콜
 
