@@ -27,7 +27,7 @@ view controller가 단독적으로 사용되는 일은 거의 없습니다. 대�
 
 ## SubClassing Notes
 
-대부분의 앱에는 UIViewController의 커스텀 하위 클래스가 적어도 하나 이상 포함되어 있습니다. 커스텀 view controller는 앱의 생김새와 사용자 상호작용에 응답하는 방법을 포함하여 앱의 전반적인 동작을 정의합니다. 다음 섹션에서는 사용자 정의 하위 클래스에서 수행하는 몇 가지 작업에 대한 간략한 개요를 제공합니다. view controller의 사용 및 구현에 대한 자세한 내용은 [iOS용 뷰 컨트롤러 프로그래밍 가이드](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/not-found/README.md)를 참조하십시오.
+대부분의 앱에는 UIViewController의 커스텀 하위 클래스가 적어도 하나 이상 포함되어 있습니다. 커스텀 view controller는 앱의 생김새와 사용자 상호작용에 응답하는 방법을 포함하여 앱의 전반적인 동작을 정의합니다. 다음 섹션에서는 사용자 정의 하위 클래스에서 수행하는 몇 가지 작업에 대한 간략한 개요를 제공합니다. view controller의 사용 및 구현에 대한 자세한 내용은 [iOS용 뷰 컨트롤러 프로그래밍 가이드](../../not-found.md)를 참조하십시오.
 
 ### 뷰 관리
 
