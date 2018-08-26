@@ -256,14 +256,21 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 ### 자동 레이아웃 시작시키기
 
-경계가 변경될 때 뷰가 레이아웃을 조정하는 정의합니다.
+* func needsUpdateConstraints\(\) -&gt; Bool
 
-* var contentMode: UIViewContentMode 경계가 변경될 때 뷰가 내용의 표시방법을 결정하는데 사용되는 플래그입니다.
-* enum UIViewContentMode 경계가 변경될 때 뷰를 통해 컨텐츠를 조정하는 방법을 지정하는 옵션
-* func sizeThatFits\(CGSize\) 지정된 크기가장 적합한 크기를 계산하고 반환하도록 뷰에 요청합니다.
-* func sizeToFit\(\) 수신자 뷰의 크기를 조정하고 하위 뷰만 둘러싸도록 이동시킵니다.
-* var autoresizesSubviews: Bool 경계가 변경될 때 수신자 뷰가 자동적으로 하위 뷰의 크기를 재조정하게 할것인지를 결정하는 Boolean 값
-* var autoresizingMask: UIViewAutoresizing 상위 뷰의 경계가 변화할 때 수신자가 스스로 리사이징하는 방법을 결정하는 정수 비트마스크
+  뷰가 제약조건을 업데이트 해야 할지 나타내는 Boolean 값을 반환합니다.
+
+* func setNeedsUpdateConstraints\(\)
+
+  뷰의 제약조건 업데이트가 필요한지를 설정합니다.
+
+* func updateConstraints\(\)
+
+  뷰 제약조건을 업데이트합니다.
+
+* func updateConstraintsIfNeeded\(\)
+
+   수신자 뷰와 하위 뷰의 제약조건을 업데이트합니다.
 
 ### 자동 레이아웃 디버깅
 
@@ -275,79 +282,363 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 ### 리사이징 동작 설정하기
 
+경계가 변경될 때 컨텐츠를 조정하는 방법을 정의합니다.
 
+* var contentMode: UIViewContentMode 경계가 변경될 때 뷰가 내용의 표시방법을 결정하는데 사용되는 플래그입니다.
+* enum UIViewContentMode 경계가 변경될 때 뷰를 통해 컨텐츠를 조정하는 방법을 지정하는 옵션
+* func sizeThatFits\(CGSize\) 지정된 크기가장 적합한 크기를 계산하고 반환하도록 뷰에 요청합니다.
+* func sizeToFit\(\) 수신자 뷰의 크기를 조정하고 하위 뷰만 둘러싸도록 이동시킵니다.
+* var autoresizesSubviews: Bool 경계가 변경될 때 수신자 뷰가 자동적으로 하위 뷰의 크기를 재조정하게 할것인지를 결정하는 Boolean 값
+* var autoresizingMask: UIViewAutoresizing 상위 뷰의 경계가 변화할 때 수신자가 스스로 리사이징하는 방법을 결정하는 정수 비트마스크
 
 ### 하위 뷰 배치하기
 
+앱이 자동 레이아웃을 사용하지 않는 경우 수동으로 뷰를 배치하세요.
 
+* func layoutSubviews\(\)
+
+  하위 뷰를 배치합니다.
+
+* func setNeedsLayout\(\)
+
+  수신자의 현재 레이아웃을 무효화시키고 다음 업데이트 사이클동안 레이아웃을 업데이트를 트리거합니다.
+
+* func layoutIfNeeded\(\)
+
+  레이아웃 업데이트가 보류중인 경우 즉시 하위 뷰를 배치합니다.
+
+* class var requiresConstraintBasedLayout: Bool
+
+  수신자가 제약조건 기반 레이아웃 시스템에 의존하고 있는지 나타내는 Boolean 값을 반환합니다.
+
+* var translatesAutoresizingMaskIntoConstraints: Bool
+
+  뷰의 자동 크기지정 마스크가 자동 레이아웃 제약조건으로 변환되고 있는지를 나타내는 Boolean 값
 
 ### 유저 인터페이스 방향 관리
 
+* var semanticContentAttribute: UISemanticContentAttribute
 
+  **왼쪽에서 오른쪽으로 쓰기**와 **오른쪽에서 왼쪽으로 쓰기**의 레이아웃 전환이 일어날때 뷰를 뒤집어야 할지 결정하는데 쓰이는 뷰 컨텐츠에 대한 시멘틱 설명
 
-### 드래그 앤 드롭 상호작용
+* var effectiveUserInterfaceLayoutDirection: UIUserInterfaceLayoutDirection
 
+  뷰의 컨텐츠를 즉각적으로 배치할때 적합한 유저 인터페이스 방향
 
+* class func userInterfaceLayoutDirection\(for: UISemanticContentAttribute\) -&gt; UIUserInterfaceLayoutDirection
 
-### 뷰를 그리고 업데이트 하기
+  주어진 시멘틱 컨텐츠 속성에 대한 유저 인터페이스 방향을 반환합니다.
 
+* class func userInterfaceLayoutDirection\(for: UISemanticContentAttribute, relativeTo: UIUserInterfaceLayoutDirection\) -&gt; UIUserInterfaceLayoutDirection
 
+  지정된 레이아웃 방향에 대해 시멘틱 컨텐츠 속성이 암시하는 레이아웃을 반환합니다.
+
+### 드래그 앤 드롭 상호작용 지원
+
+* func addInteraction\(UIInteraction\)
+
+  지정된 드래그 앤 드롭 또는 스프링로드 상호 작용을 뷰에 추가합니다.
+
+* func removeInteraction\(UIInteraction\) 지정된 드래그 앤 드롭 또는 스프링로드 상호 작용을 뷰에서 제거합니다.
+* var interactions: \[UIInteraction\]
+
+  뷰의 상호작용의 배열
+
+### 뷰의 그리기와 업데이트
+
+* func draw\(CGRect\)
+
+  주어진 사각형 내에 수신자의 이미지를 그립니다.
+
+* func setNeedsDisplay\(\)
+
+  수신자의 전체 경계 사각형이 다시 그려져야 함을 표시합니다.
+
+* func setNeedsDisplay\(CGRect\)
+
+  수신자의 지정된 사각형이 다시 그려져야 함을 표시합니다.
+
+* var contentScaleFactor: CGFloat
+
+  뷰에 적용된 축척 비율
+
+* func tintColorDidChange\(\)
+
+  tintColor 프로퍼티가 변경될때 시스템에 의해 호출됩니다.
 
 ### 뷰 컨텐츠의 프린팅 서식지정
 
+* func viewPrintFormatter\(\) -&gt; UIViewPrintFormatter
 
+  수신자 뷰의 print fommatter를 반환합니다.
+
+* func draw\(CGRect, for: UIViewPrintFormatter\)
+
+  인쇄용 뷰의 컨텐츠를 그리기 위해 구현됩니다.
 
 ### 제스처 인식기 관리
 
+* func addGestureRecognizer\(UIGestureRecognizer\)
 
+  뷰에 제스처 인식기를 연결합니다.
+
+* func removeGestureRecognizer\(UIGestureRecognizer\)
+
+  뷰로부터 제스처 인식기를 제거합니다.
+
+* var gestureRecognizers: \[UIGestureRecognizer\]?
+
+  현재 뷰에 연결되어있는 제스처 인식기 객체들
+
+* func gestureRecognizerShouldBegin\(UIGestureRecognizer\) -&gt; Bool
+
+  제스처 인식기가 계속해서 터치 이벤트를 추적하도록 허용할 것인지를 묻습니다.
 
 ### 포커스 관찰하기
 
+* var canBecomeFocused: Bool
 
+  뷰가 현재 포커스를 받을 수있는지 나타내는 Boolean 값
+
+* class var inheritedAnimationDuration: TimeInterval
+
+  상속받은 현재 애니메이션의 지속시간을 반환한다.
+
+* var isFocused: Bool
+
+  현재 해당 항목에 포커스가 주어졌는지를 나타내는 Boolean 값
 
 ### 모션효과 사용하기
 
+* func addMotionEffect\(UIMotionEffect\)
 
+  뷰에 모션효과를 적용하기 시작합니다.
+
+* var motionEffects: \[UIMotionEffect\]
+
+  뷰의 모션 효과 배열
+
+* func removeMotionEffect\(UIMotionEffect\)
+
+  뷰에 모션효과를 적용하는 것을 중단합니다.
 
 ### 상태의 보존과 복구
 
+* var restorationIdentifier: String?
 
+  뷰의 상태복원 지원 여부를 결정하는 식별자
+
+* func encodeRestorableState\(with: NSCoder\) 뷰에 대한 상태 관련 정보를 인코딩합니다.
+* func decodeRestorableState\(with: NSCoder\)
+
+  뷰에 대한 상태관련 정보를 디코딩하고 복원합니다.
 
 ### 뷰 스냅샷 캡처하기
 
+* func snapshotView\(afterScreenUpdates: Bool\) -&gt; UIView?
 
+  현재 뷰의 내용을 기반으로 스냅샷 뷰를 반환합니다.
+
+* func resizableSnapshotView\(from: CGRect, afterScreenUpdates: Bool, withCapInsets: UIEdgeInsets\) -&gt; UIView?
+
+  현재 뷰의 지정된 내용을 기반으로 스냅샷 보기를 늘릴 수 있는 inset과 함께 반환합니다.
+
+* func drawHierarchy\(in: CGRect, afterScreenUpdates: Bool\) -&gt; Bool
+
+  화면 상에 보이는 전체 뷰 계층 구조의 스냅샷을 현재 컨텍스트로 렌더링합니다.
 
 ### 런타임시 뷰 식별하기
 
+* var tag: Int
 
+  앱에서 뷰 객체를 식별하는 데 사용할 수 있는 정수
+
+* func viewWithTag\(Int\) -&gt; UIView?
+
+  지정된 값과 일치하는 태그를 가지고 있는 뷰를 반환합니다.
 
 ### 뷰 좌표계 간 변환
 
+* func convert\(CGPoint, to: UIView?\) -&gt; CGPoint
 
+  수신자 좌표계의 포인트를 주어진 뷰의 좌표계로 변환합니다.
+
+* func convert\(CGPoint, from: UIView?\) -&gt; CGPoint 주어진 뷰 좌표계로부터의 포인트를, 수신자의 좌표계로 변환합니다.
+* func convert\(CGRect, to: UIView?\) -&gt; CGRect
+
+  수신자 좌표계의 사각형을 주어진 뷰의 좌표계로 변환합니다.
+
+* func convert\(CGRect, from: UIView?\) -&gt; CGRect
+
+  다른 뷰 좌표계의 사각형을 수신자의 좌표계로 변환합니다.
 
 ### 뷰에서 히트 테스팅
 
+* func hitTest\(CGPoint, with: UIEvent?\) -&gt; UIView?
 
+  지정된 포인트를 포함하는 뷰 계층 구조\(수신자 포함\) 가장 먼 자손 객체를 반환합니다.
+
+* func point\(inside: CGPoint, with: UIEvent?\) -&gt; Bool
+
+  수신자가 지정된 포인트를 포함하는지 나타내는 Boolean 값을 반환합니다.
 
 ### 뷰 에디팅 세션 종료하기
 
+* func endEditing\(Bool\) -&gt; Bool
 
+  뷰 \(또는 포함된 텍스트 필드 중 하나\)가 첫번째 응답자 상태를 종료하도록 합니다.
 
 ### 접근성 동작 수정하기
 
+* var accessibilityIgnoresInvertColors: Bool
 
+  뷰가 색상 반전을 위한 접근성 요청을 무시하는지 나타내는 Boolean 값
 
 ### 블럭으로 뷰 애니메이션시키기
 
+다음 메서드들의 사용은 권장되지 않습니다. 대신 UIViewPropertyAnimator 클래스를 사용하세요.
 
+* class func animate\(withDuration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions = \[\], animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+
+  지정된 지속시간, 딜레이, 옵션 및 완료 핸들러를 사용해서 하나 이상의 뷰에 대한 변경사항을 애니메이션화합니다.
+
+* class func animate\(withDuration: TimeInterval, animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+
+  지정된 지속시간과 완료 핸들러를 사용해서 하나 이상의 뷰에 대한 변경사항을 애니메이션화합니다.
+
+* class func animate\(withDuration: TimeInterval, animations: \(\) -&gt; Void\)
+
+  지정된 지속시간동안 하나 이상의 뷰에 대한 변경사항을 애니메이션화합니다.
+
+* class func transition\(with: UIView, duration: TimeInterval, options: UIView.AnimationOptions = \[\], animations: \(\(\) -&gt; Void\)?, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+
+  지정된 컨테이너 뷰에 대한 전환 애니메이션을 만듭니다.
+
+* class func transition\(from: UIView, to: UIView, duration: TimeInterval, options: UIView.AnimationOptions = \[\], completion: \(\(Bool\) -&gt; Void\)? = nil\)
+
+  지정된 파라미터를 사용해, 지정된 뷰 간의 전환 애니메이션을 생성합니다.
+
+* class func animateKeyframes\(withDuration: TimeInterval, delay: TimeInterval, options: UIView.KeyframeAnimationOptions = \[\], animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+
+  현재 뷰에서 키 프레임 기반 애니메이션을 설정하는 데 사용할 수 있는 애니메이션 블록 객체를 만듭니다.
+
+* class func addKeyframe\(withRelativeStartTime: Double, relativeDuration: Double, animations: \(\) -&gt; Void\)
+
+  키 프레임 애니메이션의 단일 프레임에 대한 타이밍 및 애니메이션 값을 지정합니다.
+
+* class func perform\(UIView.SystemAnimation, on: \[UIView\], options: UIView.AnimationOptions = \[\], animations: \(\(\) -&gt; Void\)?, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+
+  개발자가 정의한 선택적 병렬 애니메이션과 함께 하나 이상의 뷰에서 지정된 시스템 애니메이션을 수행합니다.
+
+* class func animate\(withDuration: TimeInterval, delay: TimeInterval, usingSpringWithDamping: CGFloat, initialSpringVelocity: CGFloat, options: UIView.AnimationOptions = \[\], animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+
+  스프링의 물리적 움직임에 대응하는 시간 커브를 사용하여 뷰 애니메이션을 실행합니다.
+
+* class func performWithoutAnimation\(\(\) -&gt; Void\)
+
+  뷰 전환 애니메이션을 비활성화합니다.
 
 ### 뷰 애니메이션시키기
 
+다음 메서드들의 사용은 권장지 않습니다. 대신 UIViewPropertyAnimator 클래스를 사용하여 애니메이션을 수행하세요.
 
+* class func beginAnimations\(String?, context: UnsafeMutableRawPointer?\)
+
+  begin / commit 애니메이션 블록의 시작을 표시합니다.
+
+* class func commitAnimations\(\) begine / commit 애니메이션 블록의 끝을 표시하고 실행을 위해 애니메이션을 예약합니다.
+* class func setAnimationStart\(Date\)
+
+  현재 애니메이션 블록의 시작 시간을 설정합니다.
+
+* class func setAnimationsEnabled\(Bool\)
+
+  애니메이션의 사용 가능 여부를 설정합니다.
+
+* class func setAnimationDelegate\(Any?\)
+
+  모든 애니메이션 메시지에 대한 delegate를 설정합니다.
+
+* class func setAnimationWillStart\(Selector?\)
+
+  애니메이션이 시작될 때 애니메이션 delegate에게 보낼 메시지를 설정합니다.
+
+* class func setAnimationDidStop\(Selector?\)
+
+  애니메이션이 중단 될 때 애니메이션 delegate에게 보낼 메시지를 설정합니다.
+
+* class func setAnimationDuration\(TimeInterval\)
+
+  애니메이션 블록의 애니메이션 길이 \(초 단위\)를 설정합니다.
+
+* class func setAnimationDelay\(TimeInterval\) 애니메이션 블록 내에서 프로퍼티 변경 사항을 애니메이션화 하기 전에 대기 할 시간 \(초 단위\)을 설정합니다.
+* class func setAnimationCurve\(UIView.AnimationCurve\)
+
+  애니메이션 블록 내에서 프로퍼티 변경 사항을 애니메이션화 할 때 사용할 곡선을 설정합니다.
+
+* class func setAnimationRepeatCount\(Float\)
+
+  애니메이션 블록 내의 애니메이션이 반복되는 횟수를 설정합니다.
+
+* class func setAnimationRepeatAutoreverses\(Bool\)
+
+  애니메이션 블록 내의 애니메이션을 자동으로 되돌릴지 설정합니다.
+
+* class func setAnimationBeginsFromCurrentState\(Bool\)
+
+  현재 상태에서 애니메이션 재생을 시작할지 설정합니다.
+
+* class func setAnimationTransition\(UIView.AnimationTransition, for: UIView, cache: Bool\)
+
+  애니메이션 블록에서 뷰에 적용할 전환을 설정합니다.
+
+* class var areAnimationsEnabled: Bool
+
+  애니메이션이 활성화되었는지를 나타내는 부울 값을 반환합니다.
 
 ### 상수Constants
 
+* struct UIView.AnimationOptions
 
+  블록 객체를 사용한 뷰 애니메이션에 적용되는 옵션
+
+* enum UIView.AnimationCurve
+
+  지원되는 애니메이션 커브 지정
+
+* enum UIView.AnimationTransition 애니메이션 블록 객체에 사용하기 위한 애니메이션 전환 옵션
+* enum UIView.SystemAnimation
+
+  애니메이션이 완료되면 계층에서 뷰를 제거하기 위한 옵션
+
+* struct UIView.KeyframeAnimationOptions
+
+  animateKeyframes\(withDuration:delay:options:animations:completion:\) 메서드와 함께 사용되는 키 프레임 애니메이션 옵션.
+
+* enum NSLayoutConstraint.Axis
+
+  객체 간 수평 또는 수직 레이아웃 제약조건을 지정하는 키
+
+* enum UIView.TintAdjustmentMode
+
+  뷰의 tint 조정모드
+
+* class let layoutFittingCompressedSize: CGSize
+
+  가능한 가장 작은 크기를 사용하는 옵션
+
+* class let layoutFittingExpandedSize: CGSize 가능한 가장 큰 크기를 사용하는 옵션
+* class let noIntrinsicMetric: CGFloat
+
+  주어진 숫자 뷰 프로퍼티에 고유한 메트릭이 존재하지 않음
+
+* struct UIView.AutoresizingMask
+
+  자동 뷰 리사이징 옵션
+
+* enum UISemanticContentAttribute
+
+  **왼쪽에서 오른쪽으로 쓰기**와 **오른쪽에서 왼쪽으로 쓰기**의 레이아웃 전환이 일어날때 뷰를 뒤집어야 할지 결정하는데 쓰이는 뷰 컨텐츠에 대한 시멘틱 설명
 
 ## 관련 문서
 
