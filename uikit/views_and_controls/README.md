@@ -1,4 +1,4 @@
-# 뷰와 컨트롤
+# Views and Controls
 
 > 원본출처  
 > [https://developer.apple.com/documentation/uikit/views\_and\_controls](https://developer.apple.com/documentation/uikit/views_and_controls)
