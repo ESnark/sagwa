@@ -134,13 +134,19 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 * _var_ backgroundColor: UIColor? 뷰의 배경색
 * _var_ isHidden: Bool 뷰의 숨김상태를 결정하는 Boolean 값
-* _var_ alpha: CGFloat 뷰의 알파값
+* _var_ alpha: CGFloat
+
+  뷰의 알파값
+
 * _var_ isOpaque: Bool 뷰의 불투명 상태를 결정하는 Boolean 값
 * _var_ tintColor: UIColor! The first nondefault tint color value in the view’s hierarchy, ascending from and starting with the view itself.
 * _var_ tintAdjustmentMode: UIViewTintAdjustmentMode The first non-default tint adjustment mode value in the view’s hierarchy, ascending from and starting with the view itself.
 * _var_ clipsToBounds: Bool 하위 뷰를 뷰의 경계로 제한할지 여부를 결정하는 Boolean 값
 * _var_ clearsContextBeforeDrawing: Bool 그리기 전에 뷰의 경계를 자동으로 지워야하는지 여부를 결정하는 Boolean 값
-* _var_ mask: UIView? 알파 채널이 뷰의 내용을 마스킹하는 데 사용되는 선택적 뷰
+* _var_ mask: UIView?
+
+  알파 채널이 뷰의 내용을 마스킹하는 데 사용되는 선택적 뷰
+
 * _class var_ layerClass: AnyClass 이 클래스의 인스턴스 레이어를 생성하는 데 사용되는 클래스를 반환합니다.
 * _var_ layer: CALayer 렌더링에 사용되는 뷰의 Core Animation 레이어
 
@@ -186,7 +192,10 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 * [레이아웃 여백 범위 내에서 컨텐츠 배치하기](https://melodyarchive.gitbook.io/sagwa/not-found) 다른 view의 컨텐츠 때문에 view가 혼잡해지지 않도록 배치하세요.
 * _var_ directionalLayoutMargins: NSDirectionalEdgeInsets 현재 언어 방향을 고려하여 뷰에서 컨텐츠를 배치할 때 사용할 기본 간격
 * _var_ layoutMargins: UIEdgeInsets 뷰에 컨텐츠를 배치할 때 사용할 기본 간격
-* _var_ preservesSuperviewLayoutMargins: Bool 현재 뷰가 상위 뷰의 여백도 준수할 것인지를 나타내는 Boolean 값
+* _var_ preservesSuperviewLayoutMargins: Bool
+
+  현재 뷰가 상위 뷰의 여백도 준수할 것인지를 나타내는 Boolean 값
+
 * _func_ layoutMarginsDidChange\(\) 레이아웃 여백이 변경되었음을 뷰에 알립니다.
 
 ### Safe Area 얻기
@@ -223,7 +232,10 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 * _var_ leftAnchor: NSLayoutXAxisAnchor 뷰 프레임의 왼쪽 모서리를 나타내는 레이아웃 앵커
 * _var_ rightAnchor: NSLayoutXAxisAnchor 뷰 프레임의 오른쪽 모서리를 나타내는 레이아웃 앵커
 * _var_ topAnchor: NSLayoutYAxisAnchor 뷰 프래임의 상단 모서리를 나타내는 레이아웃 앵커
-* _var_ trailingAnchor: NSLayoutXAxisAnchor 뷰 프레임의 후행 모서리를 나타내는 레이아웃 앵커
+* _var_ trailingAnchor: NSLayoutXAxisAnchor
+
+  뷰 프레임의 후행 모서리를 나타내는 레이아웃 앵커
+
 * _var_ widthAnchor: NSLayoutDimension 뷰 프레임의 너비를 나타내는 레이아웃 앵커
 
 ### 레이아웃 가이드와 같이 작업하기
@@ -240,8 +252,14 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 * _func_ systemLayoutSizeFitting\(CGSize, withHorizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority\) 제약조건과 지정된 맞춤 프로퍼티를 기준으로 하여 뷰의 최적 크기를 반환합니다.
 * _var_ intrinsicContentSize: CGSize 뷰 자체의 프로퍼티만을 고려한 수신자 뷰의 자연 크기
 * _func_ invalidateIntrinsicContentSize\(\) 뷰의 고유한 컨텐츠 사이즈를 무효화합니다.
-* _func_ contentCompressionResistancePriority\(for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 작게 만들어지지 않도록 하는 우선순위를 반환합니다.
-* _func_ setContentCompressionResistancePriority\(UILayoutPriority, for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 작게 만들어지지 않도록 하는 우선순위를 설정합니다.
+* _func_ contentCompressionResistancePriority\(for: UILayoutConstraintAxis\)
+
+  뷰가 고유한 크기보다 작게 만들어지지 않도록 하는 우선순위를 반환합니다.
+
+* _func_ setContentCompressionResistancePriority\(UILayoutPriority, for: UILayoutConstraintAxis\)
+
+  뷰가 고유한 크기보다 작게 만들어지지 않도록 하는 우선순위를 설정합니다.
+
 * _func_ contentHuggingPriority\(for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 크게 만들어지지 않도록 하는 우선순위를 반환합니다.
 * _func_ setContentHuggingPriority\(UILayoutPriority, for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 크게 만들어지지 않도록 하는 우선순위를 설정합니다.
 
@@ -251,7 +269,7 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 * _func_ frame\(forAlignmentRect: CGRect\) 지정된 정렬 사각형에 대한 뷰 프레임을 반환합니다.
 * _var_ alignmentRectInsets: UIEdgeInsets 정렬 직사각형을 정의하는 뷰 프레임의 inset
 * ~~func forBaselineLayout\(\)~~ Returns a view used to satisfy baseline constraints. `Deprecated`
-* _var_ forFirstBaselineLayout: UIView 첫 번째 기준선 제약조건을 충족하는 뷰를 반환합니다. Returns a view used to satisfy first baseline constraints.
+* _var_ forFirstBaselineLayout: UIView 첫 번째 기준선 제약조건을 충족하는 뷰를 반환합니다.
 * _var_ forLastBaselineLayout: UIView 마지막 기준선 제약조건을 충족하는 뷰를 반환합니다.
 
 ### 자동 레이아웃 시작시키기
@@ -270,7 +288,7 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 * _func_ updateConstraintsIfNeeded\(\)
 
-   수신자 뷰와 하위 뷰의 제약조건을 업데이트합니다.
+  수신자 뷰와 하위 뷰의 제약조건을 업데이트합니다.
 
 ### 자동 레이아웃 디버깅
 

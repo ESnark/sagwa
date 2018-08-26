@@ -1,7 +1,3 @@
----
-description: View Controller로 인터페이스를 관리하고 앱 컨텐츠 탐색을 수월하게 만드세요
----
-
 # View Controllers
 
 > 원본출처[  
