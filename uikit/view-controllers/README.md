@@ -20,7 +20,7 @@ UIKit은 특정 유형의 콘텐츠를 탐색하고 관리하기 위한 몇 개�
 
 커스텀 인터페이스를 관리하기 위해서 view controller를 상속합니다.
 
-* _class_ [UIViewController](/uikit/view-controllers/uiviewcontroller) UIKit 앱의 View 계층구조를 관리하는 객체
+* _class_ [UIViewController](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/uikit/view-controllers/uiviewcontroller/README.md) UIKit 앱의 View 계층구조를 관리하는 객체
 * _class_ UITableViewController Table View 관리에 특화된 view controller
 * _class_ UICollectionViewController Collection View 관리에 특화된 view controller
 * _protocol_ UIContentContainer view controller의 컨텐츠를 뷰 사이즈와 제약사항에 맞게 조정하는 메서드들
