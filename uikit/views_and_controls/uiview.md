@@ -132,80 +132,80 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 ### 뷰의 모양 설정하기
 
-* var backgroundColor: UIColor? 뷰의 배경색
-* var isHidden: Bool 뷰의 숨김상태를 결정하는 Boolean 값
-* var alpha: CGFloat 뷰의 알파값
-* var isOpaque: Bool 뷰의 불투명 상태를 결정하는 Boolean 값
-* var tintColor: UIColor! The first nondefault tint color value in the view’s hierarchy, ascending from and starting with the view itself.
-* var tintAdjustmentMode: UIViewTintAdjustmentMode The first non-default tint adjustment mode value in the view’s hierarchy, ascending from and starting with the view itself.
-* var clipsToBounds: Bool 하위 뷰를 뷰의 경계로 제한할지 여부를 결정하는 Boolean 값
-* var clearsContextBeforeDrawing: Bool 그리기 전에 뷰의 경계를 자동으로 지워야하는지 여부를 결정하는 Boolean 값
-* var mask: UIView? 알파 채널이 뷰의 내용을 마스킹하는 데 사용되는 선택적 뷰
-* class var layerClass: AnyClass 이 클래스의 인스턴스 레이어를 생성하는 데 사용되는 클래스를 반환합니다.
-* var layer: CALayer 렌더링에 사용되는 뷰의 Core Animation 레이어
+* **var** backgroundColor: UIColor? 뷰의 배경색
+* **var** isHidden: Bool 뷰의 숨김상태를 결정하는 Boolean 값
+* **var** alpha: CGFloat 뷰의 알파값
+* **var** isOpaque: Bool 뷰의 불투명 상태를 결정하는 Boolean 값
+* **var** tintColor: UIColor! The first nondefault tint color value in the view’s hierarchy, ascending from and starting with the view itself.
+* **var** tintAdjustmentMode: UIViewTintAdjustmentMode The first non-default tint adjustment mode value in the view’s hierarchy, ascending from and starting with the view itself.
+* **var** clipsToBounds: Bool 하위 뷰를 뷰의 경계로 제한할지 여부를 결정하는 Boolean 값
+* **var** clearsContextBeforeDrawing: Bool 그리기 전에 뷰의 경계를 자동으로 지워야하는지 여부를 결정하는 Boolean 값
+* **var** mask: UIView? 알파 채널이 뷰의 내용을 마스킹하는 데 사용되는 선택적 뷰
+* **class var** layerClass: AnyClass 이 클래스의 인스턴스 레이어를 생성하는 데 사용되는 클래스를 반환합니다.
+* **var** layer: CALayer 렌더링에 사용되는 뷰의 Core Animation 레이어
 
 ### 이벤트 관련동작 설정하기
 
-* var isUserInteractionEnabled: Bool 사용자 이벤트를 무시하고 이벤트 큐에서 제거할지 결정하는 Boolean 값
-* var isMultipleTouchEnabled: Bool 뷰가 한 번에 두 개 이상의 터치를 받을 수 있도록 결정하는 Boolean 값
-* var isExclusiveTouch: Bool 수신자가 터치이벤트를 독점적으로 처리하도록 할지 결정하는 Boolean 값
+* **var** isUserInteractionEnabled: Bool 사용자 이벤트를 무시하고 이벤트 큐에서 제거할지 결정하는 Boolean 값
+* **var** isMultipleTouchEnabled: Bool 뷰가 한 번에 두 개 이상의 터치를 받을 수 있도록 결정하는 Boolean 값
+* **var** isExclusiveTouch: Bool 수신자가 터치이벤트를 독점적으로 처리하도록 할지 결정하는 Boolean 값
 
 ### 경계\(Bounds\)와 프레임 사각형 설정하기
 
-* var frame: CGRect 상위 뷰 좌표계에서 뷰의 위치와 크기를 설명하는 프레임 사각형
-* var bounds: CGRect 자체 좌표계 내에서 뷰의 위치와 크기를 설명하는 경계 사각형
-* var center: CGPoint 뷰 프레임 사각형의 중심점
-* var transform: CGAffineTransform 경계 중심에 상대적인 뷰에 적용되는 변환을 지정합니다.
+* **var** frame: CGRect 상위 뷰 좌표계에서 뷰의 위치와 크기를 설명하는 프레임 사각형
+* **var** bounds: CGRect 자체 좌표계 내에서 뷰의 위치와 크기를 설명하는 경계 사각형
+* **var** center: CGPoint 뷰 프레임 사각형의 중심점
+* **var** transform: CGAffineTransform 경계 중심에 상대적인 뷰에 적용되는 변환을 지정합니다.
 
 ### 뷰 계층구조 관리하기
 
-* var superview: UIView? 수신자의 수퍼뷰. 없는 경우에는 nil
-* var subviews: \[UIView\] 수신자의 바로 아래 하위뷰
-* var window: UIWindow? 수신자의 window 객체. 없는 경우에는 nil
-* func addSubview\(UIView\) 수신자의 하위 뷰 리스트 끝에 뷰를 추가합니다.
-* func bringSubview\(toFront: UIView\) 지정된 하위 뷰를 이동시켜서 형제 뷰 위에 표시합니다.
-* func sendSubview\(toBack: UIView\) 지정된 하위 뷰를 이동시켜서 형제 뷰 아래에 표시합니다.
-* func removeFromSuperview\(\) 뷰를 상위 뷰와 window로부터 해제하고 응답자 체인으로부터 제거합니다.
-* func insertSubview\(UIView, at: Int\) 지정된 인덱스에 하위 뷰를 삽입합니다.
-* func insertSubview\(UIView, aboveSubview: UIView\) 뷰 계층상의 다른 뷰 위에 뷰를 삽입합니다.
-* func insertSubview\(UIView, belowSubview: UIView\) 뷰 계층상의 다른 뷰 아래에 뷰를 삽입합니다.
-* func exchangeSubview\(at: Int, withSubviewAt: Int\) 지정된 인덱스의 하위 뷰를 서로 교환합니다.
-* func isDescendant\(of: UIView\) 수신자가 주어진 뷰와 동일한 뷰거나 하위 뷰인지를 나타내는 Boolean 값을 반환합니다.
+* **var** superview: UIView? 수신자의 수퍼뷰. 없는 경우에는 nil
+* **var** subviews: \[UIView\] 수신자의 바로 아래 하위뷰
+* **var** window: UIWindow? 수신자의 window 객체. 없는 경우에는 nil
+* **func** addSubview\(UIView\) 수신자의 하위 뷰 리스트 끝에 뷰를 추가합니다.
+* **func** bringSubview\(toFront: UIView\) 지정된 하위 뷰를 이동시켜서 형제 뷰 위에 표시합니다.
+* **func** sendSubview\(toBack: UIView\) 지정된 하위 뷰를 이동시켜서 형제 뷰 아래에 표시합니다.
+* **func** removeFromSuperview\(\) 뷰를 상위 뷰와 window로부터 해제하고 응답자 체인으로부터 제거합니다.
+* **func** insertSubview\(UIView, at: Int\) 지정된 인덱스에 하위 뷰를 삽입합니다.
+* **func** insertSubview\(UIView, aboveSubview: UIView\) 뷰 계층상의 다른 뷰 위에 뷰를 삽입합니다.
+* **func** insertSubview\(UIView, belowSubview: UIView\) 뷰 계층상의 다른 뷰 아래에 뷰를 삽입합니다.
+* **func** exchangeSubview\(at: Int, withSubviewAt: Int\) 지정된 인덱스의 하위 뷰를 서로 교환합니다.
+* **func** isDescendant\(of: UIView\) 수신자가 주어진 뷰와 동일한 뷰거나 하위 뷰인지를 나타내는 Boolean 값을 반환합니다.
 
 ### 뷰 관련 변동사항 관찰하기
 
-* func didAddSubview\(UIView\) 하위 뷰가 추가되었음을 뷰에 알립니다.
-* func willRemoveSubview\(UIView\) 하위 뷰가 곧 삭제된다는 것을 뷰에 알립니다.
-* func willMove\(toSuperview: UIView?\) 상위 뷰가 지정된 다른 상위 뷰로 곧 바뀐다는 것을 뷰에 알립니다.
-* func didMoveToSuperview\(\) 상위 뷰가 바뀌었음을 뷰에 알립니다.
-* func willMove\(toWindow: UIWindow?\) window 객체가 곧 바뀐다는 것을 뷰에 알립니다.
-* func didMoveToWindow\(\) window 객체가 바뀌었음을 뷰에 알립니다.
+* **func** didAddSubview\(UIView\) 하위 뷰가 추가되었음을 뷰에 알립니다.
+* **func** willRemoveSubview\(UIView\) 하위 뷰가 곧 삭제된다는 것을 뷰에 알립니다.
+* **func** willMove\(toSuperview: UIView?\) 상위 뷰가 지정된 다른 상위 뷰로 곧 바뀐다는 것을 뷰에 알립니다.
+* **func** didMoveToSuperview\(\) 상위 뷰가 바뀌었음을 뷰에 알립니다.
+* **func** willMove\(toWindow: UIWindow?\) window 객체가 곧 바뀐다는 것을 뷰에 알립니다.
+* **func** didMoveToWindow\(\) window 객체가 바뀌었음을 뷰에 알립니다.
 
 ### 컨텐츠 여백 설정하기
 
 * [레이아웃 여백 범위 내에서 컨텐츠 배치하기](https://melodyarchive.gitbook.io/sagwa/not-found) 다른 view의 컨텐츠 때문에 view가 혼잡해지지 않도록 배치하세요.
-* var directionalLayoutMargins: NSDirectionalEdgeInsets 현재 언어 방향을 고려하여 뷰에서 컨텐츠를 배치할 때 사용할 기본 간격
-* var layoutMargins: UIEdgeInsets 뷰에 컨텐츠를 배치할 때 사용할 기본 간격
-* var preservesSuperviewLayoutMargins: Bool 현재 뷰가 상위 뷰의 여백도 준수할 것인지를 나타내는 Boolean 값
-* func layoutMarginsDidChange\(\) 레이아웃 여백이 변경되었음을 뷰에 알립니다.
+* **var** directionalLayoutMargins: NSDirectionalEdgeInsets 현재 언어 방향을 고려하여 뷰에서 컨텐츠를 배치할 때 사용할 기본 간격
+* **var** layoutMargins: UIEdgeInsets 뷰에 컨텐츠를 배치할 때 사용할 기본 간격
+* **var** preservesSuperviewLayoutMargins: Bool 현재 뷰가 상위 뷰의 여백도 준수할 것인지를 나타내는 Boolean 값
+* **func** layoutMarginsDidChange\(\) 레이아웃 여백이 변경되었음을 뷰에 알립니다.
 
 ### Safe Area 얻기
 
 * [Safe Area에 상대적인 컨텐츠 위치 지정](https://melodyarchive.gitbook.io/sagwa/not-found) view가 다른 컨텐츠에 가려지지 않도록 배치하기.
-* var safeAreaInsets: UIEdgeInsets 이 뷰의 Safe Area를 결정하는데 사용되는 inset
-* var safeAreaLayoutGuide: UILayoutGuide 바 또는 기타 컨텐츠에 의해 가려지지 않는 뷰 영역을 나타내는 레이아웃 가이드
-* func safeAreaInsetsDidChange\(\) 뷰의 Safe Area가 변경되었을 때 호출됩니다.
-* var insetsLayoutMarginsFromSafeArea: Bool 뷰의 레이아웃 여백이 Safe Area를 반영하도록 자동적으로 업데이트할지를 나타내는 Boolean 값
+* **var** safeAreaInsets: UIEdgeInsets 이 뷰의 Safe Area를 결정하는데 사용되는 inset
+* **var** safeAreaLayoutGuide: UILayoutGuide 바 또는 기타 컨텐츠에 의해 가려지지 않는 뷰 영역을 나타내는 레이아웃 가이드
+* **func** safeAreaInsetsDidChange\(\) 뷰의 Safe Area가 변경되었을 때 호출됩니다.
+* **var** insetsLayoutMarginsFromSafeArea: Bool 뷰의 레이아웃 여백이 Safe Area를 반영하도록 자동적으로 업데이트할지를 나타내는 Boolean 값
 
 ### 뷰 제약사항 관리하기
 
 자동 레이아웃 제약조건을 사용해서 뷰의 크기와 위치를 조정합니다.
 
-* var constraints: \[NSLayoutConstraint\] 뷰가 보유하는 제약조건
-* func addConstraint\(NSLayoutConstraint\) 수신자 뷰 또는 하위 뷰의 레이아웃에 제약조건을 추가합니다.
-* func addConstraints\(\[NSLayoutConstraint\]\) 수신자 뷰 또는 하위 뷰의 레이아웃에 여러 개의 제약조건을 추가합니다.
-* func removeConstraint\(NSLayoutConstraint\) 뷰로부터 지정된 제약조건을 제거합니다.
-* func removeConstraints\(\[NSLayoutConstraint\]\)
+* **var** constraints: \[NSLayoutConstraint\] 뷰가 보유하는 제약조건
+* **func** addConstraint\(NSLayoutConstraint\) 수신자 뷰 또는 하위 뷰의 레이아웃에 제약조건을 추가합니다.
+* **func** addConstraints\(\[NSLayoutConstraint\]\) 수신자 뷰 또는 하위 뷰의 레이아웃에 여러 개의 제약조건을 추가합니다.
+* **func** removeConstraint\(NSLayoutConstraint\) 뷰로부터 지정된 제약조건을 제거합니다.
+* **func** removeConstraints\(\[NSLayoutConstraint\]\)
 
   뷰로부터 여러개의 제약조건을 제거합니다.
 
@@ -213,62 +213,62 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 뷰 앵커중 하나에 자동 레이아웃 조건을 추가합니다.
 
-* var bottomAnchor: NSLayoutYAxisAnchor 뷰 프레임의 하단 모서리를 나타내는 레이아웃 앵커
-* var centerXAnchor: NSLayoutXAxisAnchor 뷰 프레임의 수평 중심을 나타내는 레이아웃 앵커
-* var centerYAnchor: NSLayoutYAxisAnchor 뷰 프레임의 수직 중심을 나타내는 레이아웃 앵커
-* var firstBaselineAnchor: NSLayoutYAxisAnchor 뷰 가장 위 텍스트 라인에 대한 기준선을 나타내는 레이아웃 앵커
-* var heightAnchor: NSLayoutDimension 뷰 프레임의 높이를 나타내는 레이아웃 
-* var lastBaselineAnchor: NSLayoutYAxisAnchor 뷰 가장 아래 텍스트 라인에 대한 기준선을 나타내는 레이아웃 
-* var leadingAnchor: NSLayoutXAxisAnchor 뷰 프레임의 선행 가장자리를 나타내는 레이아웃 앵커
-* var leftAnchor: NSLayoutXAxisAnchor 뷰 프레임의 왼쪽 모서리를 나타내는 레이아웃 앵커
-* var rightAnchor: NSLayoutXAxisAnchor 뷰 프레임의 오른쪽 모서리를 나타내는 레이아웃 앵커
-* var topAnchor: NSLayoutYAxisAnchor 뷰 프래임의 상단 모서리를 나타내는 레이아웃 앵커
-* var trailingAnchor: NSLayoutXAxisAnchor 뷰 프레임의 후행 모서리를 나타내는 레이아웃 앵커
-* var widthAnchor: NSLayoutDimension 뷰 프레임의 너비를 나타내는 레이아웃 앵커
+* **var** bottomAnchor: NSLayoutYAxisAnchor 뷰 프레임의 하단 모서리를 나타내는 레이아웃 앵커
+* **var** centerXAnchor: NSLayoutXAxisAnchor 뷰 프레임의 수평 중심을 나타내는 레이아웃 앵커
+* **var** centerYAnchor: NSLayoutYAxisAnchor 뷰 프레임의 수직 중심을 나타내는 레이아웃 앵커
+* **var** firstBaselineAnchor: NSLayoutYAxisAnchor 뷰 가장 위 텍스트 라인에 대한 기준선을 나타내는 레이아웃 앵커
+* **var** heightAnchor: NSLayoutDimension 뷰 프레임의 높이를 나타내는 레이아웃 
+* **var** lastBaselineAnchor: NSLayoutYAxisAnchor 뷰 가장 아래 텍스트 라인에 대한 기준선을 나타내는 레이아웃 
+* **var** leadingAnchor: NSLayoutXAxisAnchor 뷰 프레임의 선행 가장자리를 나타내는 레이아웃 앵커
+* **var** leftAnchor: NSLayoutXAxisAnchor 뷰 프레임의 왼쪽 모서리를 나타내는 레이아웃 앵커
+* **var** rightAnchor: NSLayoutXAxisAnchor 뷰 프레임의 오른쪽 모서리를 나타내는 레이아웃 앵커
+* **var** topAnchor: NSLayoutYAxisAnchor 뷰 프래임의 상단 모서리를 나타내는 레이아웃 앵커
+* **var** trailingAnchor: NSLayoutXAxisAnchor 뷰 프레임의 후행 모서리를 나타내는 레이아웃 앵커
+* **var** widthAnchor: NSLayoutDimension 뷰 프레임의 너비를 나타내는 레이아웃 앵커
 
 ### 레이아웃 가이드와 같이 작업하기
 
-* func addLayoutGuide\(UILayoutGuide\) 지정된 레이아웃 가이드를 뷰에 추가합니다.
-* var layoutGuides: \[UILayoutGuide\] 이 뷰가 소유한 레이아웃 가이드 객체의 배열
-* var layoutMarginsGuide: UILayoutGuide 뷰 여백을 나타내는 레이아웃 가이드
-* var readableContentGuide: UILayoutGuide 뷰 내에서 읽을 수 있는 너비가 있는 영역을 나타내는 레이아웃 가이드
-* func removeLayoutGuide\(UILayoutGuide\) 지정된 레이아웃 가이드를 뷰에서 제거합니다.
+* **func** addLayoutGuide\(UILayoutGuide\) 지정된 레이아웃 가이드를 뷰에 추가합니다.
+* **var** layoutGuides: \[UILayoutGuide\] 이 뷰가 소유한 레이아웃 가이드 객체의 배열
+* **var** layoutMarginsGuide: UILayoutGuide 뷰 여백을 나타내는 레이아웃 가이드
+* **var** readableContentGuide: UILayoutGuide 뷰 내에서 읽을 수 있는 너비가 있는 영역을 나타내는 레이아웃 가이드
+* **func** removeLayoutGuide\(UILayoutGuide\) 지정된 레이아웃 가이드를 뷰에서 제거합니다.
 
 ### 자동 레이아웃에서 측정
 
-* func systemLayoutSizeFitting\(CGSize\) 현재 제약조건을 기준으로 뷰의 최적 크기를 반환합니다.
-* func systemLayoutSizeFitting\(CGSize, withHorizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority\) 제약조건과 지정된 맞춤 프로퍼티를 기준으로 하여 뷰의 최적 크기를 반환합니다.
-* var intrinsicContentSize: CGSize 뷰 자체의 프로퍼티만을 고려한 수신자 뷰의 자연 크기
-* func invalidateIntrinsicContentSize\(\) 뷰의 고유한 컨텐츠 사이즈를 무효화합니다.
-* func contentCompressionResistancePriority\(for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 작게 만들어지지 않도록 하는 우선순위를 반환합니다.
-* func setContentCompressionResistancePriority\(UILayoutPriority, for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 작게 만들어지지 않도록 하는 우선순위를 설정합니다.
-* func contentHuggingPriority\(for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 크게 만들어지지 않도록 하는 우선순위를 반환합니다.
-* func setContentHuggingPriority\(UILayoutPriority, for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 크게 만들어지지 않도록 하는 우선순위를 설정합니다.
+* **func** systemLayoutSizeFitting\(CGSize\) 현재 제약조건을 기준으로 뷰의 최적 크기를 반환합니다.
+* **func** systemLayoutSizeFitting\(CGSize, withHorizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority\) 제약조건과 지정된 맞춤 프로퍼티를 기준으로 하여 뷰의 최적 크기를 반환합니다.
+* **var** intrinsicContentSize: CGSize 뷰 자체의 프로퍼티만을 고려한 수신자 뷰의 자연 크기
+* **func** invalidateIntrinsicContentSize\(\) 뷰의 고유한 컨텐츠 사이즈를 무효화합니다.
+* **func** contentCompressionResistancePriority\(for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 작게 만들어지지 않도록 하는 우선순위를 반환합니다.
+* **func** setContentCompressionResistancePriority\(UILayoutPriority, for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 작게 만들어지지 않도록 하는 우선순위를 설정합니다.
+* **func** contentHuggingPriority\(for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 크게 만들어지지 않도록 하는 우선순위를 반환합니다.
+* **func** setContentHuggingPriority\(UILayoutPriority, for: UILayoutConstraintAxis\) 뷰가 고유한 크기보다 크게 만들어지지 않도록 하는 우선순위를 설정합니다.
 
 ### 자동 레이아웃에서 뷰 정렬
 
-* func alignmentRect\(forFrame: CGRect\) 지정된 프레임에 대한 뷰의 정렬 직사각형을 반환합니다.
-* func frame\(forAlignmentRect: CGRect\) 지정된 정렬 사각형에 대한 뷰 프레임을 반환합니다.
-* var alignmentRectInsets: UIEdgeInsets 정렬 직사각형을 정의하는 뷰 프레임의 inset
+* **func** alignmentRect\(forFrame: CGRect\) 지정된 프레임에 대한 뷰의 정렬 직사각형을 반환합니다.
+* **func** frame\(forAlignmentRect: CGRect\) 지정된 정렬 사각형에 대한 뷰 프레임을 반환합니다.
+* **var** alignmentRectInsets: UIEdgeInsets 정렬 직사각형을 정의하는 뷰 프레임의 inset
 * ~~func forBaselineLayout\(\)~~ Returns a view used to satisfy baseline constraints. `Deprecated`
-* var forFirstBaselineLayout: UIView 첫 번째 기준선 제약조건을 충족하는 뷰를 반환합니다. Returns a view used to satisfy first baseline constraints.
-* var forLastBaselineLayout: UIView 마지막 기준선 제약조건을 충족하는 뷰를 반환합니다.
+* **var** forFirstBaselineLayout: UIView 첫 번째 기준선 제약조건을 충족하는 뷰를 반환합니다. Returns a view used to satisfy first baseline constraints.
+* **var** forLastBaselineLayout: UIView 마지막 기준선 제약조건을 충족하는 뷰를 반환합니다.
 
 ### 자동 레이아웃 시작시키기
 
-* func needsUpdateConstraints\(\) -&gt; Bool
+* **func** needsUpdateConstraints\(\) -&gt; Bool
 
   뷰가 제약조건을 업데이트 해야 할지 나타내는 Boolean 값을 반환합니다.
 
-* func setNeedsUpdateConstraints\(\)
+* **func** setNeedsUpdateConstraints\(\)
 
   뷰의 제약조건 업데이트가 필요한지를 설정합니다.
 
-* func updateConstraints\(\)
+* **func** updateConstraints\(\)
 
   뷰 제약조건을 업데이트합니다.
 
-* func updateConstraintsIfNeeded\(\)
+* **func** updateConstraintsIfNeeded\(\)
 
    수신자 뷰와 하위 뷰의 제약조건을 업데이트합니다.
 
@@ -276,221 +276,221 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 제약조건 기반의 레이아웃 디버깅에 대한 자세한 내용은 [자동 레이아웃 가이드](https://melodyarchive.gitbook.io/sagwa/not-found)를 참조하세요.
 
-* func constraintsAffectingLayout\(for: UILayoutConstraintAxis\) 지정된 축에 대한 뷰 레이아웃에 영향을 미치는 제약조건을 반환합니다.
-* var hasAmbiguousLayout: Bool 뷰 레이아웃에 영향을 미치는 제약조건이 뷰의 위치를 불완전하게 지정하는지를 나타내는 Boolean 값
-* func exerciseAmbiguityInLayout\(\) 서로 다른 유효한 값으로 인해 발생하는 모호한 레이아웃을 통해 가능한 뷰 프레임을 랜덤하게 변화시켜 보입니다.
+* **func** constraintsAffectingLayout\(for: UILayoutConstraintAxis\) 지정된 축에 대한 뷰 레이아웃에 영향을 미치는 제약조건을 반환합니다.
+* **var** hasAmbiguousLayout: Bool 뷰 레이아웃에 영향을 미치는 제약조건이 뷰의 위치를 불완전하게 지정하는지를 나타내는 Boolean 값
+* **func** exerciseAmbiguityInLayout\(\) 서로 다른 유효한 값으로 인해 발생하는 모호한 레이아웃을 통해 가능한 뷰 프레임을 랜덤하게 변화시켜 보입니다.
 
 ### 리사이징 동작 설정하기
 
 경계가 변경될 때 컨텐츠를 조정하는 방법을 정의합니다.
 
-* var contentMode: UIViewContentMode 경계가 변경될 때 뷰가 내용의 표시방법을 결정하는데 사용되는 플래그입니다.
-* enum UIViewContentMode 경계가 변경될 때 뷰를 통해 컨텐츠를 조정하는 방법을 지정하는 옵션
-* func sizeThatFits\(CGSize\) 지정된 크기가장 적합한 크기를 계산하고 반환하도록 뷰에 요청합니다.
-* func sizeToFit\(\) 수신자 뷰의 크기를 조정하고 하위 뷰만 둘러싸도록 이동시킵니다.
-* var autoresizesSubviews: Bool 경계가 변경될 때 수신자 뷰가 자동적으로 하위 뷰의 크기를 재조정하게 할것인지를 결정하는 Boolean 값
-* var autoresizingMask: UIViewAutoresizing 상위 뷰의 경계가 변화할 때 수신자가 스스로 리사이징하는 방법을 결정하는 정수 비트마스크
+* **var** contentMode: UIViewContentMode 경계가 변경될 때 뷰가 내용의 표시방법을 결정하는데 사용되는 플래그입니다.
+* **enum** UIViewContentMode 경계가 변경될 때 뷰를 통해 컨텐츠를 조정하는 방법을 지정하는 옵션
+* **func** sizeThatFits\(CGSize\) 지정된 크기가장 적합한 크기를 계산하고 반환하도록 뷰에 요청합니다.
+* **func** sizeToFit\(\) 수신자 뷰의 크기를 조정하고 하위 뷰만 둘러싸도록 이동시킵니다.
+* **var** autoresizesSubviews: Bool 경계가 변경될 때 수신자 뷰가 자동적으로 하위 뷰의 크기를 재조정하게 할것인지를 결정하는 Boolean 값
+* **var** autoresizingMask: UIViewAutoresizing 상위 뷰의 경계가 변화할 때 수신자가 스스로 리사이징하는 방법을 결정하는 정수 비트마스크
 
 ### 하위 뷰 배치하기
 
 앱이 자동 레이아웃을 사용하지 않는 경우 수동으로 뷰를 배치하세요.
 
-* func layoutSubviews\(\)
+* **func** layoutSubviews\(\)
 
   하위 뷰를 배치합니다.
 
-* func setNeedsLayout\(\)
+* **func** setNeedsLayout\(\)
 
   수신자의 현재 레이아웃을 무효화시키고 다음 업데이트 사이클동안 레이아웃을 업데이트를 트리거합니다.
 
-* func layoutIfNeeded\(\)
+* **func** layoutIfNeeded\(\)
 
   레이아웃 업데이트가 보류중인 경우 즉시 하위 뷰를 배치합니다.
 
-* class var requiresConstraintBasedLayout: Bool
+* **class var** requiresConstraintBasedLayout: Bool
 
   수신자가 제약조건 기반 레이아웃 시스템에 의존하고 있는지 나타내는 Boolean 값을 반환합니다.
 
-* var translatesAutoresizingMaskIntoConstraints: Bool
+* **var** translatesAutoresizingMaskIntoConstraints: Bool
 
   뷰의 자동 크기지정 마스크가 자동 레이아웃 제약조건으로 변환되고 있는지를 나타내는 Boolean 값
 
 ### 유저 인터페이스 방향 관리
 
-* var semanticContentAttribute: UISemanticContentAttribute
+* **var** semanticContentAttribute: UISemanticContentAttribute
 
   **왼쪽에서 오른쪽으로 쓰기**와 **오른쪽에서 왼쪽으로 쓰기**의 레이아웃 전환이 일어날때 뷰를 뒤집어야 할지 결정하는데 쓰이는 뷰 컨텐츠에 대한 시멘틱 설명
 
-* var effectiveUserInterfaceLayoutDirection: UIUserInterfaceLayoutDirection
+* **var** effectiveUserInterfaceLayoutDirection: UIUserInterfaceLayoutDirection
 
   뷰의 컨텐츠를 즉각적으로 배치할때 적합한 유저 인터페이스 방향
 
-* class func userInterfaceLayoutDirection\(for: UISemanticContentAttribute\) -&gt; UIUserInterfaceLayoutDirection
+* **class func** userInterfaceLayoutDirection\(for: UISemanticContentAttribute\) -&gt; UIUserInterfaceLayoutDirection
 
   주어진 시멘틱 컨텐츠 속성에 대한 유저 인터페이스 방향을 반환합니다.
 
-* class func userInterfaceLayoutDirection\(for: UISemanticContentAttribute, relativeTo: UIUserInterfaceLayoutDirection\) -&gt; UIUserInterfaceLayoutDirection
+* **class func** userInterfaceLayoutDirection\(for: UISemanticContentAttribute, relativeTo: UIUserInterfaceLayoutDirection\) -&gt; UIUserInterfaceLayoutDirection
 
   지정된 레이아웃 방향에 대해 시멘틱 컨텐츠 속성이 암시하는 레이아웃을 반환합니다.
 
 ### 드래그 앤 드롭 상호작용 지원
 
-* func addInteraction\(UIInteraction\)
+* **func** addInteraction\(UIInteraction\)
 
   지정된 드래그 앤 드롭 또는 스프링로드 상호 작용을 뷰에 추가합니다.
 
-* func removeInteraction\(UIInteraction\) 지정된 드래그 앤 드롭 또는 스프링로드 상호 작용을 뷰에서 제거합니다.
-* var interactions: \[UIInteraction\]
+* **func** removeInteraction\(UIInteraction\) 지정된 드래그 앤 드롭 또는 스프링로드 상호 작용을 뷰에서 제거합니다.
+* **var** interactions: \[UIInteraction\]
 
   뷰의 상호작용의 배열
 
 ### 뷰의 그리기와 업데이트
 
-* func draw\(CGRect\)
+* **func** draw\(CGRect\)
 
   주어진 사각형 내에 수신자의 이미지를 그립니다.
 
-* func setNeedsDisplay\(\)
+* **func** setNeedsDisplay\(\)
 
   수신자의 전체 경계 사각형이 다시 그려져야 함을 표시합니다.
 
-* func setNeedsDisplay\(CGRect\)
+* **func** setNeedsDisplay\(CGRect\)
 
   수신자의 지정된 사각형이 다시 그려져야 함을 표시합니다.
 
-* var contentScaleFactor: CGFloat
+* **var** contentScaleFactor: CGFloat
 
   뷰에 적용된 축척 비율
 
-* func tintColorDidChange\(\)
+* **func** tintColorDidChange\(\)
 
   tintColor 프로퍼티가 변경될때 시스템에 의해 호출됩니다.
 
 ### 뷰 컨텐츠의 프린팅 서식지정
 
-* func viewPrintFormatter\(\) -&gt; UIViewPrintFormatter
+* **func** viewPrintFormatter\(\) -&gt; UIViewPrintFormatter
 
   수신자 뷰의 print fommatter를 반환합니다.
 
-* func draw\(CGRect, for: UIViewPrintFormatter\)
+* **func** draw\(CGRect, for: UIViewPrintFormatter\)
 
   인쇄용 뷰의 컨텐츠를 그리기 위해 구현됩니다.
 
 ### 제스처 인식기 관리
 
-* func addGestureRecognizer\(UIGestureRecognizer\)
+* **func** addGestureRecognizer\(UIGestureRecognizer\)
 
   뷰에 제스처 인식기를 연결합니다.
 
-* func removeGestureRecognizer\(UIGestureRecognizer\)
+* **func** removeGestureRecognizer\(UIGestureRecognizer\)
 
   뷰로부터 제스처 인식기를 제거합니다.
 
-* var gestureRecognizers: \[UIGestureRecognizer\]?
+* **var** gestureRecognizers: \[UIGestureRecognizer\]?
 
   현재 뷰에 연결되어있는 제스처 인식기 객체들
 
-* func gestureRecognizerShouldBegin\(UIGestureRecognizer\) -&gt; Bool
+* **func** gestureRecognizerShouldBegin\(UIGestureRecognizer\) -&gt; Bool
 
   제스처 인식기가 계속해서 터치 이벤트를 추적하도록 허용할 것인지를 묻습니다.
 
 ### 포커스 관찰하기
 
-* var canBecomeFocused: Bool
+* **var** canBecomeFocused: Bool
 
   뷰가 현재 포커스를 받을 수있는지 나타내는 Boolean 값
 
-* class var inheritedAnimationDuration: TimeInterval
+* **class var** inheritedAnimationDuration: TimeInterval
 
   상속받은 현재 애니메이션의 지속시간을 반환한다.
 
-* var isFocused: Bool
+* **var** isFocused: Bool
 
   현재 해당 항목에 포커스가 주어졌는지를 나타내는 Boolean 값
 
 ### 모션효과 사용하기
 
-* func addMotionEffect\(UIMotionEffect\)
+* **func** addMotionEffect\(UIMotionEffect\)
 
   뷰에 모션효과를 적용하기 시작합니다.
 
-* var motionEffects: \[UIMotionEffect\]
+* **var** motionEffects: \[UIMotionEffect\]
 
   뷰의 모션 효과 배열
 
-* func removeMotionEffect\(UIMotionEffect\)
+* **func** removeMotionEffect\(UIMotionEffect\)
 
   뷰에 모션효과를 적용하는 것을 중단합니다.
 
 ### 상태의 보존과 복구
 
-* var restorationIdentifier: String?
+* **var** restorationIdentifier: String?
 
   뷰의 상태복원 지원 여부를 결정하는 식별자
 
-* func encodeRestorableState\(with: NSCoder\) 뷰에 대한 상태 관련 정보를 인코딩합니다.
-* func decodeRestorableState\(with: NSCoder\)
+* **func** encodeRestorableState\(with: NSCoder\) 뷰에 대한 상태 관련 정보를 인코딩합니다.
+* **func** decodeRestorableState\(with: NSCoder\)
 
   뷰에 대한 상태관련 정보를 디코딩하고 복원합니다.
 
 ### 뷰 스냅샷 캡처하기
 
-* func snapshotView\(afterScreenUpdates: Bool\) -&gt; UIView?
+* **func** snapshotView\(afterScreenUpdates: Bool\) -&gt; UIView?
 
   현재 뷰의 내용을 기반으로 스냅샷 뷰를 반환합니다.
 
-* func resizableSnapshotView\(from: CGRect, afterScreenUpdates: Bool, withCapInsets: UIEdgeInsets\) -&gt; UIView?
+* **func** resizableSnapshotView\(from: CGRect, afterScreenUpdates: Bool, withCapInsets: UIEdgeInsets\) -&gt; UIView?
 
   현재 뷰의 지정된 내용을 기반으로 스냅샷 보기를 늘릴 수 있는 inset과 함께 반환합니다.
 
-* func drawHierarchy\(in: CGRect, afterScreenUpdates: Bool\) -&gt; Bool
+* **func** drawHierarchy\(in: CGRect, afterScreenUpdates: Bool\) -&gt; Bool
 
   화면 상에 보이는 전체 뷰 계층 구조의 스냅샷을 현재 컨텍스트로 렌더링합니다.
 
 ### 런타임시 뷰 식별하기
 
-* var tag: Int
+* **var** tag: Int
 
   앱에서 뷰 객체를 식별하는 데 사용할 수 있는 정수
 
-* func viewWithTag\(Int\) -&gt; UIView?
+* **func** viewWithTag\(Int\) -&gt; UIView?
 
   지정된 값과 일치하는 태그를 가지고 있는 뷰를 반환합니다.
 
 ### 뷰 좌표계 간 변환
 
-* func convert\(CGPoint, to: UIView?\) -&gt; CGPoint
+* **func** convert\(CGPoint, to: UIView?\) -&gt; CGPoint
 
   수신자 좌표계의 포인트를 주어진 뷰의 좌표계로 변환합니다.
 
-* func convert\(CGPoint, from: UIView?\) -&gt; CGPoint 주어진 뷰 좌표계로부터의 포인트를, 수신자의 좌표계로 변환합니다.
-* func convert\(CGRect, to: UIView?\) -&gt; CGRect
+* **func** convert\(CGPoint, from: UIView?\) -&gt; CGPoint 주어진 뷰 좌표계로부터의 포인트를, 수신자의 좌표계로 변환합니다.
+* **func** convert\(CGRect, to: UIView?\) -&gt; CGRect
 
   수신자 좌표계의 사각형을 주어진 뷰의 좌표계로 변환합니다.
 
-* func convert\(CGRect, from: UIView?\) -&gt; CGRect
+* **func** convert\(CGRect, from: UIView?\) -&gt; CGRect
 
   다른 뷰 좌표계의 사각형을 수신자의 좌표계로 변환합니다.
 
 ### 뷰에서 히트 테스팅
 
-* func hitTest\(CGPoint, with: UIEvent?\) -&gt; UIView?
+* **func** hitTest\(CGPoint, with: UIEvent?\) -&gt; UIView?
 
   지정된 포인트를 포함하는 뷰 계층 구조\(수신자 포함\) 가장 먼 자손 객체를 반환합니다.
 
-* func point\(inside: CGPoint, with: UIEvent?\) -&gt; Bool
+* **func** point\(inside: CGPoint, with: UIEvent?\) -&gt; Bool
 
   수신자가 지정된 포인트를 포함하는지 나타내는 Boolean 값을 반환합니다.
 
 ### 뷰 에디팅 세션 종료하기
 
-* func endEditing\(Bool\) -&gt; Bool
+* **func** endEditing\(Bool\) -&gt; Bool
 
   뷰 \(또는 포함된 텍스트 필드 중 하나\)가 첫번째 응답자 상태를 종료하도록 합니다.
 
 ### 접근성 동작 수정하기
 
-* var accessibilityIgnoresInvertColors: Bool
+* **var** accessibilityIgnoresInvertColors: Bool
 
   뷰가 색상 반전을 위한 접근성 요청을 무시하는지 나타내는 Boolean 값
 
@@ -498,43 +498,43 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 다음 메서드들의 사용은 권장되지 않습니다. 대신 UIViewPropertyAnimator 클래스를 사용하세요.
 
-* class func animate\(withDuration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions = \[\], animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+* **class func** animate\(withDuration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions = \[\], animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
 
   지정된 지속시간, 딜레이, 옵션 및 완료 핸들러를 사용해서 하나 이상의 뷰에 대한 변경사항을 애니메이션화합니다.
 
-* class func animate\(withDuration: TimeInterval, animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+* **class func** animate\(withDuration: TimeInterval, animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
 
   지정된 지속시간과 완료 핸들러를 사용해서 하나 이상의 뷰에 대한 변경사항을 애니메이션화합니다.
 
-* class func animate\(withDuration: TimeInterval, animations: \(\) -&gt; Void\)
+* **class func** animate\(withDuration: TimeInterval, animations: \(\) -&gt; Void\)
 
   지정된 지속시간동안 하나 이상의 뷰에 대한 변경사항을 애니메이션화합니다.
 
-* class func transition\(with: UIView, duration: TimeInterval, options: UIView.AnimationOptions = \[\], animations: \(\(\) -&gt; Void\)?, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+* **class func** transition\(with: UIView, duration: TimeInterval, options: UIView.AnimationOptions = \[\], animations: \(\(\) -&gt; Void\)?, completion: \(\(Bool\) -&gt; Void\)? = nil\)
 
   지정된 컨테이너 뷰에 대한 전환 애니메이션을 만듭니다.
 
-* class func transition\(from: UIView, to: UIView, duration: TimeInterval, options: UIView.AnimationOptions = \[\], completion: \(\(Bool\) -&gt; Void\)? = nil\)
+* **class func** transition\(from: UIView, to: UIView, duration: TimeInterval, options: UIView.AnimationOptions = \[\], completion: \(\(Bool\) -&gt; Void\)? = nil\)
 
   지정된 파라미터를 사용해, 지정된 뷰 간의 전환 애니메이션을 생성합니다.
 
-* class func animateKeyframes\(withDuration: TimeInterval, delay: TimeInterval, options: UIView.KeyframeAnimationOptions = \[\], animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+* **class func** animateKeyframes\(withDuration: TimeInterval, delay: TimeInterval, options: UIView.KeyframeAnimationOptions = \[\], animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
 
   현재 뷰에서 키 프레임 기반 애니메이션을 설정하는 데 사용할 수 있는 애니메이션 블록 객체를 만듭니다.
 
-* class func addKeyframe\(withRelativeStartTime: Double, relativeDuration: Double, animations: \(\) -&gt; Void\)
+* **class func** addKeyframe\(withRelativeStartTime: Double, relativeDuration: Double, animations: \(\) -&gt; Void\)
 
   키 프레임 애니메이션의 단일 프레임에 대한 타이밍 및 애니메이션 값을 지정합니다.
 
-* class func perform\(UIView.SystemAnimation, on: \[UIView\], options: UIView.AnimationOptions = \[\], animations: \(\(\) -&gt; Void\)?, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+* **class func** perform\(UIView.SystemAnimation, on: \[UIView\], options: UIView.AnimationOptions = \[\], animations: \(\(\) -&gt; Void\)?, completion: \(\(Bool\) -&gt; Void\)? = nil\)
 
   개발자가 정의한 선택적 병렬 애니메이션과 함께 하나 이상의 뷰에서 지정된 시스템 애니메이션을 수행합니다.
 
-* class func animate\(withDuration: TimeInterval, delay: TimeInterval, usingSpringWithDamping: CGFloat, initialSpringVelocity: CGFloat, options: UIView.AnimationOptions = \[\], animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+* **class func** animate\(withDuration: TimeInterval, delay: TimeInterval, usingSpringWithDamping: CGFloat, initialSpringVelocity: CGFloat, options: UIView.AnimationOptions = \[\], animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
 
   스프링의 물리적 움직임에 대응하는 시간 커브를 사용하여 뷰 애니메이션을 실행합니다.
 
-* class func performWithoutAnimation\(\(\) -&gt; Void\)
+* **class func** performWithoutAnimation\(\(\) -&gt; Void\)
 
   뷰 전환 애니메이션을 비활성화합니다.
 
@@ -542,101 +542,101 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 다음 메서드들의 사용은 권장지 않습니다. 대신 UIViewPropertyAnimator 클래스를 사용하여 애니메이션을 수행하세요.
 
-* class func beginAnimations\(String?, context: UnsafeMutableRawPointer?\)
+* **class func** beginAnimations\(String?, context: UnsafeMutableRawPointer?\)
 
   begin / commit 애니메이션 블록의 시작을 표시합니다.
 
-* class func commitAnimations\(\) begine / commit 애니메이션 블록의 끝을 표시하고 실행을 위해 애니메이션을 예약합니다.
-* class func setAnimationStart\(Date\)
+* **class func** commitAnimations\(\) begine / commit 애니메이션 블록의 끝을 표시하고 실행을 위해 애니메이션을 예약합니다.
+* **class func** setAnimationStart\(Date\)
 
   현재 애니메이션 블록의 시작 시간을 설정합니다.
 
-* class func setAnimationsEnabled\(Bool\)
+* **class func** setAnimationsEnabled\(Bool\)
 
   애니메이션의 사용 가능 여부를 설정합니다.
 
-* class func setAnimationDelegate\(Any?\)
+* **class func** setAnimationDelegate\(Any?\)
 
   모든 애니메이션 메시지에 대한 delegate를 설정합니다.
 
-* class func setAnimationWillStart\(Selector?\)
+* **class func** setAnimationWillStart\(Selector?\)
 
   애니메이션이 시작될 때 애니메이션 delegate에게 보낼 메시지를 설정합니다.
 
-* class func setAnimationDidStop\(Selector?\)
+* **class func** setAnimationDidStop\(Selector?\)
 
   애니메이션이 중단 될 때 애니메이션 delegate에게 보낼 메시지를 설정합니다.
 
-* class func setAnimationDuration\(TimeInterval\)
+* **class func** setAnimationDuration\(TimeInterval\)
 
   애니메이션 블록의 애니메이션 길이 \(초 단위\)를 설정합니다.
 
-* class func setAnimationDelay\(TimeInterval\) 애니메이션 블록 내에서 프로퍼티 변경 사항을 애니메이션화 하기 전에 대기 할 시간 \(초 단위\)을 설정합니다.
-* class func setAnimationCurve\(UIView.AnimationCurve\)
+* **class func** setAnimationDelay\(TimeInterval\) 애니메이션 블록 내에서 프로퍼티 변경 사항을 애니메이션화 하기 전에 대기 할 시간 \(초 단위\)을 설정합니다.
+* **class func** setAnimationCurve\(UIView.AnimationCurve\)
 
   애니메이션 블록 내에서 프로퍼티 변경 사항을 애니메이션화 할 때 사용할 곡선을 설정합니다.
 
-* class func setAnimationRepeatCount\(Float\)
+* **class func** setAnimationRepeatCount\(Float\)
 
   애니메이션 블록 내의 애니메이션이 반복되는 횟수를 설정합니다.
 
-* class func setAnimationRepeatAutoreverses\(Bool\)
+* **class func** setAnimationRepeatAutoreverses\(Bool\)
 
   애니메이션 블록 내의 애니메이션을 자동으로 되돌릴지 설정합니다.
 
-* class func setAnimationBeginsFromCurrentState\(Bool\)
+* **class func** setAnimationBeginsFromCurrentState\(Bool\)
 
   현재 상태에서 애니메이션 재생을 시작할지 설정합니다.
 
-* class func setAnimationTransition\(UIView.AnimationTransition, for: UIView, cache: Bool\)
+* **class func** setAnimationTransition\(UIView.AnimationTransition, for: UIView, cache: Bool\)
 
   애니메이션 블록에서 뷰에 적용할 전환을 설정합니다.
 
-* class var areAnimationsEnabled: Bool
+* **class var** areAnimationsEnabled: Bool
 
   애니메이션이 활성화되었는지를 나타내는 부울 값을 반환합니다.
 
 ### 상수Constants
 
-* struct UIView.AnimationOptions
+* **struct** UIView.AnimationOptions
 
   블록 객체를 사용한 뷰 애니메이션에 적용되는 옵션
 
-* enum UIView.AnimationCurve
+* **enum** UIView.AnimationCurve
 
   지원되는 애니메이션 커브 지정
 
-* enum UIView.AnimationTransition 애니메이션 블록 객체에 사용하기 위한 애니메이션 전환 옵션
-* enum UIView.SystemAnimation
+* **enum** UIView.AnimationTransition 애니메이션 블록 객체에 사용하기 위한 애니메이션 전환 옵션
+* **enum** UIView.SystemAnimation
 
   애니메이션이 완료되면 계층에서 뷰를 제거하기 위한 옵션
 
-* struct UIView.KeyframeAnimationOptions
+* **struct** UIView.KeyframeAnimationOptions
 
   animateKeyframes\(withDuration:delay:options:animations:completion:\) 메서드와 함께 사용되는 키 프레임 애니메이션 옵션.
 
-* enum NSLayoutConstraint.Axis
+* **enum** NSLayoutConstraint.Axis
 
   객체 간 수평 또는 수직 레이아웃 제약조건을 지정하는 키
 
-* enum UIView.TintAdjustmentMode
+* **enum** UIView.TintAdjustmentMode
 
   뷰의 tint 조정모드
 
-* class let layoutFittingCompressedSize: CGSize
+* **class let** layoutFittingCompressedSize: CGSize
 
   가능한 가장 작은 크기를 사용하는 옵션
 
-* class let layoutFittingExpandedSize: CGSize 가능한 가장 큰 크기를 사용하는 옵션
-* class let noIntrinsicMetric: CGFloat
+* **class let** layoutFittingExpandedSize: CGSize 가능한 가장 큰 크기를 사용하는 옵션
+* **class let** noIntrinsicMetric: CGFloat
 
   주어진 숫자 뷰 프로퍼티에 고유한 메트릭이 존재하지 않음
 
-* struct UIView.AutoresizingMask
+* **struct** UIView.AutoresizingMask
 
   자동 뷰 리사이징 옵션
 
-* enum UISemanticContentAttribute
+* **enum** UISemanticContentAttribute
 
   **왼쪽에서 오른쪽으로 쓰기**와 **오른쪽에서 왼쪽으로 쓰기**의 레이아웃 전환이 일어날때 뷰를 뒤집어야 할지 결정하는데 쓰이는 뷰 컨텐츠에 대한 시멘틱 설명
 
