@@ -40,7 +40,7 @@ let rect = CGRect(x: 10, y: 10, width: 100, height: 100)
 let myView = UIView(frame: rect)
 ```
 
-다른 뷰에 하위 뷰를 추가하려면 수퍼 뷰에서 [addSubview \(\_ :\)](../../not-found.md) 메서드를 호출하세요. 뷰에 하위 뷰를 여러 개 추가할 수 있으며, 형제 뷰는 iOS에서 아무 문제없이 서로 겹칠 수 있습니다. addSubview \(\_ :\) 메소드를 호출 할 때마다 새 뷰가 다른 기존 형제 뷰 위에 놓입니다. [insertSubview \(\_ : aboveSubview :\)](../../not-found.md) 및 [insertSubview \(\_ : belowSubview :\)](../../not-found.md) 메서드를 사용하여 하위 뷰의 상대 z 순서를 지정할 수 있습니다. [exchangeSubview \(at : withSubviewAt :\)](../../not-found.md) 메서드를 사용하여 이미 추가 된 하위 뷰의 위치를 ​​교환할 수도 있습니다.
+다른 뷰에 하위 뷰를 추가하려면 수퍼 뷰에서 [addSubview\(\_ :\)](../../not-found.md) 메서드를 호출하세요. 뷰에 하위 뷰를 여러 개 추가할 수 있으며, 형제 뷰는 iOS에서 아무 문제없이 서로 겹칠 수 있습니다. addSubview\(\_ :\) 메소드를 호출 할 때마다 새 뷰가 다른 기존 형제 뷰 위에 놓입니다. [insertSubview\(\_ : aboveSubview :\)](../../not-found.md) 및 [insertSubview\(\_ : belowSubview :\)](../../not-found.md) 메서드를 사용하여 하위 뷰의 상대 z 순서를 지정할 수 있습니다. [exchangeSubview\(at : withSubviewAt :\)](../../not-found.md) 메서드를 사용하여 이미 추가 된 하위 뷰의 위치를 ​​교환할 수도 있습니다.
 
 뷰를 생성한 후 자동 레이아웃 규칙을 작성하여 나머지 뷰 계층 구조의 변화에 따라 뷰의 크기와 위치가 변경되는 방법을 제어할 수 있습니다. 자세한 내용은 [자동 레이아웃 가이드](../../not-found.md)를 참조하세요.
 
@@ -83,7 +83,7 @@ OpenGL ES를 사용하여 그리는 경우 UIView의 하위 클래스 대신 [GL
 
 UIView 클래스는 시각적 컨텐츠와 더불어 유저 상호작용 제공을 위한 중요한 서브클래싱 지점입니다. UIView를 서브클래싱해야 할 이유야 많겠지만 상속은 기본 UIView 클래스나 표준 시스템 뷰가 필요한 기능을 제공하지 못할 때 하는 것을 권장합니다. 서브클래싱을 사용하면 뷰를 구현하고 성능을 최적화하는데 더 많은 작업이 필요합니다.
 
-서브클래싱을 피하는 방법에 대한 정보는 [서브클래싱의 대안](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/not-found/README.md)을 참조하세요
+서브클래싱을 피하는 방법에 대한 정보는 [서브클래싱의 대안](uiview.md#alternatives_to_subclassing)을 참조하세요
 
 ### 오버라이드할 메서드
 
