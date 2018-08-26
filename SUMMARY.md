@@ -9,5 +9,6 @@
     * [UIViewController](uikit/view-controllers/uiviewcontroller.md)
   * [터치, 누르기 , 제스처](uikit/touches_presses_and_gestures/README.md)
     * [UIResponder](uikit/touches_presses_and_gestures/uiresponder.md)
+    * [UIKit 제스처 처리](uikit/touches_presses_and_gestures/handling_uikit_gestures.md)
 * [Not Found](not-found.md)
 
