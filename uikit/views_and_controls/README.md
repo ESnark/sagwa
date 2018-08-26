@@ -1,3 +1,7 @@
+---
+description: 화면에 컨텐츠를 표시하고 해당 컨텐츠에 상호작용을 지정하세요
+---
+
 # 뷰와 컨트롤
 
 > 원본출처  
@@ -19,7 +23,7 @@ View와 Control은 앱 사용자 인터페이스의 시각적 구성 요소입�
 * focus 변동에 응답합니다.
 * 뷰의 크기, 위치, 모양 속성을 애니메이션화 합니다.
 
-[UIView](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/uikit/view_and_controls/uiview/README.md)는 모든 뷰의 루트 클래스이며 공통된 동작을 정의합니다. [UIControl](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/not-found/README.md)은 단추, 스위치 및 사용자 상호 작용을 위해 설계된 다른 뷰와 관련된 추가 동작을 정의합니다.
+[UIView](uiview.md)는 모든 뷰의 루트 클래스이며 공통된 동작을 정의합니다. [UIControl](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/not-found/README.md)은 단추, 스위치 및 사용자 상호 작용을 위해 설계된 다른 뷰와 관련된 추가 동작을 정의합니다.
 
 뷰 및 컨트롤을 사용하는 방법에 대한 자세한 내용은 [iOS 휴먼 인터페이스 가이드라인](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/not-found/README.md)을 참조하십시오.
 
@@ -27,7 +31,7 @@ View와 Control은 앱 사용자 인터페이스의 시각적 구성 요소입�
 
 ### 뷰 기초\(View Fundamentals\)
 
-* class [UIView](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/uikit/view_and_controls/uiview/README.md) 화면상의 직사각형 영역에 대한 컨텐츠를 관리하는 개체입니다.
+* class [UIView](uiview.md) 화면상의 직사각형 영역에 대한 컨텐츠를 관리하는 개체입니다.
 
 ### 컨테이너 뷰
 
@@ -35,61 +39,61 @@ View와 Control은 앱 사용자 인터페이스의 시각적 구성 요소입�
 
 * Collection Views 설정 및 커스텀이 가능한 레이아웃을 사용하여 중첩된 뷰를 표시하세요.
 * Table Views 하나의 열과 커스텀 가능한 행에 데이터를 표시하세요.
-* class UIStackView 열또는 행으로 뷰 집합을 배치하기 위한 효율적인 인터페이스입니다.
-* class UIScrollView 포함된 뷰를 스크롤하고 확대/축소할 수 있는 뷰입니다.
+* _class_ UIStackView 열또는 행으로 뷰 집합을 배치하기 위한 효율적인 인터페이스입니다.
+* _class_ UIScrollView 포함된 뷰를 스크롤하고 확대/축소할 수 있는 뷰입니다.
 
 ### 컨텐츠 뷰
 
-* class UIActivityIndicatorView 작업 진행을 보여주는 뷰
-* class UIImageView 인터페이스 상에 단일 이미지나 애니메이션 이미지들을 표시하는 객체
-* class UIPickerView spinning-wheel이나 슬롯머신 모양의 하나 이상의 value set를 나타내는 뷰
-* class UIProgressView 시간에 따른 작업 진행을 묘사하는 뷰
-* class UIWebView 앱에 웹 컨텐츠를 포함시키는 뷰
+* _class_ UIActivityIndicatorView 작업 진행을 보여주는 뷰
+* _class_ UIImageView 인터페이스 상에 단일 이미지나 애니메이션 이미지들을 표시하는 객체
+* _class_ UIPickerView spinning-wheel이나 슬롯머신 모양의 하나 이상의 value set를 나타내는 뷰
+* _class_ UIProgressView 시간에 따른 작업 진행을 묘사하는 뷰
+* _class_ UIWebView 앱에 웹 컨텐츠를 포함시키는 뷰
 
 ### 컨트롤
 
 컨트롤로 입력을 수집하고 유저 상호작용에 대응하세요.
 
-* class UIControl 시각적 엘리먼트로써 사용자 상호작용에 대한 응답으로 특정 동작이나 의도를 전달하는 컨트롤의 기본 클래스입니다.
-* class UIButton 유저 상호작용에 대한 응답으로 커스텀 코드를 실행하는 컨트롤
-* class UIDatePicker 날짜와 시간값을 입력하는데 사용되는 컨트롤
-* class UIPageControl 수평으로 놓여진 점들을 표시하는 컨트롤로 각 점은 앱의 도큐먼트나 다른 데이터 모델 엔티티 페이지에 대응합니다.
-* class UISegmentedControl 여러 세그먼트로 구성된 수평 컨트롤로, 각 세그먼트는 별도의 버튼으로 작동합니다.
-* class UISlider 연속 범위에서 단일 값을 선택하는 데 사용되는 컨트롤입니다.
-* class UIStepper 값을 늘리거나 줄이는 데 사용되는 컨트롤입니다.
-* class UISwitch On/Off와 같은 이진 선택 기능을 제공하는 컨트롤입니다.
+* _class_ UIControl 시각적 엘리먼트로써 사용자 상호작용에 대한 응답으로 특정 동작이나 의도를 전달하는 컨트롤의 기본 클래스입니다.
+* _class_ UIButton 유저 상호작용에 대한 응답으로 커스텀 코드를 실행하는 컨트롤
+* _class_ UIDatePicker 날짜와 시간값을 입력하는데 사용되는 컨트롤
+* _class_ UIPageControl 수평으로 놓여진 점들을 표시하는 컨트롤로 각 점은 앱의 도큐먼트나 다른 데이터 모델 엔티티 페이지에 대응합니다.
+* _class_ UISegmentedControl 여러 세그먼트로 구성된 수평 컨트롤로, 각 세그먼트는 별도의 버튼으로 작동합니다.
+* _class_ UISlider 연속 범위에서 단일 값을 선택하는 데 사용되는 컨트롤입니다.
+* _class_ UIStepper 값을 늘리거나 줄이는 데 사용되는 컨트롤입니다.
+* _class_ UISwitch On/Off와 같은 이진 선택 기능을 제공하는 컨트롤입니다.
 
 ### 텍스트 뷰
 
 텍스트 뷰를 사용하여 텍스트를 표시하고 수정하세요
 
-* class UILabel 한 줄 이상의 읽기 전용 텍스트를 표시하는 뷰입니다. 의도를 설명하는 컨트롤과 함께 사용되기도 합니다.
-* class UITextField 인터페이스 상에 편집 가능한 텍스트 영역을 표시하는 객체입니다.
-* class UITextView 스크롤 가능한 여러 줄의 텍스트 영역
+* _class_ UILabel 한 줄 이상의 읽기 전용 텍스트를 표시하는 뷰입니다. 의도를 설명하는 컨트롤과 함께 사용되기도 합니다.
+* _class_ UITextField 인터페이스 상에 편집 가능한 텍스트 영역을 표시하는 객체입니다.
+* _class_ UITextView 스크롤 가능한 여러 줄의 텍스트 영역
 * Drag and Drop Customization 텍스트 뷰에 대한 표준 드래그 앤 드롭 기능을 확장하여 커스텀 타입의 컨텐츠를 포함하게 할 수 있습니다.
 
 ### 바 \(Bars\)
 
 네비게이션 바, 탭 바, 서치 바 및 툴바에 표시되는 항목을 관리합니다.
 
-* class UIBarItem 화면 맨 아래의 바에 추가할 수 있는 항목에 대한 추상 수퍼 클래스입니다.
-* class UIBarButtonItem 툴바 또는 탭 바에 배치하기 위해 특화된 버튼
-* class UIBarButtonItemGroup iPad 키보드 위의 바로 가기에 있는 바 버튼 항목 모음
-* class UINavigationBar 네비게이션 컨트롤은 일반적으로 네비게이션 컨트롤러와 함께 화면 상단 바에 표시됩니다.
-* class UISearchBar 유저로부터 검색관련 정보를 받는데 특화된 컨트롤
-* class UITabBar 탭 바에 다른 하위 작업, 뷰 또는 모드를 선택하기 위한 하나 이상의 버튼을 표시하는 컨트롤
-* class UITabBarItem 탭 바의 항목
-* protocol UIBarPositioning iOS 앱의 바 배치 방법을 정의하는 메서드 모음
-* protocol UIBarPositioningDelegate UIBarPositioning 프로토콜을 준수하는 바의 위치 지정을 지원하는 메서드 모음
+* _class_ UIBarItem 화면 맨 아래의 바에 추가할 수 있는 항목에 대한 추상 수퍼 클래스입니다.
+* _class_ UIBarButtonItem 툴바 또는 탭 바에 배치하기 위해 특화된 버튼
+* _class_ UIBarButtonItemGroup iPad 키보드 위의 바로 가기에 있는 바 버튼 항목 모음
+* _class_ UINavigationBar 네비게이션 컨트롤은 일반적으로 네비게이션 컨트롤러와 함께 화면 상단 바에 표시됩니다.
+* _class_ UISearchBar 유저로부터 검색관련 정보를 받는데 특화된 컨트롤
+* _class_ UITabBar 탭 바에 다른 하위 작업, 뷰 또는 모드를 선택하기 위한 하나 이상의 버튼을 표시하는 컨트롤
+* _class_ UITabBarItem 탭 바의 항목
+* _protocol_ UIBarPositioning iOS 앱의 바 배치 방법을 정의하는 메서드 모음
+* _protocol_ UIBarPositioningDelegate UIBarPositioning 프로토콜을 준수하는 바의 위치 지정을 지원하는 메서드 모음
 
 ### Appearance Customize
 
-* protocol UIAppearance 클래스의 appearance 프록시에 대한 액세스를 제공하는 메서드 모음
-* protocol UIAppearanceContainer UIAppearance API를 사용한 appearance 커스터마이즈를 허용하기 위해 클래스가 채택해야하는 프로토콜
+* _protocol_ UIAppearance 클래스의 appearance 프록시에 대한 액세스를 제공하는 메서드 모음
+* _protocol_ UIAppearanceContainer UIAppearance API를 사용한 appearance 커스터마이즈를 허용하기 위해 클래스가 채택해야하는 프로토콜
 
 ### 연관 타입
 
-* struct UIEdgeInsets view에 대한 inset 거리
-* struct NSDirectionalEdgeInsets 언어별 쓰기 방향을 고려한 가장자리 inset
-* struct UIOffset 위치의 오프셋 크기를 지정하는 구조체를 정의합니다.
+* _struct_ UIEdgeInsets view에 대한 inset 거리
+* _struct_ NSDirectionalEdgeInsets 언어별 쓰기 방향을 고려한 가장자리 inset
+* _struct_ UIOffset 위치의 오프셋 크기를 지정하는 구조체를 정의합니다.
 

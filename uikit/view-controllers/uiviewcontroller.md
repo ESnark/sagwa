@@ -1,3 +1,7 @@
+---
+description: UIKit 앱의 View 계층구조를 관리하는 객체
+---
+
 # UIViewController
 
 > 원본출처
@@ -128,7 +132,10 @@ view controller의 [restorationIdentifier](https://github.com/ESnark/sagwa/tree/
 * _var_ view: UIView! 컨트롤러가 관리하는 뷰
 * _var_ isViewLoaded: Bool 뷰가 현재 메모리에 로드 되었는지를 나타내는 값
 * _func_ loadView\(\) 컨트롤러가 관리하는 뷰를 생합니다.
-* _func_ viewDidLoad\(\) 컨트롤러의 뷰가 메모리에 로드 된 후에 호출됩니다.
+* _func_ viewDidLoad\(\)
+
+  컨트롤러의 뷰가 메모리에 로드 된 후에 호출됩니다.
+
 * _func_ loadViewIfNeeded\(\) 아직 로드되지 않은 view controller의 view를 로드합니다.
 * _var_ viewIfLoaded: UIView? 뷰가 로드된 상태에서는 view를, 아니라면 nil을 나타냅니다.
 * _var_ title: String? 해당 컨트롤러가 관리하는 뷰를 나타내는 지역화 문자열
@@ -143,18 +150,41 @@ view controller의 [restorationIdentifier](https://github.com/ESnark/sagwa/tree/
 * _func_ showDetailViewController\(UIViewController, sender: Any?\) 보조\(디테일\) 컨텍스트에서 view controller를 표시합니다.
 * _func_ present\(UIViewController, animated: Bool, completion: \(\(\) -&gt; Void\)? = nil\) view controller를 모달 방식으로 표시합니다.
 * _func_ dismiss\(animated: Bool, completion: \(\(\) -&gt; Void\)? = nil\) 모달 방식으로 표시된 view controller를 닫습니다.
-* _var_ definesPresentationContext: Bool 해당 프로퍼티를 소유한 view controller 또는 하위 view controller가 나타날때 새로 나타나는 뷰가 이 view controller의 view를 가리도록 만들것인지를 나타내는 값
-* _var_ providesPresentationContextTransitionStyle: Bool 새로 나타나는 view controller에 context view controller의 전환 스타일을 제공할 것인지 나타내는 값
+* _var_ definesPresentationContext: Bool
+
+  해당 프로퍼티를 소유한 view controller 또는 하위 view controller가 나타날때 새로 나타나는 뷰가 이 view controller의 view를 가리도록 만들것인지를 나타내는 값
+
+* _var_ providesPresentationContextTransitionStyle: Bool
+
+  새로 나타나는 view controller에 context view controller의 전환 스타일을 제공할 것인지 나타내는 값
+
 * _var_ disablesAutomaticKeyboardDismissal: Bool 컨트롤을 변경할 때 현재 input view가 자동으로 사라지게 할것인지를 나타내는 값
 
 ### 커스텀 화면 전환과 표시
 
-* _var_ transitioningDelegate: UIViewControllerTransitioningDelegate? 전환 애니메이터, 상호작용 컨트롤러, custom presentation 컨트롤러 객체를 제공하는 delegate 객체
-* _var_ transitionCoordinator: UIViewControllerTransitionCoordinator? 활성화된 transition coordinator 객체
-* _func_ targetViewController\(forAction: Selector, sender: Any?\) 동작에 응답하는 view controller를 반환한다.
-* _var_ presentationController: UIPresentationController? 현재 view controller를 관리하는 가장 가까운 presentation 컨트롤러
-* _var_ popoverPresentationController: UIPopoverPresentationController? 현재 view controller를 관리하는 가장 가까운 popover presentation 컨트롤러
-* _var_ restoresFocusAfterTransition: Bool 이전에 focus 상태였었던 item이 다시 보여졌을때 자동적으로 focus 상태로 되돌려져야 할지를 나타내는 값
+* _var_ transitioningDelegate: UIViewControllerTransitioningDelegate?
+
+  전환 애니메이터, 상호작용 컨트롤러, custom presentation 컨트롤러 객체를 제공하는 delegate 객체
+
+* _var_ transitionCoordinator: UIViewControllerTransitionCoordinator?
+
+  활성화된 transition coordinator 객체
+
+* _func_ targetViewController\(forAction: Selector, sender: Any?\)
+
+  동작에 응답하는 view controller를 반환한다.
+
+* _var_ presentationController: UIPresentationController?
+
+  현재 view controller를 관리하는 가장 가까운 presentation 컨트롤러
+
+* _var_ popoverPresentationController: UIPopoverPresentationController?
+
+  현재 view controller를 관리하는 가장 가까운 popover presentation 컨트롤러
+
+* _var_ restoresFocusAfterTransition: Bool
+
+  이전에 focus 상태였었던 item이 다시 보여졌을때 자동적으로 focus 상태로 되돌려져야 할지를 나타내는 값
 
 ### View 이벤트에 응답하기
 
@@ -165,7 +195,9 @@ view controller의 [restorationIdentifier](https://github.com/ESnark/sagwa/tree/
 * _var_ isBeingDismissed: Bool view controller가 해제되는 중인지를 알려주는 값
 * _var_ isBeingPresented: Bool view controller가 나타나는 중인지를 알려주는 값
 * _var_ isMovingFromParentViewController: Bool view controller가 상위 view controller에서 제거되는 중인지를 나타내는 값
-* _var_ isMovingToParentViewController: Bool view controller가 상위 view controller로 들어가고 있는지를 나타내는 값
+* _var_ isMovingToParentViewController: Bool
+
+  view controller가 상위 view controller로 들어가고 있는지를 나타내는 값
 
 ### View Safe Area 확장
 
@@ -197,39 +229,79 @@ view controller의 [restorationIdentifier](https://github.com/ESnark/sagwa/tree/
 
 ### 환경 변화에 적응하기
 
-* _func_ collapseSecondaryViewController\(UIViewController, for: UISplitViewController\) compact 사이즈의 너비로 split view controller 전환이 일어날 때 호출됩니다.
-* _func_ separateSecondaryViewController\(for: UISplitViewController\) regular 사이즈의 너비로 split view controller 전환이 일어날 때 호출됩니다.
+* _func_ collapseSecondaryViewController\(UIViewController, for: UISplitViewController\)
+
+  compact 사이즈의 너비로 split view controller 전환이 일어날 때 호출됩니다.
+
+* _func_ separateSecondaryViewController\(for: UISplitViewController\)
+
+  regular 사이즈의 너비로 split view controller 전환이 일어날 때 호출됩니다.
 
 ### 인터페이스 스타일 조정
 
-* _var_ preferredUserInterfaceStyle: UIUserInterfaceStyle 해당 view controller에 대한 기본 인터페이스 스타일
-* _var_ childViewControllerForUserInterfaceStyle: UIViewController? 기본 사용자 인터페이스 스타일을 지원하는 하위 보기 컨트롤러.
+* _var_ preferredUserInterfaceStyle: UIUserInterfaceStyle
+
+  해당 view controller에 대한 기본 인터페이스 스타일
+
+* _var_ childViewControllerForUserInterfaceStyle: UIViewController?
+
+  기본 사용자 인터페이스 스타일을 지원하는 하위 보기 컨트롤러.
+
 * _func_ setNeedsUserInterfaceAppearanceUpdate\(\) 기본 인터페이스 스타일에 영향을 줄 수 있는 변경 사항이 발생했을 때 view controller에 알립니다.
 * _enum_ UIUserInterfaceStyle 앱의 인터페이스 스타일을 나타내는 상수
 
 ### 커스텀 컨테이너 내의 하위 View Controller 관리
 
-* _var_ childViewControllers: \[UIViewController\] 현재 view controller의 하위 view controller 배열
-* _func_ addChildViewController\(UIViewController\) 특정 view controller를 현재 view controller의 하위 view controller로 추가합니다.
-* _func_ removeFromParentViewController\(\) view controller를 상위 view controller로부터 제거합니다.
+* _var_ childViewControllers: \[UIViewController\]
+
+  현재 view controller의 하위 view controller 배열
+
+* _func_ addChildViewController\(UIViewController\)
+
+  특정 view controller를 현재 view controller의 하위 view controller로 추가합니다.
+
+* _func_ removeFromParentViewController\(\)
+* view controller를 상위 view controller로부터 제거합니다.
 * _func_ transition\(from: UIViewController, to: UIViewController, duration: TimeInterval, options: UIViewAnimationOptions = \[\], animations: \(\(\) -&gt; Void\)?, completion: \(\(Bool\) -&gt; Void\)? = nil\) 두 개의 하위 view controller간의 전환
 * _var_ shouldAutomaticallyForwardAppearanceMethods: Bool appearance 메서드가 하위 view controller로 전달될지를 나타내는 값
-* _func_ beginAppearanceTransition\(Bool, animated: Bool\) 하위 컨트롤러에 appearance가 곧 바뀔것임을 알립니다.
-* _func_ endAppearanceTransition\(\) 하위 컨트롤러에 appearance가 방금 바뀌었음을 알립니다.
-* _func_ setOverrideTraitCollection\(UITraitCollection?, forChildViewController: UIViewController\) 특정 하위 view controller에 적용되어있는 제약사항을 변경합니다. Changes the traits assigned to the specified child view controller.
-* _func_ overrideTraitCollection\(forChildViewController: UIViewController\) 하위 view controller의 제약조건 컬렉션을 불러옵니다.
+* _func_ beginAppearanceTransition\(Bool, animated: Bool\)
+
+  하위 컨트롤러에 appearance가 곧 바뀔것임을 알립니다.
+
+* _func_ endAppearanceTransition\(\)
+
+  하위 컨트롤러에 appearance가 방금 바뀌었음을 알립니다.
+
+* _func_ setOverrideTraitCollection\(UITraitCollection?, forChildViewController: UIViewController\)
+
+  특정 하위 view controller에 적용되어있는 제약사항을 변경합니다. Changes the traits assigned to the specified child view controller.
+
+* _func_ overrideTraitCollection\(forChildViewController: UIViewController\)
+
+  하위 view controller의 제약조건 컬렉션을 불러옵니다.
 
 ### Containment 이벤트에 응답
 
-* _func_ willMove\(toParentViewController: UIViewController?\) view controller가 컨테이너 뷰 컨트롤러에 추가되거나 제거되기 직전에 호출됩니다. Called just before the view controller is added or removed from a container view controller.
-* _func_ didMove\(toParentViewController: UIViewController?\) view controller가 컨테이너 뷰 컨트롤러에 추가되거나 제거된 후에 호출됩니다.
+* _func_ willMove\(toParentViewController: UIViewController?\)
+
+  view controller가 컨테이너 뷰 컨트롤러에 추가되거나 제거되기 직전에 호출됩니다.
+
+* _func_ didMove\(toParentViewController: UIViewController?\)
+
+  view controller가 컨테이너 뷰 컨트롤러에 추가되거나 제거된 후에 호출됩니다.
 
 ### 연관된 다른 View Controller 얻기
 
 * _var_ presentingViewController: UIViewController? 해당 view controller를 표시한 view controller
 * _var_ presentedViewController: UIViewController? 해당 view controller나 view controller 계층의 상위 항목중 하나가 표시하는 view controller
-* _var_ parent: UIViewController? 상위 view controller
-* _var_ navigationController: UINavigationController? view controller 계층에서 가장 가까운 navigation controller
+* _var_ parent: UIViewController?
+
+  상위 view controller
+
+* _var_ navigationController: UINavigationController?
+
+  view controller 계층에서 가장 가까운 navigation controller
+
 * _var_ splitViewController: UISplitViewController? view controller 계층에서 가장 가까운 split view controller
 * _var_ tabBarController: UITabBarController? view controller 계층에서 가장 가까운 tab bar controller
 
@@ -239,10 +311,22 @@ view controller의 [restorationIdentifier](https://github.com/ESnark/sagwa/tree/
 
 ### 상태 복구 관리
 
-* _var_ restorationIdentifier: String? view controller 상태 복원 지원을 결정하는 식별자
-* _var_ restorationClass: UIViewControllerRestoration.Type? 앱의 상태를 복원할 때 view controller를 재생성하는 클래스
-* _func_ encodeRestorableState\(with: NSCoder\) view controller에 대한 상태 관련 정보를 인코딩합니다.
-* _func_ decodeRestorableState\(with: NSCoder\) view controller에 대한 상태 관련 정보를 디코딩하고 복원합니다.
+* _var_ restorationIdentifier: String? view controller
+
+  상태 복원 지원을 결정하는 식별자
+
+* _var_ restorationClass: UIViewControllerRestoration.Type?
+
+  앱의 상태를 복원할 때 view controller를 재생성하는 클래스
+
+* _func_ encodeRestorableState\(with: NSCoder\)
+
+  view controller에 대한 상태 관련 정보를 인코딩합니다.
+
+* _func_ decodeRestorableState\(with: NSCoder\)
+
+  view controller에 대한 상태 관련 정보를 디코딩하고 복원합니다.
+
 * _func_ applicationFinishedRestoringState\(\) 다른 객체의 디코딩이 완료된 후 복원된 view controller에서 호출됩니다.
 
 ### 앱 확장 지원
@@ -267,57 +351,129 @@ view controller의 [restorationIdentifier](https://github.com/ESnark/sagwa/tree/
 ### 상태바 관리
 
 * _var_ childViewControllerForStatusBarHidden: UIViewController? 시스템이 view controller를 사용하여 상태 표시줄 숨김/숨기지 않음 상태를 확인해야 할 때 호출됩니다.
-* _var_ childViewControllerForStatusBarStyle: UIViewController? 상태 표시줄 스타일을 결정하기 위해 보기 컨트롤러를 사용해야 할 때 호출됩니다.
-* _var_ preferredStatusBarStyle: UIStatusBarStyle 뷰 컨트롤러에 대한 기본 상태 표시줄 스타일
-* _var_ prefersStatusBarHidden: Bool view controller 상태 표시줄의 기본 숨김 상태
-* _var_ modalPresentationCapturesStatusBarAppearance: Bool 전체화면이 아닌 view controller에 상태표시줄의 appearance 제어를 넘길것인지를 나타냅니다.
-* _var_ preferredStatusBarUpdateAnimation: UIStatusBarAnimation view controller의 상태 표시줄을 숨기고 표시하는 애니메이션 스타일
-* _func_ setNeedsStatusBarAppearanceUpdate\(\) view controller의 상태 표시줄 속성이 변경되었음을 시스템에 알립니다.
+* _var_ childViewControllerForStatusBarStyle: UIViewController?
+
+  상태 표시줄 스타일을 결정하기 위해 보기 컨트롤러를 사용해야 할 때 호출됩니다.
+
+* _var_ preferredStatusBarStyle: UIStatusBarStyle
+
+  뷰 컨트롤러에 대한 기본 상태 표시줄 스타일
+
+* _var_ prefersStatusBarHidden: Bool
+
+  view controller 상태 표시줄의 기본 숨김 상태
+
+* _var_ modalPresentationCapturesStatusBarAppearance: Bool
+
+  전체화면이 아닌 view controller에 상태표시줄의 appearance 제어를 넘길것인지를 나타냅니다.
+
+* _var_ preferredStatusBarUpdateAnimation: UIStatusBarAnimation
+
+  view controller의 상태 표시줄을 숨기고 표시하는 애니메이션 스타일
+
+* _func_ setNeedsStatusBarAppearanceUpdate\(\)
+
+  view controller의 상태 표시줄 속성이 변경되었음을 시스템에 알립니다.
 
 ### 제스처 설정
 
-* _func_ prefersHomeIndicatorAutoHidden\(\) 홈 화면으로 돌아가는 인디케이터를 숨길 수 있도록 시스템으로부터 허가 받았는지를 반환합니다.
-* _func_ childViewControllerForHomeIndicatorAutoHidden\(\) 홈 화면으로 돌아가는 인디케이터의 표시 설정을 참조하는 하위 view controller를 반환합니다.
-* _func_ setNeedsUpdateOfHomeIndicatorAutoHidden\(\) view controller가 홈 화면으로 돌아가기 위한 인디케이터에 대한 기본 설정을 업데이트했음을 UIKit에 알립니다.
+* _func_ prefersHomeIndicatorAutoHidden\(\)
+
+  홈 화면으로 돌아가는 인디케이터를 숨길 수 있도록 시스템으로부터 허가 받았는지를 반환합니다.
+
+* _func_ childViewControllerForHomeIndicatorAutoHidden\(\)
+
+  홈 화면으로 돌아가는 인디케이터의 표시 설정을 참조하는 하위 view controller를 반환합니다.
+
+* _func_ setNeedsUpdateOfHomeIndicatorAutoHidden\(\)
+
+  view controller가 홈 화면으로 돌아가기 위한 인디케이터에 대한 기본 설정을 업데이트했음을 UIKit에 알립니다.
 
 ### 네비게이션 인터페이스 설정
 
-* _var_ navigationItem: UINavigationItem 상위 네비게이션 바에서 view controller를 나타내는데 사용되는 네비게이션 항목
-* _var_ hidesBottomBarWhenPushed: Bool view controller가 네비게이션 컨트롤러에 푸시될 때 화면 아래쪽의 도구 모음이 숨겨져 있는지를 나타내는 값
-* _func_ setToolbarItems\(\[UIBarButtonItem\]?, animated: Bool\) view controller와 함께 표시할 툴바 항목을 설정합니다.
-* _var_ toolbarItems: \[UIBarButtonItem\]? 해당 view controller와 연관된 툴바 항목
+* _var_ navigationItem: UINavigationItem
+
+  상위 네비게이션 바에서 view controller를 나타내는데 사용되는 네비게이션 항목
+
+* _var_ hidesBottomBarWhenPushed: Bool
+
+  view controller가 네비게이션 컨트롤러에 푸시될 때 화면 아래쪽의 도구 모음이 숨겨져 있는지를 나타내는 값
+
+* _func_ setToolbarItems\(\[UIBarButtonItem\]?, animated: Bool\)
+
+  view controller와 함께 표시할 툴바 항목을 설정합니다.
+
+* _var_ toolbarItems: \[UIBarButtonItem\]?
+
+  해당 view controller와 연관된 툴바 항목
 
 ### 탭바 아이템 설정
 
-* _var_ tabBarItem: UITabBarItem! 탭 바 컨트롤러에 추가 될 때 view controller를 나타내는 탭 바 항목입니다.
+* _var_ tabBarItem: UITabBarItem!
+
+  탭 바 컨트롤러에 추가 될 때 view controller를 나타내는 탭 바 항목입니다.
 
 ### 뷰 컨트롤러에 에디팅 동작 추가하기
 
-* _var_ isEditing: Bool view controller가 현재 뷰 내용을 편집할 수 있는지를 나타내는 값
-* _func_ setEditing\(Bool, animated: Bool\) 뷰 컨트롤러에 편집 가능한 뷰를 표시할지 여부를 설정합니다.
-* _var_ editButtonItem: UIBarButtonItem 제목 및 편집/완료 상태를 전환하는 bar button item을 반환합니다.
+* _var_ isEditing: Bool
+
+  view controller가 현재 뷰 내용을 편집할 수 있는지를 나타내는 값
+
+* _func_ setEditing\(Bool, animated: Bool\)
+
+  뷰 컨트롤러에 편집 가능한 뷰를 표시할지 여부를 설정합니다.
+
+* _var_ editButtonItem: UIBarButtonItem
+
+  제목 및 편집/완료 상태를 전환하는 bar button item을 반환합니다.
 
 ### 사용가능한 키 커맨드에 접근
 
-* _func_ addKeyCommand\(UIKeyCommand\) 지정된 바로 가기 키를 view controller에 연결합니다.
-* _func_ removeKeyCommand\(UIKeyCommand\) view controller에서 바로가기 키 커맨드를 제거합니다.
+* _func_ addKeyCommand\(UIKeyCommand\)
+
+  지정된 바로 가기 키를 view controller에 연결합니다.
+
+* _func_ removeKeyCommand\(UIKeyCommand\)
+
+  view controller에서 바로가기 키 커맨드를 제거합니다.
 
 ### Nib 파일 정보 얻기
 
-* _var_ nibName: String? view controller의 nib 파일의 이름\(지정된 경우\)
-* _var_ nibBundle: Bundle? view controller의 nib bundle\(존재하는 경우\)
+* _var_ nibName: String?
+
+  view controller의 nib 파일의 이름\(지정된 경우\)
+
+* _var_ nibBundle: Bundle?
+
+  view controller의 nib bundle\(존재하는 경우\)
 
 ### 상수Constants
 
-* _enum_ UIModalPresentationStyle view controller가 모달 방식으로 나타날때 사용가능한 표시 스타일
-* _enum_ UIModalTransitionStyle view controller가 모달 방식으로 나타날때 사용가능한 전환 스타일
-* ~~_enum_ ADInterstitialPresentationPolicy~~ **Deprecated** Policy options governing how and when interstitial ads may be presented from a view controller. 
-* Exceptions view controller에서 발생하는 예외
-* _struct_ UIRectEdge 사각형 테두리를 가리키는 상수
+* _enum_ UIModalPresentationStyle
+
+  view controller가 모달 방식으로 나타날때 사용가능한 표시 스타일
+
+* _enum_ UIModalTransitionStyle
+
+  view controller가 모달 방식으로 나타날때 사용가능한 전환 스타일
+
+* ~~_enum_ ADInterstitialPresentationPolicy~~
+
+  Policy options governing how and when interstitial ads may be presented from a view controller. `Deprecated`
+
+* Exceptions
+
+  view controller에서 발생하는 예외
+
+* _struct_ UIRectEdge
+
+  사각형 테두리를 가리키는 상수
 
 ### 알림Notification
 
-* _static let_ UIViewControllerShowDetailTargetDidChange: NSNotification.Name 분할 뷰 컨트롤러를 확장하거나 축소할 때 발생합니다.
+* _static let_ UIViewControllerShowDetailTargetDidChange: NSNotification.Name
+
+  분할 뷰 컨트롤러를 확장하거나 축소할 때 발생합니다.
 
 ### 지원중단Deprecated
 

@@ -97,7 +97,7 @@ UIView를 서브클래싱할 때 반드시 오버라이드 해야하는 메서�
   * draw\(\_:\) - 뷰가 커스텀 컨텐츠를 그리는 경우 이 메서드를 구현하세요. 뷰가 커스텀 드로잉을 수행하는 경우가 아니라면 이 메서드는 오버라이드하지 않는 것이 좋습니다.
   * draw\(\_:for:\) - 프린팅 중에 뷰를 다르게 그리고자 하는 경우에만 이 메서드를 구현하세요.
 * 레이아웃과 제약조건
-  * [requiresConstraintBasedLayout](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/not-found/README.md)  뷰 클래스가 제대로 동작하기 위해서 제약조건을 필요로 하는 경우 이 프로퍼티를 사용하세요.
+  * [requiresConstraintBasedLayout](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/not-found/README.md) 뷰 클래스가 제대로 동작하기 위해서 제약조건을 필요로 하는 경우 이 프로퍼티를 사용하세요.
   * updateConstraints\(\) - 뷰와 하위 뷰 간에 커스텀 제약조건을 작성해야 하는 경우 이 메서드를 구현하세요
   * alignmentRect\(forFrame:\), frame\(forAlignmentRect:\) - 뷰와 다른 뷰 간의 정렬방법을 오버라이드하려면 이 메서드들을 구현하세요.
   * didAddSubview\(\_:\), willRemoveSubview\(\_:\) - 하위 뷰의 생성과 제거를 추적해야 할 필요가 있다면 이 메서드들을 구현하세요.
@@ -189,7 +189,7 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 ### 컨텐츠 여백 설정하기
 
-* [레이아웃 여백 범위 내에서 컨텐츠 배치하기](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/not-found/README.md) 다른 view의 컨텐츠 때문에 view가 혼잡해지지 않도록 배치하세요.
+* [레이아웃 여백 범위 내에서 컨텐츠 배치하기](../../not-found.md) 다른 view의 컨텐츠 때문에 view가 혼잡해지지 않도록 배치하세요.
 * _var_ directionalLayoutMargins: NSDirectionalEdgeInsets 현재 언어 방향을 고려하여 뷰에서 컨텐츠를 배치할 때 사용할 기본 간격
 * _var_ layoutMargins: UIEdgeInsets 뷰에 컨텐츠를 배치할 때 사용할 기본 간격
 * _var_ preservesSuperviewLayoutMargins: Bool
@@ -200,7 +200,7 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 ### Safe Area 얻기
 
-* [Safe Area에 상대적인 컨텐츠 위치 지정](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/not-found/README.md) view가 다른 컨텐츠에 가려지지 않도록 배치하기.
+* [Safe Area에 상대적인 컨텐츠 위치 지정](../../not-found.md) view가 다른 컨텐츠에 가려지지 않도록 배치하기.
 * _var_ safeAreaInsets: UIEdgeInsets 이 뷰의 Safe Area를 결정하는데 사용되는 inset
 * _var_ safeAreaLayoutGuide: UILayoutGuide 바 또는 기타 컨텐츠에 의해 가려지지 않는 뷰 영역을 나타내는 레이아웃 가이드
 * _func_ safeAreaInsetsDidChange\(\) 뷰의 Safe Area가 변경되었을 때 호출됩니다.
@@ -224,7 +224,10 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 * _var_ bottomAnchor: NSLayoutYAxisAnchor 뷰 프레임의 하단 모서리를 나타내는 레이아웃 앵커
 * _var_ centerXAnchor: NSLayoutXAxisAnchor 뷰 프레임의 수평 중심을 나타내는 레이아웃 앵커
-* _var_ centerYAnchor: NSLayoutYAxisAnchor 뷰 프레임의 수직 중심을 나타내는 레이아웃 앵커
+* _var_ centerYAnchor: NSLayoutYAxisAnchor
+
+  뷰 프레임의 수직 중심을 나타내는 레이아웃 앵커
+
 * _var_ firstBaselineAnchor: NSLayoutYAxisAnchor 뷰 가장 위 텍스트 라인에 대한 기준선을 나타내는 레이아웃 앵커
 * _var_ heightAnchor: NSLayoutDimension 뷰 프레임의 높이를 나타내는 레이아웃 
 * _var_ lastBaselineAnchor: NSLayoutYAxisAnchor 뷰 가장 아래 텍스트 라인에 대한 기준선을 나타내는 레이아웃 
@@ -242,13 +245,19 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 * _func_ addLayoutGuide\(UILayoutGuide\) 지정된 레이아웃 가이드를 뷰에 추가합니다.
 * _var_ layoutGuides: \[UILayoutGuide\] 이 뷰가 소유한 레이아웃 가이드 객체의 배열
-* _var_ layoutMarginsGuide: UILayoutGuide 뷰 여백을 나타내는 레이아웃 가이드
+* _var_ layoutMarginsGuide: UILayoutGuide
+
+  뷰 여백을 나타내는 레이아웃 가이드
+
 * _var_ readableContentGuide: UILayoutGuide 뷰 내에서 읽을 수 있는 너비가 있는 영역을 나타내는 레이아웃 가이드
 * _func_ removeLayoutGuide\(UILayoutGuide\) 지정된 레이아웃 가이드를 뷰에서 제거합니다.
 
 ### 자동 레이아웃에서 측정
 
-* _func_ systemLayoutSizeFitting\(CGSize\) 현재 제약조건을 기준으로 뷰의 최적 크기를 반환합니다.
+* _func_ systemLayoutSizeFitting\(CGSize\)
+
+  현재 제약조건을 기준으로 뷰의 최적 크기를 반환합니다.
+
 * _func_ systemLayoutSizeFitting\(CGSize, withHorizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority\) 제약조건과 지정된 맞춤 프로퍼티를 기준으로 하여 뷰의 최적 크기를 반환합니다.
 * _var_ intrinsicContentSize: CGSize 뷰 자체의 프로퍼티만을 고려한 수신자 뷰의 자연 크기
 * _func_ invalidateIntrinsicContentSize\(\) 뷰의 고유한 컨텐츠 사이즈를 무효화합니다.
@@ -269,7 +278,10 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 * _func_ frame\(forAlignmentRect: CGRect\) 지정된 정렬 사각형에 대한 뷰 프레임을 반환합니다.
 * _var_ alignmentRectInsets: UIEdgeInsets 정렬 직사각형을 정의하는 뷰 프레임의 inset
 * ~~func forBaselineLayout\(\)~~ Returns a view used to satisfy baseline constraints. `Deprecated`
-* _var_ forFirstBaselineLayout: UIView 첫 번째 기준선 제약조건을 충족하는 뷰를 반환합니다.
+* _var_ forFirstBaselineLayout: UIView
+
+  첫 번째 기준선 제약조건을 충족하는 뷰를 반환합니다.
+
 * _var_ forLastBaselineLayout: UIView 마지막 기준선 제약조건을 충족하는 뷰를 반환합니다.
 
 ### 자동 레이아웃 시작시키기
@@ -306,7 +318,10 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 * _enum_ UIViewContentMode 경계가 변경될 때 뷰를 통해 컨텐츠를 조정하는 방법을 지정하는 옵션
 * _func_ sizeThatFits\(CGSize\) 지정된 크기가장 적합한 크기를 계산하고 반환하도록 뷰에 요청합니다.
 * _func_ sizeToFit\(\) 수신자 뷰의 크기를 조정하고 하위 뷰만 둘러싸도록 이동시킵니다.
-* _var_ autoresizesSubviews: Bool 경계가 변경될 때 수신자 뷰가 자동적으로 하위 뷰의 크기를 재조정하게 할것인지를 결정하는 Boolean 값
+* _var_ autoresizesSubviews: Bool
+
+  경계가 변경될 때 수신자 뷰가 자동적으로 하위 뷰의 크기를 재조정하게 할것인지를 결정하는 Boolean 값
+
 * _var_ autoresizingMask: UIViewAutoresizing 상위 뷰의 경계가 변화할 때 수신자가 스스로 리사이징하는 방법을 결정하는 정수 비트마스크
 
 ### 하위 뷰 배치하기

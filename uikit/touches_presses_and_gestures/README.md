@@ -1,3 +1,7 @@
+---
+description: 제스처 인식기에서 앱의 이벤트 처리 로직을 캡슐화하여 앱 전체에서 해당 코드를 재사용 할 수 있습니다.
+---
+
 # 터치, 누르기 , 제스처
 
 > 원본출처  
@@ -15,12 +19,12 @@
 ### 첫 번째 단계
 
 * 응답자\(Responder\)와 응답자 체인을 통한 이벤트 처리 이벤트가 앱을 통해 전파되는 방법과 이를 처리하는 방법에 대해 알아봅니다.
-* _class_ UIResponder 이벤트에 응답하고 이벤트를 처리하기 위한 추상 인터페이스
+* _class_ [UIResponder](uiresponder.md) 이벤트에 응답하고 이벤트를 처리하기 위한 추상 인터페이스
 * _class_ UIEvent 사용자와의 단일한 상호 작용을 설명하는 객체
 
 ### 터치
 
-* [뷰에서 터치 처리하기](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/not-found/README.md) 터치 핸들링이 뷰 시각화와 복잡하게 연결되어 있다면 뷰 서브 클래스에서 직접 터치 이벤트를 사용하세요.
+* [뷰에서 터치 처리하기](../../not-found.md) 터치 핸들링이 뷰 시각화와 복잡하게 연결되어 있다면 뷰 서브 클래스에서 직접 터치 이벤트를 사용하세요.
 * 애플 펜슬 입력 처리하기 애플 펜슬의 터치를 감지하고 응답하는 방법에 대해 알아보세요.
 * 3D 터치 이벤트의 압력 추적 터치의 강도에 따라서 컨텐츠를 조작하세요.
 
@@ -31,7 +35,7 @@
 
 ### UIKit 제스처
 
-* [UIKit 제스처 처리](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/not-found/README.md) 제스처 인식기를 사용하여 터치 처리를 단순화하고 일관적인 사용자 환경을 만드세요.
+* [UIKit 제스처 처리](../../not-found.md) 제스처 인식기를 사용하여 터치 처리를 단순화하고 일관적인 사용자 환경을 만드세요.
 * 다중 제스처 인식기 조정 동일한 view 내에서 여러 제스처 인식기를 사용하는 방법을 알아보세요.
 * _class_ UILongPressGestureRecognizer 길게 누르기 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스
 * _class_ UIPanGestureRecognizer 드래그 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스

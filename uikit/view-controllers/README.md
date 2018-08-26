@@ -1,3 +1,7 @@
+---
+description: View Controller로 인터페이스를 관리하고 앱 컨텐츠 탐색을 수월하게 만드세요
+---
+
 # View Controllers
 
 > 원본출처[  
@@ -20,7 +24,7 @@ UIKit은 특정 유형의 콘텐츠를 탐색하고 관리하기 위한 몇 개�
 
 커스텀 인터페이스를 관리하기 위해서 view controller를 상속합니다.
 
-* _class_ [UIViewController](https://github.com/ESnark/sagwa/tree/6092cb95e077aa0abcc382e4e3b85a7e7fe9a670/uikit/view-controllers/uiviewcontroller/README.md) UIKit 앱의 View 계층구조를 관리하는 객체
+* _class_ [UIViewController](uiviewcontroller.md) UIKit 앱의 View 계층구조를 관리하는 객체
 * _class_ UITableViewController Table View 관리에 특화된 view controller
 * _class_ UICollectionViewController Collection View 관리에 특화된 view controller
 * _protocol_ UIContentContainer view controller의 컨텐츠를 뷰 사이즈와 제약사항에 맞게 조정하는 메서드들
@@ -37,7 +41,9 @@ UIKit은 특정 유형의 콘텐츠를 탐색하고 관리하기 위한 몇 개�
 
 ### 페이지 뷰 인터페이스
 
-* _class_ UIPageViewController 하위 뷰 컨트롤러로 컨텐츠 페이지와 페이지의 탐색을 관리하는 컨테이너 뷰 컨트롤러
+* _class_ UIPageViewController
+
+  하위 뷰 컨트롤러로 컨텐츠 페이지와 페이지의 탐색을 관리하는 컨테이너 뷰 컨트롤러
 
 ### 탭 뷰 인터페이스
 
@@ -102,4 +108,6 @@ UIKit은 특정 유형의 콘텐츠를 탐색하고 관리하기 위한 몇 개�
 
 * _func_ UIInterfaceOrientationIsPortrait\(UIInterfaceOrientation\) 유저 인터페이스가 현재 세로 방향으로 표시되고 있는지 Boolean값을 반환하는 함수
 * _func_ UIInterfaceOrientationIsLandscape\(UIInterfaceOrientation\) 유저 인터페이스가 현재 세로 방향으로 표시되고 있는지 Boolean값을 반환하는 함수
+
+
 
