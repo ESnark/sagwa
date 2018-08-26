@@ -94,17 +94,17 @@ description: 이벤트에 응답하고 이벤트를 처리하기 위한 추상 �
 
 ## 관련 문서
 
-### 상속받은 상위 클래스
+### 상속받은 대상
 
-* `NSObject`
+* NSObject
 
 ### 준수하는 프로토콜
 
-* `CVarArg`
-* `Equatable`
-* `Hashable`
-* `UIPasteConfigurationSupporting`
-* `UIResponderStandardEditActions`
+* CVarArg
+* Equatable
+* Hashable
+* UIPasteConfigurationSupporting
+* UIResponderStandardEditActions
 
 
 

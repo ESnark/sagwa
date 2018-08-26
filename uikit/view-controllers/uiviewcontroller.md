@@ -172,7 +172,7 @@ view controller의 [restorationIdentifier](https://melodyarchive.gitbook.io/sagw
 
 ### View Safe Area 확장
 
-* [Positioning Content Relative to the Safe Area](https://melodyarchive.gitbook.io/sagwa/not-found) view가 다른 컨텐츠에 가려지지 않도록 배치하기.
+* [Safe Area에 상대적인 컨텐츠 위치 지정](https://melodyarchive.gitbook.io/sagwa/not-found) view가 다른 컨텐츠에 가려지지 않도록 배치하기.
 * _var_ additionalSafeAreaInsets: UIEdgeInsets view controller의 safe area를 수정하기 위해 명시하는 Custom insets
 * _func_ viewSafeAreaInsetsDidChange\(\) view controller의 root view safe area가 변경되었음을 해당 view controller에 알리기 위해서 호출됩니다.
 
@@ -328,21 +328,21 @@ view controller의 [restorationIdentifier](https://melodyarchive.gitbook.io/sagw
 
 ## 관련 문서
 
-### 상속받은 상위 클래스
+### 상속받은 대상
 
-* `UIResponder`
+* [UIResponder](https://melodyarchive.gitbook.io/sagwa/uikit/touches_presses_and_gestures/uiresponder)
 
 ### 준수하는 프로토콜
 
-* `CVarArg`
-* `Equatable`
-* `Hashable`
-* `NSCoding`
-* `NSExtensionRequestHandling`
-* `UIAppearanceContainer`
-* `UIContentContainer`
-* `UIFocusEnvironment`
-* `UIPasteConfigurationSupporting`
-* `UIStateRestoring`
-* `UITraitEnvironment`
+* CVarArg
+* Equatable
+* Hashable
+* NSCoding
+* NSExtensionRequestHandling
+* UIAppearanceContainer
+* UIContentContainer
+* UIFocusEnvironment
+* UIPasteConfigurationSupporting
+* UIStateRestoring
+* UITraitEnvironment
 
