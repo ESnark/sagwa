@@ -5,6 +5,7 @@
   * [UIKit으로 앱 개발](uikit/about_app_development_with_uikit.md)
   * [Core App](uikit/core-app/README.md)
     * [앱 라이프 사이클 관리하기](uikit/core-app/managing_your_app_s_life_cycle.md)
+    * [UIApplication](uikit/core-app/uiapplication.md)
   * [뷰와 컨트롤](uikit/views_and_controls/README.md)
     * [UIView](uikit/views_and_controls/uiview.md)
   * [View Controllers](uikit/view-controllers/README.md)

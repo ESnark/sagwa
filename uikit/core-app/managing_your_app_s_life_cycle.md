@@ -37,13 +37,13 @@ App delegate는 다음과 같은 중요한 이벤트에도 응답합니다:
 * Memory warning \(메모리 경고\) 앱에서 사용하는 메모리 양을 줄입니다. [메모리 경고에 응답하기](../../not-found.md) 문서를 참조하세요.
 * Time changes \(시간 경과\) 앱의 시간에 민감한 기능을 업데이트합니다.
 * Protected data becomes available/unavailable \(보호된 데이터가 사용가능/불가능하게 됨\) 사용자가 기기를 잠그거나 해제할 때 파일을 관리합니다.
-* State restoration \(상태 복구\) 앱 UI의 이전 상태를 복구함으로써 앱이 멈추지 않고 동작하는 경험을 제공합니다. [시작 시 앱 UI 유지](../../not-found.md) 문서를 참조하세요.
+* State restoration \(상태 복원\) 앱 UI의 이전 상태를 복원함으로써 앱이 멈추지 않고 동작하는 경험을 제공합니다. [시작 시 앱 UI 유지](../../not-found.md) 문서를 참조하세요.
 * Handoff tasks \(작업 넘기기\) 다른 기기에서 작업을 계속하기 시작합니다.
 * Open URLs \(URL 열기\) 앱으로 전송된 URL을 수신하고 엽니다.
 * Inter-app communication \(앱 간 통신\) 페어링 된 watchOS 앱으로부터 데이터를 수신합니다.
 * File downloads \(파일 다운로드\) URLSession 객체를 사용하여 다운로드 한 파일을 수신합니다.
 
-App delegate가 라이프 사이클 이벤트를 처리하는 기본 위치이기는 하지만 유일한 장소는 아닙니다. 대부분의 이벤트에서 UIKit은 모든 객체가 관찰할 수 있는 알림을 생성합니다. 관찰할 수 있는 앱 관련 알림 목록을 보려면 [UIApplication](../../not-found.md)을 참조하세요. 이벤트를 처리하는데 사용되는 메서드에 대한 자세한 내용은 [UIApplicationDelegate](../../not-found.md)를 참조하십시오.
+App delegate가 라이프 사이클 이벤트를 처리하는 기본 위치이기는 하지만 유일한 장소는 아닙니다. 대부분의 이벤트에서 UIKit은 모든 객체가 관찰할 수 있는 알림을 생성합니다. 관찰할 수 있는 앱 관련 알림 목록을 보려면 [UIApplication](uiapplication.md)을 참조하세요. 이벤트를 처리하는데 사용되는 메서드에 대한 자세한 내용은 [UIApplicationDelegate](../../not-found.md)를 참조하십시오.
 
 ## 주제 {#topics}
 
@@ -62,7 +62,7 @@ App delegate가 라이프 사이클 이벤트를 처리하는 기본 위치이�
 
 ### Application
 
-* _class_ UIApplication iOS에서 실행되는 앱의 제어와 조정의 중심점
+* _class_ [UIApplication](uiapplication.md) iOS에서 실행되는 앱의 제어와 조정의 중심점
 * _protocol_ UIApplicationDelegate
 
   앱 라이프 타임동안 발생하는 중요한 이벤트에 대해 응답하기 위해서 UIApplication 싱글턴 객체가 호출하는 메서드 세트

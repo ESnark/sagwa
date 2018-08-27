@@ -9,7 +9,7 @@ description: 이벤트에 응답하고 이벤트를 처리하기 위한 추상 �
 
 ## 개요
 
-응답자\(Responder\) 객체 \(즉, [UIResponder](uiresponder.md)의 인스턴스\)는 UIKit 응용 프로그램의 이벤트 처리 백본을 구성합니다. [UIApplication](../../not-found.md), [UIViewController](../view-controllers/uiviewcontroller.md) 및 모든 [UIView](../views_and_controls/uiview.md) 객체 \([UIWindow](../../not-found.md) 포함\)를 포함한 중요 객체들도 응답자입니다. 이벤트가 발생하면 UIKit은 이를 처리 할 수 ​​있도록 앱의 응답 객체에 전달합니다.
+응답자\(Responder\) 객체 \(즉, [UIResponder](uiresponder.md)의 인스턴스\)는 UIKit 응용 프로그램의 이벤트 처리 백본을 구성합니다. [UIApplication](../core-app/uiapplication.md), [UIViewController](../view-controllers/uiviewcontroller.md) 및 모든 [UIView](../views_and_controls/uiview.md) 객체 \([UIWindow](../../not-found.md) 포함\)를 포함한 중요 객체들도 응답자입니다. 이벤트가 발생하면 UIKit은 이를 처리 할 수 ​​있도록 앱의 응답 객체에 전달합니다.
 
 터치 이벤트, 모션 이벤트, 원격 제어 이벤트 및 프레스 이벤트를 비롯한 여러 종류의 이벤트가 있습니다. 특정 유형의 이벤트를 처리하려면 응답자가 해당 메서드를 오버라이드해야 합니다.  
 예를 들어, 터치 이벤트를 처리하기 위해 응답자는 [touchesBegan \( : with :\)](../../not-found.md), [touchesMoved \( : with :\)](../../not-found.md), [touchesEnded \( : with :\)](../../not-found.md) 및 [touchesCancelled \( : with :\)](../../not-found.md) 메서드를 구현합니다. 터치가 일어났을때 응답자는 UIKit에서 제공한 이벤트 정보를 사용하여 해당 터치의 변경 사항을 추적하고 앱의 인터페이스를 적절하게 업데이트합니다.

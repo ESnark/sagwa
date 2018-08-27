@@ -103,7 +103,7 @@ UIViewController의 하위 커스텀 클래스는 컨테이너 뷰 컨트롤러�
 
 메모리는 iOS에서 중요한 리소스이며, view controller는 중요한 시간에 메모리 공간을 줄일 수 있는 built-in 기능을 지원합니다. UIViewController 클래스는 불필요한 메모리를 해제하는 [didReceeMemoryWarning\(\)](../../not-found.md) 메서드를 통해 낮은 메모리 상태를 자동으로 처리합니다.
 
-### 상태 보존과 복구
+### 상태 보존과 복원
 
 view controller의 [restorationIdentifier](../../not-found.md)\(복원 식별자\) 속성에 값을 할당하면, 앱이 백그라운드로 전환될 때 시스템이 view controller에 인코딩을 요청할 수 있습니다. 요청에 따라 보존이 일어나는 경우 view controller는 restorationIdentifier가 있는 뷰 계층의 뷰를 보존합니다. view controller는 다른 상태를 자동으로 저장하지 않습니다. 커스텀 컨테이너 뷰 컨트롤러를 구현한다면 모든 하위 뷰 컨트롤러를 직접 인코딩해야 하고 인코딩될 각 하위 항목은 고유한 restorationIdentifier가 있어야 합니다.
 
@@ -309,7 +309,7 @@ view controller의 [restorationIdentifier](../../not-found.md)\(복원 식별자
 
 * _func_ didReceiveMemoryWarning\(\) 앱이 메모리 경고를 받았을때 view controller로 보냅니다.
 
-### 상태 복구 관리
+### 상태 복원 관리
 
 * _var_ restorationIdentifier: String? view controller
 

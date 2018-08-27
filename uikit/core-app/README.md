@@ -12,7 +12,7 @@ description: '앱의 데이터 모델, 그리고 시스템과 데이터 모델�
 ### Application
 
 * [앱 라이프 사이클 관리하기](managing_your_app_s_life_cycle.md) 앱 delegate가 앱의 상위 수준 동작을 관리하는 방식을 이해합니다.
-* _class_ UIApplication iOS에서 실행되는 앱의 제어와 조정의 중심점
+* _class_ [UIApplication](uiapplication.md) iOS에서 실행되는 앱의 제어와 조정의 중심점
 * _protocol_ UIApplicationDelegate 앱 라이프 타임동안 발생하는 중요한 이벤트에 대해 응답하기 위해서 UIApplication 싱글턴 객체가 호출하는 메서드 세트
 * 앱과 웹에서 컨텐츠에 링크하도록 허용하기 유니버설 링크를 사용하여 앱 내의 콘텐츠에 연결하고 데이터를 안전하게 공유하세요
 * _func_ UIApplicationMain\(Int32, UnsafeMutablePointer?&gt;, String?, String?\) -&gt; Int32 어플리케이션 객체와 delegate를 생성하고 이벤트 사이클을 설정합니다.
