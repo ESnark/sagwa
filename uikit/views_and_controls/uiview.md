@@ -25,9 +25,9 @@ description: 화면상의 직사각형 영역에 대한 컨텐츠를 관리하�
   * 뷰는 UIResponder의 하위 클래스이기 때문에 터치나 기타 다른 이벤트에 응답할 수 있습니다.
   * 뷰에는 일반 제스처를 처리하는 제스처 인식기가 설치될 수 있습니다.
 
-뷰는 다른 뷰 내부에 중첩되어 뷰 계층을 만들 수 있으므로 관련 컨텐츠를 편리하게 구성할 수 있습니다. 뷰를 중첩하면 중첩된 하위 뷰와 상위 뷰 사이에 상하위 관계가 만들어집니다. 상위 뷰에는 여러 개의 하위 뷰가 포함될 수 있지만 각 하위 뷰에는 하나의 슈퍼 뷰만 있습니다. 기본적으로 하위 뷰의 보이는 영역이 수퍼 뷰의 범위를 벗어나 확장되어도 하위 뷰의 내용이 잘리지 않습니다. 해당 동작 방식을 변경하려면 clipsToBounds 속성을 사용하세요.
+뷰는 다른 뷰 내부에 중첩되어 뷰 계층을 만들 수 있으므로 관련 컨텐츠를 편리하게 구성할 수 있습니다. 뷰를 중첩하면 중첩된 하위 뷰와 상위 뷰 사이에 상하위 관계가 만들어집니다. 상위 뷰에는 여러 개의 하위 뷰가 포함될 수 있지만 각 하위 뷰에는 하나의 슈퍼 뷰만 있습니다. 기본적으로 하위 뷰의 보이는 영역이 상위 뷰의 범위를 벗어나 확장되어도 하위 뷰의 내용이 잘리지 않습니다. 해당 동작 방식을 변경하려면 [clipsToBounds](../../not-found.md) 속성을 사용하세요.
 
-각 뷰의 범위는 그 frame과 경계\(bounds\) 속성에 의해 결정됩니다. frame 속성은 수퍼 뷰 좌표계의 안에서 원점과 크기로 정해집니다. bounds 속성은 뷰의 내부적인 수치를 의미하며 커스텀 그리기 코드 내에서 배타적으로 사용됩니다. center 속성을 사용하면 frame이나 bounds 특성을 직접 변경하지 않고도 뷰의 위치를 쉽게 변경할 수 있습니다.
+각 뷰의 범위는 그 [frame](../../not-found.md)과 [경계\(bounds\)](../../not-found.md) 속성에 의해 결정됩니다. frame 속성은 수퍼 뷰 좌표계의 안에서 원점과 크기로 정해집니다. bounds 속성은 뷰의 내부적인 수치를 의미하며 커스텀 그리기 코드 내에서 배타적으로 사용됩니다. center 속성을 사용하면 frame이나 bounds 특성을 직접 변경하지 않고도 뷰의 위치를 쉽게 변경할 수 있습니다.
 
 UIView 클래스를 사용하는 방법에 대한 자세한 내용은 [iOS용 View 프로그래밍 가이드](../../not-found.md)를 참조하세요
 
@@ -579,7 +579,10 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
   begin / commit 애니메이션 블록의 시작을 표시합니다.
 
-* _class func_ commitAnimations\(\) begine / commit 애니메이션 블록의 끝을 표시하고 실행을 위해 애니메이션을 예약합니다.
+* _class func_ commitAnimations\(\)
+
+  begine / commit 애니메이션 블록의 끝을 표시하고 실행을 위해 애니메이션을 예약합니다.
+
 * _class func_ setAnimationStart\(Date\)
 
   현재 애니메이션 블록의 시작 시간을 설정합니다.
@@ -604,7 +607,10 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
   애니메이션 블록의 애니메이션 길이 \(초 단위\)를 설정합니다.
 
-* _class func_ setAnimationDelay\(TimeInterval\) 애니메이션 블록 내에서 프로퍼티 변경 사항을 애니메이션화 하기 전에 대기 할 시간 \(초 단위\)을 설정합니다.
+* _class func_ setAnimationDelay\(TimeInterval\)
+
+  애니메이션 블록 내에서 프로퍼티 변경 사항을 애니메이션화 하기 전에 대기 할 시간 \(초 단위\)을 설정합니다.
+
 * _class func_ setAnimationCurve\(UIView.AnimationCurve\)
 
   애니메이션 블록 내에서 프로퍼티 변경 사항을 애니메이션화 할 때 사용할 곡선을 설정합니다.
@@ -639,7 +645,10 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
   지원되는 애니메이션 커브 지정
 
-* _enum_ UIView.AnimationTransition 애니메이션 블록 객체에 사용하기 위한 애니메이션 전환 옵션
+* _enum_ UIView.AnimationTransition
+
+  애니메이션 블록 객체에 사용하기 위한 애니메이션 전환 옵션
+
 * _enum_ UIView.SystemAnimation
 
   애니메이션이 완료되면 계층에서 뷰를 제거하기 위한 옵션
@@ -660,7 +669,10 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
   가능한 가장 작은 크기를 사용하는 옵션
 
-* _class let_ layoutFittingExpandedSize: CGSize 가능한 가장 큰 크기를 사용하는 옵션
+* _class let_ layoutFittingExpandedSize: CGSize
+
+  가능한 가장 큰 크기를 사용하는 옵션
+
 * _class let_ noIntrinsicMetric: CGFloat
 
   주어진 숫자 뷰 프로퍼티에 고유한 메트릭이 존재하지 않음
