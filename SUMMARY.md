@@ -2,6 +2,7 @@
 
 * [애플 개발문서 번역 프로젝트](README.md)
 * [Foundation](foundation/README.md)
+  * [작업 관리](foundation/task-management.md)
   * [파일 시스템](foundation/file-system/README.md)
     * [FileManager](foundation/file-system/filemanager.md)
 * [UIKit](uikit/README.md)
