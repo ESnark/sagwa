@@ -19,7 +19,7 @@ description: '앱의 데이터 모델, 그리고 시스템과 데이터 모델�
 
 ### 기기 환경
 
-* 애플 TV에서의 디스플레이 모드 변경에 대응하기 기기 변경에 따른 화면 색역 변경에 따라 이미지와 리소스를 동적으로 변경시킵니다.
+* 애플 TV에서의 디스플레이 모드 변경에 대응하기 기기 변경에 의 화면 색역 변경에 따라 이미지와 리소스를 동적으로 변경시킵니다.
 * _class_ UIDevice 현재 기기 표시
 * _class_ UITraitCollection 수평 및 수직 사이즈 클래스, 디스플레이 스케일 및 사용자 인터페이스 종류\(phone, pad, tv 등\)와 같은 특성에 의해 정의된 앱용 iOS 인터페이스 환경.
 * _protocol_ UITraitEnvironment 앱에서 iOS 인터페이스 환경을 사용할 수 있도록 하는 메서드 집합
@@ -33,7 +33,7 @@ description: '앱의 데이터 모델, 그리고 시스템과 데이터 모델�
 
 * _class_ UIManagedDocument
 
-  Core Data와 통합되는 관리문서 객
+  Core Data와 통합되는 관리문서 객체
 
 ### 클립보드\(Pasteboard\)
 
