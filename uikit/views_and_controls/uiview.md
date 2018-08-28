@@ -72,8 +72,8 @@ OpenGL ES를 사용하여 그리는 경우 UIView의 하위 클래스 대신 [GL
 * alpha
 * backgroundColor
 
-변경사항을 애니메이션화하려면 [UIViewPropertyAnimator](../../not-found.md) 객체를 만들고 객체의 핸들러 블럭을 사용하여 뷰 프로퍼티를 변경합니다. UIViewPropertyAnimator의 클래스 메서드를 사용하여 애니메이션의 지속시간이나 타이밍을 설정할 수 있지만 이 경우에는 애니메이션이 그 즉시 실행됩니다. 또한 프로퍼티 기반 애니메이터는 실행 중에 멈추거나 대화형으로 구동될 수 있습니다.  
-자세한 내용은 [UIViewPropertyAnimator](../../not-found.md)를 참조하세요.
+변경사항을 애니메이션화하려면 [UIViewPropertyAnimator](../animation-and-haptics/property-based-animations/uiviewpropertyanimator.md) 객체를 만들고 객체의 핸들러 블럭을 사용하여 뷰 프로퍼티를 변경합니다. UIViewPropertyAnimator의 클래스 메서드를 사용하여 애니메이션의 지속시간이나 타이밍을 설정할 수 있지만 이 경우에는 애니메이션이 그 즉시 실행됩니다. 또한 프로퍼티 기반 애니메이터는 실행 중에 멈추거나 대화형으로 구동될 수 있습니다.  
+자세한 내용은 [UIViewPropertyAnimator](../animation-and-haptics/property-based-animations/uiviewpropertyanimator.md)를 참조하세요.
 
 ## 스레딩 고려사항
 
@@ -529,7 +529,7 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 ### 블럭으로 뷰 애니메이션시키기
 
-다음 메서드들의 사용은 권장되지 않습니다. 대신 UIViewPropertyAnimator 클래스를 사용하세요.
+다음 메서드들의 사용은 권장되지 않습니다. 대신 [UIViewPropertyAnimator](../animation-and-haptics/property-based-animations/uiviewpropertyanimator.md) 클래스를 사용하세요.
 
 * _class func_ animate\(withDuration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions = \[\], animations: \(\) -&gt; Void, completion: \(\(Bool\) -&gt; Void\)? = nil\)
 
@@ -573,7 +573,7 @@ UIView 클래스의 많은 프로퍼티들이 애니메이션 가능하며 이�
 
 ### 뷰 애니메이션시키기
 
-다음 메서드들의 사용은 권장지 않습니다. 대신 UIViewPropertyAnimator 클래스를 사용하여 애니메이션을 수행하세요.
+다음 메서드들의 사용은 권장되지 않습니다. 대신 [UIViewPropertyAnimator](../animation-and-haptics/property-based-animations/uiviewpropertyanimator.md) 클래스를 사용하여 애니메이션을 수행하세요.
 
 * _class func_ beginAnimations\(String?, context: UnsafeMutableRawPointer?\)
 
