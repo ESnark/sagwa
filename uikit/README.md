@@ -39,7 +39,7 @@ View는 화면에 내용을 표시하고 사용자 상호 작용을 용이하게
 * [뷰와 컨트롤](views_and_controls/) 화면에 컨텐츠를 표시하고 해당 컨텐츠에 상호작용을 지정하세요.
 * [View Controllers](view-controllers/) View Controller로 인터페이스를 관리하고 앱 컨텐츠 탐색을 수월하게 만드세요.
 * 뷰 레이아웃 Stack View를 사용해서 인터페이스를 자동으로 배치하고 View를 정교하게 배치해야 하는 경우 자동 레이아웃을 사용하세요.
-* 애니메이션과 햅틱 뷰 기반 애니메이션 햅틱을 사용하여 사용자에게 피드백을 제공합니다.
+* [애니메이션과 햅틱](animation-and-haptics.md) 뷰 기반 애니메이션 햅틱을 사용하여 사용자에게 피드백을 제공합니다.
 * 윈도우와 스크린
 
    뷰 계층 구조 및 기타 컨텐츠를 위한 컨테이너를 제공합니다.
@@ -87,18 +87,9 @@ UIKit에는 텍스트를 앱에 쉽게 표시할수 있는 텍스트 뷰 외에�
 
 * Deprecated Symbols
 
-### Structures
+### 참조Reference
 
-* _struct_ UIDocumentBrowserError 문서 브라우저 오류에 대한 정보가 들어있는 구조체
-
-### Classes
-
-* _class_ UICollectionViewDropPlaceholder
-* _class_ UICollectionViewPlaceholder
-* _class_ UITableViewDropPlaceholder
-* _class_ UITableViewPlaceholder
-
-### Protocols
-
-* _protocol_ UIItemProviderPresentationSizeProviding
+* UIKit 상수
+* UIKit 함수
+* UIKit 데이터 타입
 

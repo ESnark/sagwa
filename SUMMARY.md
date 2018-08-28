@@ -13,6 +13,7 @@
     * [UIView](uikit/views_and_controls/uiview.md)
   * [View Controllers](uikit/view-controllers/README.md)
     * [UIViewController](uikit/view-controllers/uiviewcontroller.md)
+  * [애니메이션과 햅틱](uikit/animation-and-haptics.md)
   * [터치, 누르기 , 제스처](uikit/touches_presses_and_gestures/README.md)
     * [UIResponder](uikit/touches_presses_and_gestures/uiresponder.md)
     * [UIKit 제스처 처리](uikit/touches_presses_and_gestures/handling_uikit_gestures.md)
