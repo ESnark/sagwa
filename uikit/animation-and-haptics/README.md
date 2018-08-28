@@ -12,7 +12,7 @@ description: 뷰 기반 애니메이션 햅틱을 사용하여 사용자에게 �
 ### 컨텐츠 애니메이션 {#content-animations}
 
 * [프로퍼티 기반 애니메이션 ](property-based-animations/)뷰의 프로퍼티를 바꿈으로써 애니메이션을 만드세요
-* View controller 전환 하나의 view controller에서 다른 하나로 넘어가는 커스텀 전환효과를 정의하세요
+* [View controller 전환](view-controller.md) 하나의 view controller에서 다른 하나로 넘어가는 커스텀 전환효과를 정의하세요
 
 ### 물리 기반 애니메이션 {#physics-based-animations}
 

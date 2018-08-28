@@ -16,6 +16,7 @@
   * [애니메이션과 햅틱](uikit/animation-and-haptics/README.md)
     * [프로퍼티 기반 애니메이션](uikit/animation-and-haptics/property-based-animations/README.md)
       * [UIViewPropertyAnimator](uikit/animation-and-haptics/property-based-animations/uiviewpropertyanimator.md)
+    * [View controller 전환](uikit/animation-and-haptics/view-controller.md)
   * [터치, 누르기 , 제스처](uikit/touches_presses_and_gestures/README.md)
     * [UIResponder](uikit/touches_presses_and_gestures/uiresponder.md)
     * [UIKit 제스처 처리](uikit/touches_presses_and_gestures/handling_uikit_gestures.md)

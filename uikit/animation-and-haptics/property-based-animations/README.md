@@ -8,7 +8,7 @@ description: 뷰의 프로퍼티를 바꿈으로써 애니메이션을 만드세
 
 ### 첫 시작
 
-* _class_ UIViewPropertyAnimator
+* _class_ [UIViewPropertyAnimator](uiviewpropertyanimator.md)
 
   뷰에 대한 변경 사항을 애니메이션화하고 해당 애니메이션의 동적 수정을 허용하는 클래스입니다.
 
@@ -40,5 +40,5 @@ description: 뷰의 프로퍼티를 바꿈으로써 애니메이션을 만드세
 
 ### 컨텐츠 애니메이션
 
-* View controller 전환 하나의 view controller에서 다른 하나로 넘어가는 커스텀 전환효과를 정의하세요
+* [View controller 전환](../view-controller.md) 하나의 view controller에서 다른 하나로 넘어가는 커스텀 전환효과를 정의하세요
 
