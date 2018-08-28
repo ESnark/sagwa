@@ -180,76 +180,76 @@ UIApplication 클래스는 UIApplicationDelegate 프로토콜을 준수하고 �
 
 ### 이벤트의 제어와 처리 {#controlling_and_handling_events}
 
-* func sendEvent\(UIEvent\)
+* _func_ sendEvent\(UIEvent\)
 
   앱의 적절한 응답자\(Responder\) 객체에 이벤트를 디스패치합니다.
 
-* func sendAction\(Selector, to: Any?, from: Any?, for: UIEvent?\) -&gt; Bool
+* _func_ sendAction\(Selector, to: Any?, from: Any?, for: UIEvent?\) -&gt; Bool
 
   Selector로 식별된 action 메세지를 지정된 target으로 보냅니다.
 
-* func beginIgnoringInteractionEvents\(\)
+* _func_ beginIgnoringInteractionEvents\(\)
 
   수신자에게 터치 관련 이벤트 처리를 중지하도록 지시합니다.
 
-* func endIgnoringInteractionEvents\(\)
+* _func_ endIgnoringInteractionEvents\(\)
 
   수신자에게 터치 관련 이벤트 처리를 재개하도록 지시합니다.
 
-* var isIgnoringInteractionEvents: Bool
+* _var_ isIgnoringInteractionEvents: Bool
 
   수신자가 화면터치로 시작된 이벤트를 무시하고 있는지를 나타내는 Boolean 값
 
-* var applicationSupportsShakeToEdit: Bool
+* _var_ applicationSupportsShakeToEdit: Bool
 
   장치를 흔들때 실행 취소-다시 실행 유저 인터페이스가 나타나게 할지 결정하는 Boolean 값
 
 ### 앱 아이콘 관리 {#managing_the_apps_icon}
 
-* var applicationIconBadgeNumber: Int 현재 스프링보드에서 앱 아이콘의 배지로 표시되고 있는 숫자
-* var supportsAlternateIcons: Bool 앱 아이콘이 변경가능한지를 나타내는 Boolean 값
-* var alternateIconName: String? 앱 아이콘의 이름
-* func setAlternateIconName\(String?, completionHandler: \(\(Error?\) -&gt; Void\)? = nil\) 앱 아이콘을 변경합니다.
+* _var_ applicationIconBadgeNumber: Int 현재 스프링보드에서 앱 아이콘의 배지로 표시되고 있는 숫자
+* _var_ supportsAlternateIcons: Bool 앱 아이콘이 변경가능한지를 나타내는 Boolean 값
+* _var_ alternateIconName: String? 앱 아이콘의 이름
+* _func_ setAlternateIconName\(String?, completionHandler: \(\(Error?\) -&gt; Void\)? = nil\) 앱 아이콘을 변경합니다.
 
 ### App window 접근 {#getting_app_windows}
 
-* var keyWindow: UIWindow?
+* _var_ keyWindow: UIWindow?
 
   앱의 key window.
 
-* var windows: \[UIWindow\]
+* _var_ windows: \[UIWindow\]
 
   앱에서 보여지고 숨겨져있는 모든 window
 
 ### 폰트 사이징 기본설정 가져오기 {#getting_the_font_sizing_preference}
 
-* var preferredContentSizeCategory: UIContentSizeCategory
+* _var_ preferredContentSizeCategory: UIContentSizeCategory
 
   사용자가 선호하는 글꼴 사이징 옵션
 
-* struct UIContentSizeCategory
+* _struct_ UIContentSizeCategory
 
   컨텐츠의 기본 크기를 나타내는 상수
 
 ### 기본 인터페이스 방향 관리하기 {#managing_the_default_interface_orientations}
 
-* func supportedInterfaceOrientations\(for: UIWindow?\) -&gt; UIInterfaceOrientationMask
+* _func_ supportedInterfaceOrientations\(for: UIWindow?\) -&gt; UIInterfaceOrientationMask
 
   지정된 window의 view controller에 사용할 기본 인터페이스 방향 set를 반환합니다.
 
 ### 상태바 애니메이션 관리하기 {#managing_status_bar_animations}
 
-* var statusBarOrientationAnimationDuration: TimeInterval
+* _var_ statusBarOrientationAnimationDuration: TimeInterval
 
   90도 방향 변경 중 상태 바의 애니메이션 지속 시간\(초 단위\)
 
 ### 상수Constants
 
-* enum UIStatusBarStyle
+* _enum_ UIStatusBarStyle
 
   기기의 상태 바 스타일
 
-* enum UIStatusBarAnimation
+* _enum_ UIStatusBarAnimation
 
   상태 바가 숨겨지거나 나타날때 적용되는 애니메이션
 
@@ -257,7 +257,7 @@ UIApplication 클래스는 UIApplicationDelegate 프로토콜을 준수하고 �
 
   일부 UIApplication에서 발송한 노티피케이션의 userInfo 딕셔너리 값에 접근하는데 사용되는 딕셔너리 키
 
-*  Key for Content Size Change Notifications
+* Key for Content Size Change Notifications
 
   새 컨텐츠 사이즈의 카테고리를 식별하는 키
 
@@ -273,71 +273,71 @@ UIApplication 클래스는 UIApplicationDelegate 프로토콜을 준수하고 �
 
 모든 UIApplication 노티피케이션은 [shared](../../not-found.md)로부터 반환되는 앱 인스턴스에 의해서 발송됩니다.
 
-* class let backgroundRefreshStatusDidChangeNotification: NSNotification.Name
+* _class let_ backgroundRefreshStatusDidChangeNotification: NSNotification.Name
 
   백그라운드에서 콘텐츠를 다운로드하는 앱의 상태가 변경될때 발송됩니다.
 
-* class let didBecomeActiveNotification: NSNotification.Name
+* _class let_ didBecomeActiveNotification: NSNotification.Name
 
   앱이 Active 상태가 되었을 때 발송됩니다.
 
-* class let didChangeStatusBarFrameNotification: NSNotification.Name
+* _class let_ didChangeStatusBarFrameNotification: NSNotification.Name
 
   상태 바의 프레임이 변경되었을때 발송됩니다.
 
-* class let didChangeStatusBarOrientationNotification: NSNotification.Name
+* _class let_ didChangeStatusBarOrientationNotification: NSNotification.Name
 
   유저 인터페이스의 방향이 변경되었을때 발송됩니다.
 
-* class let didEnterBackgroundNotification: NSNotification.Name
+* _class let_ didEnterBackgroundNotification: NSNotification.Name
 
   앱이 Background에 진입했을때 발송됩니다.
 
-* class let didFinishLaunchingNotification: NSNotification.Name
+* _class let_ didFinishLaunchingNotification: NSNotification.Name
 
   앱이 launching을 마친 직후에 발송됩니다.
 
-* class let didReceiveMemoryWarningNotification: NSNotification.Name
+* _class let_ didReceiveMemoryWarningNotification: NSNotification.Name
 
   앱이 운영체제로부터 메모리 부족 경고를 받았을때 발송됩니다.
 
-* class let protectedDataDidBecomeAvailableNotification: NSNotification.Name
+* _class let_ protectedDataDidBecomeAvailableNotification: NSNotification.Name
 
   보호된 파일이 코드를 통해 접근 가능하게 되었을때 발송됩니다.
 
-* class let protectedDataWillBecomeUnavailableNotification: NSNotification.Name
+* _class let_ protectedDataWillBecomeUnavailableNotification: NSNotification.Name
 
   보호된 파일이 잠기고 접근불가능하게 되기 직전에 발송됩니다.
 
-* class let significantTimeChangeNotification: NSNotification.Name
+* _class let_ significantTimeChangeNotification: NSNotification.Name
 
   중요한 변화가 발생할때 발송됩니다.\(예: 날짜가 바뀔때\(자정\), 캐리어 시간 업데이트, 일광 절약 시간제 변경\)
 
-* class let userDidTakeScreenshotNotification: NSNotification.Name
+* _class let_ userDidTakeScreenshotNotification: NSNotification.Name
 
   사용자가 홈 버튼과 잠금 버튼을 눌러 스크린샷을 찍을 때 발송됩니다.
 
-* class let willChangeStatusBarOrientationNotification: NSNotification.Name
+* _class let_ willChangeStatusBarOrientationNotification: NSNotification.Name
 
   앱 인터페이스의 방향이 바뀌려고 할 때 발송됩니다.
 
-* class let willChangeStatusBarFrameNotification: NSNotification.Name
+* _class let_ willChangeStatusBarFrameNotification: NSNotification.Name
 
   상태 바의 프레임이 바뀌려고 할 때 발송됩니다.
 
-* class let willEnterForegroundNotification: NSNotification.Name
+* _class let_ willEnterForegroundNotification: NSNotification.Name
 
   앱이 Background 상태에서 Active가 되기 직전에 발송됩니다.
 
-* class let willResignActiveNotification: NSNotification.Name
+* _class let_ willResignActiveNotification: NSNotification.Name
 
   앱이 더 이상 Active 상태가 아니고 focus를 잃었을 때 발생됩니다.
 
-* class let willTerminateNotification: NSNotification.Name
+* _class let_ willTerminateNotification: NSNotification.Name
 
   앱이 terminate가 되려고 할 때 발송됩니다.
 
-* static let didChangeNotification: NSNotification.Name
+* _static let_ didChangeNotification: NSNotification.Name
 
   사용자가 기본 컨텐츠 사이즈를 바꿨을 때 발송됩니다.
 
