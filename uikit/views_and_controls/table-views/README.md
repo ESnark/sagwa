@@ -10,7 +10,7 @@ description: 하나의 열과 커스텀 가능한 행에 데이터를 표시하�
 
 ### View
 
-* class UITableView
+* class [UITableView](uitableview.md)
 
   단일 열에 정렬된 행을 사용하여 데이터를 표시하는 뷰
 
