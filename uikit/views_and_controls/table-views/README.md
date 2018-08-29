@@ -10,39 +10,39 @@ description: 하나의 열과 커스텀 가능한 행에 데이터를 표시하�
 
 ### View
 
-* class [UITableView](uitableview.md)
+* _class_ [UITableView](uitableview.md)
 
   단일 열에 정렬된 행을 사용하여 데이터를 표시하는 뷰
 
-* class UITableViewController
+* _class_ UITableViewController
 
   테이블 뷰 관리를 전문으로 하는 뷰 컨트롤러
 
-* class UITableViewFocusUpdateContext
+* _class_ UITableViewFocusUpdateContext
 
   컨텍스트 객체로써 한 뷰에서 다른 뷰로 업데이트 되는 특정 포커스 갱신에 대한 정보를 제공합니다.
 
-* class UILocalizedIndexedCollation 섹션 인덱스를 갖는 테이블 뷰에 대해서 해당 데이터의 구성, 정렬, 지역화 하는 방법을 제공하는 객체입니다.
+* _class_ UILocalizedIndexedCollation 섹션 인덱스를 갖는 테이블 뷰에 대해서 해당 데이터의 구성, 정렬, 지역화 하는 방법을 제공하는 객체입니다.
 
 ### Rows
 
-* class UITableViewCell
+* _class_ UITableViewCell
 
   테이블 뷰에 있는 셀
 
-* class UISwipeActionsConfiguration
+* _class_ UISwipeActionsConfiguration
 
   테이블 행을 스와이프할 때 실행되는 action의 집합입니다.
 
-* class UIContextualAction
+* _class_ UIContextualAction
 
   사용자가 테이블 행을 스와이프할 때 표시할 action입니다.
 
-* class UITableViewRowAction
+* _class_ UITableViewRowAction
 
   사용자가 테이블 행을 수평으로 스와이프할 때 표시할 action입니다.
 
-* enum UIContextualAction.Style
+* _enum_ UIContextualAction.Style
 
   action 버튼에 적용되는 스타일 정보를 나타내는 상수
 
@@ -52,13 +52,13 @@ description: 하나의 열과 커스텀 가능한 행에 데이터를 표시하�
 
 ### Headers and Footers
 
-* class UITableViewHeaderFooterView
+* _class_ UITableViewHeaderFooterView
 
   테이블 섹션의 상단 또는 하단에 배치하여 해당 섹션에 대한 추가 정보를 표시할 수 있는 재사용 가능한 뷰입니다.
 
 ### Adornments
 
-* class UIRefreshControl
+* _class_ UIRefreshControl
 
   스크롤 뷰 컨텐츠를 새로고침 할 수 있는 표준 컨트롤
 
@@ -68,31 +68,31 @@ description: 하나의 열과 커스텀 가능한 행에 데이터를 표시하�
 
   테이블 뷰에서 드래그 앤 드롭을 시작합니다.
 
-* protocol UITableViewDragDelegate
+* _protocol_ UITableViewDragDelegate
 
-  테이블 뷰에서 드래그를 시작하기 위한 인터페이스입니다.
+  테이블 뷰에서 드래그를 시작하기 위한 인터페이스
 
-* protocol UITableViewDropDelegate
+* _protocol_ UITableViewDropDelegate
 
-  테이블 뷰에서 놓기 동작을 처리하기 위한 인터페이스입니다.  
+  테이블 뷰에서 놓기 동작을 처리하기 위한 인터페이스  
   The interface for handling drops in a table view.
 
-* protocol UITableViewDropCoordinator
+* _protocol_ UITableViewDropCoordinator
 
   테이블 뷰에서 커스텀 드롭 동작을 조정하기 위한 인터페이스입니다.
 
-* class UITableViewDropPlaceholder
-* class UITableViewDropProposal
+* _class_ UITableViewDropPlaceholder
+* _class_ UITableViewDropProposal
 
   테이블 뷰에서 드롭을 처리하기 위해 제안된 솔루션
 
-* protocol UITableViewDropItem 테이블 뷰로 놓여지는 항목과 관련된 데이터
-* protocol UITableViewDropPlaceholderContext
+* _protocol_ UITableViewDropItem 테이블 뷰로 놓여지는 항목과 관련된 데이터
+* _protocol_ UITableViewDropPlaceholderContext
 
   표시할 데이터가 실제로 들어오기 전에 임시적으로 테이블 뷰에 삽입되는 객체
 
-* protocol UIDataSourceTranslating DataSource 객체를 관리하기 위한 고급 인터페이스
-* class UITableViewPlaceholder
+* _protocol_ UIDataSourceTranslating DataSource 객체를 관리하기 위한 고급 인터페이스
+* _class_ UITableViewPlaceholder
 
 ## 같이 보기
 

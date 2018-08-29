@@ -46,308 +46,308 @@ UITableView는 UITableView의 새 인스턴스를 생성하거나 새 데이터 
 
 ### 테이블 뷰 데이터 제공
 
-* var dataSource: UITableViewDataSource?
+* _var_ dataSource: UITableViewDataSource?
 
   테이블 뷰의 데이터 소스 역할을 하는 객체
 
-* protocol UITableViewDataSource
+* _protocol_ UITableViewDataSource
 
   UITableViewDataSource 프로토콜은 UITableView 객체에 대한 앱 데이터 모델을 조정하는 객체에서 사용됩니다.
 
-* protocol UITableViewDataSourcePrefetching
+* _protocol_ UITableViewDataSourcePrefetching
 
   테이블 뷰의 데이터 요구 사항에 대한 사전 경고를 제공하여 비동기 데이터 로드 작업의 트리거를 허용하는 프로토콜입니다.
 
 ### 테이블 뷰 동작 커스터마이징
 
-* var delegate: UITableViewDelegate?
+* _var_ delegate: UITableViewDelegate?
 
   테이블 뷰의 delegate 역할을 하는 객체입니다.
 
-* protocol UITableViewDelegate
+* _protocol_ UITableViewDelegate
 
   UITableView 객체의 delegate는 UITableViewDelegate 프로토콜을 준수해야 합니다. 프로토콜의 선택적 메서드들을 통해서 섹션 Header와 Footer 설정과 셀 선택, 삭제, 위치 조정 등의 작업을 수행할 수 있습니다.
 
 ### 테이블 뷰 설정하기
 
-* var style: UITableView.Style
+* _var_ style: UITableView.Style
 
   테이블 뷰의 스타일
 
-* func numberOfRows\(inSection: Int\) -&gt; Int
+* _func_ numberOfRows\(inSection: Int\) -&gt; Int
 
   `inSection:` 에 해당하는 섹션의 행 \(테이블 셀\) 갯수를 반환합니다.
 
-* var numberOfSections: Int
+* _var_ numberOfSections: Int
 
   테이블 뷰의 섹션 갯수
 
-* var rowHeight: CGFloat
+* _var_ rowHeight: CGFloat
 
   테이블 뷰의 각 행 \(즉, 테이블 셀\)의 높이
 
-* var separatorStyle: UITableViewCell.SeparatorStyle
+* _var_ separatorStyle: UITableViewCell.SeparatorStyle
 
   셀을 구분하는 Separator의 스타일
 
-* var separatorColor: UIColor? Separator의 색깔
-* var separatorEffect: UIVisualEffect? Separator에 적용되는 효과
-* var backgroundView: UIView?
+* _var_ separatorColor: UIColor? Separator의 색깔
+* _var_ separatorEffect: UIVisualEffect? Separator에 적용되는 효과
+* _var_ backgroundView: UIView?
 
   테이블 뷰의 백그라운드 뷰
 
-* var separatorInset: UIEdgeInsets
+* _var_ separatorInset: UIEdgeInsets
 
   셀 Separator의 기본 inset을 지정합니다.
 
-* var separatorInsetReference: UITableView.SeparatorInsetReference
+* _v_ar separatorInsetReference: UITableView.SeparatorInsetReference
 
   Separator Inset 값을 해석하는 방법
 
-* enum UITableView.SeparatorInsetReference
+* _enum_ UITableView.SeparatorInsetReference
 
   Separator Inset 값의 해석방법을 나타내는 상수
 
-* var cellLayoutMarginsFollowReadableWidth: Bool 셀 margin이 읽을 수 있는 컨텐츠 가이드 너비에서 유래한 것인지를 나타내는 Boolean 값
+* _var_ cellLayoutMarginsFollowReadableWidth: Bool 셀 margin이 읽을 수 있는 컨텐츠 가이드 너비에서 유래한 것인지를 나타내는 Boolean 값
 
 ### 테이블 뷰 셀 생성하기
 
-* func register\(UINib?, forCellReuseIdentifier: String\)
+* _func_ register\(UINib?, forCellReuseIdentifier: String\)
 
   테이블 셀의 nib 객체를 `forCellReuseIdentifier:` 로 등록합니다.
 
-* func register\(AnyClass?, forCellReuseIdentifier: String\)
+* _func_ register\(AnyClass?, forCellReuseIdentifier: String\)
 
   새 테이블 셀 생성에 사용할 클래스를 등록합니다.
 
-* func dequeueReusableCell\(withIdentifier: String, for: IndexPath\) -&gt; UITableViewCell
+* _func_ dequeueReusableCell\(withIdentifier: String, for: IndexPath\) -&gt; UITableViewCell
 
   `withIdentifier:` 식별자를 갖는 재사용 가능한 테이블 뷰 셀을 반환하고 테이블에 추가합니다.
 
-* func dequeueReusableCell\(withIdentifier: String\) -&gt; UITableViewCell?
+* _func_ dequeueReusableCell\(withIdentifier: String\) -&gt; UITableViewCell?
 
   `withIdentifier:` 식별자로 지정된 재사용 가능한 테이블 뷰 셀 객체를 반환합니다.
 
 ### Header 뷰와 Footer 뷰에 액세스
 
-* func register\(UINib?, forHeaderFooterViewReuseIdentifier: String\)
+* _func_ register\(UINib?, forHeaderFooterViewReuseIdentifier: String\)
 
   nib 파일을 통해서 `forHeaderFooterViewReuseIdentifier:` 를 갖는 Header 셀이나 Footer 셀을 등록합니다.
 
-* func register\(AnyClass?, forHeaderFooterViewReuseIdentifier: String\)
+* _func_ register\(AnyClass?, forHeaderFooterViewReuseIdentifier: String\)
 
   새 Header 셀이나 Footer 셀을 만드는데 사용할 클래스를 등록합니다.
 
-* func dequeueReusableHeaderFooterView\(withIdentifier: String\) -&gt; UITableViewHeaderFooterView?
+* _func_ dequeueReusableHeaderFooterView\(withIdentifier: String\) -&gt; UITableViewHeaderFooterView?
 
   `withIdentifier:` 식별자로 지정된 재사용 가능한 Header 셀이나 Footer 셀을 반환합니다.
 
-* var tableHeaderView: UIView?
+* _var_ tableHeaderView: UIView?
 
   테이블 위에 표시되는 액서세리 뷰
 
-* var tableFooterView: UIView?
+* _var_ tableFooterView: UIView?
 
   테이블 아래에 표시되는 액서세리 뷰
 
-* var sectionHeaderHeight: CGFloat
+* _var_ sectionHeaderHeight: CGFloat
 
   섹션 Header의 높이
 
-* var sectionFooterHeight: CGFloat
+* _var_ sectionFooterHeight: CGFloat
 
   섹션 Footer의 높이
 
-* func headerView\(forSection: Int\) -&gt; UITableViewHeaderFooterView?
+* _func_ headerView\(forSection: Int\) -&gt; UITableViewHeaderFooterView?
 
   `forSection:` 순서에 해당하는 섹션의 Header 뷰를 반환합니다.
 
-* func footerView\(forSection: Int\) -&gt; UITableViewHeaderFooterView?
+* _func_ footerView\(forSection: Int\) -&gt; UITableViewHeaderFooterView?
 
   `forSection:` 순서에 해당하는 섹션의 Footer 뷰를 반환합니다.
 
 ### 셀과 섹션에 액세스
 
-* func cellForRow\(at: IndexPath\) -&gt; UITableViewCell? `at:` IndexPath에 있는 테이블 셀을 반환합니다.
-* func indexPath\(for: UITableViewCell\) -&gt; IndexPath?
+* _func_ cellForRow\(at: IndexPath\) -&gt; UITableViewCell? `at:` IndexPath에 있는 테이블 셀을 반환합니다.
+* _func_ indexPath\(for: UITableViewCell\) -&gt; IndexPath?
 
   `for:` 테이블 셀의 IndexPath를 반환합니다.
 
-* func indexPathForRow\(at: CGPoint\) -&gt; IndexPath?
+* _func_ indexPathForRow\(at: CGPoint\) -&gt; IndexPath?
 
   `at:` 위치에 해당하는 행과 섹션에 해당하는 IndexPath를 반환합니다.
 
-* func indexPathsForRows\(in: CGRect\) -&gt; \[IndexPath\]? `in:` CGRect로 둘러싸인 행을 나타내는 IndexPath 배열을 반환합니다.
-* var visibleCells: \[UITableViewCell\] 현재 테이블에 보여지고 있는 테이블 셀 배열
-* var indexPathsForVisibleRows: \[IndexPath\]? 현재 테이블에 보여지고 있는 테이블 셀의 IndexPath 배열
+* _func_ indexPathsForRows\(in: CGRect\) -&gt; \[IndexPath\]? `in:` CGRect로 둘러싸인 행을 나타내는 IndexPath 배열을 반환합니다.
+* _var_ visibleCells: \[UITableViewCell\] 현재 테이블에 보여지고 있는 테이블 셀 배열
+* _var_ indexPathsForVisibleRows: \[IndexPath\]? 현재 테이블에 보여지고 있는 테이블 셀의 IndexPath 배열
 
 ### 엘리먼트 높이 추정
 
-* var estimatedRowHeight: CGFloat
+* _var_ estimatedRowHeight: CGFloat
 
   테이블 행의 추정 높이
 
-* var estimatedSectionHeaderHeight: CGFloat
+* _var_ estimatedSectionHeaderHeight: CGFloat
 
   테이블 섹션 Header의 높이
 
-* var estimatedSectionFooterHeight: CGFloat
+* _var_ estimatedSectionFooterHeight: CGFloat
 
   테이블 섹션 Footer의 높이
 
 ### 테이블 뷰 스크롤
 
-* func scrollToRow\(at: IndexPath, at: UITableView.ScrollPosition, animated: Bool\)
+* _func_ scrollToRow\(at: IndexPath, at: UITableView.ScrollPosition, animated: Bool\)
 
   `at:IndexPath`에 있는 행이 `at: UITableView.ScrollPosition`위치에 올때까지 테이블 뷰를 스크롤합니다.
 
-* func scrollToNearestSelectedRow\(at: UITableView.ScrollPosition, animated: Bool\)
+* _func_ scrollToNearestSelectedRow\(at: UITableView.ScrollPosition, animated: Bool\)
 
   테이블 뷰를 스크롤 했을때 `at:` 위치에 가장 가까운 행이 위치하도록 합니다.
 
 ### 섹션 관리
 
-* var indexPathForSelectedRow: IndexPath?
+* _var_ indexPathForSelectedRow: IndexPath?
 
   선택한 행의 행과 섹션을 가리키는 IndexPath
 
-* var indexPathsForSelectedRows: \[IndexPath\]? 선택한 행들을 가리키는 IndexPath
-* func selectRow\(at: IndexPath?, animated: Bool, scrollPosition: UITableView.ScrollPosition\)
+* _var_ indexPathsForSelectedRows: \[IndexPath\]? 선택한 행들을 가리키는 IndexPath
+* _func_ selectRow\(at: IndexPath?, animated: Bool, scrollPosition: UITableView.ScrollPosition\)
 
   `at:` IndexPath의 행을 선택하고 `scrollPosition:` 위치로 자동 스크롤 시킬지 선택할 수 있습니다.
 
-* func deselectRow\(at: IndexPath, animated: Bool\)
+* _func_ deselectRow\(at: IndexPath, animated: Bool\)
 
   `at:` IndexPath의 선택을 취소하고 `animated:` 옵션으로 취소 애니메이션을 줄 것인지 선택할 수 있습니다.
 
-* var allowsSelection: Bool
+* _var_ allowsSelection: Bool
 
   사용자가 행을 선택할 수 있는지를 결정하는 Boolean 값
 
-* var allowsMultipleSelection: Bool
+* _var_ allowsMultipleSelection: Bool
 
   편집모드가 아닌 상황에서 사용자가 두개 이상의 행을 선택할수 있을지를 결정하는 Boolean 값
 
-* var allowsSelectionDuringEditing: Bool 편집모드 상태에서 사용자가 셀을 선택할 수 있는지를 선택할 수 있을지를 선택하는 Boolean 값
-* var allowsMultipleSelectionDuringEditing: Bool
+* _var_ allowsSelectionDuringEditing: Bool 편집모드 상태에서 사용자가 셀을 선택할 수 있는지를 선택할 수 있을지를 선택하는 Boolean 값
+* _var_ allowsMultipleSelectionDuringEditing: Bool
 
   편집모드 상태에서 사용자가 두개 이상의 cell을 선택할 수 있게 할지를 결정하는 Boolean 
 
 ### 행과 섹션을 삽입, 삭제, 이동하기
 
-* func insertRows\(at: \[IndexPath\], with: UITableView.RowAnimation\)
+* _func_ insertRows\(at: \[IndexPath\], with: UITableView.RowAnimation\)
 
   `with:` 삽입 애니메이션 옵션을 사용하여 `at:` IndexPath 위치에 행을 삽입합니다.
 
-* func deleteRows\(at: \[IndexPath\], with: UITableView.RowAnimation\)
+* _func_ deleteRows\(at: \[IndexPath\], with: UITableView.RowAnimation\)
 
   `with:` 삭제 애니메이션 옵션을 사용하여 `at:` IndexPath 위치의 행을 삭제합니다.
 
-* func moveRow\(at: IndexPath, to: IndexPath\)
+* _func_ moveRow\(at: IndexPath, to: IndexPath\)
 
   `at:` 위치의 행을 `to:` 위치로 이동시킵니다.
 
-* func insertSections\(IndexSet, with: UITableView.RowAnimation\)
+* _func_ insertSections\(IndexSet, with: UITableView.RowAnimation\)
 
   하나 이상의 섹션을 테이블 뷰에 삽입한니다. `with:` 옵션을 통해 삽입 애니메이션을 설정할 수 있습니다.
 
-* func deleteSections\(IndexSet, with: UITableView.RowAnimation\)
+* _func_ deleteSections\(IndexSet, with: UITableView.RowAnimation\)
 
   하나 이상의 섹션을 테이블 뷰에서 삭제합니다. `with:` 옵션을 통해 삭제 애니메이션을 설정할 수 있습니다.
 
-* func moveSection\(Int, toSection: Int\)
+* _func_ moveSection\(Int, toSection: Int\)
 
   섹션을 새로운 위치로 이동시킵니다.
 
-* func performBatchUpdates\(\(\(\) -&gt; Void\)?, completion: \(\(Bool\) -&gt; Void\)? = nil\)
+* _func_ performBatchUpdates\(\(\(\) -&gt; Void\)?, completion: \(\(Bool\) -&gt; Void\)? = nil\)
 
   삽입, 삭제, 재로딩, 이동을 하는 여러개의 작업을 그룹화해서 애니메이션합니다.
 
-* func beginUpdates\(\)
+* _func_ beginUpdates\(\)
 
   테이블 뷰의 행과 섹션을 삽입, 삭제 또는 선택하는 일련의 메서드 호출을 시작합니다.
 
-* func endUpdates\(\)
+* _func_ endUpdates\(\)
 
   테이블 뷰의 행 섹션을 삽입, 삭제, 선택 또는 다시 로드하는 일련의 메서드 호출을 완료합니다.
 
 ### 드래그 상호작용 관리
 
-* var dragDelegate: UITableViewDragDelegate?
+* _var_ dragDelegate: UITableViewDragDelegate?
 
   테이블 뷰에서 드래그 앤 드롭을 관리하는 delegate 객체
 
-* protocol UITableViewDragDelegate
+* _protocol_ UITableViewDragDelegate
 
   테이블 뷰에서 드래그를 시작하기 위한 인터페이스
 
-* var hasActiveDrag: Bool
+* _var_ hasActiveDrag: Bool
 
   행이 테이블 뷰에서 들어올려져 있으며 아직 내려놓지 않았음을 나타내는 Boolean 값
 
-* var dragInteractionEnabled: Bool
+* _var_ dragInteractionEnabled: Bool
 
   테이블 뷰가 앱 간의 드래그앤 드롭을 지원하는지를 나타내는 Boolean 값
 
 ### 드롭 상호작용 관리
 
-* var dropDelegate: UITableViewDropDelegate?
+* _var_ dropDelegate: UITableViewDropDelegate?
 
   테이블 뷰에 컨텐츠를 내려놓는 동작을 관리하는 delegate
 
-* protocol UITableViewDropDelegate
+* _protocol_ UITableViewDropDelegate
 
-  테이블 뷰로 내려놓는 동작을 관리하는 인터페이스
+  테이블 뷰에서 놓기 동작을 처리하기 위한 인터페이스
 
-* var hasActiveDrop: Bool
+* _var_ hasActiveDrop: Bool
 
 ### 테이블 셀 수정모드 관리
 
-* var isEditing: Bool
+* _var_ isEditing: Bool
 
   테이블 뷰의 편집모드 상태를 결정짓는 Boolean 값
 
-* func setEditing\(Bool, animated: Bool\)
+* _func_ setEditing\(Bool, animated: Bool\)
 
   테이블 뷰의 편집모드 상태를 토글합니다.
 
 ### 테이블 뷰 다시 로드하기
 
-* var hasUncommittedUpdates: Bool
+* _var_ hasUncommittedUpdates: Bool
 
   테이블 뷰에서 새로운 행이 놓일 자리에 drop placeholder를 표시할지, 행의 순서를 변경할지 결정하는 Boolean 값
 
-* func reloadData\(\)
+* _func_ reloadData\(\)
 
   테이블 뷰의 섹션과 행을 다시 로드합니다.
 
-* func reloadRows\(at: \[IndexPath\], with: UITableView.RowAnimation\)
+* _func_ reloadRows\(at: \[IndexPath\], with: UITableView.RowAnimation\)
 
   `with:` 애니메이션 효과를 사용하여 `at:` 위치의 행을 다시 로드합니다.
 
-* func reloadSections\(IndexSet, with: UITableView.RowAnimation\)
+* _func_ reloadSections\(IndexSet, with: UITableView.RowAnimation\)
 
   `with:` 애니메이션 효과를 사용하여 지정된 섹션을 다시 로드합니다.
 
-* func reloadSectionIndexTitles\(\)
+* _func_ reloadSectionIndexTitles\(\)
 
   테이블 뷰 오른쪽의 인덱스 바를 다시 로드합니다.
 
 ### 테이블 뷰의 그리기 영역 액세스
 
-* func rect\(forSection: Int\) -&gt; CGRect
+* _func_ rect\(forSection: Int\) -&gt; CGRect
 
   `forSection:` 위치에 있는 섹션의 drawing 영역을 반환합니다.
 
-* func rectForRow\(at: IndexPath\) -&gt; CGRect
+* _func_ rectForRow\(at: IndexPath\) -&gt; CGRect
 
   `at:` 위치에 있는 행의 drawing 영역을 반환합니다.
 
-* func rectForFooter\(inSection: Int\) -&gt; CGRect
+* _func_ rectForFooter\(inSection: Int\) -&gt; CGRect
 
    `forSection:` 섹션의 Footer drawing 영역을 반환합니다.
 
-* func rectForHeader\(inSection: Int\) -&gt; CGRect
+* _func_ rectForHeader\(inSection: Int\) -&gt; CGRect
 
    `forSection:` 섹션의 Header drawing 영역을 반환합니다.
 
@@ -355,43 +355,43 @@ UITableView는 UITableView의 새 인스턴스를 생성하거나 새 데이터 
 
 테이블 뷰가 시간이 오래 걸리는 데이터 로딩 프로세스에 의존하고 있다면 뷰를 표시하기 이전에 데이터를 프리페치해서 사용자 경험을 개선할 수 있습니다. [UITableViewDataSourcePrefetching](../../../not-found.md) 프로토콜을 준수하는 객체를 [prefetchDataSource](../../../not-found.md) 객체에 할당함으로써 셀의 데이터를 프리페치할 시기를 전달받을 수 있습니다.
 
-* var prefetchDataSource: UITableViewDataSourcePrefetching? 테이블 뷰에 대한 프리페치 데이터 소스 역할을 하는 객체로써 곧 있을 셀 데이터 요구사항에 대한 알림을 받습니다.
+* _var_ prefetchDataSource: UITableViewDataSourcePrefetching? 테이블 뷰에 대한 프리페치 데이터 소스 역할을 하는 객체로써 곧 있을 셀 데이터 요구사항에 대한 알림을 받습니다.
 
 ### 테이블 인덱스 설정하기
 
-* var sectionIndexMinimumDisplayRowCount: Int
+* _var_ sectionIndexMinimumDisplayRowCount: Int
 
   테이블 행의 갯수가 해당 값 이상으로 늘어나면 테이블 오른쪽에 인덱스 리스트가 나타나기 시작합니다.
 
-* var sectionIndexColor: UIColor?
+* _var_ sectionIndexColor: UIColor?
 
   인덱스 텍스트의 색깔
 
-* var sectionIndexBackgroundColor: UIColor?
+* _var_ sectionIndexBackgroundColor: UIColor?
 
   터치하지 않은 상태에서의 섹션 인덱스 배경 색상
 
-* var sectionIndexTrackingBackgroundColor: UIColor?
+* _var_ sectionIndexTrackingBackgroundColor: UIColor?
 
   터치한 상태에서의 섹션 인덱스 배경 색상
 
 ### 포커스 관리
 
-* var remembersLastFocusedIndexPath: Bool
+* _var_ remembersLastFocusedIndexPath: Bool
 
   테이블 뷰가 마지막으로 포커스되었던 IndexPath의 포커스를 자동으로 반환해야 할지를 나타내는 Boolean 값
 
 ### 상수Constants
 
-* enum UITableView.Style
+* _enum_ UITableView.Style
 
   테이블 뷰 스타일
 
-* enum UITableView.ScrollPosition
+* _enum_ UITableView.ScrollPosition
 
   주어진 행이 스크롤될 테이블 뷰 상의 위치 \(상단, 중간, 하단\)
 
-* enum UITableView.RowAnimation
+* _enum_ UITableView.RowAnimation
 
   행을 삽입하거나 삭제하는 애니메이션
 
@@ -405,13 +405,13 @@ UITableView는 UITableView의 새 인스턴스를 생성하거나 새 데이터 
 
 ### 노티피케이션Notification
 
-* class let selectionDidChangeNotification: NSNotification.Name
+* _class let_ selectionDidChangeNotification: NSNotification.Name
 
   테이블 뷰 상의 선택된 셀이 바뀌었을때 발송됩니다.
 
 ### Instance Properties
 
-* var insetsContentViewsToSafeArea: Bool
+* _var_ insetsContentViewsToSafeArea: Bool
 
 ## 관련 문서
 
