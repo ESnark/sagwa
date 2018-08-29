@@ -29,8 +29,8 @@ UITableView는 UITableView의 새 인스턴스를 생성하거나 새 데이터 
 
 ## 상태 보존
 
-테이블 뷰의 [restorationIdentifier](../../../not-found.md) 속성에 값을 지정하면 선택된 행과 현재 화면상에 보이는 첫번째 행이 보존됩니다. 테이블의 데이터 소스는 [UIDataSourceModelAssociation](../../../not-found.md) 프로토콜을 준수함으로써 테이블의 행 위치와 관계없이 행의 내용을 식별할 수 있습니다. 테이블의 데이터 원본이 UIDataSourceModelAssociation 프로토콜을 사용하는 경우, 상태를 저장할 때 데이터 소스를 참조하여 화면상의 첫번째 행과 선택한 셀의 indexPath를 식별자로 변환합니다.  
-복원 중에는 데이터 소스를 참조하여 식별자를 다시 indexPath로 변환하며 맨 위에 보이는 행을 재설정하고 셀을 다시 선택합니다. 테이블의 데이터 소스가 UIDataSourceModelAssociation 프로토콜을 구현하지 않으면 선택된 셀의 indexPath와 마찬가지로 스크롤 위치가 직접 저장 및 복원됩니다.
+테이블 뷰의 [restorationIdentifier](../../../not-found.md) 속성에 값을 지정하면 선택된 행과 현재 화면상에 보이는 첫번째 행이 보존됩니다. 테이블의 데이터 소스가 [UIDataSourceModelAssociation](../../../not-found.md) 프로토콜을 따른다면 테이블의 행 위치와 관계없이 행의 내용을 식별할 수 있습니다. 또한 상태를 저장할 때 데이터 소스를 참조하여 화면상의 첫번째 행과 선택한 셀의 indexPath를 식별자로 변환합니다.  
+복원 중에는 데이터 소스를 참조하여 식별자를 다시 indexPath로 변환하며 맨 위에 보이는 행을 재설정하고 셀을 다시 선택하게 됩니다. 테이블의 데이터 소스가 UIDataSourceModelAssociation 프로토콜을 구현하지 않으면 선택된 셀의 indexPath와 마찬가지로 스크롤 위치가 직접 저장되고 복원됩니다.
 
 상태 보존 및 복원에 대한 자세한 내용은 [iOS용 앱 프로그래밍 가이드](../../../not-found.md)를 참조하세요.
 
