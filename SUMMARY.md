@@ -14,6 +14,7 @@
     * [UIView](uikit/views_and_controls/uiview.md)
     * [Table Views](uikit/views_and_controls/table-views/README.md)
       * [UITableView](uikit/views_and_controls/table-views/uitableview.md)
+      * [UITableViewCell](uikit/views_and_controls/table-views/uitableviewcell.md)
   * [View Controllers](uikit/view-controllers/README.md)
     * [UIViewController](uikit/view-controllers/uiviewcontroller.md)
   * [애니메이션과 햅틱](uikit/animation-and-haptics/README.md)

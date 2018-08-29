@@ -26,7 +26,7 @@ description: 하나의 열과 커스텀 가능한 행에 데이터를 표시하�
 
 ### Rows
 
-* _class_ UITableViewCell
+* _class_ [UITableViewCell](uitableviewcell.md)
 
   테이블 뷰에 있는 셀
 
