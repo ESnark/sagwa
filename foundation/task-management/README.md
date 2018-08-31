@@ -24,7 +24,7 @@ description: 사용자와 시스템간 상호 작용과 앱 작업을 관리합�
 
 ### Operations
 
-* _class_ Operation
+* _class_ [Operation](operation.md)
 
   단일 태스크와 관련된 코드 및 데이터를 나타내는 추상 클래스
 
