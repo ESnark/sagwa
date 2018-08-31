@@ -1,0 +1,8 @@
+---
+description: 작업 실행을 제어하는 대기열
+---
+
+# OperationQueue
+
+> 원본 출처  
+> [https://developer.apple.com/documentation/foundation/operation](https://developer.apple.com/documentation/foundation/operation)
