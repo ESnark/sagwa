@@ -1,7 +1,3 @@
----
-description: 단일 태스크와 관련된 코드 및 데이터를 나타내는 추상 클래스
----
-
 # Operation
 
 > 원본 출처  
@@ -16,7 +12,7 @@ description: 단일 태스크와 관련된 코드 및 데이터를 나타내는 
 
 Operation은 추상 클래스이기 때문에 작업 수행을 위해 직접 사용되지는 않고 \(시스템 정의된\) 서브클래스를 사용합니다. 시스템 정의 서브클래스로는 [NSInvocationOperation](../../not-found.md), [BlockOperation](../../not-found.md)이 있습니다. Operation의 기본 구현에는 추상적이지만 작업의 안전한 실행을 조정하는 중요한 로직이 포함되어 있습니다. 이 기본 내장된 로직은 개발자가 다른 시스템 객체와 올바르게 동작하도록 하기 위한 글루코드가 아니라 실제 작업 구현에 집중하도록 돕습니다.
 
-operation 객체는 싱글샷 객체입니다. 즉, 작업을 한 번 실행한 후에는 다시 사용할 수 없습니다. 일반적으로 작업 대기열\([OperationQueue](../../not-found.md) 클래스의 인스턴스\)에 추가하여 작업을 실행하는데 operationQueue 보조 쓰레드에서 직접 실행하거나 libdispatch 라이브러리\(Grand Central Dispatch라고도 함\)를 사용하여 간접적으로 operation을 수행합니다. operationQueue가 operation을 실행하는 방법에 대한 자세한 내용은 [OperationQueue](../../not-found.md)를 참조하세요.
+operation 객체는 싱글샷 객체입니다. 즉, 작업을 한 번 실행한 후에는 다시 사용할 수 없습니다. 일반적으로 작업 대기열\([OperationQueue](operationqueue.md) 클래스의 인스턴스\)에 추가하여 작업을 실행하는데 operationQueue 보조 쓰레드에서 직접 실행하거나 libdispatch 라이브러리\(Grand Central Dispatch라고도 함\)를 사용하여 간접적으로 operation을 수행합니다. operationQueue가 operation을 실행하는 방법에 대한 자세한 내용은 [OperationQueue](operationqueue.md)를 참조하세요.
 
 operationQeueu를 원하지 않는다면 코드에서 직접 start\(\) 메서드를 호출하여 작업을 직접 실행할 수 있습니다. 준비 상태가 아닌 작업을 시작하면 예외가 발생하기 때문에 operation을 수동적으로 실행하는 것은 코드에 많은 부담이 됩니다. isReady 프로퍼티는 작업 준비 상태를 나타냅니다.
 
@@ -161,7 +157,7 @@ cancellation 시멘틱은 작성하는 모든 커스텀 코드에서 지원되�
 
   operation의 이름
 
-### 종속성\(의존성\) 관리
+### 종속성\(의존성\) 관리 {#managing-dependencies}
 
 * _func_ addDependency\(Operation\)
 
@@ -217,7 +213,7 @@ cancellation 시멘틱은 작성하는 모든 커스텀 코드에서 지원되�
 
 ### Operations
 
-* _class_ OperationQueue
+* _class_ [OperationQueue](operationqueue.md)
 
   작업 실행을 제어하는 대기열\(queue\)
 

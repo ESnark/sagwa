@@ -1,7 +1,3 @@
----
-description: 하나의 열과 커스텀 가능한 행에 데이터를 표시하세요.
----
-
 # Table Views
 
 > 원본 출처[https://developer.apple.com/documentation/uikit/views\_and\_controls/table\_views](https://developer.apple.com/documentation/uikit/views_and_controls/table_views)

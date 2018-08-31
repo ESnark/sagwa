@@ -1,7 +1,3 @@
----
-description: iOS/tvOS 앱 개발을 위해 UIKit과 Xcode가 제공하는 기본기능에 대해서 알아보세요
----
-
 # UIKit으로 앱 개발
 
 > 원본출처  

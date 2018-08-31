@@ -1,7 +1,3 @@
----
-description: 사용자와 시스템간 상호 작용과 앱 작업을 관리합니다.
----
-
 # 작업 관리
 
 ## 주제
@@ -28,7 +24,7 @@ description: 사용자와 시스템간 상호 작용과 앱 작업을 관리합�
 
   단일 태스크와 관련된 코드 및 데이터를 나타내는 추상 클래스
 
-* _class_ OperationQueue
+* _class_ [OperationQueue](operationqueue.md)
 
   작업 실행을 제어하는 대기열\(queue\)
 

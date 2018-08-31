@@ -1,7 +1,3 @@
----
-description: iOS에서 실행되는 앱의 제어와 조정의 중심점
----
-
 # UIApplication
 
 > 원본출처  

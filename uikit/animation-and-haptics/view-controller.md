@@ -1,7 +1,3 @@
----
-description: 하나의 view controller에서 다른 하나로 넘어가는 커스텀 전환효과를 정의하세요
----
-
 # View controller 전환
 
 ## 주제
