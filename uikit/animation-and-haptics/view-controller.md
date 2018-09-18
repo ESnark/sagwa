@@ -1,4 +1,11 @@
+---
+description: 하나의 view controller에서 다른 하나로 넘어가는 커스텀 전환효과를 정의하세요
+---
+
 # View controller 전환
+
+> 원본출처  
+> [https://developer.apple.com/documentation/uikit/animation\_and\_haptics/view\_controller\_transitions](https://developer.apple.com/documentation/uikit/animation_and_haptics/view_controller_transitions)
 
 ## 주제
 

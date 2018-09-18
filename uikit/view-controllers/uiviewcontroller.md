@@ -1,3 +1,7 @@
+---
+description: UIKit 앱의 View 계층구조를 관리하는 객체
+---
+
 # UIViewController
 
 > 원본출처

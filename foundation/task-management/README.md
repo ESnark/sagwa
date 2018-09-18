@@ -1,4 +1,11 @@
+---
+description: 사용자와 시스템간 상호 작용과 앱 작업을 관리합니다.
+---
+
 # 작업 관리
+
+> 원본출처  
+> [https://developer.apple.com/documentation/foundation/task\_management](https://developer.apple.com/documentation/foundation/task_management)
 
 ## 주제
 

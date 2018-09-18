@@ -1,3 +1,7 @@
+---
+description: 화면상의 직사각형 영역에 대한 컨텐츠를 관리하는 개체입니다.
+---
+
 # Table Views
 
 > 원본 출처[https://developer.apple.com/documentation/uikit/views\_and\_controls/table\_views](https://developer.apple.com/documentation/uikit/views_and_controls/table_views)

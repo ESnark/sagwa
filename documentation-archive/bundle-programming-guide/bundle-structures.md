@@ -1,3 +1,7 @@
+---
+description: 표준 번들 타입의 구조와 컨텐츠를 설명합니다.
+---
+
 # 번들 구조
 
 번들 구조는 번들 유형과 타겟 플랫폼에 따라 달라질 수 있습니다. 다음 섹션에서는 MacOS와 iOS 모두에서 가장 일반적으로 사용되는 번들 구조를 설명합니다.
@@ -53,17 +57,62 @@ Xcode에서 제공하는 프로젝트 템플릿은 iPhone 또는 iPad 애플리�
 
 다음 표는 MyApp의 내용을 설명합니다. 이 애플리케이션 자체는 데모용으로만 사용할 수 있지만 포함된 많은 파일은 애플리케이션 번들로 검색할 때 iOS에서 찾을 수 있는 특정 파일들을 나타냅니다. 지원하는 기능에 따라 자신의 번들에 이러한 파일의 일부 또는 전체가 포함됩니다.
 
-| 파일 | 설명 |
-| :--- | :--- |
-| MyApp | \(필수\) 애플리케이션 코드를 포함하는 실행 파일입니다. 이 파일의 이름은 애플리케이션 이름에서 .app 확장자를 뺀 것과 같습니다. |
-| 애플리케이션 아이콘\(MyAppIcon.png, MySearchIcon.png, and MySettingsIcon.png\) | \(필수/권장\) 애플리케이션 아이콘은 애플리케이션을 나타내는 특정 시점에 사용됩니다. 예를 들어, 홈 스크린, 검색 결과 및 설정 응용 프로그램에 다양한 크기의 응용 프로그램 아이콘이 표시됩니다. 모든 아이콘이 필요한 것은 아니지만 대부분은 권장됩니다. 응용 프로그램 아이콘에 대한 자세한 내용은 [애플리케이션 아이콘 및 실행 이미지](../../not-found.md)를 참조하세요. |
-| Info.plist | \(필수\) 이 파일에는 번들 ID, 버전 번호 및 디스플레이 이름과 같은 애플리케이션에 대한 구성 정보가 포함되어 있습니다. 자세한 내용은 [Information Property list File](../../not-found.md)을 참조하세요. |
-| Launch images \(Default.png\) | \(권장\) 애플리케이션의 초기 인터페이스를 특정 방향으로 표시하는 하나 이상의 이미지입니다. 시스템은 애플리케이션이 창과 사용자 인터페이스를 로드할 때까지 Launch 이미지 중 하나를 임시 배경으로 사용합니다. 애플리케이션에서 Launch 이미지를 제공하지 않으면 애플리케이션이 시작되는 동안 검은 배경이 표시됩니다. 애플리케이션 아이콘에 대한 자세한 내용은 [애플리케이션 아이콘 및 실행 이미지](../../not-found.md)를 참조하세요. |
-| MainWindow.nib | \(권장\) 애플리케이션의 main [nib 파일](../../not-found.md)은 시작 시 로드할 기본 인터페이스 객체를 포함하고 있습니다. 일반적으로 이 nib 파일에는 애플리케이션의 기본 창 객체와 App [delegate](../../not-found.md) 객체의 인스턴스가 포함됩니다. 그런 다음 다른 인터페이스 객체는 추가 nib 파일에서 로드되거나 애플리케이션에 의해 프로그래밍 방식으로 생성됩니다. \(main nib 파일의 이름은 Info.plist 파일의 NSMainNibFile 키에 다른 값을 할당하여 변경할 수 있습니다. 자세한 내용은 Informatioin Property list 파일을 참조하세요.\) |
-| Settings.bundle | Setting 번들은 설정 애플리케이션에 추가할 애플리케이션별 기본 설정이 포함된 특별한 유형의 플러그인입니다. 이 번들에는 기본 설정을 구성하고 표시할 [프로퍼티 리스트](../../not-found.md)와 기타 리소스 파일이 포함되어 있습니다. |
-| 커스텀 리소스 파일 | 지역화되지 않은 리소스는 최상위 디렉터리에 배치되고 지역화된 리소스는 애플리케이션 번들의 언어별 하위 디렉터리에 배치됩니다. 리소스는 nib 파일, 이미지, 사운드 파일, 설정 파일, 문자열 파일 및 애플리케이션에 필요한 기타 커스텀 데이터 파일로 구성됩니다. 리소스에 대한 자세한 내용은 [iOS 애플리케이션의 리소스](../../not-found.md)를 참조하세요. |
-
-{% hint style="info" %}
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">파일</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">MyApp</td>
+      <td style="text-align:left">(필수) 애플리케이션 코드를 포함하는 실행 파일입니다. 이 파일의 이름은 애플리케이션 이름에서 .app 확장자를 뺀 것과 같습니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p>애플리케이션 아이콘</p>
+        <p>(MyAppIcon.png, MySearchIcon.png, and MySettingsIcon.png)</p>
+      </td>
+      <td style="text-align:left">(필수/권장) 애플리케이션 아이콘은 애플리케이션을 나타내는 특정 시점에 사용됩니다. 예를 들어, 홈 스크린, 검색 결과 및 설정
+        응용 프로그램에 다양한 크기의 응용 프로그램 아이콘이 표시됩니다. 모든 아이콘이 필요한 것은 아니지만 대부분은 권장됩니다. 응용
+        프로그램 아이콘에 대한 자세한 내용은 <a href="../../not-found.md">애플리케이션 아이콘 및 실행 이미지</a>를
+        참조하세요.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Info.plist</td>
+      <td style="text-align:left">(필수) 이 파일에는 번들 ID, 버전 번호 및 디스플레이 이름과 같은 애플리케이션에 대한 구성 정보가 포함되어 있습니다. 자세한
+        내용은 <a href="../../not-found.md">Information Property list File</a>을 참조하세요.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Launch images (Default.png)</td>
+      <td style="text-align:left">(권장) 애플리케이션의 초기 인터페이스를 특정 방향으로 표시하는 하나 이상의 이미지입니다. 시스템은 애플리케이션이 창과 사용자
+        인터페이스를 로드할 때까지 Launch 이미지 중 하나를 임시 배경으로 사용합니다. 애플리케이션에서 Launch 이미지를 제공하지
+        않으면 애플리케이션이 시작되는 동안 검은 배경이 표시됩니다. 애플리케이션 아이콘에 대한 자세한 내용은 <a href="../../not-found.md">애플리케이션 아이콘 및 실행 이미지</a>를
+        참조하세요.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">MainWindow.nib</td>
+      <td style="text-align:left">(권장) 애플리케이션의 main <a href="../../not-found.md">nib 파일</a>은 시작 시 로드할 기본
+        인터페이스 객체를 포함하고 있습니다. 일반적으로 이 nib 파일에는 애플리케이션의 기본 창 객체와 App <a href="../../not-found.md">delegate</a> 객체의
+        인스턴스가 포함됩니다. 그런 다음 다른 인터페이스 객체는 추가 nib 파일에서 로드되거나 애플리케이션에 의해 프로그래밍 방식으로
+        생성됩니다. (main nib 파일의 이름은 Info.plist 파일의 NSMainNibFile 키에 다른 값을 할당하여 변경할
+        수 있습니다. 자세한 내용은 Informatioin Property list 파일을 참조하세요.)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Settings.bundle</td>
+      <td style="text-align:left">Setting 번들은 설정 애플리케이션에 추가할 애플리케이션별 기본 설정이 포함된 특별한 유형의 플러그인입니다. 이 번들에는
+        기본 설정을 구성하고 표시할 <a href="../../not-found.md">프로퍼티 리스트</a>와 기타 리소스 파일이 포함되어
+        있습니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">커스텀 리소스 파일</td>
+      <td style="text-align:left">지역화되지 않은 리소스는 최상위 디렉터리에 배치되고 지역화된 리소스는 애플리케이션 번들의 언어별 하위 디렉터리에 배치됩니다.
+        리소스는 nib 파일, 이미지, 사운드 파일, 설정 파일, 문자열 파일 및 애플리케이션에 필요한 기타 커스텀 데이터 파일로 구성됩니다.
+        리소스에 대한 자세한 내용은 <a href="../../not-found.md">iOS 애플리케이션의 리소스</a>를 참조하세요.</td>
+    </tr>
+  </tbody>
+</table>{% hint style="info" %}
 알림
 
 iOS 앱 번들에는 "Resources"라는 이름의 사용자 지정 폴더가 포함될 수 없습니다.

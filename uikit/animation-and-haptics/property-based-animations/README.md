@@ -1,4 +1,11 @@
+---
+description: 뷰의 프로퍼티를 바꿈으로써 애니메이션을 만드세요
+---
+
 # 프로퍼티 기반 애니메이션
+
+> 원본출처  
+> [https://developer.apple.com/documentation/uikit/animation\_and\_haptics/property-based\_animations](https://developer.apple.com/documentation/uikit/animation_and_haptics/property-based_animations)
 
 ## 주제
 
