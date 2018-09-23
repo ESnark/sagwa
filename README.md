@@ -15,10 +15,10 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 ### App Frameworks
 
 * AppKit
-* [Foundation](foundation/)
+* [Foundation](app-framework/foundation/)
 * Objective-C
-* [Swift](swift/)
-* [UIKit](uikit/)
+* [Swift](app-framework/swift/)
+* [UIKit](app-framework/uikit/)
 
 ### App Service
 
