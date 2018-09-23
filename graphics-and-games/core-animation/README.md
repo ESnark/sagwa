@@ -36,7 +36,7 @@ Core Animation은 CPU에 부담을 주지 않고 앱 속도를 저하시키지 �
 
   일반 문자열이나 속성 문자열의 간단한 텍스트 레이아웃과 렌더링을 제공하는 레이어
 
-* _class_ CAShapeLayer
+* _class_ [CAShapeLayer](cashapelayer.md)
 
   좌표공간에 cubic Bezier spline을 그리는 레이어
 
