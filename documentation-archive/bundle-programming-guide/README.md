@@ -1,7 +1,7 @@
 # 번들 프로그래밍 가이드
 
 > 원문출처  
-> [https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AboutBundles/AboutBundles.html\#//apple\_ref/doc/uid/10000123i-CH100-SW1](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AboutBundles/AboutBundles.html#//apple_ref/doc/uid/10000123i-CH100-SW1)
+> [https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html\#//apple\_ref/doc/uid/10000123i-CH1-SW1](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i-CH1-SW1)
 
 ## 소개
 
