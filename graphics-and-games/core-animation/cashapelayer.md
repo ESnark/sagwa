@@ -4,6 +4,9 @@ description: 좌표공간에 cubic Bezier spline을 그리는 레이어
 
 # CAShapeLayer
 
+> 원본 출처  
+> [https://developer.apple.com/documentation/quartzcore/cashapelayer](https://developer.apple.com/documentation/quartzcore/cashapelayer)
+
 ## 개요
 
 이 Shape는 레이어의 컨텐츠와 첫 번째 하위 레이어 사이에 합성됩니다.

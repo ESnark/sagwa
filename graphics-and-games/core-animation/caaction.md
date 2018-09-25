@@ -4,6 +4,9 @@ description: 객체가 CALayer 변경에 의해 트리거 된 액션에 응답�
 
 # CAAction
 
+> 원본 출처  
+> [https://developer.apple.com/documentation/quartzcore/caaction](https://developer.apple.com/documentation/quartzcore/caaction)
+
 ## 개요 {#overview}
 
 Action 식별자\(key path, 외부 action 이름 또는 미리 정의된 작업 식별자\)로 쿼리할 때 레이어는 적절한 action 객체\(CAAction 프로토콜이 구현되어있어야 함\)를 반환하고 run\(forKey:object:arguments:\) 메시지를 전송합니다.

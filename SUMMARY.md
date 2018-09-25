@@ -44,6 +44,7 @@
   * [CALayer](graphics-and-games/core-animation/calayer.md)
   * [CAAction](graphics-and-games/core-animation/caaction.md)
   * [CAShapeLayer](graphics-and-games/core-animation/cashapelayer.md)
+* [Core Graphics](graphics-and-games/core-graphics.md)
 
 ## Documentation Archive
 
