@@ -1,4 +1,11 @@
+---
+description: '필수 데이터 타입, 컬렉션, 운영체제 서비스를 통해 앱 기능성의 기본 계층을 정의하세요'
+---
+
 # Foundation
+
+> 원문 출처  
+> [https://developer.apple.com/documentation/foundation](https://developer.apple.com/documentation/foundation)
 
 ## 개요 {#overview}
 

@@ -41,11 +41,11 @@ Core Graphics 프레임워크는 Quartz 고급 드로잉 엔진을 기반으로 
 
 * _class_ CGPath
 
-  변경 가능/변경 불가능 타입의 그래픽 경로: 그래픽 컨텍스트에 그려질 모양이나 선의 수학적  설명
+  변경 가능/변경 불가능 타입의 그래픽 경로: 그래픽 컨텍스트에 그려질 모양이나 선의 수학적 설명
 
 * _class_ CGMutablePath
 
-  변경 가능한 그래픽 경로: 그래픽 컨텍스트에 그려질 모양이나 선의 수학적  설명
+  변경 가능한 그래픽 경로: 그래픽 컨텍스트에 그려질 모양이나 선의 수학적 설명
 
 * _class_ CGLayer
 
@@ -116,7 +116,7 @@ Core Graphics 프레임워크는 Quartz 고급 드로잉 엔진을 기반으로 
 
 ### Enumerations
 
-* enum CGPathFillRule 어느 영역이 경로\(Path\)의 내부인지를 결정하는 규칙. [fillPath\(using:\)](../etc/not-found.md)과 [clip\(using:\)](../etc/not-found.md) 메서드에서 사용됩니다.
+* enum CGPathFillRule 어느 영역이 경로\(Path\)의 내부인지를 결정하는 규칙. [fillPath\(using:\)](../../etc/not-found.md)과 [clip\(using:\)](../../etc/not-found.md) 메서드에서 사용됩니다.
 
 ### 구조체
 
