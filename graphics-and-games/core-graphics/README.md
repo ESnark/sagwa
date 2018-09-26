@@ -39,7 +39,7 @@ Core Graphics 프레임워크는 Quartz 고급 드로잉 엔진을 기반으로 
 
   비트맵 이미지 또는 이미지 마스크
 
-* _class_ CGPath
+* _class_ [CGPath](cgpath.md)
 
   변경 가능/변경 불가능 타입의 그래픽 경로: 그래픽 컨텍스트에 그려질 모양이나 선의 수학적 설명
 

@@ -20,41 +20,41 @@ description: '변경 가능/변경 불가능 타입의 그래픽 경로: 그래�
 
 ### 그래픽 경로 복사
 
-* func copy\(\) -&gt; CGPath? 그래픽 경로의 변경 불가능한 사본을 생성합니다.
-* func copy\(using: UnsafePointer?\) -&gt; CGPath? 변환 매트릭스에 의해 변형된 그래픽 경로의 변경 불가능한 사본을 생성합니다.
-* func copy\(dashingWithPhase: CGFloat, lengths: \[CGFloat\], transform: CGAffineTransform\) -&gt; CGPath 점선 스트로크 경로를 그린 결과물에 해당하는 새로운 경로를 반환합니다.
-* func copy\(strokingWithWidth: CGFloat, lineCap: CGLineCap, lineJoin: CGLineJoin, miterLimit: CGFloat, transform: CGAffineTransform\) -&gt; CGPath 실선 경로를 그린 결과물에 해당하는 새로운 경로를 반환합니다.
-* func mutableCopy\(\) -&gt; CGMutablePath? 존재하는 그래픽 경로의 변경 가능한 사본을 생성합니다.
-* func mutableCopy\(using: UnsafePointer?\) -&gt; CGMutablePath? 변환 매트릭스에 의해 변형된 그래픽 경로듸 변경 가능한 사본을 생성합니다.
+* _func_ copy\(\) -&gt; CGPath? 그래픽 경로의 변경 불가능한 사본을 생성합니다.
+* _func_ copy\(using: UnsafePointer?\) -&gt; CGPath? 변환 매트릭스에 의해 변형된 그래픽 경로의 변경 불가능한 사본을 생성합니다.
+* _func_ copy\(dashingWithPhase: CGFloat, lengths: \[CGFloat\], transform: CGAffineTransform\) -&gt; CGPath 점선 스트로크 경로를 그린 결과물에 해당하는 새로운 경로를 반환합니다.
+* _func_ copy\(strokingWithWidth: CGFloat, lineCap: CGLineCap, lineJoin: CGLineJoin, miterLimit: CGFloat, transform: CGAffineTransform\) -&gt; CGPath 실선 경로를 그린 결과물에 해당하는 새로운 경로를 반환합니다.
+* _func_ mutableCopy\(\) -&gt; CGMutablePath? 존재하는 그래픽 경로의 변경 가능한 사본을 생성합니다.
+* _func_ mutableCopy\(using: UnsafePointer?\) -&gt; CGMutablePath? 변환 매트릭스에 의해 변형된 그래픽 경로듸 변경 가능한 사본을 생성합니다.
 
 ### 그래픽 경로 검사
 
-* var boundingBox: CGRect 그래픽 경로의 모든 지점을 포함하는 경계 박스를 반환합니다.
-* var boundingBoxOfPath: CGRect 그래픽 경로의 경계 박스를 반환합니다.
-* var currentPoint: CGPoint 그래픽 경로의 현재 지점을 반환합니다.
-* func contains\(CGPoint, using: CGPathFillRule, transform: CGAffineTransform\) -&gt; Bool 지정된 지점이 경로 내부에 있는지를 Boolean 값으로 반환합니다.
-* var isEmpty: Bool 그래픽 경로가 비어있는지를 Boolean 값으로 반환합니다.
-* func isRect\(UnsafeMutablePointer?\) -&gt; Bool 그래픽 경로가 사각형인지를 가리키는 값을 반환합니다.
+* _var_ boundingBox: CGRect 그래픽 경로의 모든 지점을 포함하는 경계 박스를 반환합니다.
+* _var_ boundingBoxOfPath: CGRect 그래픽 경로의 경계 박스를 반환합니다.
+* _var_ currentPoint: CGPoint 그래픽 경로의 현재 지점을 반환합니다.
+* _func_ contains\(CGPoint, using: CGPathFillRule, transform: CGAffineTransform\) -&gt; Bool 지정된 지점이 경로 내부에 있는지를 Boolean 값으로 반환합니다.
+* _var_ isEmpty: Bool 그래픽 경로가 비어있는지를 Boolean 값으로 반환합니다.
+* _func_ isRect\(UnsafeMutablePointer?\) -&gt; Bool 그래픽 경로가 사각형인지를 가리키는 값을 반환합니다.
 
 ### 경로 요소에 함수 적용
 
-* func apply\(info: UnsafeMutableRawPointer?, function: CGPathApplierFunction\)
+* _func_ apply\(info: UnsafeMutableRawPointer?, function: CGPathApplierFunction\)
 
   그래픽 경로의 각 요소마다 커스텀 적용 함수를 호출합니다.
 
-* typealias CGPathApplierFunction 그래픽 경로에서 요소를 볼 수 있는 콜백함수를 정의합니다.
-* struct CGPathElement 경로 요소에 대한 정보를 제공하는 데이터 구조체
-* enum CGPathElementType 경로상의 요소 타입
+* _typealias_ CGPathApplierFunction 그래픽 경로에서 요소를 볼 수 있는 콜백함수를 정의합니다.
+* _struct_ CGPathElement 경로 요소에 대한 정보를 제공하는 데이터 구조체
+* _enum_ CGPathElementType 경로상의 요소 타입
 
 ### Core Foundation 타입으로 작업하기
 
-* class var typeID: CFTypeID
+* _class var_ typeID: CFTypeID
 
   Core Graphics 경로에 대한 Core Foundation 타입 식별자를 반환합니다.
 
 ### 인스턴스 메서드
 
-* func applyWithBlock\(\(UnsafePointer\) -&gt; Void\)
+* _func_ applyWithBlock\(\(UnsafePointer\) -&gt; Void\)
 
 ## 같이 보기
 
