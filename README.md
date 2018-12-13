@@ -18,7 +18,7 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 
 ### GitBook Link
 
-[Link](https://melodyarchive.gitbook.io/sagwa/)
+[Link](https://melodyarchive.gitbook.io/sagwa)
 
 ## 목차
 
