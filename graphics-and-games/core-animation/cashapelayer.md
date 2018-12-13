@@ -1,7 +1,3 @@
----
-description: 좌표공간에 cubic Bezier spline을 그리는 레이어
----
-
 # CAShapeLayer
 
 > 원본 출처  
@@ -54,15 +50,15 @@ shapeLayer.fillRule = kCAFillRuleEvenOdd
 Shape 래스터화는 정확성보다 속도를 선호할 수 있습니다. 예를 들어 교차 경로가 여러 개인 픽셀은 정확한 결과를 제공하지 않을 수 있습니다.
 {% endhint %}
 
-## 주제 {#topics}
+## 주제 <a id="topics"></a>
 
-### Shape 경로 지정 {#specifying-the-shape-path}
+### Shape 경로 지정 <a id="specifying-the-shape-path"></a>
 
 * _var_ path: CGPath?
 
   렌더링될 shape를 정의하는 경로. 애니메이션 가능합니다.
 
-### Shape 스타일 프로퍼티 액세스 {#accessing-shape-style-properties}
+### Shape 스타일 프로퍼티 액세스 <a id="accessing-shape-style-properties"></a>
 
 * _var_ fillColor: CGColor?
 
@@ -103,7 +99,7 @@ Shape 래스터화는 정확성보다 속도를 선호할 수 있습니다. 예�
 
   경로 스트로크를 끝낼 상대 위치. 애니메이션 가능합니다.
 
-### 상수 {#constants}
+### 상수 <a id="constants"></a>
 
 * Shape Fill Mode Values
 
@@ -119,19 +115,19 @@ Shape 래스터화는 정확성보다 속도를 선호할 수 있습니다. 예�
 
 ## 관련 문서
 
-### 상속받은 대상 {#inherits-from}
+### 상속받은 대상 <a id="inherits-from"></a>
 
 * CALayer
 
-### 준수하는 프로토콜 {#conforms-to}
+### 준수하는 프로토콜 <a id="conforms-to"></a>
 
 * CVarArg
 * Equatable
 * Hashable
 
-## 같이 보기 {#see-also}
+## 같이 보기 <a id="see-also"></a>
 
-### 텍스트, 모양, 그라디언트 {#text-shapes-and-gradients}
+### 텍스트, 모양, 그라디언트 <a id="text-shapes-and-gradients"></a>
 
 * _class_ CATextLayer
 

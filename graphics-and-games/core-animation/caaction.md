@@ -1,19 +1,15 @@
----
-description: 객체가 CALayer 변경에 의해 트리거 된 액션에 응답할 수 있게 해주는 인터페이스
----
-
 # CAAction
 
 > 원본 출처  
 > [https://developer.apple.com/documentation/quartzcore/caaction](https://developer.apple.com/documentation/quartzcore/caaction)
 
-## 개요 {#overview}
+## 개요 <a id="overview"></a>
 
 Action 식별자\(key path, 외부 action 이름 또는 미리 정의된 작업 식별자\)로 쿼리할 때 레이어는 적절한 action 객체\([CAAction](caaction.md) 프로토콜이 구현되어있어야 함\)를 반환하고 [run\(forKey:object:arguments:\)](../../etc/not-found.md) 메시지를 전송합니다.
 
-## 주제 {#topics}
+## 주제 <a id="topics"></a>
 
-### 액션에 응답하기 {#responding-to-an-action}
+### 액션에 응답하기 <a id="responding-to-an-action"></a>
 
 * func run\(forKey: String, object: Any, arguments: \[AnyHashable : Any\]?\)
 

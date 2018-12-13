@@ -1,21 +1,17 @@
----
-description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대해 애니메이션을 수행할 수 있는 객체
----
-
 # CALayer
 
 > 원본 출처  
 > [https://developer.apple.com/documentation/quartzcore/calayer](https://developer.apple.com/documentation/quartzcore/calayer)
 
-## 개요 {#overview}
+## 개요 <a id="overview"></a>
 
 레이어는 종종 뷰에 대한 백업 저장소를 제공하는데 사용되기도 하지만 컨텐츠를 표시할 뷰 없이도 사용될 수 있습니다. 레이어의의 기본 작업은 개발자가 제공하는 시각적 컨텐츠를 관리하는 것이지만 레이어 자체에는 배경색, 테두리 및 그림자 같은 시각적 속성이 설정되어 있습니다. 시각적 컨텐츠 관리 외에도, 레이어는 해당 컨텐츠를 화면에 표시하는데 사용되는 컨텐츠의 형태\(위치, 크기 및 변환 등\)에 대한 정보도 보유합니다. 레이어 프로퍼티를 수정함으로써 레이어의 컨텐츠나 지오메트리 상의 에니메이션을 시작할 수 있습니다. 레이어 객체는 레이어의 타이밍 정보를 정의하는 [CAMediaTiming](../../etc/not-found.md) 프로토콜을 채택하여 레이어와 애니메이션의 지속 시간과 페이싱을 캡슐화합니다.
 
 레이어 객체가 뷰에 의해 생성된 경우 일반적으로 뷰는 자신을 레이어의 delegate로 자동 할당하는데 해당 관계는 변경되어선 안됩니다. 직접 작성하는 레이어의 경우 delegate 객체를 할당하고 해당 객체를 사용하여 레이어의 컨텐츠를 동적으로 제공하며 다른 작업도 수행할 수 있습니다. 또한 레이어에는 하위 뷰의 레이아웃을 별도로 관리하기 위한 레이아웃 관리자 객체가 있을 수 있습니다\(LayoutManager 프로퍼티에 할당됨\)
 
-## 주제 {#topics}
+## 주제 <a id="topics"></a>
 
-### 레이어 생성 {#creating-a-layer}
+### 레이어 생성 <a id="creating-a-layer"></a>
 
 * init\(\)
 
@@ -29,20 +25,20 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 
   remote client ID로 레이어를 초기화합니다.
 
-### 연관 레이어 객체에 접근하기 {#accessing-related-layer-objects}
+### 연관 레이어 객체에 접근하기 <a id="accessing-related-layer-objects"></a>
 
 * _func_ presentation\(\) -&gt; Self? 현재 화면에 표시되는 레이어 상태를 나타내는 프레젠테이션 레이어 객체의 복사본을 반환합니다.
 * _func_ model\(\) -&gt; Self
 
   수신자와 연결된 모델 레이어 객체가 있는 경우 반환합니다.
 
-### Delegate에 접근하기 {#accessing-the-delegate}
+### Delegate에 접근하기 <a id="accessing-the-delegate"></a>
 
 * _var_ delegate: CALayerDelegate?
 
   레이어의 delegate 객체
 
-### 레이어 컨텐츠 제공 {#providing-the-layers-content}
+### 레이어 컨텐츠 제공 <a id="providing-the-layers-content"></a>
 
 * _var_ contents: Any?
 
@@ -61,7 +57,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 
   지정된 그래픽 컨텍스트를 사용하여 레이어의 컨텐츠를 그립니다.
 
-### 레이어 모양 수정 {#modifying-the-layers-appearance}
+### 레이어 모양 수정 <a id="modifying-the-layers-appearance"></a>
 
 * _var_ contentsGravity: CALayerContentsGravity
 
@@ -111,7 +107,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 
   레이어를 부모로부터 분리된 그룹으로 합성할 수 있는지를 나타내는 Boolean 값
 
-### 레이어 필터 {#layer-filters}
+### 레이어 필터 <a id="layer-filters"></a>
 
 * _var_ filters: \[Any\]?
 
@@ -129,7 +125,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 * _var_ minificationFilterBias: Float 최소화 필터에서 디테일 수준을 결정하는 데 사용되는 치우침 계수.
 * _var_ magnificationFilter: CALayerContentsFilter 컨텐츠의 크기를 늘리는데 사용되는 필터.
 
-### 레이어 렌더링 동작 설정 {#configuring-the-layers-rendering-behavior}
+### 레이어 렌더링 동작 설정 <a id="configuring-the-layers-rendering-behavior"></a>
 
 * _var_ isOpaque: Bool
 
@@ -150,7 +146,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 * _var_ contentsFormat: CALayerContentsFormat 레이어 컨텐츠의 원하는 저장 형식에 대한 힌트.
 * _func_ render\(in: CGContext\) 레이어와 해당 하위 레이어를 지정된 컨텍스트로 렌더링합니다.
 
-### 레이어 지오메트리 수정 {#modifying-the-layer-geometry}
+### 레이어 지오메트리 수정 <a id="modifying-the-layer-geometry"></a>
 
 * _var_ frame: CGRect
 
@@ -174,7 +170,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 
   레이어에 적용되는 스케일 인자
 
-### 레이어 변형관리 {#managing-the-layers-transform}
+### 레이어 변형관리 <a id="managing-the-layers-transform"></a>
 
 * _var_ transform: CATransform3D
 
@@ -187,7 +183,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 * _func_ affineTransform\(\) -&gt; CGAffineTransform 레이어 변환의 affine 버전을 반환합니다.
 * _func_ setAffineTransform\(CGAffineTransform\) 레이어의 변환을 지정된 affine 변환으로 설정합니다.
 
-### 레이어 계층관리 {#managing-the-layer-hierarchy}
+### 레이어 계층관리 <a id="managing-the-layer-hierarchy"></a>
 
 * _var_ sublayers: \[CALayer\]?
 
@@ -201,7 +197,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 * _func_ insertSublayer\(CALayer, above: CALayer?\) 지정된 레이어를 이미 수신자에 속해있는 다른 `above:` 서브레이어 위에 삽입합니다.
 * _func_ replaceSublayer\(CALayer, with: CALayer\) 지정된 레이어로 다른 `with:` 레이어 객체를 대체합니다.
 
-### 레이어 디스플레이 업데이트 {#updating-layer-display}
+### 레이어 디스플레이 업데이트 <a id="updating-layer-display"></a>
 
 * _var_ layoutManager: CALayoutManager?
 
@@ -220,7 +216,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 * _func_ needsDisplay\(\) -&gt; Bool 레이어가 업데이트가 필요한 것으로 표시되었는지 나타내는 Boolean 값을 반환합니다.
 * _class func_ needsDisplay\(forKey: String\) -&gt; Bool `forKey:` 의 변경사항이 레이어의 재디스플레이를 요구하는지 나타내는 Boolean 값을 반환합니다.
 
-### 레이어 애니메이션 {#layer-animations}
+### 레이어 애니메이션 <a id="layer-animations"></a>
 
 * _func_ add\(CAAnimation, forKey: String?\)
 
@@ -239,7 +235,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 
   레이어에 현재 연결된 애니메이션을 식별하는 문자열 배열을 반환합니다.
 
-### 레이어 리사이징과 레이아웃 관리 {#managing-layer-resizing-and-layout}
+### 레이어 리사이징과 레이아웃 관리 <a id="managing-layer-resizing-and-layout"></a>
 
 * _var_ layoutManager: CALayoutManager?
 
@@ -263,7 +259,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 
 * _func_ preferredFrameSize\(\) -&gt; CGSize 슈퍼 레이어 좌표 공간상에서의 레이어의 기본 크기를 반환합니다.
 
-### 레이어 제약조건 관리 {#managing-layer-constraints}
+### 레이어 제약조건 관리 <a id="managing-layer-constraints"></a>
 
 * _var_ constraints: \[CAConstraint\]?
 
@@ -273,7 +269,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 
   지정된 제약조건을 레이어에 추가합니다.
 
-### 레이어 액션 가져오기 {#getting-the-layers-actions}
+### 레이어 액션 가져오기 <a id="getting-the-layers-actions"></a>
 
 * _func_ action\(forKey: String\) -&gt; CAAction?
 
@@ -287,7 +283,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 
   현재 클래스의 기본 action을 반환합니다.
 
-### 좌표와 시공간 매핑 {#mapping-between-coordinate-and-time-spaces}
+### 좌표와 시공간 매핑 <a id="mapping-between-coordinate-and-time-spaces"></a>
 
 * _func_ convert\(CGPoint, from: CALayer?\) -&gt; CGPoint
 
@@ -309,7 +305,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 
   수신자가 지정된 포인트를 포함하는지 나타내는 Boolean 값을 반환합니다.
 
-### 스크롤링 {#scrolling}
+### 스크롤링 <a id="scrolling"></a>
 
 * _var_ visibleRect: CGRect
 
@@ -323,7 +319,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 
   지정된 사각형이 보일때까지 레이어의의 가장 가까운 조상 스크롤 레이어에서 스크롤을 시작합니다.
 
-### 레이어 식별 {#identifying-the-layer}
+### 레이어 식별 <a id="identifying-the-layer"></a>
 
 * _var_ name: String?
 
@@ -334,7 +330,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 * _func_ shouldArchiveValue\(forKey: String\) -&gt; Bool `forKey:` 의 값이 아카이브되어야 할지를 나타내는 Boolean값을 반환합니다.
 * _class func_ defaultValue\(forKey: String\) -&gt; Any? `forKey:` 와 연결된 기본값을 지정합니다.
 
-### 상수 {#constants}
+### 상수 <a id="constants"></a>
 
 * _struct_ CAAutoresizingMask
 
@@ -360,13 +356,13 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 
   Core Animation 전체에서 사용되는 표준 변환 매트릭스입니다.
 
-## 관련 문서 {#relationships}
+## 관련 문서 <a id="relationships"></a>
 
-### 상속받은 대상 {#inherits-from}
+### 상속받은 대상 <a id="inherits-from"></a>
 
 * NSObject
 
-### 준수하는 프로토콜 {#conforms-to}
+### 준수하는 프로토콜 <a id="conforms-to"></a>
 
 * CAMediaTiming
 * CVarArg
@@ -374,9 +370,9 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 * Hashable
 * NSSecureCoding
 
-## 같이 보기 {#see-also}
+## 같이 보기 <a id="see-also"></a>
 
-### 레이어 기초 {#layer-basics}
+### 레이어 기초 <a id="layer-basics"></a>
 
 * _protocol_ CALayerDelegate 레이어 관련 이벤트에 응답하기 위해 앱이 구현할 수 있는 메서드
 * _class_ CAConstraint 두 레이어 사이의 단일 레이아웃 제약 조건
