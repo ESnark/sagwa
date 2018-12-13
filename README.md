@@ -16,9 +16,9 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 
 불편하시더라도 github으로 pull request를 주시면 반영하도록 하겠습니다.
 
-### GitBook Link
+### GitBook 링크
 
-[Link](https://melodyarchive.gitbook.io/sagwa)
+[Link](https://melodyarchive.gitbook.io/sagwa/)
 
 ## 목차
 
