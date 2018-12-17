@@ -20,7 +20,7 @@ operationQeueu를 원하지 않는다면 코드에서 직접 start\(\) 메서드
 
 종속성은 operation을 순서대로 실행하는 편리한 방법입니다. addDependency\(\_:\)와 removeDependency\(\_:\) 메서드를 사용하여 operation에 대한 종속성을 추가하고 제거할 수 있습니다. 기본적으로 종속성이 있는 operation 객체는 해당 객체가 종속된 모든 operation 객체\(선행하는 operation\)의 실행이 완료되기 전까지 준비되지 않은 것으로 간주됩니다.  그러나 선행 operation이 전부 실행된 후에는 종속된 operation 객체가 준비되고 실행가능해집니다.
 
-NSOperation에서 지원되는 종속성은 선행 operation이 성공적으로 완료되었는지 실패했는지를 구분하지 않습니다. 즉, operation을 취소하면 유사한 방식으로 완료된 것으로 표시됩니다. 선행 operation이 취소되었거나 작업을 성공적으로 완료되지 못한 경우 종속 operation을 계속해서 진행할지 여부는 개발자에게 달려 있습니다. 이를 위해 operation 객체에 몇 가지 추가 오류 추적 기능을 통합해야 할 수 있습니다.
+NSOperation에서 지원되는 종속성은 선행 operation이 성공적으로 완료되었는지 실패했는지를 구분하지 않습니다. 즉, operation을 취소하면 유사한 방식으로 완료된 것으로 표시됩니다. 선행 operation이 취소되었거나 작업을 성공적으로 완료되지 못한 경우 종속 operation을 계속해서 진행할지 여부는 개발자에게 달려 있습니다. 이를 위해 operation 객체에 몇 가지 오류 추적 기능을 추가해야 할 수도 있습니다.
 
 ## KVO 준수 프로퍼티
 
