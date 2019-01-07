@@ -1,6 +1,6 @@
 # Table of contents
 
-* [애플 개발문서 번역 프로젝트](README.md)
+* [애플 개발자 문서 한글 번역](README.md)
 
 ## App Frameworks
 
