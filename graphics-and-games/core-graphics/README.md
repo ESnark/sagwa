@@ -65,30 +65,30 @@ Core Graphics 프레임워크는 Quartz 고급 드로잉 엔진을 기반으로 
 
 ### PDF 문서로 작업하기
 
-* class CGPDFDocument
+* _class_ CGPDFDocument
 
   PDF 드로잉 정보를 포함한 문서
 
 ### Utility and Support Classes
 
-* class CGDataConsumer
+* _class_ CGDataConsumer
 
   An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer.
 
-* class CGDataProvider
+* _class_ CGDataProvider
 
   An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer.
 
-* class CGShading
+* _class_ CGShading
 
   색상 간의 자연스러운 전환을 위한 정의로서, 개발자가 제공하는 커스텀 함수로 제어됩니다. 이 함수는 방사상 또는 축 그라데이션을 채우는 기능을 합니다.
 
-* class CGGradient 방사상 그라데이션과 축 그라데이션에서 색상간에 부드러운 전환을 위한 정의
-* class CGFunction
+* _class_ CGGradient 방사상 그라데이션과 축 그라데이션에서 색상간에 부드러운 전환을 위한 정의
+* _class_ CGFunction
 
   콜백함수를 정의하고 사용하는 일반 기능
 
-* class CGPattern 그래픽 경로를 그리는데 사용되는 2D 패턴
+* _class_ CGPattern 그래픽 경로를 그리는데 사용되는 2D 패턴
 
 ### 서비스
 
@@ -114,12 +114,12 @@ Core Graphics 프레임워크는 Quartz 고급 드로잉 엔진을 기반으로 
 
 ### 구조체
 
-* struct CGPDFAccessPermissions
-* struct CGPSConverterCallbacks A structure for holding the callbacks provided when you create a PostScript converter object.
+* _struct_ CGPDFAccessPermissions
+* _struct_ CGPSConverterCallbacks A structure for holding the callbacks provided when you create a PostScript converter object.
 
 ### 클래스
 
-* class CGPSConverter
+* _class_ CGPSConverter
 
   PostScript 데이터를 PDF 데이터로 변환하는데 사용되는 불투명 데이터 타입
 

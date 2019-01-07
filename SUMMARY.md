@@ -48,6 +48,18 @@
 * [Core Graphics](graphics-and-games/core-graphics/README.md)
   * [CGPath](graphics-and-games/core-graphics/cgpath.md)
 
+## Media
+
+* [AVFoundation](media/avfoundation/README.md)
+  * [AVFoundation 자료형](media/avfoundation/avfoundation/README.md)
+    * [AVAudioSession.Category](media/avfoundation/avfoundation/avaudiosession.category/README.md)
+      * [ambient](media/avfoundation/avfoundation/avaudiosession.category/ambient.md)
+      * [multiRoute](media/avfoundation/avfoundation/avaudiosession.category/untitled.md)
+      * [playAndRecord](media/avfoundation/avfoundation/avaudiosession.category/playandrecord.md)
+      * [playback](media/avfoundation/avfoundation/avaudiosession.category/playback.md)
+      * [record](media/avfoundation/avfoundation/avaudiosession.category/record.md)
+      * [soloAmbient](media/avfoundation/avfoundation/avaudiosession.category/soloambient.md)
+
 ## Documentation Archive
 
 * [번들 프로그래밍 가이드](documentation-archive/bundle-programming-guide/README.md)
