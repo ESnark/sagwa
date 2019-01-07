@@ -3,7 +3,7 @@
 > 원본출처  
 > [https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AboutBundles/AboutBundles.html\#//apple\_ref/doc/uid/10000123i-CH100-SW1](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AboutBundles/AboutBundles.html#//apple_ref/doc/uid/10000123i-CH100-SW1)
 
-번들은 MacOS와 iOS에서 소프트웨어를 제공하는 편리한 방법입니다. 번들은 최종 사용자에게 간소화된 인터페이스를 제공하는 동시에 개발을 지원합니다. 이 장에서는 번들에 대해 소개하고 매크로 및 iOS에서 번들이 수행하는 역할에 대해 설명합니다.
+번들은 MacOS와 iOS에서 소프트웨어를 제공하는 편리한 방법입니다. 번들은 최종 사용자에게 간소화된 인터페이스를 제공하는 동시에 개발지원을 제공합니다. 이 장에서는 번들에 대해 소개하고 매크로 및 iOS에서 번들이 수행하는 역할에 대해 설명합니다.
 
 ## 번들과 패키지
 
