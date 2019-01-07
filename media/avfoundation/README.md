@@ -40,7 +40,7 @@ AVFoundation 프레임워크는 애플 플랫폼에서 시청각 미디어의 �
 
 * AVFoundation Enumerations
 * AVFoundation 상수
-* AVFoundation 자료형
+* [AVFoundation 자료형](avfoundation/)
 
 ## 같이 보기
 

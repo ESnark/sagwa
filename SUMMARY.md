@@ -59,6 +59,7 @@
       * [playback](media/avfoundation/avfoundation/avaudiosession.category/playback.md)
       * [record](media/avfoundation/avfoundation/avaudiosession.category/record.md)
       * [soloAmbient](media/avfoundation/avfoundation/avaudiosession.category/soloambient.md)
+    * [AVAudioSession.Mode](media/avfoundation/avfoundation/avaudiosession.mode.md)
 
 ## Documentation Archive
 

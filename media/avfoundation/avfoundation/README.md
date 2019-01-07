@@ -9,8 +9,10 @@
 
 * [AVAudioSession.Category](avaudiosession.category/)
 * AVAudioSession.Location
-* AVAudioSession.Mode
+* [AVAudioSession.Mode](avaudiosession.mode.md)
 * AVAudioSession.Orientation
 * AVAudioSession.PolarPattern
 * AVAudioSession.Port
+
+
 
