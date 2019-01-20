@@ -15,7 +15,7 @@
 * class NotificationCenter 등록된 Observer에게 정보를 브로드캐스트 할 수 있는 notification 발송 매커니즘
 * class NotificationQueue 알림 센터 버퍼
 
-### 프로세스 간 노티피케이
+### 프로세스 간 노티피케이션
 
 * class DistributedNotificationCenter 태스크 경계를 넘어서 notification을 브로드캐스트 할 수 있는 notification 발송 매커니즘
 
