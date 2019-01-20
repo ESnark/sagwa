@@ -1,6 +1,6 @@
 # UIResponder
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/uiresponder](https://developer.apple.com/documentation/uikit/uiresponder)
 
 ## 개요

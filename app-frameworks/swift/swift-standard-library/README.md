@@ -1,6 +1,6 @@
 # 스위프트 표준 라이브러리
 
-> 원문출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/swift/swift\_standard\_library](https://developer.apple.com/documentation/swift/swift_standard_library)
 
 ## 개요

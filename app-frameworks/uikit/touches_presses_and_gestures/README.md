@@ -1,6 +1,6 @@
 # 터치, 누르기 , 제스처
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/touches\_presses\_and\_gestures](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures)
 
 ## 개요

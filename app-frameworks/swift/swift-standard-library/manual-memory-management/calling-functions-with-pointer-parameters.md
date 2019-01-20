@@ -1,6 +1,6 @@
 # 포인터 파라미터를 사용하는 함수 호출
 
-> 원문출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/swift/swift\_standard\_library/manual\_memory\_management/calling\_functions\_with\_pointer\_parameters](https://developer.apple.com/documentation/swift/swift_standard_library/manual_memory_management/calling_functions_with_pointer_parameters)
 
 ## 개요

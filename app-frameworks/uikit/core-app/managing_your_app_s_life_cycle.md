@@ -1,6 +1,6 @@
 # 앱 라이프 사이클 관리하기
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/core\_app/managing\_your\_app\_s\_life\_cycle](https://developer.apple.com/documentation/uikit/core_app/managing_your_app_s_life_cycle)
 
 ## 개요 <a id="overview"></a>

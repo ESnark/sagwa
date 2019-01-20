@@ -46,7 +46,7 @@ Foundation 프레임워크는 데이터 저장 및 지속성, 텍스트 처리, 
 
   앱에 번들되어 있는 Asset 과 기타 데이터에 액세스할 수 있습니다.
 
-* Notification
+* [Notification](notification/)
 
   정보를 브로드캐스팅하고 받아보는 방법에 대한 디자인 패턴.
 

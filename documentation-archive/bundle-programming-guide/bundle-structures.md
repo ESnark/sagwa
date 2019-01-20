@@ -1,6 +1,6 @@
 # 번들 구조
 
-> 원문출처  
+> 원문 출처  
 > [https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html\#//apple\_ref/doc/uid/10000123i-CH101-SW1](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html#//apple_ref/doc/uid/10000123i-CH101-SW1)
 
 번들 구조는 번들 유형과 타겟 플랫폼에 따라 달라질 수 있습니다. 다음 섹션에서는 MacOS와 iOS 모두에서 가장 일반적으로 사용되는 번들 구조를 설명합니다.

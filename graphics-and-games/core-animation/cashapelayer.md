@@ -1,6 +1,6 @@
 # CAShapeLayer
 
-> 원본 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/quartzcore/cashapelayer](https://developer.apple.com/documentation/quartzcore/cashapelayer)
 
 ## 개요

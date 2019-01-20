@@ -1,6 +1,6 @@
 # CADisplayLink
 
-> 원본 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/quartzcore/cadisplaylink](https://developer.apple.com/documentation/quartzcore/cadisplaylink)
 
 ## 개요

@@ -1,6 +1,6 @@
 # 뷰와 컨트롤
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/views\_and\_controls](https://developer.apple.com/documentation/uikit/views_and_controls)
 
 ## 개요

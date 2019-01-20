@@ -1,6 +1,6 @@
 # Operation
 
-> 원본 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/foundation/operation](https://developer.apple.com/documentation/foundation/operation)
 
 > 역자 주

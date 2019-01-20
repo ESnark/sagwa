@@ -1,6 +1,6 @@
 # UnsafePointer
 
-> 원문출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/swift/unsafepointer](https://developer.apple.com/documentation/swift/unsafepointer)
 
 ## 개요

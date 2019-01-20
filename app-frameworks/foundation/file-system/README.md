@@ -1,6 +1,6 @@
 # 파일 시스템
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/foundation/file\_system](https://developer.apple.com/documentation/foundation/file_system)
 
 ## 주제 <a id="overview"></a>

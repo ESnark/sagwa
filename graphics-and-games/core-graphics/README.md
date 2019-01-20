@@ -1,6 +1,6 @@
 # Core Graphics
 
-> 원본 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/coregraphics](https://developer.apple.com/documentation/coregraphics)
 
 ## 개요

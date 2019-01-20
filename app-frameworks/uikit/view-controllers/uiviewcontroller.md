@@ -1,6 +1,6 @@
 # UIViewController
 
-> 원본출처
+> 원문 출처
 >
 > [https://developer.apple.com/documentation/uikit/uiviewcontroller](https://developer.apple.com/documentation/uikit/uiviewcontroller)
 

@@ -1,6 +1,6 @@
 # CAAction
 
-> 원본 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/quartzcore/caaction](https://developer.apple.com/documentation/quartzcore/caaction)
 
 ## 개요 <a id="overview"></a>

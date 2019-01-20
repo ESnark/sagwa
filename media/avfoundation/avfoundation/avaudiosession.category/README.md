@@ -1,6 +1,6 @@
 # AVAudioSession.Category
 
-> 원본 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/avfoundation/avaudiosession/category](https://developer.apple.com/documentation/avfoundation/avaudiosession/category)
 
 ## 선언

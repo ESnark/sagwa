@@ -1,6 +1,6 @@
 # UnsafeMutableRawBufferPointer
 
-> 원문출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/swift/unsafemutablerawbufferpointer](https://developer.apple.com/documentation/swift/unsafemutablerawbufferpointer)
 
 ## 개요

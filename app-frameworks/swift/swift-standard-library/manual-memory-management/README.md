@@ -1,6 +1,6 @@
 # 메모리 직접 관리
 
-> \`원문출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/swift/swift\_standard\_library/manual\_memory\_management](https://developer.apple.com/documentation/swift/swift_standard_library/manual_memory_management)
 
 ## 주제

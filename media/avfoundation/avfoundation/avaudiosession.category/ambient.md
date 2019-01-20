@@ -1,6 +1,6 @@
 # ambient
 
-> 원본 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/avfoundation/avaudiosession/category/1616560-ambient](https://developer.apple.com/documentation/avfoundation/avaudiosession/category/1616560-ambient)
 
 ## Declaration

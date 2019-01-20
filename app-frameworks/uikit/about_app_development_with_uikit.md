@@ -1,6 +1,6 @@
 # UIKit으로 앱 개발
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/about\_app\_development\_with\_uikit](https://developer.apple.com/documentation/uikit/about_app_development_with_uikit)
 
 ## 개요

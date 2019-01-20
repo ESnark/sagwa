@@ -12,6 +12,8 @@
     * [Bundle](app-frameworks/foundation/resources/bundle.md)
   * [파일 시스템](app-frameworks/foundation/file-system/README.md)
     * [FileManager](app-frameworks/foundation/file-system/filemanager.md)
+  * [Notification](app-frameworks/foundation/notification/README.md)
+    * [NSKeyValueObserving](app-frameworks/foundation/notification/nskeyvalueobserving.md)
 * [UIKit](app-frameworks/uikit/README.md)
   * [UIKit으로 앱 개발](app-frameworks/uikit/about_app_development_with_uikit.md)
   * [Core App](app-frameworks/uikit/core-app/README.md)

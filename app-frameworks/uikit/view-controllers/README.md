@@ -1,6 +1,6 @@
 # View Controllers
 
-> 원본출처[  
+> 원문 출처[  
 > https://developer.apple.com/documentation/uikit/view\_controllers](https://developer.apple.com/documentation/uikit/view_controllers)
 
 ## 개요

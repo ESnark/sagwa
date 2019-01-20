@@ -1,6 +1,6 @@
 # Bundle
 
-> 원문출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/foundation/bundle](https://developer.apple.com/documentation/foundation/bundle)
 
 ## 개요

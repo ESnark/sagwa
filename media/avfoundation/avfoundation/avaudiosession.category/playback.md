@@ -1,6 +1,6 @@
 # playback
 
-> 원본 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/avfoundation/avaudiosession/category/1616509-playback](https://developer.apple.com/documentation/avfoundation/avaudiosession/category/1616509-playback)
 
 ## Declaration

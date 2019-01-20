@@ -1,6 +1,6 @@
 # playAndRecord
 
-> 원본 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/avfoundation/avaudiosession/category/1616568-playandrecord](https://developer.apple.com/documentation/avfoundation/avaudiosession/category/1616568-playandrecord)
 
 ## Declaration

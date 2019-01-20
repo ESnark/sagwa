@@ -1,6 +1,6 @@
 # 프로퍼티 기반 애니메이션
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/animation\_and\_haptics/property-based\_animations](https://developer.apple.com/documentation/uikit/animation_and_haptics/property-based_animations)
 
 ## 주제

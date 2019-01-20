@@ -1,6 +1,6 @@
 # Core Animation
 
-> 원본 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/quartzcore](https://developer.apple.com/documentation/quartzcore)
 
 ## 개요

@@ -1,6 +1,6 @@
 # UIKit 제스처 처리
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/touches\_presses\_and\_gestures/handling\_uikit\_gestures](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures)
 
 ## 개요

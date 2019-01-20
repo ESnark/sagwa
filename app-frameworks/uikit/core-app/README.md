@@ -1,6 +1,6 @@
 # Core App
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/core\_app](https://developer.apple.com/documentation/uikit/core_app)
 
 ## 주제

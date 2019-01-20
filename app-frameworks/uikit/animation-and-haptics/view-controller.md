@@ -1,6 +1,6 @@
 # View controller 전환
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/animation\_and\_haptics/view\_controller\_transitions](https://developer.apple.com/documentation/uikit/animation_and_haptics/view_controller_transitions)
 
 ## 주제

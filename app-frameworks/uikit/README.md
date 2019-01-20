@@ -1,6 +1,6 @@
 # UIKit
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit](https://developer.apple.com/documentation/uikit)
 
 ## 개요 <a id="overview"></a>

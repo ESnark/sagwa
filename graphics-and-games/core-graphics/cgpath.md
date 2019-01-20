@@ -1,6 +1,6 @@
 # CGPath
 
-> 원본 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/coregraphics/cgpath](https://developer.apple.com/documentation/coregraphics/cgpath)
 
 ## 주제

@@ -1,6 +1,7 @@
 # Table Views
 
-> 원본 출처[https://developer.apple.com/documentation/uikit/views\_and\_controls/table\_views](https://developer.apple.com/documentation/uikit/views_and_controls/table_views)
+> 원문 출처  
+> [https://developer.apple.com/documentation/uikit/views\_and\_controls/table\_views](https://developer.apple.com/documentation/uikit/views_and_controls/table_views)
 
 ## 주제
 

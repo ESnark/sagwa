@@ -1,6 +1,6 @@
 # UIViewPropertyAnimator
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/uiviewpropertyanimator](https://developer.apple.com/documentation/uikit/uiviewpropertyanimator)
 
 ## 개요

@@ -1,6 +1,6 @@
 # OperationQueue
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/foundation/operationqueue](https://developer.apple.com/documentation/foundation/operationqueue)
 
 ## 개요

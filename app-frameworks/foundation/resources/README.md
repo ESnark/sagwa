@@ -1,6 +1,6 @@
 # 리소스
 
-> 원문출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/foundation/resources](https://developer.apple.com/documentation/foundation/resources)
 
 ## 주제

@@ -1,6 +1,6 @@
 # 작업 관리
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/foundation/task\_management](https://developer.apple.com/documentation/foundation/task_management)
 
 ## 주제

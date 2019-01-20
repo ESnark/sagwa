@@ -4,7 +4,7 @@ description: 화면상의 직사각형 영역에 대한 컨텐츠를 관리하�
 
 # UIView
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/uiview](https://developer.apple.com/documentation/uikit/uiview)
 
 ## 개요

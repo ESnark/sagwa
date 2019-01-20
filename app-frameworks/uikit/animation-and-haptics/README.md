@@ -1,6 +1,6 @@
 # 애니메이션과 햅틱
 
-> 원본출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/animation\_and\_haptics](https://developer.apple.com/documentation/uikit/animation_and_haptics)
 
 ## 주제 <a id="topics"></a>
