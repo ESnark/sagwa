@@ -95,7 +95,7 @@ Foundation 프레임워크는 데이터 저장 및 지속성, 텍스트 처리, 
 
   보안 인터프로세스 통신을 관리합니다.
 
-* Object Runtime
+* [Object Runtime](object-runtime/)
 
   기본 Objective-C 기능, 코코아 디자인 패턴, 스위프트 통합에 대한 저수준 지원을 받을 수 있습니다.
 
