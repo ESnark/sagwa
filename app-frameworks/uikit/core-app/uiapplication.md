@@ -160,7 +160,7 @@ UIApplication 클래스는 UIApplicationDelegate 프로토콜을 준수하고 �
 
 * _var_ statusBarFrame: CGRect
 
-  상태 의 영역을 정의하는 프레임 사각형
+  상태 바 영역을 정의하는 프레임 사각형
 
 * _var_ isNetworkActivityIndicatorVisible: Bool
 
@@ -243,7 +243,7 @@ UIApplication 클래스는 UIApplicationDelegate 프로토콜을 준수하고 �
 
 * _enum_ UIStatusBarStyle
 
-  기기의 상태 바 스타일
+  상태 바 스타일
 
 * _enum_ UIStatusBarAnimation
 
@@ -359,7 +359,7 @@ UIApplication 클래스는 UIApplicationDelegate 프로토콜을 준수하고 �
 
 ### Application
 
-* [앱 라이프 사이클 관리하](managing_your_app_s_life_cycle.md)
+* [앱 라이프 사이클 관리하기](managing_your_app_s_life_cycle.md)
 
   앱 delegate가 앱의 상위 수준 동작을 관리하는 방식을 이해합니다.
 
