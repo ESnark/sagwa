@@ -59,57 +59,115 @@ Xcode에서 제공하는 프로젝트 템플릿은 iPhone 또는 iPad 애플리�
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">파일</th>
-      <th style="text-align:left">설명</th>
+      <th style="text-align:left">&#xD30C;&#xC77C;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left">MyApp</td>
-      <td style="text-align:left">(필수) 애플리케이션 코드를 포함하는 실행 파일입니다. 이 파일의 이름은 애플리케이션 이름에서 .app 확장자를 뺀 것과 같습니다.</td>
+      <td style="text-align:left">(&#xD544;&#xC218;) &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xCF54;&#xB4DC;&#xB97C;
+        &#xD3EC;&#xD568;&#xD558;&#xB294; &#xC2E4;&#xD589; &#xD30C;&#xC77C;&#xC785;&#xB2C8;&#xB2E4;.
+        &#xC774; &#xD30C;&#xC77C;&#xC758; &#xC774;&#xB984;&#xC740; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;
+        &#xC774;&#xB984;&#xC5D0;&#xC11C; .app &#xD655;&#xC7A5;&#xC790;&#xB97C;
+        &#xBE80; &#xAC83;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <p>애플리케이션 아이콘</p>
+        <p>&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xC544;&#xC774;&#xCF58;</p>
         <p>(MyAppIcon.png, MySearchIcon.png, and MySettingsIcon.png)</p>
       </td>
-      <td style="text-align:left">(필수/권장) 애플리케이션 아이콘은 애플리케이션을 나타내는 특정 시점에 사용됩니다. 예를 들어, 홈 스크린, 검색 결과 및 설정
-        응용 프로그램에 다양한 크기의 응용 프로그램 아이콘이 표시됩니다. 모든 아이콘이 필요한 것은 아니지만 대부분은 권장됩니다. 응용
-        프로그램 아이콘에 대한 자세한 내용은 <a href="../../etc/not-found.md">애플리케이션 아이콘 및 실행 이미지</a>를
-        참조하세요.</td>
+      <td style="text-align:left">(&#xD544;&#xC218;/&#xAD8C;&#xC7A5;) &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;
+        &#xC544;&#xC774;&#xCF58;&#xC740; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC744;
+        &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xD2B9;&#xC815; &#xC2DC;&#xC810;&#xC5D0;
+        &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4;,
+        &#xD648; &#xC2A4;&#xD06C;&#xB9B0;, &#xAC80;&#xC0C9; &#xACB0;&#xACFC; &#xBC0F;
+        &#xC124;&#xC815; &#xC751;&#xC6A9; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0;
+        &#xB2E4;&#xC591;&#xD55C; &#xD06C;&#xAE30;&#xC758; &#xC751;&#xC6A9; &#xD504;&#xB85C;&#xADF8;&#xB7A8;
+        &#xC544;&#xC774;&#xCF58;&#xC774; &#xD45C;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;.
+        &#xBAA8;&#xB4E0; &#xC544;&#xC774;&#xCF58;&#xC774; &#xD544;&#xC694;&#xD55C;
+        &#xAC83;&#xC740; &#xC544;&#xB2C8;&#xC9C0;&#xB9CC; &#xB300;&#xBD80;&#xBD84;&#xC740;
+        &#xAD8C;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;. &#xC751;&#xC6A9; &#xD504;&#xB85C;&#xADF8;&#xB7A8;
+        &#xC544;&#xC774;&#xCF58;&#xC5D0; &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C;
+        &#xB0B4;&#xC6A9;&#xC740; <a href="../../etc/not-found.md">&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xC544;&#xC774;&#xCF58; &#xBC0F; &#xC2E4;&#xD589; &#xC774;&#xBBF8;&#xC9C0;</a>&#xB97C;
+        &#xCC38;&#xC870;&#xD558;&#xC138;&#xC694;.</td>
     </tr>
     <tr>
       <td style="text-align:left">Info.plist</td>
-      <td style="text-align:left">(필수) 이 파일에는 번들 ID, 버전 번호 및 디스플레이 이름과 같은 애플리케이션에 대한 구성 정보가 포함되어 있습니다. 자세한
-        내용은 <a href="../../etc/not-found.md">Information Property list File</a>을
-        참조하세요.</td>
+      <td style="text-align:left">(&#xD544;&#xC218;) &#xC774; &#xD30C;&#xC77C;&#xC5D0;&#xB294; &#xBC88;&#xB4E4;
+        ID, &#xBC84;&#xC804; &#xBC88;&#xD638; &#xBC0F; &#xB514;&#xC2A4;&#xD50C;&#xB808;&#xC774;
+        &#xC774;&#xB984;&#xACFC; &#xAC19;&#xC740; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC5D0;
+        &#xB300;&#xD55C; &#xAD6C;&#xC131; &#xC815;&#xBCF4;&#xAC00; &#xD3EC;&#xD568;&#xB418;&#xC5B4;
+        &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740;
+        <a
+        href="../../etc/not-found.md">Information Property list File</a>&#xC744; &#xCC38;&#xC870;&#xD558;&#xC138;&#xC694;.</td>
     </tr>
     <tr>
       <td style="text-align:left">Launch images (Default.png)</td>
-      <td style="text-align:left">(권장) 애플리케이션의 초기 인터페이스를 특정 방향으로 표시하는 하나 이상의 이미지입니다. 시스템은 애플리케이션이 창과 사용자
-        인터페이스를 로드할 때까지 Launch 이미지 중 하나를 임시 배경으로 사용합니다. 애플리케이션에서 Launch 이미지를 제공하지
-        않으면 애플리케이션이 시작되는 동안 검은 배경이 표시됩니다. 애플리케이션 아이콘에 대한 자세한 내용은 <a href="../../etc/not-found.md">애플리케이션 아이콘 및 실행 이미지</a>를
-        참조하세요.</td>
+      <td style="text-align:left">(&#xAD8C;&#xC7A5;) &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758;
+        &#xCD08;&#xAE30; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xB97C; &#xD2B9;&#xC815;
+        &#xBC29;&#xD5A5;&#xC73C;&#xB85C; &#xD45C;&#xC2DC;&#xD558;&#xB294; &#xD558;&#xB098;
+        &#xC774;&#xC0C1;&#xC758; &#xC774;&#xBBF8;&#xC9C0;&#xC785;&#xB2C8;&#xB2E4;.
+        &#xC2DC;&#xC2A4;&#xD15C;&#xC740; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC774;
+        &#xCC3D;&#xACFC; &#xC0AC;&#xC6A9;&#xC790; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xB97C;
+        &#xB85C;&#xB4DC;&#xD560; &#xB54C;&#xAE4C;&#xC9C0; Launch &#xC774;&#xBBF8;&#xC9C0;
+        &#xC911; &#xD558;&#xB098;&#xB97C; &#xC784;&#xC2DC; &#xBC30;&#xACBD;&#xC73C;&#xB85C;
+        &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC5D0;&#xC11C;
+        Launch &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC81C;&#xACF5;&#xD558;&#xC9C0;
+        &#xC54A;&#xC73C;&#xBA74; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC774;
+        &#xC2DC;&#xC791;&#xB418;&#xB294; &#xB3D9;&#xC548; &#xAC80;&#xC740; &#xBC30;&#xACBD;&#xC774;
+        &#xD45C;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;. &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;
+        &#xC544;&#xC774;&#xCF58;&#xC5D0; &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C;
+        &#xB0B4;&#xC6A9;&#xC740; <a href="../../etc/not-found.md">&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xC544;&#xC774;&#xCF58; &#xBC0F; &#xC2E4;&#xD589; &#xC774;&#xBBF8;&#xC9C0;</a>&#xB97C;
+        &#xCC38;&#xC870;&#xD558;&#xC138;&#xC694;.</td>
     </tr>
     <tr>
       <td style="text-align:left">MainWindow.nib</td>
-      <td style="text-align:left">(권장) 애플리케이션의 main <a href="../../etc/not-found.md">nib 파일</a>은 시작 시 로드할
-        기본 인터페이스 객체를 포함하고 있습니다. 일반적으로 이 nib 파일에는 애플리케이션의 기본 창 객체와 App <a href="../../etc/not-found.md">delegate</a> 객체의
-        인스턴스가 포함됩니다. 그런 다음 다른 인터페이스 객체는 추가 nib 파일에서 로드되거나 애플리케이션에 의해 프로그래밍 방식으로
-        생성됩니다. (main nib 파일의 이름은 Info.plist 파일의 NSMainNibFile 키에 다른 값을 할당하여 변경할
-        수 있습니다. 자세한 내용은 Informatioin Property list 파일을 참조하세요.)</td>
+      <td style="text-align:left">(&#xAD8C;&#xC7A5;) &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758;
+        main <a href="../../etc/not-found.md">nib &#xD30C;&#xC77C;</a>&#xC740; &#xC2DC;&#xC791;
+        &#xC2DC; &#xB85C;&#xB4DC;&#xD560; &#xAE30;&#xBCF8; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;
+        &#xAC1D;&#xCCB4;&#xB97C; &#xD3EC;&#xD568;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+        &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xC774; nib &#xD30C;&#xC77C;&#xC5D0;&#xB294;
+        &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xAE30;&#xBCF8;
+        &#xCC3D; &#xAC1D;&#xCCB4;&#xC640; App <a href="../../etc/not-found.md">delegate</a> &#xAC1D;&#xCCB4;&#xC758;
+        &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xAC00; &#xD3EC;&#xD568;&#xB429;&#xB2C8;&#xB2E4;.
+        &#xADF8;&#xB7F0; &#xB2E4;&#xC74C; &#xB2E4;&#xB978; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;
+        &#xAC1D;&#xCCB4;&#xB294; &#xCD94;&#xAC00; nib &#xD30C;&#xC77C;&#xC5D0;&#xC11C;
+        &#xB85C;&#xB4DC;&#xB418;&#xAC70;&#xB098; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC5D0;
+        &#xC758;&#xD574; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xBC29;&#xC2DD;&#xC73C;&#xB85C;
+        &#xC0DD;&#xC131;&#xB429;&#xB2C8;&#xB2E4;. (main nib &#xD30C;&#xC77C;&#xC758;
+        &#xC774;&#xB984;&#xC740; Info.plist &#xD30C;&#xC77C;&#xC758; NSMainNibFile
+        &#xD0A4;&#xC5D0; &#xB2E4;&#xB978; &#xAC12;&#xC744; &#xD560;&#xB2F9;&#xD558;&#xC5EC;
+        &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC790;&#xC138;&#xD55C;
+        &#xB0B4;&#xC6A9;&#xC740; Informatioin Property list &#xD30C;&#xC77C;&#xC744;
+        &#xCC38;&#xC870;&#xD558;&#xC138;&#xC694;.)</td>
     </tr>
     <tr>
       <td style="text-align:left">Settings.bundle</td>
-      <td style="text-align:left">Setting 번들은 설정 애플리케이션에 추가할 애플리케이션별 기본 설정이 포함된 특별한 유형의 플러그인입니다. 이 번들에는
-        기본 설정을 구성하고 표시할 <a href="../../etc/not-found.md">프로퍼티 리스트</a>와 기타 리소스 파일이
-        포함되어 있습니다.</td>
+      <td style="text-align:left">Setting &#xBC88;&#xB4E4;&#xC740; &#xC124;&#xC815; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC5D0;
+        &#xCD94;&#xAC00;&#xD560; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xBCC4;
+        &#xAE30;&#xBCF8; &#xC124;&#xC815;&#xC774; &#xD3EC;&#xD568;&#xB41C; &#xD2B9;&#xBCC4;&#xD55C;
+        &#xC720;&#xD615;&#xC758; &#xD50C;&#xB7EC;&#xADF8;&#xC778;&#xC785;&#xB2C8;&#xB2E4;.
+        &#xC774; &#xBC88;&#xB4E4;&#xC5D0;&#xB294; &#xAE30;&#xBCF8; &#xC124;&#xC815;&#xC744;
+        &#xAD6C;&#xC131;&#xD558;&#xACE0; &#xD45C;&#xC2DC;&#xD560; <a href="../../etc/not-found.md">&#xD504;&#xB85C;&#xD37C;&#xD2F0; &#xB9AC;&#xC2A4;&#xD2B8;</a>&#xC640;
+        &#xAE30;&#xD0C0; &#xB9AC;&#xC18C;&#xC2A4; &#xD30C;&#xC77C;&#xC774; &#xD3EC;&#xD568;&#xB418;&#xC5B4;
+        &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
-      <td style="text-align:left">커스텀 리소스 파일</td>
-      <td style="text-align:left">지역화되지 않은 리소스는 최상위 디렉터리에 배치되고 지역화된 리소스는 애플리케이션 번들의 언어별 하위 디렉터리에 배치됩니다.
-        리소스는 nib 파일, 이미지, 사운드 파일, 설정 파일, 문자열 파일 및 애플리케이션에 필요한 기타 커스텀 데이터 파일로 구성됩니다.
-        리소스에 대한 자세한 내용은 <a href="../../etc/not-found.md">iOS 애플리케이션의 리소스</a>를 참조하세요.</td>
+      <td style="text-align:left">&#xCEE4;&#xC2A4;&#xD140; &#xB9AC;&#xC18C;&#xC2A4; &#xD30C;&#xC77C;</td>
+      <td
+      style="text-align:left">&#xC9C0;&#xC5ED;&#xD654;&#xB418;&#xC9C0; &#xC54A;&#xC740; &#xB9AC;&#xC18C;&#xC2A4;&#xB294;
+        &#xCD5C;&#xC0C1;&#xC704; &#xB514;&#xB809;&#xD130;&#xB9AC;&#xC5D0; &#xBC30;&#xCE58;&#xB418;&#xACE0;
+        &#xC9C0;&#xC5ED;&#xD654;&#xB41C; &#xB9AC;&#xC18C;&#xC2A4;&#xB294; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;
+        &#xBC88;&#xB4E4;&#xC758; &#xC5B8;&#xC5B4;&#xBCC4; &#xD558;&#xC704; &#xB514;&#xB809;&#xD130;&#xB9AC;&#xC5D0;
+        &#xBC30;&#xCE58;&#xB429;&#xB2C8;&#xB2E4;. &#xB9AC;&#xC18C;&#xC2A4;&#xB294;
+        nib &#xD30C;&#xC77C;, &#xC774;&#xBBF8;&#xC9C0;, &#xC0AC;&#xC6B4;&#xB4DC;
+        &#xD30C;&#xC77C;, &#xC124;&#xC815; &#xD30C;&#xC77C;, &#xBB38;&#xC790;&#xC5F4;
+        &#xD30C;&#xC77C; &#xBC0F; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC5D0;
+        &#xD544;&#xC694;&#xD55C; &#xAE30;&#xD0C0; &#xCEE4;&#xC2A4;&#xD140; &#xB370;&#xC774;&#xD130;
+        &#xD30C;&#xC77C;&#xB85C; &#xAD6C;&#xC131;&#xB429;&#xB2C8;&#xB2E4;. &#xB9AC;&#xC18C;&#xC2A4;&#xC5D0;
+        &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; <a href="../../etc/not-found.md">iOS &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xB9AC;&#xC18C;&#xC2A4;</a>&#xB97C;
+        &#xCC38;&#xC870;&#xD558;&#xC138;&#xC694;.</td>
     </tr>
   </tbody>
 </table>{% hint style="info" %}
@@ -137,8 +195,11 @@ _표 2-3 Info.plist 파일의 필수 키_
     <tr>
       <td style="text-align:left">CFBundleDisplayName
         <br />(Bundle display name)</td>
-      <td style="text-align:left">Bundle display name이란 애플리케이션 아이콘 아래에 표시되는 이름을 뜻합니다. 이 값은 지원하는 모든 언어에 대해
-        지역화되어야 합니다.</td>
+      <td style="text-align:left">Bundle display name&#xC774;&#xB780; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;
+        &#xC544;&#xC774;&#xCF58; &#xC544;&#xB798;&#xC5D0; &#xD45C;&#xC2DC;&#xB418;&#xB294;
+        &#xC774;&#xB984;&#xC744; &#xB73B;&#xD569;&#xB2C8;&#xB2E4;. &#xC774; &#xAC12;&#xC740;
+        &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xBAA8;&#xB4E0; &#xC5B8;&#xC5B4;&#xC5D0;
+        &#xB300;&#xD574; &#xC9C0;&#xC5ED;&#xD654;&#xB418;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -146,11 +207,19 @@ _표 2-3 Info.plist 파일의 필수 키_
         <p>(Bundle identifier)</p>
       </td>
       <td style="text-align:left">
-        <p>Bundle identifier 문자열은 시스템이 애플리케이션을 식별하는데 사용됩니다. 이 문자열은 영숫자(A-Z,a-z,0-9),
-          하이픈(-) 및 마침표(.)만 포함하는 Uniform type identifier(UTI)형식 역방향 DNS 형식을 따라야합니다.
-          예를 들어, 회사의 도메인이 Ajax.com이고 Hello라는 애플리케이션을 생성하는 경우 com.Ajax.Hello 문자열을
-          할당할 수 있습니다.</p>
-        <p>번들 식별자는 응용 프로그램 서명을 검증하는 데 사용됩니다</p>
+        <p>Bundle identifier &#xBB38;&#xC790;&#xC5F4;&#xC740; &#xC2DC;&#xC2A4;&#xD15C;&#xC774;
+          &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC744; &#xC2DD;&#xBCC4;&#xD558;&#xB294;&#xB370;
+          &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;. &#xC774; &#xBB38;&#xC790;&#xC5F4;&#xC740;
+          &#xC601;&#xC22B;&#xC790;(A-Z,a-z,0-9), &#xD558;&#xC774;&#xD508;(-) &#xBC0F;
+          &#xB9C8;&#xCE68;&#xD45C;(.)&#xB9CC; &#xD3EC;&#xD568;&#xD558;&#xB294; Uniform
+          type identifier(UTI)&#xD615;&#xC2DD; &#xC5ED;&#xBC29;&#xD5A5; DNS &#xD615;&#xC2DD;&#xC744;
+          &#xB530;&#xB77C;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4;,
+          &#xD68C;&#xC0AC;&#xC758; &#xB3C4;&#xBA54;&#xC778;&#xC774; Ajax.com&#xC774;&#xACE0;
+          Hello&#xB77C;&#xB294; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC744;
+          &#xC0DD;&#xC131;&#xD558;&#xB294; &#xACBD;&#xC6B0; com.Ajax.Hello &#xBB38;&#xC790;&#xC5F4;&#xC744;
+          &#xD560;&#xB2F9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xBC88;&#xB4E4; &#xC2DD;&#xBCC4;&#xC790;&#xB294; &#xC751;&#xC6A9; &#xD504;&#xB85C;&#xADF8;&#xB7A8;
+          &#xC11C;&#xBA85;&#xC744; &#xAC80;&#xC99D;&#xD558;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;</p>
       </td>
     </tr>
     <tr>
@@ -158,15 +227,25 @@ _표 2-3 Info.plist 파일의 필수 키_
         <p>CFBundleVersion</p>
         <p>(Bundle version)</p>
       </td>
-      <td style="text-align:left">Bundle version 문자열은 번들의 빌드 버전 번호를 지정합니다. 이 값은 한 개 이상의 마침표로 구분되는 정수로 구성된
-        문자열입니다. 이 값은 지속적으로 증가하게 되어있으며 지역화할 수 없습니다.</td>
+      <td style="text-align:left">Bundle version &#xBB38;&#xC790;&#xC5F4;&#xC740; &#xBC88;&#xB4E4;&#xC758;
+        &#xBE4C;&#xB4DC; &#xBC84;&#xC804; &#xBC88;&#xD638;&#xB97C; &#xC9C0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.
+        &#xC774; &#xAC12;&#xC740; &#xD55C; &#xAC1C; &#xC774;&#xC0C1;&#xC758; &#xB9C8;&#xCE68;&#xD45C;&#xB85C;
+        &#xAD6C;&#xBD84;&#xB418;&#xB294; &#xC815;&#xC218;&#xB85C; &#xAD6C;&#xC131;&#xB41C;
+        &#xBB38;&#xC790;&#xC5F4;&#xC785;&#xB2C8;&#xB2E4;. &#xC774; &#xAC12;&#xC740;
+        &#xC9C0;&#xC18D;&#xC801;&#xC73C;&#xB85C; &#xC99D;&#xAC00;&#xD558;&#xAC8C;
+        &#xB418;&#xC5B4;&#xC788;&#xC73C;&#xBA70; &#xC9C0;&#xC5ED;&#xD654;&#xD560;
+        &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">CFBundleIconFiles</td>
       <td style="text-align:left">
-        <p>애플리케이션의 다양한 아이콘에 사용되는 이미지의 파일 이름이 포함된 문자열 배열입니다. 기술적으로 필수적인 값은 아니지만, 사용하는
-          것이 좋습니다.</p>
-        <p>이 키는 iOS 3.2 이상에서 지원됩니다.</p>
+        <p>&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xB2E4;&#xC591;&#xD55C;
+          &#xC544;&#xC774;&#xCF58;&#xC5D0; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xC774;&#xBBF8;&#xC9C0;&#xC758;
+          &#xD30C;&#xC77C; &#xC774;&#xB984;&#xC774; &#xD3EC;&#xD568;&#xB41C; &#xBB38;&#xC790;&#xC5F4;
+          &#xBC30;&#xC5F4;&#xC785;&#xB2C8;&#xB2E4;. &#xAE30;&#xC220;&#xC801;&#xC73C;&#xB85C;
+          &#xD544;&#xC218;&#xC801;&#xC778; &#xAC12;&#xC740; &#xC544;&#xB2C8;&#xC9C0;&#xB9CC;,
+          &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xC774; &#xD0A4;&#xB294; iOS 3.2 &#xC774;&#xC0C1;&#xC5D0;&#xC11C; &#xC9C0;&#xC6D0;&#xB429;&#xB2C8;&#xB2E4;.</p>
       </td>
     </tr>
     <tr>
@@ -174,19 +253,39 @@ _표 2-3 Info.plist 파일의 필수 키_
         <p>LSRequiresIPhoneOS</p>
         <p>(Application requires iOS environment)</p>
       </td>
-      <td style="text-align:left">번들이 iOS에서만 실행가능한지를 나타내는 BOOL 값입니다. Xcode는 이 키를 자동으로 추가하고 값을 true로 설정합니다.
-        이 키의 값은 변경하지 마세요.</td>
+      <td style="text-align:left">&#xBC88;&#xB4E4;&#xC774; iOS&#xC5D0;&#xC11C;&#xB9CC; &#xC2E4;&#xD589;&#xAC00;&#xB2A5;&#xD55C;&#xC9C0;&#xB97C;
+        &#xB098;&#xD0C0;&#xB0B4;&#xB294; BOOL &#xAC12;&#xC785;&#xB2C8;&#xB2E4;.
+        Xcode&#xB294; &#xC774; &#xD0A4;&#xB97C; &#xC790;&#xB3D9;&#xC73C;&#xB85C;
+        &#xCD94;&#xAC00;&#xD558;&#xACE0; &#xAC12;&#xC744; true&#xB85C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.
+        &#xC774; &#xD0A4;&#xC758; &#xAC12;&#xC740; &#xBCC0;&#xACBD;&#xD558;&#xC9C0;
+        &#xB9C8;&#xC138;&#xC694;.</td>
     </tr>
     <tr>
       <td style="text-align:left">UIRequiredDeviceCapabilities</td>
       <td style="text-align:left">
-        <p>iTunes와 App Store가 애플리케이션을 실행하기 위해 필요로 하는 디바이스 기능을 알려주는 키입니다. iTunes와
-          Mobile App Store는 이 목록을 사용하여 고객이 해당 기능을 지원하지 않는 기기에 애플리케이션을 설치하지 못하도록 합니다.</p>
-        <p>이 키의 값은 배열 또는 딕셔너리입니다. 배열을 사용하는 경우 지정된 키가 포함되어있으면 해당 기능이 필요하다는 것을 나타내며,
-          딕셔너리를 사용할 경우 각 키에 대해 BOOL 값을 지정해서 해당 기능의 필요 여부를 표시합니다. 두 경우 모두 키를 포함하지
-          않으면 기능이 필요하지 않음을 나타냅니다.</p>
-        <p>딕셔너리에 포함할 키 목록은 Information Property List 키를 참조하세요. 이 키는 iOS 3.0 이상에서
-          지원됩니다.</p>
+        <p>iTunes&#xC640; App Store&#xAC00; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC744;
+          &#xC2E4;&#xD589;&#xD558;&#xAE30; &#xC704;&#xD574; &#xD544;&#xC694;&#xB85C;
+          &#xD558;&#xB294; &#xB514;&#xBC14;&#xC774;&#xC2A4; &#xAE30;&#xB2A5;&#xC744;
+          &#xC54C;&#xB824;&#xC8FC;&#xB294; &#xD0A4;&#xC785;&#xB2C8;&#xB2E4;. iTunes&#xC640;
+          Mobile App Store&#xB294; &#xC774; &#xBAA9;&#xB85D;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC;
+          &#xACE0;&#xAC1D;&#xC774; &#xD574;&#xB2F9; &#xAE30;&#xB2A5;&#xC744; &#xC9C0;&#xC6D0;&#xD558;&#xC9C0;
+          &#xC54A;&#xB294; &#xAE30;&#xAE30;&#xC5D0; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC744;
+          &#xC124;&#xCE58;&#xD558;&#xC9C0; &#xBABB;&#xD558;&#xB3C4;&#xB85D; &#xD569;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xC774; &#xD0A4;&#xC758; &#xAC12;&#xC740; &#xBC30;&#xC5F4; &#xB610;&#xB294;
+          &#xB515;&#xC154;&#xB108;&#xB9AC;&#xC785;&#xB2C8;&#xB2E4;. &#xBC30;&#xC5F4;&#xC744;
+          &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xACBD;&#xC6B0; &#xC9C0;&#xC815;&#xB41C;
+          &#xD0A4;&#xAC00; &#xD3EC;&#xD568;&#xB418;&#xC5B4;&#xC788;&#xC73C;&#xBA74;
+          &#xD574;&#xB2F9; &#xAE30;&#xB2A5;&#xC774; &#xD544;&#xC694;&#xD558;&#xB2E4;&#xB294;
+          &#xAC83;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xBA70;, &#xB515;&#xC154;&#xB108;&#xB9AC;&#xB97C;
+          &#xC0AC;&#xC6A9;&#xD560; &#xACBD;&#xC6B0; &#xAC01; &#xD0A4;&#xC5D0; &#xB300;&#xD574;
+          BOOL &#xAC12;&#xC744; &#xC9C0;&#xC815;&#xD574;&#xC11C; &#xD574;&#xB2F9;
+          &#xAE30;&#xB2A5;&#xC758; &#xD544;&#xC694; &#xC5EC;&#xBD80;&#xB97C; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.
+          &#xB450; &#xACBD;&#xC6B0; &#xBAA8;&#xB450; &#xD0A4;&#xB97C; &#xD3EC;&#xD568;&#xD558;&#xC9C0;
+          &#xC54A;&#xC73C;&#xBA74; &#xAE30;&#xB2A5;&#xC774; &#xD544;&#xC694;&#xD558;&#xC9C0;
+          &#xC54A;&#xC74C;&#xC744; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xB515;&#xC154;&#xB108;&#xB9AC;&#xC5D0; &#xD3EC;&#xD568;&#xD560; &#xD0A4;
+          &#xBAA9;&#xB85D;&#xC740; Information Property List &#xD0A4;&#xB97C; &#xCC38;&#xC870;&#xD558;&#xC138;&#xC694;.
+          &#xC774; &#xD0A4;&#xB294; iOS 3.0 &#xC774;&#xC0C1;&#xC5D0;&#xC11C; &#xC9C0;&#xC6D0;&#xB429;&#xB2C8;&#xB2E4;.</p>
       </td>
     </tr>
   </tbody>
@@ -207,49 +306,102 @@ _표 2-4 Info.plist 파일에 일반적으로 포함되는 키_
         <p>NSMainNibFile</p>
         <p>(Main nib file base name)</p>
       </td>
-      <td style="text-align:left">애플리케이션의 기본 nib 파일 이름을 식별하는 문자열. 프로젝트에 대해 생성된 기본 nib 파일이 아닌 다른 nib 파일을
-        사용하려면 해당 nib 파일의 이름을 이 키와 연결시켜야 합니다. nib 파일 이름에는 .nib 파일 이름 확장명이 포함되지 않아야
-        합니다.</td>
+      <td style="text-align:left">&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xAE30;&#xBCF8;
+        nib &#xD30C;&#xC77C; &#xC774;&#xB984;&#xC744; &#xC2DD;&#xBCC4;&#xD558;&#xB294;
+        &#xBB38;&#xC790;&#xC5F4;. &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0; &#xB300;&#xD574;
+        &#xC0DD;&#xC131;&#xB41C; &#xAE30;&#xBCF8; nib &#xD30C;&#xC77C;&#xC774;
+        &#xC544;&#xB2CC; &#xB2E4;&#xB978; nib &#xD30C;&#xC77C;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xB824;&#xBA74;
+        &#xD574;&#xB2F9; nib &#xD30C;&#xC77C;&#xC758; &#xC774;&#xB984;&#xC744;
+        &#xC774; &#xD0A4;&#xC640; &#xC5F0;&#xACB0;&#xC2DC;&#xCF1C;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.
+        nib &#xD30C;&#xC77C; &#xC774;&#xB984;&#xC5D0;&#xB294; .nib &#xD30C;&#xC77C;
+        &#xC774;&#xB984; &#xD655;&#xC7A5;&#xBA85;&#xC774; &#xD3EC;&#xD568;&#xB418;&#xC9C0;
+        &#xC54A;&#xC544;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">UIStatusBarStyle</td>
       <td style="text-align:left">
-        <p>응용 프로그램이 시작될 때 상태 표시줄의 스타일을 식별하는 문자열. 이 값은 UIApplication.h 헤더 파일에 선언된
-          UIStatusBarStyle 상수를 기반으로 합니다. 기본 스타일은 UIStatusBarStyleDefault입니다. 애플리케이션이
-          실행을 마칠 때(didFinishLaunching)이 초기 상태 표시줄 스타일을 변경할 수 있습니다.</p>
-        <p>이 키를 지정하지 않으면 iOS에서 기본 상태 표시줄을 표시합니다.</p>
+        <p>&#xC751;&#xC6A9; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC774; &#xC2DC;&#xC791;&#xB420;
+          &#xB54C; &#xC0C1;&#xD0DC; &#xD45C;&#xC2DC;&#xC904;&#xC758; &#xC2A4;&#xD0C0;&#xC77C;&#xC744;
+          &#xC2DD;&#xBCC4;&#xD558;&#xB294; &#xBB38;&#xC790;&#xC5F4;. &#xC774; &#xAC12;&#xC740;
+          UIApplication.h &#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC5D0; &#xC120;&#xC5B8;&#xB41C;
+          UIStatusBarStyle &#xC0C1;&#xC218;&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C;
+          &#xD569;&#xB2C8;&#xB2E4;. &#xAE30;&#xBCF8; &#xC2A4;&#xD0C0;&#xC77C;&#xC740;
+          UIStatusBarStyleDefault&#xC785;&#xB2C8;&#xB2E4;. &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC774;
+          &#xC2E4;&#xD589;&#xC744; &#xB9C8;&#xCE60; &#xB54C;(didFinishLaunching)&#xC774;
+          &#xCD08;&#xAE30; &#xC0C1;&#xD0DC; &#xD45C;&#xC2DC;&#xC904; &#xC2A4;&#xD0C0;&#xC77C;&#xC744;
+          &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xC774; &#xD0A4;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC73C;&#xBA74;
+          iOS&#xC5D0;&#xC11C; &#xAE30;&#xBCF8; &#xC0C1;&#xD0DC; &#xD45C;&#xC2DC;&#xC904;&#xC744;
+          &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">UIStatusBarHidden</td>
-      <td style="text-align:left">애플리케이션이 시작될 때 상태 표시줄을 처음부터 숨길 것인지를 결정하는 BOOL 값입니다. 상태 표시줄을 숨기려면 이 값을 true로
-        설정합니다. 기본값은 false입니다.</td>
+      <td style="text-align:left">&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC774; &#xC2DC;&#xC791;&#xB420;
+        &#xB54C; &#xC0C1;&#xD0DC; &#xD45C;&#xC2DC;&#xC904;&#xC744; &#xCC98;&#xC74C;&#xBD80;&#xD130;
+        &#xC228;&#xAE38; &#xAC83;&#xC778;&#xC9C0;&#xB97C; &#xACB0;&#xC815;&#xD558;&#xB294;
+        BOOL &#xAC12;&#xC785;&#xB2C8;&#xB2E4;. &#xC0C1;&#xD0DC; &#xD45C;&#xC2DC;&#xC904;&#xC744;
+        &#xC228;&#xAE30;&#xB824;&#xBA74; &#xC774; &#xAC12;&#xC744; true&#xB85C;
+        &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xAE30;&#xBCF8;&#xAC12;&#xC740;
+        false&#xC785;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">UIInterfaceOrientation</td>
-      <td style="text-align:left">애플리케이션 UI의 초기 방향을 식별하는 문자열. 이 값은 UIApplication.h 헤더 파일에 선언된 UIInterfaceOrientation
-        상수를 기반으로 합니다. 기본 스타일은 UIInterfaceOrientationPortrait입니다.</td>
+      <td style="text-align:left">&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; UI&#xC758; &#xCD08;&#xAE30;
+        &#xBC29;&#xD5A5;&#xC744; &#xC2DD;&#xBCC4;&#xD558;&#xB294; &#xBB38;&#xC790;&#xC5F4;.
+        &#xC774; &#xAC12;&#xC740; UIApplication.h &#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC5D0;
+        &#xC120;&#xC5B8;&#xB41C; UIInterfaceOrientation &#xC0C1;&#xC218;&#xB97C;
+        &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xD569;&#xB2C8;&#xB2E4;. &#xAE30;&#xBCF8;
+        &#xC2A4;&#xD0C0;&#xC77C;&#xC740; UIInterfaceOrientationPortrait&#xC785;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">UIPrerenderedIcon</td>
-      <td style="text-align:left">애플리케이션 아이콘에 이미 gloss 또는 bevel 효과가 포함되어 있는지를 나타내는 BOOL 값입니다. 기본값은 false입니다.
-        시스템이 비슷한 효과를 아이콘에 적용하지 않기를 바란다면 이것을 true로 설정하세요.</td>
+      <td style="text-align:left">&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xC544;&#xC774;&#xCF58;&#xC5D0;
+        &#xC774;&#xBBF8; gloss &#xB610;&#xB294; bevel &#xD6A8;&#xACFC;&#xAC00;
+        &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xB294;&#xC9C0;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294;
+        BOOL &#xAC12;&#xC785;&#xB2C8;&#xB2E4;. &#xAE30;&#xBCF8;&#xAC12;&#xC740;
+        false&#xC785;&#xB2C8;&#xB2E4;. &#xC2DC;&#xC2A4;&#xD15C;&#xC774; &#xBE44;&#xC2B7;&#xD55C;
+        &#xD6A8;&#xACFC;&#xB97C; &#xC544;&#xC774;&#xCF58;&#xC5D0; &#xC801;&#xC6A9;&#xD558;&#xC9C0;
+        &#xC54A;&#xAE30;&#xB97C; &#xBC14;&#xB780;&#xB2E4;&#xBA74; &#xC774;&#xAC83;&#xC744;
+        true&#xB85C; &#xC124;&#xC815;&#xD558;&#xC138;&#xC694;.</td>
     </tr>
     <tr>
       <td style="text-align:left">UIRequiresPersistentWiFi</td>
       <td style="text-align:left">
-        <p>애플리케이션이 Wi-Fi 네트워크를 사용하여 통신한다는 것을 시스템에 알려주는 BOOL 값입니다. Wi-Fi를 일정시간 사용하는
-          애플리케이션은 이 키를 true로 설정해야 합니다. 그렇지 않으면 기기는 전원을 절약하기 위해 30분 후에 Wi-Fi 연결을 종료합니다.
-          또한 이 플래그를 설정하면 시스템이 Wi-Fi를 사용할 수 있지만 현재 사용되지 않을 때 네트워크 선택 대화 상자를 표시해야 함을
-          알 수 있습니다. 기본값은 false입니다.</p>
-        <p>이 속성의 값이 true인 경우에도 기기가 유휴 상태(즉, 스크린 잠금)일 때는 이 키는 효과가 없습니다. 이 시간 동안 애플리케이은
-          비활성 상태로 간주되며, 일부 수준에서 작동할 수 있지만 Wi-Fi 연결은 되지 않습니다.</p>
+        <p>&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC774; Wi-Fi &#xB124;&#xD2B8;&#xC6CC;&#xD06C;&#xB97C;
+          &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xD1B5;&#xC2E0;&#xD55C;&#xB2E4;&#xB294;
+          &#xAC83;&#xC744; &#xC2DC;&#xC2A4;&#xD15C;&#xC5D0; &#xC54C;&#xB824;&#xC8FC;&#xB294;
+          BOOL &#xAC12;&#xC785;&#xB2C8;&#xB2E4;. Wi-Fi&#xB97C; &#xC77C;&#xC815;&#xC2DC;&#xAC04;
+          &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC740;
+          &#xC774; &#xD0A4;&#xB97C; true&#xB85C; &#xC124;&#xC815;&#xD574;&#xC57C;
+          &#xD569;&#xB2C8;&#xB2E4;. &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC73C;&#xBA74;
+          &#xAE30;&#xAE30;&#xB294; &#xC804;&#xC6D0;&#xC744; &#xC808;&#xC57D;&#xD558;&#xAE30;
+          &#xC704;&#xD574; 30&#xBD84; &#xD6C4;&#xC5D0; Wi-Fi &#xC5F0;&#xACB0;&#xC744;
+          &#xC885;&#xB8CC;&#xD569;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C; &#xC774; &#xD50C;&#xB798;&#xADF8;&#xB97C;
+          &#xC124;&#xC815;&#xD558;&#xBA74; &#xC2DC;&#xC2A4;&#xD15C;&#xC774; Wi-Fi&#xB97C;
+          &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC9C0;&#xB9CC; &#xD604;&#xC7AC;
+          &#xC0AC;&#xC6A9;&#xB418;&#xC9C0; &#xC54A;&#xC744; &#xB54C; &#xB124;&#xD2B8;&#xC6CC;&#xD06C;
+          &#xC120;&#xD0DD; &#xB300;&#xD654; &#xC0C1;&#xC790;&#xB97C; &#xD45C;&#xC2DC;&#xD574;&#xC57C;
+          &#xD568;&#xC744; &#xC54C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xAE30;&#xBCF8;&#xAC12;&#xC740;
+          false&#xC785;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xC774; &#xC18D;&#xC131;&#xC758; &#xAC12;&#xC774; true&#xC778; &#xACBD;&#xC6B0;&#xC5D0;&#xB3C4;
+          &#xAE30;&#xAE30;&#xAC00; &#xC720;&#xD734; &#xC0C1;&#xD0DC;(&#xC989;, &#xC2A4;&#xD06C;&#xB9B0;
+          &#xC7A0;&#xAE08;)&#xC77C; &#xB54C;&#xB294; &#xC774; &#xD0A4;&#xB294; &#xD6A8;&#xACFC;&#xAC00;
+          &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774; &#xC2DC;&#xAC04; &#xB3D9;&#xC548;
+          &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC740; &#xBE44;&#xD65C;&#xC131;
+          &#xC0C1;&#xD0DC;&#xB85C; &#xAC04;&#xC8FC;&#xB418;&#xBA70;, &#xC77C;&#xBD80;
+          &#xC218;&#xC900;&#xC5D0;&#xC11C; &#xC791;&#xB3D9;&#xD560; &#xC218; &#xC788;&#xC9C0;&#xB9CC;
+          Wi-Fi &#xC5F0;&#xACB0;&#xC740; &#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">UILaunchImageFile</td>
-      <td style="text-align:left">애플리케이션의 시작 이미지에 사용되는 기본 파일 이름을 포함하는 문자열. 이 키를 지정하지 않으면 기본 파일 이름은 <code>Default</code> 문자열로
-        간주됩니다.</td>
+      <td style="text-align:left">&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xC2DC;&#xC791;
+        &#xC774;&#xBBF8;&#xC9C0;&#xC5D0; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xAE30;&#xBCF8;
+        &#xD30C;&#xC77C; &#xC774;&#xB984;&#xC744; &#xD3EC;&#xD568;&#xD558;&#xB294;
+        &#xBB38;&#xC790;&#xC5F4;. &#xC774; &#xD0A4;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xC9C0;
+        &#xC54A;&#xC73C;&#xBA74; &#xAE30;&#xBCF8; &#xD30C;&#xC77C; &#xC774;&#xB984;&#xC740; <code>Default</code> &#xBB38;&#xC790;&#xC5F4;&#xB85C;
+        &#xAC04;&#xC8FC;&#xB429;&#xB2C8;&#xB2E4;.</td>
     </tr>
   </tbody>
 </table>#### 애플리케이션 아이콘과 이미지
@@ -325,40 +477,81 @@ _표 2-5 Contents 디렉토리의 하위 디렉토리_
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">디렉토리</th>
-      <th style="text-align:left">설명</th>
+      <th style="text-align:left">&#xB514;&#xB809;&#xD1A0;&#xB9AC;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left">MacOS</td>
-      <td style="text-align:left">애플리케이션의 독립실행형 코드가 들어 있습니다. 일반적으로 이 디렉토리에는 애플리케이션의 기본 진입점과 정적으로 링크된 코드가
-        포함된 이진 파일 하나만 포함되어 있지만 다른 독립실행형 실행파일(예 : 명령줄 도구)도 들어갈 수 있습니다.</td>
+      <td style="text-align:left">&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xB3C5;&#xB9BD;&#xC2E4;&#xD589;&#xD615;
+        &#xCF54;&#xB4DC;&#xAC00; &#xB4E4;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+        &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xC774; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0;&#xB294;
+        &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xAE30;&#xBCF8;
+        &#xC9C4;&#xC785;&#xC810;&#xACFC; &#xC815;&#xC801;&#xC73C;&#xB85C; &#xB9C1;&#xD06C;&#xB41C;
+        &#xCF54;&#xB4DC;&#xAC00; &#xD3EC;&#xD568;&#xB41C; &#xC774;&#xC9C4; &#xD30C;&#xC77C;
+        &#xD558;&#xB098;&#xB9CC; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xC9C0;&#xB9CC;
+        &#xB2E4;&#xB978; &#xB3C5;&#xB9BD;&#xC2E4;&#xD589;&#xD615; &#xC2E4;&#xD589;&#xD30C;&#xC77C;(&#xC608;
+        : &#xBA85;&#xB839;&#xC904; &#xB3C4;&#xAD6C;)&#xB3C4; &#xB4E4;&#xC5B4;&#xAC08;
+        &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">Resources</td>
-      <td style="text-align:left">모든 응용 프로그램의 리소스 파일을 포함합니다. 이 디렉토리의 내용은 지역화 된 리소스와 그렇지 않은 리소스를 구분하기 위해
-        더 체계화되어 있습니다. 이 디렉토리의 구조에 대한 자세한 내용은 Resources 디렉토리를 참조하십시오.</td>
+      <td style="text-align:left">&#xBAA8;&#xB4E0; &#xC751;&#xC6A9; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC758;
+        &#xB9AC;&#xC18C;&#xC2A4; &#xD30C;&#xC77C;&#xC744; &#xD3EC;&#xD568;&#xD569;&#xB2C8;&#xB2E4;.
+        &#xC774; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC758; &#xB0B4;&#xC6A9;&#xC740;
+        &#xC9C0;&#xC5ED;&#xD654; &#xB41C; &#xB9AC;&#xC18C;&#xC2A4;&#xC640; &#xADF8;&#xB807;&#xC9C0;
+        &#xC54A;&#xC740; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xAD6C;&#xBD84;&#xD558;&#xAE30;
+        &#xC704;&#xD574; &#xB354; &#xCCB4;&#xACC4;&#xD654;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+        &#xC774; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC758; &#xAD6C;&#xC870;&#xC5D0;
+        &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; Resources
+        &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB97C; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
     </tr>
     <tr>
       <td style="text-align:left">Frameworks</td>
       <td style="text-align:left">
-        <p>실행 파일에 사용되는 개인 공유 라이브러리 및 프레임워크를 포함합니다. 이 디렉토리의 프레임워크는 애플리케이션에 리비전 잠금되며
-          운영체제에서 사용할 수 있는 다른 최신 버전으로 대체될 수 없습니다. 즉, 이 디렉토리에 포함된 프레임워크는 운영체제의 다른 부분에서
-          발견되는 비슷한 이름의 프레임워크보다 우선합니다.</p>
-        <p>애플리케이션 번들에 개인 프레임워크를 추가하는 방법에 대한 정보는 <a href="../../etc/not-found.md">Framework Programming Guide</a>를
-          참조하십시오.</p>
+        <p>&#xC2E4;&#xD589; &#xD30C;&#xC77C;&#xC5D0; &#xC0AC;&#xC6A9;&#xB418;&#xB294;
+          &#xAC1C;&#xC778; &#xACF5;&#xC720; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;
+          &#xBC0F; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xB97C; &#xD3EC;&#xD568;&#xD569;&#xB2C8;&#xB2E4;.
+          &#xC774; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC758; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xB294;
+          &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC5D0; &#xB9AC;&#xBE44;&#xC804;
+          &#xC7A0;&#xAE08;&#xB418;&#xBA70; &#xC6B4;&#xC601;&#xCCB4;&#xC81C;&#xC5D0;&#xC11C;
+          &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB294; &#xB2E4;&#xB978; &#xCD5C;&#xC2E0;
+          &#xBC84;&#xC804;&#xC73C;&#xB85C; &#xB300;&#xCCB4;&#xB420; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.
+          &#xC989;, &#xC774; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0; &#xD3EC;&#xD568;&#xB41C;
+          &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xB294; &#xC6B4;&#xC601;&#xCCB4;&#xC81C;&#xC758;
+          &#xB2E4;&#xB978; &#xBD80;&#xBD84;&#xC5D0;&#xC11C; &#xBC1C;&#xACAC;&#xB418;&#xB294;
+          &#xBE44;&#xC2B7;&#xD55C; &#xC774;&#xB984;&#xC758; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xBCF4;&#xB2E4;
+          &#xC6B0;&#xC120;&#xD569;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xBC88;&#xB4E4;&#xC5D0;
+          &#xAC1C;&#xC778; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xB294;
+          &#xBC29;&#xBC95;&#xC5D0; &#xB300;&#xD55C; &#xC815;&#xBCF4;&#xB294; <a href="../../etc/not-found.md">Framework Programming Guide</a>&#xB97C;
+          &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">PlugIns</td>
-      <td style="text-align:left">애플리케이션의 기본 기능을 확장하는 로드 가능한 번들을 포함합니다. 이 디렉토리를 사용하여 애플리케이션의 프로세스 공간에 로드해야
-        하는 코드 모듈을 포함할 수 있습니다. 독립 실행형 실행 파일을 저장하는 용도로는 사용되지 않습니다.</td>
+      <td style="text-align:left">&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xAE30;&#xBCF8;
+        &#xAE30;&#xB2A5;&#xC744; &#xD655;&#xC7A5;&#xD558;&#xB294; &#xB85C;&#xB4DC;
+        &#xAC00;&#xB2A5;&#xD55C; &#xBC88;&#xB4E4;&#xC744; &#xD3EC;&#xD568;&#xD569;&#xB2C8;&#xB2E4;.
+        &#xC774; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC;
+        &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xD504;&#xB85C;&#xC138;&#xC2A4;
+        &#xACF5;&#xAC04;&#xC5D0; &#xB85C;&#xB4DC;&#xD574;&#xC57C; &#xD558;&#xB294;
+        &#xCF54;&#xB4DC; &#xBAA8;&#xB4C8;&#xC744; &#xD3EC;&#xD568;&#xD560; &#xC218;
+        &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB3C5;&#xB9BD; &#xC2E4;&#xD589;&#xD615;
+        &#xC2E4;&#xD589; &#xD30C;&#xC77C;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xB294;
+        &#xC6A9;&#xB3C4;&#xB85C;&#xB294; &#xC0AC;&#xC6A9;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">SharedSupport</td>
-      <td style="text-align:left">애플리케이션 실행 기능에 영향을 주지 않는 부가적인 리소스가 포함되어 있습니다. 이 디렉토리를 사용하여 애플리케이션의 실행에
-        영향을 주지 않는 문서 템플릿, 클립 아트 및 튜토리얼을 포함시킬 수 있습니다.</td>
+      <td style="text-align:left">&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xC2E4;&#xD589; &#xAE30;&#xB2A5;&#xC5D0;
+        &#xC601;&#xD5A5;&#xC744; &#xC8FC;&#xC9C0; &#xC54A;&#xB294; &#xBD80;&#xAC00;&#xC801;&#xC778;
+        &#xB9AC;&#xC18C;&#xC2A4;&#xAC00; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+        &#xC774; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC;
+        &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xC2E4;&#xD589;&#xC5D0;
+        &#xC601;&#xD5A5;&#xC744; &#xC8FC;&#xC9C0; &#xC54A;&#xB294; &#xBB38;&#xC11C;
+        &#xD15C;&#xD50C;&#xB9BF;, &#xD074;&#xB9BD; &#xC544;&#xD2B8; &#xBC0F; &#xD29C;&#xD1A0;&#xB9AC;&#xC5BC;&#xC744;
+        &#xD3EC;&#xD568;&#xC2DC;&#xD0AC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
   </tbody>
 </table>애플리케이션 번들은 수년간 발전해 왔지만 전반적인 목표는 같았습니다. 번들 구조는 애플리케이션이 리소스를 더 쉽게 찾을 수 있도록 하는 동시에 사용자가 이러한 리소스에 간섭하는 것을 더 어렵게 만듭니다.. Finder는 대부분의 번들을 불투명 엔터티로 처리하므로, 일반 사용자가 애플리케이션에 필요한 리소스를 이동하거나 삭제하기가 어렵습니다.
@@ -390,48 +583,79 @@ Finder에서 애플리케이션 번들을 인식하게 하려면 Information Pro
         <p>CFBundleName</p>
         <p>(Bundle name)</p>
       </td>
-      <td style="text-align:left">번들의 짧은 이름입니다. 이 키의 값은 일반적으로 애플리케이션의 이름으로 사용됩니다. Xcode는 새 프로젝트를 만들때 기본적으로
-        이 키의 값을 설정합니다.</td>
+      <td style="text-align:left">&#xBC88;&#xB4E4;&#xC758; &#xC9E7;&#xC740; &#xC774;&#xB984;&#xC785;&#xB2C8;&#xB2E4;.
+        &#xC774; &#xD0A4;&#xC758; &#xAC12;&#xC740; &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C;
+        &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xC774;&#xB984;&#xC73C;&#xB85C;
+        &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;. Xcode&#xB294; &#xC0C8; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xB97C;
+        &#xB9CC;&#xB4E4;&#xB54C; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xC774;
+        &#xD0A4;&#xC758; &#xAC12;&#xC744; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">CFBundleDisplayName
         <br />(Bundle display name)</td>
-      <td style="text-align:left">애플리케이션 이름의 지역화된 버전입니다. 일반적으로 각 언어별 리소스 디렉토리의 InfoPlist.strings 파일에 이 키의
-        지역화된 값을 포함시킵니다.</td>
+      <td style="text-align:left">&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xC774;&#xB984;&#xC758;
+        &#xC9C0;&#xC5ED;&#xD654;&#xB41C; &#xBC84;&#xC804;&#xC785;&#xB2C8;&#xB2E4;.
+        &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xAC01; &#xC5B8;&#xC5B4;&#xBCC4;
+        &#xB9AC;&#xC18C;&#xC2A4; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC758; InfoPlist.strings
+        &#xD30C;&#xC77C;&#xC5D0; &#xC774; &#xD0A4;&#xC758; &#xC9C0;&#xC5ED;&#xD654;&#xB41C;
+        &#xAC12;&#xC744; &#xD3EC;&#xD568;&#xC2DC;&#xD0B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">CFBundleIdentifier
         <br />(Bundle identifier)</td>
       <td style="text-align:left">
-        <p>시스템에서 애플리케이션을 식별할때 사용하는 문자열입니다. 이 문자열은 영숫자 (A-Z, a-z, 0-9), 하이픈 (-) 및
-          마침표 (.) 문자 만 포함하는 Uniform type identifier(UTI)형식과 역 DNS 형식을 따라야 합니다. 예를
-          들어, 회사 도메인이 Ajax.com이고 Hello라는 애플리케이션을 작성하는 경우 com.Ajax.Hello 문자열을 애플리케이션의
-          번들 식별자로 할당할 수 있습니다.</p>
-        <p>번들 식별자는 응용 프로그램 서명을 확인하는 데 사용됩니다.</p>
+        <p>&#xC2DC;&#xC2A4;&#xD15C;&#xC5D0;&#xC11C; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC744;
+          &#xC2DD;&#xBCC4;&#xD560;&#xB54C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xBB38;&#xC790;&#xC5F4;&#xC785;&#xB2C8;&#xB2E4;.
+          &#xC774; &#xBB38;&#xC790;&#xC5F4;&#xC740; &#xC601;&#xC22B;&#xC790; (A-Z,
+          a-z, 0-9), &#xD558;&#xC774;&#xD508; (-) &#xBC0F; &#xB9C8;&#xCE68;&#xD45C;
+          (.) &#xBB38;&#xC790; &#xB9CC; &#xD3EC;&#xD568;&#xD558;&#xB294; Uniform
+          type identifier(UTI)&#xD615;&#xC2DD;&#xACFC; &#xC5ED; DNS &#xD615;&#xC2DD;&#xC744;
+          &#xB530;&#xB77C;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4;,
+          &#xD68C;&#xC0AC; &#xB3C4;&#xBA54;&#xC778;&#xC774; Ajax.com&#xC774;&#xACE0;
+          Hello&#xB77C;&#xB294; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC744;
+          &#xC791;&#xC131;&#xD558;&#xB294; &#xACBD;&#xC6B0; com.Ajax.Hello &#xBB38;&#xC790;&#xC5F4;&#xC744;
+          &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &#xBC88;&#xB4E4;
+          &#xC2DD;&#xBCC4;&#xC790;&#xB85C; &#xD560;&#xB2F9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xBC88;&#xB4E4; &#xC2DD;&#xBCC4;&#xC790;&#xB294; &#xC751;&#xC6A9; &#xD504;&#xB85C;&#xADF8;&#xB7A8;
+          &#xC11C;&#xBA85;&#xC744; &#xD655;&#xC778;&#xD558;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">CFBundleVersion
         <br />(Bundle version)</td>
-      <td style="text-align:left">번들의 빌드 버전 번호를 지정합니다. 이 값은 한 개 이상의 마침표로 구분되는 정수로 구성된 문자열입니다. 이 값은 지속적으로
-        증가하게 되어있으며 지역화할 수 없습니다.</td>
+      <td style="text-align:left">&#xBC88;&#xB4E4;&#xC758; &#xBE4C;&#xB4DC; &#xBC84;&#xC804; &#xBC88;&#xD638;&#xB97C;
+        &#xC9C0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xC774; &#xAC12;&#xC740; &#xD55C;
+        &#xAC1C; &#xC774;&#xC0C1;&#xC758; &#xB9C8;&#xCE68;&#xD45C;&#xB85C; &#xAD6C;&#xBD84;&#xB418;&#xB294;
+        &#xC815;&#xC218;&#xB85C; &#xAD6C;&#xC131;&#xB41C; &#xBB38;&#xC790;&#xC5F4;&#xC785;&#xB2C8;&#xB2E4;.
+        &#xC774; &#xAC12;&#xC740; &#xC9C0;&#xC18D;&#xC801;&#xC73C;&#xB85C; &#xC99D;&#xAC00;&#xD558;&#xAC8C;
+        &#xB418;&#xC5B4;&#xC788;&#xC73C;&#xBA70; &#xC9C0;&#xC5ED;&#xD654;&#xD560;
+        &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">CFBundlePackageType
         <br />(Bundle OS Type code)</td>
-      <td style="text-align:left">번들 유형입니다. 애플리케이션의 경우 이 키의 값은 항상 4자 문자열 <code>APPL</code>입니다.</td>
+      <td style="text-align:left">&#xBC88;&#xB4E4; &#xC720;&#xD615;&#xC785;&#xB2C8;&#xB2E4;. &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758;
+        &#xACBD;&#xC6B0; &#xC774; &#xD0A4;&#xC758; &#xAC12;&#xC740; &#xD56D;&#xC0C1;
+        4&#xC790; &#xBB38;&#xC790;&#xC5F4; <code>APPL</code>&#xC785;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">CFBundleSignature
         <br />(Bundle creator OS Type code)</td>
-      <td style="text-align:left">번들의 작성자 코드입니다. 이 문자열은 번들과 관련된 4자 문자열입니다. 예를 들어 TextEdit 애플리케이션의 시그니처는
-        ttxt입니다.</td>
+      <td style="text-align:left">&#xBC88;&#xB4E4;&#xC758; &#xC791;&#xC131;&#xC790; &#xCF54;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.
+        &#xC774; &#xBB38;&#xC790;&#xC5F4;&#xC740; &#xBC88;&#xB4E4;&#xACFC; &#xAD00;&#xB828;&#xB41C;
+        4&#xC790; &#xBB38;&#xC790;&#xC5F4;&#xC785;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C;
+        &#xB4E4;&#xC5B4; TextEdit &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758;
+        &#xC2DC;&#xADF8;&#xB2C8;&#xCC98;&#xB294; ttxt&#xC785;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">CFBundleExecutable
         <br />(Executable file)</td>
-      <td style="text-align:left">주 실행 파일의 이름. 이것은 사용자가 애플리케이션을 시작할 때 실행되는 코드입니다. 일반적으로 Xcode는 빌드시 이 키의
-        값을 자동으로 설정합니다.</td>
+      <td style="text-align:left">&#xC8FC; &#xC2E4;&#xD589; &#xD30C;&#xC77C;&#xC758; &#xC774;&#xB984;. &#xC774;&#xAC83;&#xC740;
+        &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC744;
+        &#xC2DC;&#xC791;&#xD560; &#xB54C; &#xC2E4;&#xD589;&#xB418;&#xB294; &#xCF54;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.
+        &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; Xcode&#xB294; &#xBE4C;&#xB4DC;&#xC2DC;
+        &#xC774; &#xD0A4;&#xC758; &#xAC12;&#xC744; &#xC790;&#xB3D9;&#xC73C;&#xB85C;
+        &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</td>
     </tr>
   </tbody>
 </table>_표 2-7 Info.plist 파일에 권장되는 키_
