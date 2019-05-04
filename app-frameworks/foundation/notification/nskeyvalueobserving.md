@@ -1,3 +1,7 @@
+---
+description: "다른 객체의 특정 속성의 변경이 있을 때 알림을 받기 위해서 객체가 채택하는 비공식적\x1D인 프로토콜"
+---
+
 # NSKeyValueObserving
 
 > 원문 출처  
