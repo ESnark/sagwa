@@ -115,7 +115,7 @@ Core Graphics 프레임워크는 Quartz 고급 드로잉 엔진을 기반으로 
 ### 구조체
 
 * _struct_ CGPDFAccessPermissions
-* _struct_ CGPSConverterCallbacks A structure for holding the callbacks provided when you create a PostScript converter object.
+* _struct_ CGPSConverterCallbacks PostScript 컨버터 객체를 생성할 때 제공되는 콜백을 유지하기 위한 구조체
 
 ### 클래스
 

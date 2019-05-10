@@ -1,3 +1,7 @@
+---
+description: 객체가 CALayer 변경에 의해 트리거 된 액션에 응답할 수 있게 해주는 인터페이스
+---
+
 # CAAction
 
 > 원문 출처  

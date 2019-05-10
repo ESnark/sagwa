@@ -1,3 +1,7 @@
+---
+description: 좌표공간에 cubic Bezier spline을 그리는 레이어
+---
+
 # CAShapeLayer
 
 > 원문 출처  

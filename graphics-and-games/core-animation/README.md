@@ -93,7 +93,7 @@ Core Animation은 CPU에 부담을 주지 않고 앱 속도를 저하시키지 �
   애니메이션의 페이싱을 타이밍 커브로 정의하는 함수
 
 * _protocol_ CAMediaTiming 계층적 타이밍 시스템을 모델링하는 메서드로서, 객체가 부모 객체와 로컬 시간 사이의 시간을 매핑할 수 있도록 합니다.
-* _class_ CADisplayLink
+* _class_ [CADisplayLink](cadisplaylink.md)
 
   애플리케이션에서 드로잉을 디스플레이의 주사율와 동기화 할 수 있게 해주는 타이머 객체
 
