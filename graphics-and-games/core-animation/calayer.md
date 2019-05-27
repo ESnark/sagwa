@@ -138,10 +138,10 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 * _var_ edgeAntialiasingMask: CAEdgeAntialiasingMask 수신자의 가장자리가 래스터되는 방법을 정의하는 비트마스크입니다.
 * _func_ contentsAreFlipped\(\) -&gt; Bool
 
-  렌더링 시 레이어 컨텐츠가 암시적으로 플립되는지를 나타내는 Boolean값을 반환합니다.
+  렌더링 시 레이어 컨텐츠를 암묵적으로 플립시킬 것인지 나타내는 Boolean값을 반환합니다.
 
-* _var_ isGeometryFlipped: Bool 레이어와 하위 레이어의 지오메트리가 수직으로 플립되는지를 나타내는 Boolean 값
-* _var_ drawsAsynchronously: Bool 그리기 명령이 백그라운드 스레드에서 처리되고 지연되는 방식이 비동기식인지를 나타내는 Boolean 값
+* _var_ isGeometryFlipped: Bool 레이어와 하위 레이어의 지오메트리가 수직으로 플립되어 있는지 나타내는 Boolean 값
+* _var_ drawsAsynchronously: Bool 그리기 명령이 백그라운드 스레드에서 실행될 때 비동기식으로 처리됨을 나타내는 Boolean 값
 * _var_ shouldRasterize: Bool 레이어가 합성되기 전에 비트맵으로 렌더링되는지를 나타내는 Boolean 값. 애니메이션 가능합니다.
 * _var_ rasterizationScale: CGFloat
 
