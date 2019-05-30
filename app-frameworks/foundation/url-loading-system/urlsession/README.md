@@ -104,9 +104,9 @@ iOS 9.0, OS X 10.11 버전부터 App Transport Security \(ATS\)라는 새로운 
 
 #### NSCopying 동작
 
-세과 task 객체는 다음과 같이 [NSCopying](../../notification/) 프로토콜을 준수합니다.
+세션과 task 객체는 다음과 같이 [NSCopying](../../notification/) 프로토콜을 준수합니다.
 
-* 세이나 task 객체를 복사하면 같은 객체를 받습니다.
+* 세션이나 task 객체를 복사하면 같은 객체를 받습니다.
 * configuration 객체를 복사하면 독립적으로 조작가능한 새로운 복사본을 받습니다.
 
 #### 스레드 안전성
