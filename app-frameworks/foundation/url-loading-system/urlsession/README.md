@@ -127,8 +127,8 @@ URL session API는 그 자체로 완전히 스레드 안전하며 어느 스레�
 
 ### 세션 생성하기
 
-* init\(configuration: URLSessionConfiguration\) 특정 session configuration으로 세을 생성합니다.
-* init\(configuration: URLSessionConfiguration, delegate: URLSessionDelegate?, delegateQueue: OperationQeueu?\) 특정 session configuration과 delegate, delegateQueue로 세을 생성합니다.
+* init\(configuration: URLSessionConfiguration\) 특정 session configuration으로 세션을 생성합니다.
+* init\(configuration: URLSessionConfiguration, delegate: URLSessionDelegate?, delegateQueue: OperationQeueu?\) 특정 session configuration과 delegate, delegateQueue로 세션을 생성합니다.
 * _class_ [URLSessionConfiguration](urlsessionconfiguration.md) URL session의 동작과 정책을 정의하는 configuration 객체
 * _var_ configuration: URLSessionConfiguration session configuration 객체의 복사본
 
@@ -150,9 +150,9 @@ URL session API는 그 자체로 완전히 스레드 안전하며 어느 스레�
 * _class_ URLSessionDownloadTask 다운로드된 데이터를 파일로 저장하는 URL session task
 * _protocol_ URLSessionDownloadDelegate A protocol defining methods that URL session instances call on their delegates to handle task-level events specific to data and upload tasks.
 
-### 세 관리
+### 세션 관리
 
-* func finishTasksAndInvalidate\(\) 세을 무효화하고 완료되지 않은 task를 완료시킵니다.
+* func finishTasksAndInvalidate\(\) 세션을 무효화하고 완료되지 않은 task를 완료시킵니다.
 * func flush\(completionHandler: \(\) -&gt; Void\) Flushes cookies and credentials to disk, clears transient caches, and ensures that future requests occur on a new TCP connection.
 * func getTasksWithCompletionHandler\(\(\[URLSessionDataTask\], \[URLSessionUploadTask\], \[URLSessionDownloadTask\]\) -&gt; Void\) 세션 내 모든 data, upload, download task들의 completion 콜백을 비동기 호출합니다.
 * func getAllTasks\(completionHandler: \(\[URLSessionTask\]\) -&gt; Void\) 세션 내 모든 task들의 completion 콜백을 비동기 호출합니다.
