@@ -1,6 +1,6 @@
 # UITableView
 
-> 원 출처  
+> 원문 출처  
 > [https://developer.apple.com/documentation/uikit/uitableview](https://developer.apple.com/documentation/uikit/uitableview)
 
 ## 개요

@@ -130,7 +130,7 @@ URL session API는 그 자체로 완전히 스레드 안전하며 어느 스레�
 * init\(configuration: URLSessionConfiguration\) 특정 session configuration으로 세션을 생성합니다.
 * init\(configuration: URLSessionConfiguration, delegate: URLSessionDelegate?, delegateQueue: OperationQeueu?\) 특정 session configuration과 delegate, delegateQueue로 세션을 생성합니다.
 * _class_ [URLSessionConfiguration](urlsessionconfiguration.md) URL session의 동작과 정책을 정의하는 configuration 객체
-* _var_ configuration: URLSessionConfiguration session configuration 객체의 복사본
+* _var_ [configuration](configuration.md): URLSessionConfiguration session configuration 객체의 복사본
 
 ### Delegate로 작업하기
 
