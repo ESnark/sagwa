@@ -11,7 +11,7 @@ description: URL과 상호 작용하고 표준 인터넷 프로토콜을 사용�
 
 URL 로딩 시스템은 https같은 표준 프로토콜이나 직접 만든 커스텀 프로토콜을 통해서 URL로 구별되는 리소스에 대한 접근을 제공합니다. 로딩은 비동기적으로 이루어지기 때문에 앱의 응답속도를 저하시키거나 정지시키지 않으며, 데이터나 오류가 도착하는대로 처리할 수 있습니다.
 
-[URLSessionTask](../../../etc/not-found.md) 인스턴스는 데이터를 가져와서 앱에 반환하거나 파일을 다운로드하고, 데이터 및 파일을 업로드할 수 있습니다. [URLSessionTask](../../../etc/not-found.md) 인스턴스는 [URLSession](urlsession.md) 인스턴스를 통해서 몇개든지 생성할 수 있습니다. Session을 설정할 때에는 [URLSessionConfiguration](../../../etc/not-found.md) 객체를 사용합니다. 이 객체는 캐시나 쿠키를 어떻게 사용할 것인지, 또는 셀룰러 네트워크에서 연결을 허용할 것인지와 같은 옵션을 구성할 수 있습니다.
+[URLSessionTask](urlsessiontask.md) 인스턴스는 데이터를 가져와서 앱에 반환하거나 파일을 다운로드하고, 데이터 및 파일을 업로드할 수 있습니다. [URLSessionTask](urlsessiontask.md) 인스턴스는 [URLSession](urlsession.md) 인스턴스를 통해서 몇개든지 생성할 수 있습니다. Session을 설정할 때에는 [URLSessionConfiguration](../../../etc/not-found.md) 객체를 사용합니다. 이 객체는 캐시나 쿠키를 어떻게 사용할 것인지, 또는 셀룰러 네트워크에서 연결을 허용할 것인지와 같은 옵션을 구성할 수 있습니다.
 
 task를 생성하기 위해서 하나의 세션을 계속해서 사용하는 것도 가능합니다. 예를 들어, 웹 브라우저에는 일반 브라우징과 프라이빗 브라우징을 위한 별도의 세션이 존재하며 프라이빗 브라우징을 위한 세션에서는 데이터를 캐시하지 않습니다. 그림 1은 다르게 설정된 두 세션이 어떻게 여러개의 태스크를 생성할 수 있는지를 보여줍니다.
 
@@ -29,7 +29,7 @@ task를 생성하기 위해서 하나의 세션을 계속해서 사용하는 것
 
 * 웹사이트 데이터를 메모리에 저장하기 URL 세션으로부터 데이터 task를 생성하고 데이터를 받아 메모리에 바로 저장하세요.
 * _class_ [URLSession](urlsession.md) 연관된 네트워크 데이터 전송 태스크들의 그룹을 조정하는 객체
-* _class_ URLSessionTask 리소스 다운로드와 같이 URLSession에서 수행되는 task
+* _class_ [URLSessionTask](urlsessiontask.md) 리소스 다운로드와 같이 URLSession에서 수행되는 task
 
 ### 요청과 응답
 

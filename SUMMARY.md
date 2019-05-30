@@ -17,6 +17,7 @@
     * [NSKeyValueObserving](app-frameworks/foundation/notification/nskeyvalueobserving.md)
   * [URL 로딩 시스템](app-frameworks/foundation/url-loading-system/README.md)
     * [URLSession](app-frameworks/foundation/url-loading-system/urlsession.md)
+    * [URLSessionTask](app-frameworks/foundation/url-loading-system/urlsessiontask.md)
   * [Object Runtime](app-frameworks/foundation/object-runtime/README.md)
     * [NSValue](app-frameworks/foundation/object-runtime/nsvalue.md)
 * [UIKit](app-frameworks/uikit/README.md)

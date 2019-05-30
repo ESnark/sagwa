@@ -4,8 +4,6 @@ description: 연관된 네트워크 데이터 전송 태스크들의 그룹을 �
 
 # URLSession
 
-
-
 > 원문 출처  
 > [https://developer.apple.com/documentation/foundation/urlsession](https://developer.apple.com/documentation/foundation/urlsession)
 
@@ -118,7 +116,7 @@ URL session API는 그 자체로 완전히 스레드 안전하며 어느 스레�
 {% hint style="danger" %}
 경고
 
-시스템이 [urlSessionDidFinishEvents\(forBackgroundURLSession:\)](../../../etc/not-found.md)이라는 session delegate 메서드를 보 스레드에서 호출할 수도 있습니다. 하지만 iOS에서 해당 메서드를 구현하면 [application\(\_:handleEventsForBackgroundURLSession:completionHandler:\)](../../../etc/not-found.md)라는 App delegate 메서드에서 제공하는 completion handler를 호출해야 할 수 있습니다. **이 completion handler는 반드시 메인 스레드에서 호출되어야 합니다.**
+시스템이 [urlSessionDidFinishEvents\(forBackgroundURLSession:\)](../../../etc/not-found.md)이라는 session delegate 메서드를 보조 스레드에서 호출할 수도 있습니다. 하지만 iOS에서 해당 메서드를 구현하면 [application\(\_:handleEventsForBackgroundURLSession:completionHandler:\)](../../../etc/not-found.md)라는 App delegate 메서드에서 제공하는 completion handler를 호출해야 할 수 있습니다. **이 completion handler는 반드시 메인 스레드에서 호출되어야 합니다.**
 {% endhint %}
 
 ## **주제**
