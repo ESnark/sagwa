@@ -27,7 +27,7 @@ task를 생성하기 위해서 하나의 세션을 계속해서 사용하는 것
 
 세션을 설정하고 생성하세요. 그리고 URL과 상호작용하는 task를 생성하세요.
 
-* 웹사이트 데이터를 메모리에 저장하기 URL 세션으로부터 데이터 task를 생성하고 데이터를 받아 메모리에 바로 저장하세요.
+* [웹사이트 데이터를 메모리에 저장하기](fetching-website-data-into-memory.md) URL 세션으로부터 데이터 task를 생성하고 데이터를 받아 메모리에 바로 저장하세요.
 * _class_ [URLSession](urlsession.md) 연관된 네트워크 데이터 전송 태스크들의 그룹을 조정하는 객체
 * _class_ [URLSessionTask](urlsessiontask.md) 리소스 다운로드와 같이 URLSession에서 수행되는 task
 

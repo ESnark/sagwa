@@ -179,6 +179,6 @@ URL session API는 그 자체로 완전히 스레드 안전하며 어느 스레�
 
 ## 같이 보기
 
-* 웹사이트 데이터를 메모리에 저장하기 URL 세션으로부터 데이터 task를 생성하고 데이터를 받아 메모리에 바로 저장하세요.
-* _class_ URLSessionTask 리소스 다운로드와 같이 URLSession에서 수행되는 task
+* [웹사이트 데이터를 메모리에 저장하기](fetching-website-data-into-memory.md) URL 세션으로부터 데이터 task를 생성하고 데이터를 받아 메모리에 바로 저장하세요.
+* _class_ [URLSessionTask](urlsessiontask.md) 리소스 다운로드와 같이 URLSession에서 수행되는 task
 
