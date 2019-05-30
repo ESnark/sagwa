@@ -4,11 +4,14 @@ description: URL 세션으로부터 데이터 task를 생성하고 데이터를 
 
 # 웹사이트 데이터를 메모리에 저장하기
 
+> 원문 출처  
+> [https://developer.apple.com/documentation/foundation/url\_loading\_system/fetching\_website\_data\_into\_memory](https://developer.apple.com/documentation/foundation/url_loading_system/fetching_website_data_into_memory)
+
 ## 개요
 
 원격 서버와 작은 규모의 통신을 할 경우 [URLSessionDataTask](../../../etc/not-found.md) 클래스를 사용해서 response 데이터를 메모리에 저장할 수 있습니다.\(그와 반대로 [URLSessionDownloadTask](../../../etc/not-found.md) 클래스는 데이터를 바로 파일 시스템에 저장합니다.\)  data task는 웹서비스 엔드포인를 호출하는 일에 적합합니다.
 
-[URLSession](urlsession.md) 인스턴스는 task를 생성하는데 사용됩니다. 여러분의 요구사항이 단순하다면 URLSession 클래스의 [shared](../../../etc/not-found.md) 인스턴스를 사용하는 것이 좋습니다. delegate 콜백으로 전송과정 중에 상호작용을 하길 원한다면 세션을 생성할 때 [URLSessionConfiguration](../../../etc/not-found.md) 인스턴스를 사용하고 [URLSessionDelegate](../../../etc/not-found.md) 또는 해당 하위 프로토콜 중 하나를 구현하는 클래스를 전달할 수 있습니다. 세션은 여러개의 task를 만드는데 재사용될 수 있으므로 필요로 하는 configuration마다 세션을 만들어서 프로퍼티로 저장하십시오.
+[URLSession](urlsession/) 인스턴스는 task를 생성하는데 사용됩니다. 여러분의 요구사항이 단순하다면 URLSession 클래스의 [shared](../../../etc/not-found.md) 인스턴스를 사용하는 것이 좋습니다. delegate 콜백으로 전송과정 중에 상호작용을 하길 원한다면 세션을 생성할 때 [URLSessionConfiguration](urlsession/urlsessionconfiguration.md) 인스턴스를 사용하고 [URLSessionDelegate](../../../etc/not-found.md) 또는 해당 하위 프로토콜 중 하나를 구현하는 클래스를 전달할 수 있습니다. 세션은 여러개의 task를 만드는데 재사용될 수 있으므로 필요로 하는 configuration마다 세션을 만들어서 프로퍼티로 저장하십시오.
 
 {% hint style="info" %}
 알림
@@ -144,7 +147,7 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
 
 ### 첫 단계
 
-* class [URLSession](urlsession.md)
+* class [URLSession](urlsession/)
 
   연관된 네트워크 데이터 전송 태스크들의 그룹을 조정하는 객체
 

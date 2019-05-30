@@ -43,7 +43,7 @@ URLSession 및 관련 클래스들은 URL이 가리키는 엔드포인트로 데
 {% hint style="warning" %}
 중요
 
-URLSession API는 다른 많은 클래스와 함께 상당히 복잡한 방식으로 동작합니다. 이 문서만 읽을 경우 이해하기가 쉽지 않습니다. 이 API를 사용하기 전에 [URL 로딩 시스템](./)의 주제들을 읽어보세요. [첫 단계](./#undefined-3), [업로드](./#undefined-5)와 [다운로드](./#undefined-6) 섹션의 문서에는 URLSession을 사용한 일반적인 task를 수행하는 예시들이 제공되고 있습니다.
+URLSession API는 다른 많은 클래스와 함께 상당히 복잡한 방식으로 동작합니다. 이 문서만 읽을 경우 이해하기가 쉽지 않습니다. 이 API를 사용하기 전에 [URL 로딩 시스템](../)의 주제들을 읽어보세요. [첫 단계](../#undefined-3), [업로드](../#undefined-5)와 [다운로드](../#undefined-6) 섹션의 문서에는 URLSession을 사용한 일반적인 task를 수행하는 예시들이 제공되고 있습니다.
 {% endhint %}
 
 앱은 URLSession API를 사용하여 하나 이상의 세션을 만들고 각 세션은 관련 데이터 전송 작업 그룹을 조정합니다. 예를 들어, 웹 브라우저를 하나 만든다고 하면 이 앱은 각 탭이나 윈도우별로 세션을 하나씩 생성할 것입니다. 또는 대화형으로 사용할 하나의 세션과 백그라운드 다운로드를 위 다른 하나의 세션을 만들수도 있습니다. 각 세션 내에 앱은 일련의 task들을 추가하고, 각 task는 특정 URL에 대한 요청을 나타냅니다 \(필요하다면 HTTP 리다이렉트를 따를 것입니다.\)
@@ -52,14 +52,14 @@ URLSession API는 다른 많은 클래스와 함께 상당히 복잡한 방식�
 
 하나의 URL session에 속한 task들은 같은 session configuration 객체를 공유합니다. 이 객체는 호스트당 생성 가능한 동시 접속갯수나 cellular 네트워크를 허용할 것인지와 같은 접속 동작을 정의합니다.
 
-URLSession 중에는 기본적인 요청에 적합한 \(configuration 객체가 없는\) 싱글톤 [shared](../../../etc/not-found.md) 세션이 존재합니다. 이것은 직접 생성하는 것만큼 자유롭게 커스터마이징할 수는 없지만 아주 제한적인 용도로만 사용한다면 좋은 출발점이 될 것입니다. shared 클래스 메서드를 사용함으로써 이 세션에 접근할 수 있습니다.  
+URLSession 중에는 기본적인 요청에 적합한 \(configuration 객체가 없는\) 싱글톤 [shared](../../../../etc/not-found.md) 세션이 존재합니다. 이것은 직접 생성하는 것만큼 자유롭게 커스터마이징할 수는 없지만 아주 제한적인 용도로만 사용한다면 좋은 출발점이 될 것입니다. shared 클래스 메서드를 사용함으로써 이 세션에 접근할 수 있습니다.  
 다른 종류의 session들은 다음 세가지 configuration과 함께 URLSession을 초기화 하는 방식으로 사용할 수 있습니다.
 
 * default session은 shared session과 상당히 비슷하게 동작하지만 더 많은 설정이 가능하며 delegate를 통해서 데이터를 점진적으로 받아오는 것이 가능합니다.
 * Ephemeral session은 shared session과 비슷하지만 캐시나 쿠키, 자격증명을 디스크에 기록하지 않습니다.
 * Background session은 앱이 실행중이지 않을 때도  백그라운드에서 컨텐츠를 업로드하거나 다운로드할 수 있게 해줍니다.
 
-각 타입의 configuration을 생성하는 방법에 대한 자세한 내용은 [URLSession Configuration](../notification/) 클래스와 [Creating a Session Configuration Object](../../../etc/not-found.md)를 참고하세요
+각 타입의 configuration을 생성하는 방법에 대한 자세한 내용은 [URLSession Configuration](urlsessionconfiguration.md) 클래스와 [Session Configuration 객체 생성](urlsessionconfiguration.md#session-configuration-1)을 참고하세요
 
 #### URL Session Task의 종류
 
@@ -71,7 +71,7 @@ URLSession 중에는 기본적인 요청에 적합한 \(configuration 객체가 
 
 #### Session Delegate 사용하기
 
-한 session 안에 있는 task들은 공통 delegate를 공유합니다. delegate는 다양한 이벤트\(인증 실패, 서버로부터 데이터 도착했을 때, 데이터가 캐시할 준비가 되었을 때 등등\)가 발생했을때 정보를 제공하거나 받을 수 있게 해줍니다. 만약 delegate가 제공하는 기능들이 필요 없다면 session을 생성할 때 nil을 전달하면 됩니다.
+한 세션 안에 있는 task들은 공통 delegate를 공유합니다. delegate는 다양한 이벤트\(인증 실패, 서버로부터 데이터 도착했을 때, 데이터가 캐시할 준비가 되었을 때 등등\)가 발생했을때 정보를 제공하거나 받을 수 있게 해줍니다. 만약 delegate가 제공하는 기능들이 필요 없다면 세을 생성할 때 nil을 전달하면 됩니다.
 
 {% hint style="warning" %}
 중요
@@ -100,36 +100,36 @@ URLSession은 HTTP/1.1, SPDY, HTTP/2 프로토콜을 지원합니다. HTTP/2 지
 
 iOS 9.0, OS X 10.11 버전부터 App Transport Security \(ATS\)라는 새로운 보안 기능이 URLSession을 통해 만들어지는 모든 HTTP 접속에 적용됩니다. ATS는 HTTPS를 사용하는 HTTP 접속을 필요로 합니다. \([RFC 2818](https://tools.ietf.org/html/rfc2818)\)
 
-자세한 내용은 [Information Property List Key Reference](../../../etc/not-found.md)의 [NSAppTransportSecurity](../../../etc/not-found.md)를 참고하세요.
+자세한 내용은 [Information Property List Key Reference](../../../../etc/not-found.md)의 [NSAppTransportSecurity](../../../../etc/not-found.md)를 참고하세요.
 
 #### NSCopying 동작
 
-session과 task 객체는 다음과 같이 [NSCopying](../notification/) 프로토콜을 준수합니다.
+세과 task 객체는 다음과 같이 [NSCopying](../../notification/) 프로토콜을 준수합니다.
 
-* session이나 task 객체를 복사하면 같은 객체를 받습니다.
+* 세이나 task 객체를 복사하면 같은 객체를 받습니다.
 * configuration 객체를 복사하면 독립적으로 조작가능한 새로운 복사본을 받습니다.
 
 #### 스레드 안전성
 
-URL session API는 그 자체로 완전히 스레드 안전하며 어느 스레드 컨텍스트에서든지 자유롭게 session과 task를 생성할 수 있습니다. delegate 메서드가 completion handler를 호출할 때 이 작업은 자동적으로 올바른 delegate queue에 스케줄링 됩니다.
+URL session API는 그 자체로 완전히 스레드 안전하며 어느 스레드 컨텍스트에서든지 자유롭게 세션과 task를 생성할 수 있습니다. delegate 메서드가 completion handler를 호출할 때 이 작업은 자동적으로 올바른 delegate queue에 스케줄링 됩니다.
 
 {% hint style="danger" %}
 경고
 
-시스템이 [urlSessionDidFinishEvents\(forBackgroundURLSession:\)](../../../etc/not-found.md)이라는 session delegate 메서드를 보조 스레드에서 호출할 수도 있습니다. 하지만 iOS에서 해당 메서드를 구현하면 [application\(\_:handleEventsForBackgroundURLSession:completionHandler:\)](../../../etc/not-found.md)라는 App delegate 메서드에서 제공하는 completion handler를 호출해야 할 수 있습니다. **이 completion handler는 반드시 메인 스레드에서 호출되어야 합니다.**
+시스템이 [urlSessionDidFinishEvents\(forBackgroundURLSession:\)](../../../../etc/not-found.md)이라는 session delegate 메서드를 보조 스레드에서 호출할 수도 있습니다. 하지만 iOS에서 해당 메서드를 구현하면 [application\(\_:handleEventsForBackgroundURLSession:completionHandler:\)](../../../../etc/not-found.md)라는 App delegate 메서드에서 제공하는 completion handler를 호출해야 할 수 있습니다. **이 completion handler는 반드시 메인 스레드에서 호출되어야 합니다.**
 {% endhint %}
 
 ## **주제**
 
-### shared session 사용하기
+### shared 세션 사용하기
 
 * _class_ _var_ shared: URLSession 공유 싱글톤 세션 객체
 
-### session 생성하기
+### 세션 생성하기
 
-* init\(configuration: URLSessionConfiguration\) 특정 session configuration으로 session을 생성합니다.
-* init\(configuration: URLSessionConfiguration, delegate: URLSessionDelegate?, delegateQueue: OperationQeueu?\) 특정 session configuration과 delegate, delegateQueue로 session을 생성합니다.
-* _class_ URLSessionConfiguration URL session의 동작과 정책을 정의하는 configuration 객체
+* init\(configuration: URLSessionConfiguration\) 특정 session configuration으로 세을 생성합니다.
+* init\(configuration: URLSessionConfiguration, delegate: URLSessionDelegate?, delegateQueue: OperationQeueu?\) 특정 session configuration과 delegate, delegateQueue로 세을 생성합니다.
+* _class_ [URLSessionConfiguration](urlsessionconfiguration.md) URL session의 동작과 정책을 정의하는 configuration 객체
 * _var_ configuration: URLSessionConfiguration session configuration 객체의 복사본
 
 ### Delegate로 작업하기
@@ -150,9 +150,9 @@ URL session API는 그 자체로 완전히 스레드 안전하며 어느 스레�
 * _class_ URLSessionDownloadTask 다운로드된 데이터를 파일로 저장하는 URL session task
 * _protocol_ URLSessionDownloadDelegate A protocol defining methods that URL session instances call on their delegates to handle task-level events specific to data and upload tasks.
 
-### Session 관리
+### 세 관리
 
-* func finishTasksAndInvalidate\(\) session을 무효화하고 완료되지 않은 task를 완료시킵니다.
+* func finishTasksAndInvalidate\(\) 세을 무효화하고 완료되지 않은 task를 완료시킵니다.
 * func flush\(completionHandler: \(\) -&gt; Void\) Flushes cookies and credentials to disk, clears transient caches, and ensures that future requests occur on a new TCP connection.
 * func getTasksWithCompletionHandler\(\(\[URLSessionDataTask\], \[URLSessionUploadTask\], \[URLSessionDownloadTask\]\) -&gt; Void\) 세션 내 모든 data, upload, download task들의 completion 콜백을 비동기 호출합니다.
 * func getAllTasks\(completionHandler: \(\[URLSessionTask\]\) -&gt; Void\) 세션 내 모든 task들의 completion 콜백을 비동기 호출합니다.
@@ -179,6 +179,6 @@ URL session API는 그 자체로 완전히 스레드 안전하며 어느 스레�
 
 ## 같이 보기
 
-* [웹사이트 데이터를 메모리에 저장하기](fetching-website-data-into-memory.md) URL 세션으로부터 데이터 task를 생성하고 데이터를 받아 메모리에 바로 저장하세요.
-* _class_ [URLSessionTask](urlsessiontask.md) 리소스 다운로드와 같이 URLSession에서 수행되는 task
+* [웹사이트 데이터를 메모리에 저장하기](../fetching-website-data-into-memory.md) URL 세션으로부터 데이터 task를 생성하고 데이터를 받아 메모리에 바로 저장하세요.
+* _class_ [URLSessionTask](../urlsessiontask.md) 리소스 다운로드와 같이 URLSession에서 수행되는 task
 

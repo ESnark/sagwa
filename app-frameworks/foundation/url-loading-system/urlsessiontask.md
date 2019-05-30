@@ -38,7 +38,7 @@ class URLSessionTask: NSObject
 
 ## 개요
 
-URLSessionTask 클래스는 URL session task의 기본 클래스입니다. task는 언제나 세션의 일부이며 [URLSession](urlsession.md) 인스턴스의 task 생성 메서드를 호출함으로써 만들어낼 수 있습니다. 호출되는 메서드에 따라서 생성될 task의 종류가 결정됩니다. 다음은 URLSession 인스턴스의 메서드입니다.
+URLSessionTask 클래스는 URL session task의 기본 클래스입니다. task는 언제나 세션의 일부이며 [URLSession](urlsession/) 인스턴스의 task 생성 메서드를 호출함으로써 만들어낼 수 있습니다. 호출되는 메서드에 따라서 생성될 task의 종류가 결정됩니다. 다음은 URLSession 인스턴스의 메서드입니다.
 
 * [dataTask\(with:\)](../../../etc/not-found.md) 및 관련 메서드는 [URLSessionDataTask](../../../etc/not-found.md) 인스턴스를 생성합니다. Data task는 서버에 리소스를 요청하고 응답값을 하나 이상의 NSData 객체로써 메모리에 저장합니다. 이 task는 default, ephemeral, shared 세션에서 사용가능하지만 background 세션에서는 사용할 수 없습니다.
 * [uploadTask\(with:from:\)](../notification/) 및 관련 메서드는 [URLSessionUploadTask](../../../etc/not-found.md) 인스턴스를 생성합니다. Upload task는 data task와 비슷하지만 request body를 제공하기가 더 쉽고 서버의 응답을 받기 전에 데이터를 업로드 하는 것이 더 편해집니다. 뿐만 아니라 upload task는 background 세션을 지원합니다.
@@ -107,5 +107,5 @@ Note
 ## 같이 보기
 
 * [웹사이트 데이터를 메모리에 저장하기](fetching-website-data-into-memory.md) URL 세션으로부터 데이터 task를 생성하고 데이터를 받아 메모리에 바로 저장하세요.
-* _class_ [URLSession](urlsession.md) 연관된 네트워크 데이터 전송 태스크들의 그룹을 조정하는 객체
+* _class_ [URLSession](urlsession/) 연관된 네트워크 데이터 전송 태스크들의 그룹을 조정하는 객체
 
