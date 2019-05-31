@@ -147,5 +147,5 @@ Background session은 앱이 실행중이지 않을 때도  백그라운드에�
 
 * init\(configuration: URLSessionConfiguration\) 특정 session configuration으로 세션을 생성합니다.
 * init\(configuration: URLSessionConfiguration, delegate: URLSessionDelegate?, delegateQueue: OperationQeueu?\) 특정 session configuration과 delegate, delegateQueue로 세션을 생성합니다.
-* _var_ configuration: URLSessionConfiguration session configuration 객체의 복사본
+* _var_ [configuration](configuration.md): URLSessionConfiguration session configuration 객체의 복사본
 
