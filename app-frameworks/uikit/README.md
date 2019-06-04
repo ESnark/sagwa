@@ -21,6 +21,7 @@ UIKit 프레임워크는 iOS 또는 tvOS 앱에 필요한 인프라를 제공합
 ### 첫 시작 <a id="first_steps"></a>
 
 * [UIKit으로 앱 개발](about_app_development_with_uikit.md) iOS/tvOS 앱 개발을 위해 UIKit과 Xcode가 제공하는 기본기능에 대해서 알아보세요
+* Protecting the User's Privacy Secure personal data, and respect user preferences for how data is used.
 
 ### 앱 구조 <a id="app_structure"></a>
 

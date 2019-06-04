@@ -1,3 +1,7 @@
+---
+description: 제스처 인식기에서 앱의 이벤트 처리 로직을 캡슐화하여 앱 전체에서 해당 코드를 재사용 할 수 있습니다.
+---
+
 # 터치, 누르기 , 제스처
 
 > 원문 출처  
@@ -20,21 +24,27 @@
 
 ### 터치
 
-* [뷰에서 터치 처리하기](../../../etc/not-found.md) 터치 핸들링이 뷰 시각화와 복잡하게 연결되어 있다면 뷰 서브 클래스에서 직접 터치 이벤트를 사용하세요.
+* 뷰에서 터치 처리하기
+
+  터치 핸들링이 뷰 시각화와 복잡하게 연결되어 있다면 뷰 서브 클래스에서 직접 터치 이벤트를 사용하세요.
+
 * 애플 펜슬 입력 처리하기 애플 펜슬의 터치를 감지하고 응답하는 방법에 대해 알아보세요.
-* 3D 터치 이벤트의 압력 추적 터치의 강도에 따라서 컨텐츠를 조작하세요.
+* 3D 터치 이벤트의 압력 추적
+
+  터치의 강도에 따라서 컨텐츠를 조작하세요.
 
 ### 버튼 누르기
 
 * class UIPress An object that represents the presence or movement of a button press on the screen for a particular event.
 * class UIPressesEvent 연결된 원격 또는 게임 컨트롤러처럼 장치에서 사용할 수 있는 물리적 버튼들의 상태를 나타내는 이벤트입니다.
 
-### UIKit 제스처
+### 표준 제스처
 
 * [UIKit 제스처 처리](handling_uikit_gestures.md) 제스처 인식기를 사용하여 터치 처리를 단순화하고 일관적인 사용자 환경을 만드세요.
 * 다중 제스처 인식기 조정 동일한 view 내에서 여러 제스처 인식기를 사용하는 방법을 알아보세요.
-* _class_ UILongPressGestureRecognizer 길게 누르기 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스
-* _class_ UIPanGestureRecognizer 드래그 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스
+* _class_ UIHoverGestureRecognizer `beta` A gesture recognizer that looks for pointer movement over a view.
+* _class_ [UILongPressGestureRecognizer](uilongpressgesturerecognizer.md) 길게 누르기 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스
+* _class_ [UIPanGestureRecognizer](uipangesturerecognizer/) 드래그 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스
 * _class_ UIPinchGestureRecognizer pinching 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스
 * _class_ UIScreenEdgePanGestureRecognizer 스크린 가장자리로부터의 드래그 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스
 * _class_ UISwipeGestureRecognizer 하나 이상의 방향으로 스와이프하는 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스
