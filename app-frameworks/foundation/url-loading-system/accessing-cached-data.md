@@ -4,11 +4,14 @@ description: URL 요청시 캐시 데이터의 사용방식을 제어합니다.
 
 # 캐시 데이터에 접근하기
 
+> 원문 출처  
+> [https://developer.apple.com/documentation/foundation/url\_loading\_system/accessing\_cached\_data](https://developer.apple.com/documentation/foundation/url_loading_system/accessing_cached_data)
+
 ## 개요
 
 URL 로딩 시스템은 성능 향상과 네트워크 트래픽 감소를 위해서 응답 데이터를 메모리와 디스크 양쪽에 저장합니다.
 
-[URLCach](../../../etc/not-found.md) 클래스는 네트워크 리소스로부터의 응답을 캐싱하는데 사용됩니다. 앱에서 URLCache의 [shared](../../../etc/not-found.md) 속성을 사용하여 공유 캐시 인스턴스에 직접 접근하는 것이 가능합니다. 아니면 다른 목적을 위해  [URLSessionConfiguration](urlsession/urlsessionconfiguration.md)에 고유한 캐시를 생성할 수도 있습니다.
+[URLCache](urlcache.md) 클래스는 네트워크 리소스로부터의 응답을 캐싱하는데 사용됩니다. 앱에서 URLCache의 [shared](../../../etc/not-found.md) 속성을 사용하여 공유 캐시 인스턴스에 직접 접근하는 것이 가능합니다. 아니면 다른 목적을 위해  [URLSessionConfiguration](urlsession/urlsessionconfiguration.md)에 고유한 캐시를 생성할 수도 있습니다.
 
 ### URL Request에 대한 캐시 정책 설정
 
@@ -81,14 +84,8 @@ func urlSession(_ session: URLSession, dataTask: URLSessionDataTask,
 
 ### 캐시 동작
 
-* class CachedURLResponse URL 요청에 대해 캐시된 응답
-* class URLCache URL 요청을 캐시된 응답에 매핑시키는 객체
-
-
-
-
-
-
+* _class_ [CachedURLResponse](cachedurlresponse.md) URL 요청에 대해 캐시된 응답
+* _class_ [URLCache](urlcache.md) URL 요청을 캐시된 응답에 매핑시키는 객체
 
 
 

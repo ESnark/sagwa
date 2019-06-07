@@ -51,25 +51,25 @@ task를 생성하기 위해서 하나의 세션을 계속해서 사용하는 것
 ### 캐시 동작
 
 * [캐시 데이터에 접근하기](accessing-cached-data.md) URL 요청시 캐시 데이터의 사용방식을 제어합니다.
-* class CachedURLResponse URL 요청에 대해 캐시된 응답
-* class URLCache URL 요청을 캐시된 응답에 매핑시키는 객체
+* _class_ [CachedURLResponse](cachedurlresponse.md) URL 요청에 대해 캐시된 응답
+* _class_ [URLCache](urlcache.md) URL 요청을 캐시된 응답에 매핑시키는 객체
 
 ### 인증 및 자격증
 
 * Authentication Challenge 처리하기 서버가 인증을 위한 URL 요청을 요구할때 적절하게 응답합니다.
-* class URLAuthenticationChallenge A challenge from a server requiring authentication from the client.
-* class URLCredential An authentication credential consisting of information specific to the type of credential and the type of persistent storage to use, if any.
-* class URLCredentialStorage 공유 자격증명 캐시의 관리자
-* class URLProtectionSpace 인증이 필요한 서버, 또는 서버의 영역
+* _class_ URLAuthenticationChallenge A challenge from a server requiring authentication from the client.
+* _class_ URLCredential An authentication credential consisting of information specific to the type of credential and the type of persistent storage to use, if any.
+* _class_ URLCredentialStorage 공유 자격증명 캐시의 관리자
+* _class_ URLProtectionSpace 인증이 필요한 서버, 또는 서버의 영역
 
 ### 쿠키
 
-* class HTTPCookie HTTP 쿠키 구현
-* class HTTPCookieStorage 쿠키 저장소를 관리하는 컨테이너
+* _class_ HTTPCookie HTTP 쿠키 구현
+* _class_ HTTPCookieStorage 쿠키 저장소를 관리하는 컨테이너
 
 ### 에러
 
-* struct URLError URL 로딩 API로부터 반환되는 에러코드
+* _struct_ URLError URL 로딩 API로부터 반환되는 에러코드
 * URL Loading System Error Info Keys Recognize these keys from the user info dictionary of error objects produced by URL Loading APIs.
 
 ### Legacy

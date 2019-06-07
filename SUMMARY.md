@@ -22,6 +22,8 @@
       * [configuration](app-frameworks/foundation/url-loading-system/urlsession/configuration.md)
     * [URLSessionTask](app-frameworks/foundation/url-loading-system/urlsessiontask.md)
     * [캐시 데이터에 접근하기](app-frameworks/foundation/url-loading-system/accessing-cached-data.md)
+    * [CachedURLResponse](app-frameworks/foundation/url-loading-system/cachedurlresponse.md)
+    * [URLCache](app-frameworks/foundation/url-loading-system/urlcache.md)
   * [Object Runtime](app-frameworks/foundation/object-runtime/README.md)
     * [NSValue](app-frameworks/foundation/object-runtime/nsvalue.md)
 * [UIKit](app-frameworks/uikit/README.md)
