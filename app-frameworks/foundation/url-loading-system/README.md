@@ -50,7 +50,7 @@ task를 생성하기 위해서 하나의 세션을 계속해서 사용하는 것
 
 ### 캐시 동작
 
-* 캐시 데이터에 접근하기 URL 요청시 캐시 데이터의 사용방식을 제어합니다.
+* [캐시 데이터에 접근하기](accessing-cached-data.md) URL 요청시 캐시 데이터의 사용방식을 제어합니다.
 * class CachedURLResponse URL 요청에 대해 캐시된 응답
 * class URLCache URL 요청을 캐시된 응답에 매핑시키는 객체
 
