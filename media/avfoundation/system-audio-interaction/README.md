@@ -21,7 +21,7 @@ description: 시스템 오디오를 앱에 통합시키세요.
 
 ### AudioSession 사용
 
-* _class_ AVAudioSession 앱에서 오디오를 사용하는 방식을 시스템에 전달하는 중간 객체
+* _class_ [AVAudioSession](avaudiosession.md) 앱에서 오디오를 사용하는 방식을 시스템에 전달하는 중간 객체
 
 ### 권한
 

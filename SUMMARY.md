@@ -72,7 +72,8 @@
 ## Media
 
 * [AVFoundation](media/avfoundation/README.md)
-  * [시스템 오디오 상호작용](media/avfoundation/undefined.md)
+  * [시스템 오디오 상호작용](media/avfoundation/system-audio-interaction/README.md)
+    * [AVAudioSession](media/avfoundation/system-audio-interaction/avaudiosession.md)
   * [AVFoundation 자료형](media/avfoundation/avfoundation/README.md)
     * [AVAudioSession.Category](media/avfoundation/avfoundation/avaudiosession.category/README.md)
       * [ambient](media/avfoundation/avfoundation/avaudiosession.category/ambient.md)
