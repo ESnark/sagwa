@@ -1,5 +1,5 @@
 ---
-description: URL session의 동작과 정책을 정의하는 configuration 객체
+description: Class
 ---
 
 # URLSessionConfiguration
@@ -48,7 +48,7 @@ Note
 몇몇 경우, task에 제공되는 NSURLRequest에 의해서 이미 정의된 configuration이 오버라이드될 수 있습니다. Request 객체의 정책에 비해 세션의 정책이 더 엄격한 경우가 아니라면 Request 객체에 지정된 모든 정책은 받아들여집니다. 예를 들어 session configuration이 cellular 네트워크를 제한하고 있다면 NSURLRequest는 cellular 네트워크를 통해서 요청할 수 없습니다.
 {% endhint %}
 
-configuration 객체를 사용하여 세션을 생성하는 방법에 대해서 더 자세한 내용이 알고 싶다면 [URLSession](./)을 참고하세요.
+configuration 객체를 사용하여 세션을 생성하는 방법에 대해서 더 자세한 내용이 알고 싶다면 [URLSession](../)을 참고하세요.
 
 ### Session Configuration의 타입
 
@@ -88,6 +88,20 @@ Background session은 앱이 실행중이지 않을 때도  백그라운드에�
 * _var_ httpCookieStorage: HTTPCookieStorage? 세션 내의 쿠키를 저장하는 쿠키 저장소
 * _class_ HTTPCookieStorage 쿠키 저장소를 관리하는 컨테이너
 * _class_ HTTPCookie HTTP 쿠키 구현
+
+### 보안 정책 설정
+
+* var tlsMaximumSupportedProtocol: SSLProtocol 현재 세션에서 접속 시 클라이언트가 요청해야 하는 TLS 프로토콜의 최고 버전
+* var tlsMinimumSupportedProtocol: SSLProtocol
+
+  프로토콜 협상 중에 클라이언트가 받아들일 수 있는 TLS 프로토콜의 최소 버전
+
+* urlCredentialStorage: URLCredentialStorage? 인증을 위한 자격증명\(Credential\)을 제공하는 저장소
+
+### 캐시 정책 설정
+
+* var [urlCache](urlcache.md): URLCache? 세션 내에서의 요청에 대해 캐쉬된 응답을 제공하는 URL cache
+* var [requestCachePolicy](requestcachepolicy.md): NSURLRequest.CachePolicy 캐시된 응답의 반환 조건을 결정하는 사전 정의 상수
 
 ### 백그라운드 전송 지원
 
@@ -147,5 +161,5 @@ Background session은 앱이 실행중이지 않을 때도  백그라운드에�
 
 * init\(configuration: URLSessionConfiguration\) 특정 session configuration으로 세션을 생성합니다.
 * init\(configuration: URLSessionConfiguration, delegate: URLSessionDelegate?, delegateQueue: OperationQeueu?\) 특정 session configuration과 delegate, delegateQueue로 세션을 생성합니다.
-* _var_ [configuration](configuration.md): URLSessionConfiguration session configuration 객체의 복사본
+* _var_ [configuration](../configuration.md): URLSessionConfiguration session configuration 객체의 복사본
 

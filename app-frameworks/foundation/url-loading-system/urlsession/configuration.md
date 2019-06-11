@@ -50,5 +50,5 @@ iOS 9, OS X 10.11 버전부터 URLSession 객체는 초기화될 때 넘겨받�
 
 * init\(configuration: URLSessionConfiguration\) 특정 session configuration으로 세션을 생성합니다.
 * init\(configuration: URLSessionConfiguration, delegate: URLSessionDelegate?, delegateQueue: OperationQeueu?\) 특정 session configuration과 delegate, delegateQueue로 세션을 생성합니다.
-* _class_ [URLSessionConfiguration](urlsessionconfiguration.md) URL session의 동작과 정책을 정의하는 configuration 객체
+* _class_ [URLSessionConfiguration](urlsessionconfiguration/) URL session의 동작과 정책을 정의하는 configuration 객체
 

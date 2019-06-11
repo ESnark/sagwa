@@ -59,7 +59,7 @@ URLSession 중에는 기본적인 요청에 적합한 \(configuration 객체가 
 * Ephemeral session은 shared session과 비슷하지만 캐시나 쿠키, 자격증명을 디스크에 기록하지 않습니다.
 * Background session은 앱이 실행중이지 않을 때도  백그라운드에서 컨텐츠를 업로드하거나 다운로드할 수 있게 해줍니다.
 
-각 타입의 configuration을 생성하는 방법에 대한 자세한 내용은 [URLSession Configuration](urlsessionconfiguration.md) 클래스와 [Session Configuration 객체 생성](urlsessionconfiguration.md#session-configuration-1)을 참고하세요
+각 타입의 configuration을 생성하는 방법에 대한 자세한 내용은 [URLSession Configuration](urlsessionconfiguration/) 클래스와 [Session Configuration 객체 생성](urlsessionconfiguration/#session-configuration-1)을 참고하세요
 
 #### URL Session Task의 종류
 
@@ -129,7 +129,7 @@ URL session API는 그 자체로 완전히 스레드 안전하며 어느 스레�
 
 * init\(configuration: URLSessionConfiguration\) 특정 session configuration으로 세션을 생성합니다.
 * init\(configuration: URLSessionConfiguration, delegate: URLSessionDelegate?, delegateQueue: OperationQeueu?\) 특정 session configuration과 delegate, delegateQueue로 세션을 생성합니다.
-* _class_ [URLSessionConfiguration](urlsessionconfiguration.md) URL session의 동작과 정책을 정의하는 configuration 객체
+* _class_ [URLSessionConfiguration](urlsessionconfiguration/) URL session의 동작과 정책을 정의하는 configuration 객체
 * _var_ [configuration](configuration.md): URLSessionConfiguration session configuration 객체의 복사본
 
 ### Delegate로 작업하기

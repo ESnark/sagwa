@@ -1,3 +1,7 @@
+---
+description: Class
+---
+
 # UIApplication
 
 > 원문 출처  

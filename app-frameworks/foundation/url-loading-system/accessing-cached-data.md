@@ -11,13 +11,13 @@ description: URL 요청시 캐시 데이터의 사용방식을 제어합니다.
 
 URL 로딩 시스템은 성능 향상과 네트워크 트래픽 감소를 위해서 응답 데이터를 메모리와 디스크 양쪽에 저장합니다.
 
-[URLCache](urlcache.md) 클래스는 네트워크 리소스로부터의 응답을 캐싱하는데 사용됩니다. 앱에서 URLCache의 [shared](../../../etc/not-found.md) 속성을 사용하여 공유 캐시 인스턴스에 직접 접근하는 것이 가능합니다. 아니면 다른 목적을 위해  [URLSessionConfiguration](urlsession/urlsessionconfiguration.md)에 고유한 캐시를 생성할 수도 있습니다.
+[URLCache](urlcache.md) 클래스는 네트워크 리소스로부터의 응답을 캐싱하는데 사용됩니다. 앱에서 URLCache의 [shared](../../../etc/not-found.md) 속성을 사용하여 공유 캐시 인스턴스에 직접 접근하는 것이 가능합니다. 아니면 다른 목적을 위해  [URLSessionConfiguration](urlsession/urlsessionconfiguration/)에 고유한 캐시를 생성할 수도 있습니다.
 
 ### URL Request에 대한 캐시 정책 설정
 
 각 [URLRequest](../../../etc/not-found.md) 인스턴스에는 [URLRequest.CachePolicy](../../../etc/not-found.md) 객체가 포함되어있어 캐싱을 수행해야 할지,  어떻게 캐싱할 것인지를 알려줍니다.
 
-편의를 위해서 [URLSessionConfiguration](urlsession/urlsessionconfiguration.md)에는 [requestCachePolicy](../../../etc/not-found.md)라는 속성이 있습니다. 이 Configuration을 사용하는 Session으로부터 생성된 모든 Request는 requestCachePolicy를 Configuration으로부터 상속받아 사용합니다.
+편의를 위해서 [URLSessionConfiguration](urlsession/urlsessionconfiguration/)에는 [requestCachePolicy](../../../etc/not-found.md)라는 속성이 있습니다. 이 Configuration을 사용하는 Session으로부터 생성된 모든 Request는 requestCachePolicy를 Configuration으로부터 상속받아 사용합니다.
 
 표 1은 다양한 정책들이 어떻게 동작하는지를 설명합니다. 이 표는 서버 또는 로컬에서 캐시 및 원본 파일을 로딩하기 위한 각 정책의 기본 설정을 보여줍니다. 현재는 HTTP와 HTTPS 응답만 캐시가 가능하며 FTP 및 파일 URL에 대해서는 원본 소스에 응답을 허용할 것인지에 대해서만 정책 적용이 되고 있습니다.
 
@@ -26,7 +26,7 @@ URL 로딩 시스템은 성능 향상과 네트워크 트래픽 감소를 위해
 | 캐시 정책 | 로컬 캐시 | 원본 소스 |
 | :--- | :--- | :--- |
 | NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData | 무시됨 | 무조건 접근 |
-| NSURLRequest.CachePolicy.returnCacheDataDontLoad | 무조건 접 | 무시됨 |
+| NSURLRequest.CachePolicy.returnCacheDataDontLoad | 무조건 접근 | 무시됨 |
 | NSURLRequest.CachePolicy.returnCacheDataElseLoad | 우선 시도 | 필요하다면 접근 |
 | NSURLRequest.CachePolicy.useProtocolCachePolicy | 프로토콜에 따라 다름 | 프로토콜에 따라 다름 |
 

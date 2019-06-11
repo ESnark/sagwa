@@ -1,3 +1,7 @@
+---
+description: Article
+---
+
 # 앱 라이프 사이클 관리하기
 
 > 원문 출처  
