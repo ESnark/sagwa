@@ -1,8 +1,8 @@
 # 애플 개발자 문서 한글 번역
 
-## GitBook Link
+## [GitBook Link](https://melod-it.gitbook.io/sagwa/)
 
-본 문서는 Gitbook으로 작성되었습니다. GitHub에서 읽고 계신 분은 [**Gitbook 링크**](https://melodyarchive.gitbook.io/sagwa/)로 접속해서 보시는 것이 더 편합니다.
+본 문서는 Gitbook으로 작성되었습니다. GitHub에서 읽고 계신 분은 [**Gitbook 링크**](https://melod-it.gitbook.io/sagwa/)로 접속해서 보시는 것이 더 편합니다.
 
 ## 들어가기 전에
 
@@ -29,10 +29,17 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 ### App Frameworks
 
 * AppKit
+* Bundle Resources
 * [Foundation](app-frameworks/foundation/)
 * Objective-C
 * [Swift](app-frameworks/swift/)
+* SwiftUI `Beta`
+* TVML
+* TVMLKit
+* TVMLKit JS
+* TVUIKit
 * [UIKit](app-frameworks/uikit/)
+* WatchKit
 
 ### Graphics and Games
 
@@ -53,11 +60,73 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 * Model I/O
 * OpenGL ES
 * PDFKit
+* PencilKit `Beta`
 * Quartz
+* RealityKit `Beta`
 * ReplayKit
 * SceneKit
 * SpriteKit
 * Vision
+
+### App Services
+
+* Accounts
+* AddressBook
+* AddressBookUI
+* AdSupport
+* App Store Receipts
+* ApplicationServices
+* BackgroundTasks `Beta`
+* Business Chat
+* Business Chat REST API
+* CallKit
+* CarPlay
+* ClassKit
+* ClockKit
+* CloudKit
+* Combine `Beta`
+* Contacts
+* ContactsUI
+* Core Data
+* Core Foundation
+* Core Location
+* Core ML
+* Core Motion
+* Core Spotlight
+* Core Text
+* Create ML
+* DeviceCheck
+* EventKit
+* EventKitUI
+* FileProvider
+* FileProviderUI
+* HealthKit
+* HomeKit
+* iAd
+* JavaScriptCore
+* MapKit
+* Messages
+* MessageUI
+* MultipeerConnectivity
+* Natural Language
+* NewsstandKit
+* NotificationCenter
+* PassKit
+* PreferencePanes
+* PushKit
+* QuickLook
+* QuickLookThumbnailing `Beta`
+* SafariServices
+* SiriKit
+* SMS and Call Reporting
+* Social
+* Speech
+* StoreKit
+* TVServices
+* UserNotifications
+* UserNotificationsUI
+* WatchConnectivity
+* WebKit
 
 ### Media
 
@@ -69,6 +138,8 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 * AVKit
 * Core Audio
 * Core Audio Kit
+* Core Audio Types `Beta`
+* Core Haptics `Beta`
 * Core Media
 * Core MIDI
 * Core Video
@@ -82,5 +153,13 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 * Professional Video Applications
 * QTKit
 * ScreenSaver
+* SoundAnalysis `Beta`
 * VideoToolbox
+* VisionKit `Beta`
+
+### Web
+
+### Developer Tools
+
+### System
 
