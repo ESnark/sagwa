@@ -51,21 +51,21 @@ HTTPURLResponse 클래스는 [URLResponse](urlresponse.md)의 서브클래스로
 
 ### HTTP 응답 헤더 읽기
 
-* var allHeaderFields: \[AnyHashable : Any\]
+* _var_ allHeaderFields: \[AnyHashable : Any\]
 
   Response의 모든 HTTP 헤더 필드
 
 ### Response 상태코드 읽기
 
-* class func localizedString\(forStatusCode: Int\) -&gt; String
+* _class_ _func_ localizedString\(forStatusCode: Int\) -&gt; String
 
   주어진 HTTP 상태코드에 해당하는 문자열을 지역화하여 반환합니다.
 
-* var statusCode: Int Response의 HTTP 상태코드
+* _var_ statusCode: Int Response의 HTTP 상태코드
 
 ### 인스턴스 메서드
 
-* func value\(forHTTPHeaderField: String\) -&gt; String? `Beta`
+* _func_ value\(forHTTPHeaderField: String\) -&gt; String? `Beta`
 
 ## 관련 문서
 

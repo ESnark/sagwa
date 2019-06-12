@@ -6,7 +6,7 @@
 
 * [Foundation](app-frameworks/foundation/README.md)
   * [숫자, 데이터와 기본값](app-frameworks/foundation/numbers-data-and-basic-value.md)
-  * [데이터 포맷](app-frameworks/foundation/undefined.md)
+  * [데이터 포맷](app-frameworks/foundation/data-formatting.md)
   * [작업 관리](app-frameworks/foundation/task-management/README.md)
     * [Operation](app-frameworks/foundation/task-management/operation.md)
     * [OperationQueue](app-frameworks/foundation/task-management/operationqueue.md)

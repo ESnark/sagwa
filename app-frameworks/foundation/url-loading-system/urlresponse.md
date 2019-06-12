@@ -59,11 +59,11 @@ URL 로딩시 컨텐츠 데이터를 받는 다양한 방법에 대해서 알고
 
 ### Response 속성 읽기
 
-* var expectedContentLength: Int64 응답 컨텐츠의 예상 길이
-* var suggestedFilename: String? 응답 데이터에 제안된 파일 이름
-* var mimeType: String? 응답 MIME 타입
-* var textEncodingName: String? 응답 원본 소스에서 제공하는 텍스트 인코딩명
-* var url: URL? 응답 URL
+* _var_ expectedContentLength: Int64 응답 컨텐츠의 예상 길이
+* _var_ suggestedFilename: String? 응답 데이터에 제안된 파일 이름
+* _var_ mimeType: String? 응답 MIME 타입
+* _var_ textEncodingName: String? 응답 원본 소스에서 제공하는 텍스트 인코딩명
+* _var_ url: URL? 응답 URL
 
 ## 관련 문서
 
