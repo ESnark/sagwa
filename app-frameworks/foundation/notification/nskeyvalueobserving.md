@@ -84,5 +84,5 @@ description: "다른 객체의 특정 속성의 변경이 있을 때 알림을 �
 
 ### 관련 문서
 
-* [Key - Value Observing 프로그래밍 가이드](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i)
+* [Key - Value Observing 프로그래밍 가이드](../../../documentation-archive/key-value-observing.md)
 
