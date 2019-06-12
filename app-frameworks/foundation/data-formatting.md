@@ -56,7 +56,7 @@ description: '숫자와 날짜, 측정값과 기타 값을 로케일에 맞는 �
 
 ### 기본 <a id="fundamentals"></a>
 
-* [숫자, 데이터와 기값](numbers-data-and-basic-value.md)
+* [숫자, 데이터와 기본값](numbers-data-and-basic-value.md)
 
   코코아 전체에서 사용되는 원시 값 및 기타 기본 타입을 사용하여 작업합니다.
 

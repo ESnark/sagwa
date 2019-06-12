@@ -12,7 +12,7 @@ description: 코코아 전체에서 사용되는 원시 값 및 기타 기본 �
 ### 숫자
 
 * _struct_ Int 부호가 있는 정수 타입
-* _struct_ Double 배정밀도 부동소수점 타
+* _struct_ Double 배정밀도 부동소수점 타입
 * _struct_ Decimal 10진수 숫자를 표현하는 구조체
 * _class_ NumberFormatter 숫자값과 텍스트 표현형을 서로 변환시켜주는 formatter
 
