@@ -2,7 +2,10 @@
 description: 코코아 전체에서 사용되는 원시 값 및 기타 기본 타입을 사용하여 작업합니다.
 ---
 
-# 숫자, 데이터와 원시값
+# 숫자, 데이터와 기본값
+
+> 원문 출처  
+> [https://developer.apple.com/documentation/foundation/numbers\_data\_and\_basic\_values](https://developer.apple.com/documentation/foundation/numbers_data_and_basic_values)
 
 ## 주제
 
