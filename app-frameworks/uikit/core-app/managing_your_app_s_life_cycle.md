@@ -1,5 +1,5 @@
 ---
-description: Article
+description: 앱 delegate가 앱의 상위 수준 동작을 관리하는 방식을 이해합니다.
 ---
 
 # 앱 라이프 사이클 관리하기

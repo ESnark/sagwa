@@ -1,5 +1,5 @@
 ---
-description: Instance Property
+description: 세션 내에서의 요청에 대해 캐쉬된 응답을 제공하는 URL cache
 ---
 
 # urlCache

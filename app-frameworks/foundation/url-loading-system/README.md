@@ -33,8 +33,8 @@ task를 생성하기 위해서 하나의 세션을 계속해서 사용하는 것
 
 ### 요청과 응답
 
-* _struct_ URLRequest 프로토콜이나 URL 스키마로부터 독립적인 URL 로드 요청
-* _class_ URLResponse URL 로드 요청에 대한 응답과 관련된 메타데이터로써 프로토콜과 URL 스키마로부터 독립적입니다.
+* _struct_ [URLRequest](urlrequest.md) 프로토콜이나 URL 스키마로부터 독립적인 URL 로드 요청
+* _class_ [URLResponse](urlresponse.md) URL 로드 요청에 대한 응답과 관련된 메타데이터로써 프로토콜과 URL 스키마로부터 독립적입니다.
 * _class_ HTTPURLResponse HTTP 프로토콜을 따르는 URL 로드 요청에 대한 응답과 관련된 메타데이터
 
 ### 업로드

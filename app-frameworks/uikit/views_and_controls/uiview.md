@@ -1,5 +1,5 @@
 ---
-description: Class
+description: 화면상의 직사각형 영역에 대한 컨텐츠를 관리하는 개체입니다.
 ---
 
 # UIView

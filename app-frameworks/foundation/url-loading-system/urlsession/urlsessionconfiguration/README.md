@@ -1,5 +1,5 @@
 ---
-description: Class
+description: URL session의 동작과 정책을 정의하는 configuration 객체
 ---
 
 # URLSessionConfiguration

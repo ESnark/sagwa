@@ -1,5 +1,5 @@
 ---
-description: Class
+description: C나 Objective-C의 단일 데이터 항목에 대한 단순한 컨테이너
 ---
 
 # NSValue

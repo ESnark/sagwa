@@ -26,7 +26,7 @@ description: '기본 Objective-C 기능, 코코아 디자인 패턴, 스위프�
 
   원시 스칼라 숫자값에 대한 객체 래퍼
 
-* _class_ [NSValue](nsvalue.md) C나 Objective-C의 단일 데이터 항목에 대한 간단한 컨테이너
+* _class_ [NSValue](nsvalue.md) C나 Objective-C의 단일 데이터 항목에 대한 단순한 컨테이너
 * _class_ ValueTransformer 하나의 표현형에서 다른 표현형으로 값을 변환하는데 사용되는 추상 클래스
 
 ### 스위프트 지원

@@ -1,5 +1,5 @@
 ---
-description: Instance Property
+description: 캐시된 응답의 반환 조건을 결정하는 사전 정의 상수
 ---
 
 # requestCachePolicy
