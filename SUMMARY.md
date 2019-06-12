@@ -5,6 +5,7 @@
 ## App Frameworks
 
 * [Foundation](app-frameworks/foundation/README.md)
+  * [숫자, 데이터와 원시값](app-frameworks/foundation/undefined-1.md)
   * [데이터 포맷](app-frameworks/foundation/undefined.md)
   * [작업 관리](app-frameworks/foundation/task-management/README.md)
     * [Operation](app-frameworks/foundation/task-management/operation.md)

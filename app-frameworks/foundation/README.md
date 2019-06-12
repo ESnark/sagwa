@@ -9,9 +9,9 @@ Foundation 프레임워크는 데이터 저장 및 지속성, 텍스트 처리, 
 
 ## 주제 <a id="topics"></a>
 
-### 기본 <a id="fundamentals"></a>
+### 기초 <a id="fundamentals"></a>
 
-* 숫자, 데이터와 기본 값들
+* [숫자, 데이터와 원시값](undefined-1.md)
 
   코코아 전체에서 사용되는 원시 값 및 기타 기본 타입을 사용하여 작업합니다.
 
