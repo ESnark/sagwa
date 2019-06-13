@@ -24,7 +24,7 @@ KVC는 문자열 식별자인 key로 객체의 프로퍼티를 찾아냅니다. 
 
 
 
-### KVC 호 클래스 만들기
+### KVC 호환 클래스 만들기
 
 _NSKeyValueCoding_ 비공식 프로토콜은 KVC을 가능하게 합니다. NSKeyValueCoding에는 [valueForKey:](../etc/not-found.md) 와 [setValue:forKey:](../etc/not-found.md) 라는 특별히 중요한 메서드가 있는데 key가 주어지면 해당 프로퍼티값을 설정하고 불러오기 때문입니다. NSObject는 이들 메서드의 기본 구현을 제공하고 있으며 클래스가 KVC를 준수하는 경우 이 구현에 의존할 수 있습니다.
 
