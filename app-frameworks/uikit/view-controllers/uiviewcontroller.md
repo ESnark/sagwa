@@ -1,6 +1,38 @@
+---
+description: UIKit 앱의 View 계층구조를 관리하는 객체
+---
+
 # UIViewController
 
-> 원문 출처[https://developer.apple.com/documentation/uikit/uiviewcontroller](https://developer.apple.com/documentation/uikit/uiviewcontroller)
+> 원문 출처  
+> [https://developer.apple.com/documentation/uikit/uiviewcontroller](https://developer.apple.com/documentation/uikit/uiviewcontroller)
+
+## Declaration
+
+{% tabs %}
+{% tab title="Swift" %}
+```swift
+class UIViewController : UIResponder
+```
+{% endtab %}
+
+{% tab title="Objective-C" %}
+```objectivec
+@interface UIViewController : UIResponder
+```
+{% endtab %}
+{% endtabs %}
+
+## Summary
+
+> **SDKs**
+>
+> * iOS 2.0+
+> * tvOS 9.0+
+>
+> **Framework**
+>
+> * UIKit
 
 ## 개요
 
@@ -492,4 +524,12 @@ view controller의 [restorationIdentifier](../../../etc/not-found.md)\(복원 �
 * UIPasteConfigurationSupporting
 * UIStateRestoring
 * UITraitEnvironment
+
+## 같이 보기
+
+### 커스텀 뷰 컨트롤러
+
+* _class_ [UITableViewController](uitableviewcontroller.md) Table View 관리에 특화된 view controller
+* _class_ UICollectionViewController Collection View 관리에 특화된 view controller
+* _protocol_ UIContentContainer view controller의 컨텐츠를 뷰 사이즈와 제약사항에 맞게 조정하는 메서드들
 

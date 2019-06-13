@@ -44,6 +44,7 @@
       * [UITableViewCell](app-frameworks/uikit/views_and_controls/table-views/uitableviewcell.md)
   * [View Controllers](app-frameworks/uikit/view-controllers/README.md)
     * [UIViewController](app-frameworks/uikit/view-controllers/uiviewcontroller.md)
+    * [UITableViewController](app-frameworks/uikit/view-controllers/uitableviewcontroller.md)
   * [애니메이션과 햅틱](app-frameworks/uikit/animation-and-haptics/README.md)
     * [프로퍼티 기반 애니메이션](app-frameworks/uikit/animation-and-haptics/property-based-animations/README.md)
       * [UIViewPropertyAnimator](app-frameworks/uikit/animation-and-haptics/property-based-animations/uiviewpropertyanimator.md)
