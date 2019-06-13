@@ -42,6 +42,7 @@
     * [Table Views](app-frameworks/uikit/views_and_controls/table-views/README.md)
       * [UITableView](app-frameworks/uikit/views_and_controls/table-views/uitableview.md)
       * [UITableViewCell](app-frameworks/uikit/views_and_controls/table-views/uitableviewcell.md)
+    * [UIScrollView](app-frameworks/uikit/views_and_controls/uiscrollview.md)
   * [View Controllers](app-frameworks/uikit/view-controllers/README.md)
     * [UIViewController](app-frameworks/uikit/view-controllers/uiviewcontroller.md)
     * [UITableViewController](app-frameworks/uikit/view-controllers/uitableviewcontroller.md)

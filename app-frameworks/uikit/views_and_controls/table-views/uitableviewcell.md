@@ -1,3 +1,7 @@
+---
+description: 테이블 뷰에 있는 셀
+---
+
 # UITableViewCell
 
 > 원문 출처  

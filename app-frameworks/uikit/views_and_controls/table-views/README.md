@@ -98,5 +98,5 @@
 * Collection Views 설정 및 커스텀이 가능한 레이아웃을 사용하여 중첩된 뷰를 표시하세요.
 * Table Views 하나의 열과 커스텀 가능한 행에 데이터를 표시하세요.
 * _class_ UIStackView 열또는 행으로 뷰 집합을 배치하기 위한 효율적인 인터페이스입니다.
-* _class_ UIScrollView 포함된 뷰를 스크롤하고 확대/축소할 수 있는 뷰입니다.
+* _class_ [UIScrollView](../uiscrollview.md) 포함된 뷰를 스크롤하고 확대/축소할 수 있는 뷰입니다.
 

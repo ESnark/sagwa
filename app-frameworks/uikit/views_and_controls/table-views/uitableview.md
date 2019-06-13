@@ -1,3 +1,7 @@
+---
+description: 단일 열에 정렬된 행을 사용하여 데이터를 표시하는 뷰
+---
+
 # UITableView
 
 > 원문 출처  
@@ -413,7 +417,7 @@ UITableView는 UITableView의 새 인스턴스를 생성하거나 새 데이터 
 
 ### 상속받은 대상
 
-* UIScrollView
+* [UIScrollView](../uiscrollview.md)
 
 ### 준수하는 프로토콜
 

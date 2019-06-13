@@ -28,6 +28,7 @@ View와 Control은 앱 사용자 인터페이스의 시각적 구성 요소입�
 ### 뷰 기초\(View Fundamentals\)
 
 * class [UIView](uiview.md) 화면상의 직사각형 영역에 대한 컨텐츠를 관리하는 개체입니다.
+* UIKit 카탈로그 : 뷰와 컨트롤을 생성하고 커스터마이즈 하기 UIKit의 뷰와 컨트롤을 사용해서 앱의 인터페이스를 커스터마이징 하세요
 
 ### 컨테이너 뷰
 
@@ -35,8 +36,8 @@ View와 Control은 앱 사용자 인터페이스의 시각적 구성 요소입�
 
 * Collection Views 설정 및 커스텀이 가능한 레이아웃을 사용하여 중첩된 뷰를 표시하세요.
 * [Table Views](table-views/) 하나의 열과 커스텀 가능한 행에 데이터를 표시하세요.
-* _class_ UIStackView 열또는 행으로 뷰 집합을 배치하기 위한 효율적인 인터페이스입니다.
-* _class_ UIScrollView 포함된 뷰를 스크롤하고 확대/축소할 수 있는 뷰입니다.
+* _class_ UIStackView 열 또는 행으로 뷰 집합을 배치하기 위한 효율적인 인터페이스입니다.
+* _class_ [UIScrollView](uiscrollview.md) 포함된 뷰를 스크롤하고 확대/축소할 수 있는 뷰입니다.
 
 ### 컨텐츠 뷰
 
@@ -44,7 +45,7 @@ View와 Control은 앱 사용자 인터페이스의 시각적 구성 요소입�
 * _class_ UIImageView 인터페이스 상에 단일 이미지나 애니메이션 이미지들을 표시하는 객체
 * _class_ UIPickerView spinning-wheel이나 슬롯머신 모양의 하나 이상의 value set를 나타내는 뷰
 * _class_ UIProgressView 시간에 따른 작업 진행을 묘사하는 뷰
-* _class_ UIWebView 앱에 웹 컨텐츠를 포함시키는 뷰
+* ~~_class_ UIWebView~~ `Deprecated` 앱에 웹 컨텐츠를 포함시키는 뷰
 
 ### 컨트롤
 
