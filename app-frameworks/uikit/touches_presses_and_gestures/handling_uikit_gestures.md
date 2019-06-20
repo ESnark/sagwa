@@ -66,7 +66,7 @@ Listing 1은 제스처 인식기의 Action 메서드에 대한 일반적인 형�
 
 ### UIKit 제스처
 
-* 다중 제스처 인식기 조정 동일한 뷰에서 여러 개의 제스처 인식기를 사용하는 방법을 확인합니다.
+* [다중 제스처 인식기 조정](coordinating-multiple-gesture-recognizers.md) 동일한 뷰에서 여러 개의 제스처 인식기를 사용하는 방법을 확인합니다.
 * _class_ UIHoverGestureRecognizer `beta` A gesture recognizer that looks for pointer movement over a view.
 * class [UILongPressGestureRecognizer](uilongpressgesturerecognizer.md) 길게 누르기 제스처를 인식하는 [UIGestureRecognizer](../../../etc/not-found.md)의 구상 하위 클래스
 * class UIPanGestureRecognizer 패닝\(드래그\) 제스처를 인식하는 [UIGestureRecognizer](../../../etc/not-found.md)의 구상 하위 클래스
@@ -75,6 +75,4 @@ Listing 1은 제스처 인식기의 Action 메서드에 대한 일반적인 형�
 * class UISwipeGestureRecognizer 하나 이상의 방향으로 스와이프하는 제스처를 인식하는 [UIGestureRecognizer](../../../etc/not-found.md)의 구상 하위 클래스
 * class UIRotationGestureRecognizer 두 개의 터치로 회전하는 제스처를 인식하는 [UIGestureRecognizer](../../../etc/not-found.md)의 구상 하위 클래스
 * class UITapGestureRecognizer 싱글탭이나 멀티탭을 인식하는 [UIGestureRecognizer](../../../etc/not-found.md)의 구상 하위 클래스
-
->
 

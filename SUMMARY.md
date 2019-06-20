@@ -54,6 +54,7 @@
   * [터치, 누르기 , 제스처](app-frameworks/uikit/touches_presses_and_gestures/README.md)
     * [UIResponder](app-frameworks/uikit/touches_presses_and_gestures/uiresponder.md)
     * [UIKit 제스처 처리](app-frameworks/uikit/touches_presses_and_gestures/handling_uikit_gestures.md)
+    * [다중 제스처 인식기 조정](app-frameworks/uikit/touches_presses_and_gestures/coordinating-multiple-gesture-recognizers.md)
     * [UILongPressGestureRecognizer](app-frameworks/uikit/touches_presses_and_gestures/uilongpressgesturerecognizer.md)
     * [UIPanGestureRecognizer](app-frameworks/uikit/touches_presses_and_gestures/uipangesturerecognizer/README.md)
       * [maximumNumberOfTouches](app-frameworks/uikit/touches_presses_and_gestures/uipangesturerecognizer/maximumnumberoftouches.md)
