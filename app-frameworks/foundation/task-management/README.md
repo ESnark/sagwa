@@ -57,6 +57,10 @@ description: 사용자와 시스템간 상호 작용과 앱 작업을 관리합�
 
 ### 시스템 상호작용
 
+사용자의 현재 활동을 Handoff, Spotlight, Siri shortcut과 공유하세요.
+
+* Handoff로 사용자 활동을 지속시키기 기기간에 공유될수 있는 앱의 활동을 정의하고 관리하세요.
+* Handoff를 앱에 구현하는 방법 사용자 활동을 직접 생성하고 송수신하세.
 * class ProcessInfo
 
   현재 프로세스에 대한 정보 컬렉션
