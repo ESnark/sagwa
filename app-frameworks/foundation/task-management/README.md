@@ -41,7 +41,7 @@ description: 사용자와 시스템간 상호 작용과 앱 작업을 관리합�
 
 ### Scheduling
 
-* _class_ Timer
+* _class_ [Timer](timer.md)
 
   특정 시간 간격이 경과한 후 호출되어 지정된 메세지를 target 객체에 보낸다.
 
