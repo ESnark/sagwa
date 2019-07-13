@@ -41,7 +41,7 @@ class Timer: NSObject
 
 Timer는 런 루프\(Run loop\)와 결합되어 동작합니다. 런 루프는 타이머에 대해 강한strong 참조를 유지하며 따라서 개발자는 런 루프에 추가된 타이머에 대해 직접 강한strong 참조를 유지할 필요가 없습니다.
 
-Timer를 효과적으로 사용하기 위해서는 런 루프의 동작 방식에 대해 알 필요가 있습니다. 더 자세한 내용은 [Threading Programming Guide](../../../etc/not-found.md)를 참조하세요.
+Timer를 효과적으로 사용하기 위해서는 런 루프의 동작 방식에 대해 알 필요가 있습니다. 더 자세한 내용은 [Threading 프로그래밍 가이드](../../../documentation-archive/threading-programming-guide/)를 참조하세요.
 
 Timer는 실시간 매커니즘이 아닙니다. 런 루프가 장시간 callout 중이거나 타이머를 감시하지 않는 모드에 들어가 있을 때 Timer의 실행 시간이 된다고 하더라도 런 루프가 다시 타이머를 감시하기 전까지 타이머는 실행되지 않습니다. 그러므로 실제 타이머가 실행되는 시간은 그보다 훨씬 나중이 될 것입니다. [Timer Tolerance](timer.md#time-tolerance)를 읽어보세요.
 
