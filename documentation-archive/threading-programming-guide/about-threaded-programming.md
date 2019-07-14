@@ -363,11 +363,11 @@ Lock과 Condition은 아주 일반적인 동시성 디자인 방법이지만 ato
 
 다음 섹션들은 코드의 정확성을 보장하면서 스레드를 구현하는 방법에 대한 가이드를 제공합니다. 몇몇 가이드 라인은 스레드된 코드들의 성능까지도 향상히킵니다. 다른 성능 향상 팁과 마찬가지로 코드를 변경하기 전, 변경 중, 변경 후에는 관련 성능 통계를 수집하세요.
 
-### 명시적인 스레드 생성 피하기
+### 명시적인 스레드 생성 피하기 <a id="avoid-creating-threads-explicitly"></a>
 
 스레드 생성 코드를 직접 작성하는 것은 지루하고 에러가 발생하기 쉬운 방법입니다. 가능하다면 피하세요. OS X과 iOS는 다른 API들을 통해 동시성을 암묵적으로 지원합니다. 스레드를 직접 생성하기보다는 비동기 API, GCD 또는 operation 객체를 사용하세요. 이 기술들은 여러분 대신 뒤에서 스레드 관련 작업들을 수행하며 올바르게 동작할 것을 보장합니다. 또한 GCD나 operation 객체와 같은 기술들은 현재 시스템 로드에 기반하여 활성화된 스레드의 갯수를 조정하기 때문에 직접 코드를 작성하는 것보다 훨씬 더 효율적입니다. GCD와 operation 객체에 대한 더 자세한 내용은 [동시성 프로그래밍 가이드](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091)를 참조하세요.
 
-### 스레드를 계속 활용할 것
+### 스레드를 계속 활용할 것 <a id="keep-your-threads-reasonably-busy"></a>
 
 스레드를 직접 생성하고 관리하기로 결정했다면 스레드는 귀중한 시스템 자원을 소모한다는 사실을 잊지 마세요. 스레드에 할당된 모든 작업이 합리적인 방식으로 장시간, 생산성을 유지하도록 최선을 다해야 합니다. 그러는 동시에 대부분의 시간을 아이들 상태로 소비하는 스레드는 과감히 종료시키는 것이 좋습니다. 스레드는 무시할 수 없는 양의 메모리를 사용하며 그 중의 일부는 램에 상주합니다.\(Wired memory\) 그러므로 아이들 스레드를 해제하는 것은 애플리케이션의 메모리 사용량을 줄일 뿐만 아니라 다른 시스템 프로세스들이 사용할 수 있는 더 많은 물리적 메모리를 확보하게 됩니다.
 
@@ -377,13 +377,13 @@ Important
 아이들 스레드를 종료하기 전에 항상 현재 애플리케이션의 기본 측정 세트를 기록해야 합니다. 변경을 시도한 후에는 추가적인 측정을 함으로써 실질적으로 성능이 향상되었는지 아니면 오히려 저하되었는지를 확인하세요.
 {% endhint %}
 
-### 공유 데이터 구조 피하기
+### 공유 데이터 구조 피하기 <a id="avoid-shared-data-structures"></a>
 
 스레드 관련 리소스 충돌을 회피하는 가장 간단하고 쉬운 방법은 프로그램의 각 스레드에 필요한 모든 데이터 복사본을 제공하는 것입니다. 병렬 코드는 스레드 간의 통신 및 리소스 경쟁을 최소화하는 최고의 방법입니다.
 
 멀티 스레드 어플리케이션을 만드는 일은 어렵습니다. 아주 조심스럽게 코드상에서 적절한 시점의 모든 공유 데이터에 lock을 걸어도 의미론적으로 안전하지 않을 수 있습니다. 예를 들어 공유 데이터 구조가 특정 순서로 수정될 것을 기대한다면 문제가 발생할 수 있습니다. 보완을 위해 코드를 트랜잭션 기반 모델로 바꾸면 멀티 스레드를 생성하면서 생기는 성능상의 이점이 사라집니다. 애초에 리소스 경쟁을 제거하는 것이 단순하면서도 성능이 우수한 디자인이 되는 경우가 많습니다.
 
-### 스레드와 유저 인터페이스
+### 스레드와 유저 인터페이스 <a id="threads-and-your-user-interface"></a>
 
 응용프로그램에 그래픽 유저 인터페이스\(GUI\)가 있다면 사용자 관련 인터페이스를 받거나 인터페이스 업데이트를 시작할 경우 메인스레드에서 처리하는 것을 권장합니다. 이러한 접근법은 유저 이벤트 처리와 window 컨텐츠를 그리는 작업에 연관된 동기화 이슈를 피하는데 도움이 됩니다. 코코아와 같은 몇몇 프레임워크들은 일반적으로 이러한 동작방식을 필요로 하지만 그렇지 않은 경우라고 하더라도 메인 스레드에서 이런 동작을 수행하는 것은 UI 관리 로직을 단순화 시켜준다는 장점이 있습니다.
 
@@ -391,7 +391,7 @@ Important
 
 코코아 스레드 안전성에 대한 정보는 [Thread Safety Summary](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/ThreadSafetySummary/ThreadSafetySummary.html#//apple_ref/doc/uid/10000057i-CH12-SW1)를, 코코아 drawing에 대해서는 [코코아 드로잉 가이드](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)를 참조하세요.
 
-### 종료 시의 스레드 동작을 인지할 것
+### 종료 시의 스레드 동작을 인지할 것 <a id="be-aware-of-thread-behaviors-at-quit-time"></a>
 
 프로세스는 분리되지 않은 모든 스레드들이 종료될 때까지 계속해서 실행됩니다. 기본적으로 애플리케이션의 메인 스레드만이 분리되지 않은 상태로 생성되지만 다른 스레드들도 그렇게 만들 수 있습니다. 사용자가 애플리케이션을 종료할 때 분리된 모든 스레드들은 즉시 종료시키는 것이 적합한 동작으로 여겨집니다. 그것은 분리된 스레드에서 수행되는 작업은 필수 작업이 아닌 것으로 간주되기 때문입니다. 애플리케이션이 백그라운드 스레드를 사용해서 데이터를 디스크에 저장하거나 다른 중요한 작업을 한다면 분리되지 않은 스레드로 생성하여 애플리케이션이 종료될 때의 데이터 손실을 방지하세요.
 
@@ -399,7 +399,7 @@ Important
 
 코코아 애플리케이션을 만든다면 [applicationShouldTerminate:](https://developer.apple.com/documentation/appkit/nsapplicationdelegate/1428642-applicationshouldterminate) 델리게이트 메서드를 사용하여 애플리케이션의 종료를 미루거나 취소할 수 있습니다. 종료를 지연시키는 경우 애플리케이션은 중요한 스레드들이 작업을 끝날 때까지 기다렸다가 [replyToApplicationShouldTerminate:](https://developer.apple.com/documentation/appkit/nsapplication/1428594-reply) 메서드를 호출해야 합니다. 이들 메서드에 대한 자세한 내용은 [NSApplication Class Reference](https://developer.apple.com/documentation/appkit/nsapplication)를 읽어보세요.
 
-### 예외 처리
+### 예외 처리 <a id="handle-exceptions"></a>
 
 예외 처리 메커니즘은 발생한 예외를 처리하기 위해서 현재 콜 스택에 의존합니다. 각 스레드는 자체적인 콜 스택을 가지고 있기 때문에 스레드에서 발생한 예외를 잡아내야\(catch\) 할 책임이 있습니다. 보조 스레드에서 예외를 잡지 못하면 메인 스레드에서 예외를 잡지 못했을 때와 마찬가지로 해당 스레드를 소유한 프로세스가 종료됩니다. 처리되지 않은 예외를 처리하기 위해서 다른 스레드에 던질 수는\(throw\) 없습니다.
 
@@ -411,13 +411,13 @@ Note
 
 어떤 경우에는 예외 처리기가 자동으로 생성되기도 합니다. 예를 들어 Objective-C의 @synchronized 지시자에는 암묵적인 예외 처리기가 포함되어 있습니다.
 
-### 스레드를 깔끔하게 종료할 것
+### 스레드를 깔끔하게 종료할 것 <a id="terminate-your-threads-cleanly"></a>
 
 스레드를 종료하는 가장 좋은 방법은 자연스럽게 메인 진입 루틴\(진입함수, 진입 메서드\)의 끝까지 도달하도록 하는 것입니다. 스레드를 즉시 종료시키는 함수들이 있지만 이런 함수들은 최후의 수단으로 사용해야 합니다. 자연스럽게 마지막 지점에 도달하기 전에 스레드를 종료하면 스레드가 자체적으로 정리되지 않습니다. 스레드가 메모리를 할당했거나 파일을 열었거나 다른 종류의 리소스를 획득한 경우 코드가 해당 리소스를 회수하지 못하여 메모리 누수나 다른 잠재적인 문제가 발생할 수 있습니다.
 
 적절하게 스레드를 종료하는 방법에 대한 정보는 [Terminating a Thread](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/CreatingThreads/CreatingThreads.html#//apple_ref/doc/uid/10000057i-CH15-SW10)에서 확인할 수 있습니다.
 
-### 라이브러리의 스레드 안전성
+### 라이브러리의 스레드 안전성 <a id="thread-safety-in-libraries"></a>
 
 애플리케이션 개발자는 멀티 스레드 실행 여부에 대한 결정권이 있지만 라이브러리 개발자는 그렇지 않습니다. 라이브러리를 개발할 때에는 해당 라이브러리를 호출하는 애플리케이션이 멀티스레드로 개발되었거나 아니면 언제든지 멀티스레드로 전환될 수 있다고 가정해야 합니다. 결론적으로 라이브러리를 개발할 때에는 항상 코드의 중요한 부분에 lock을 사용해야 합니다.
 
