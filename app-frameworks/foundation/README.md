@@ -113,21 +113,21 @@ Foundation 프레임워크는 데이터 저장 및 지속성, 텍스트 처리, 
 
 ### 클래스
 
-* class ListFormatter `Beta`
-* class NSOrderedCollectionChange
-* class NSOrderedCollectionDifference
-* class RelativeDateTimeFormatter `Beta`
-* class NSSecureUnarchiveFromDataTransformer
-* class NSXPCCoder
-* class URLSessionWebSocketTask `Beta`
-* class UnitInformationStorage `Beta`
+* _class_ ListFormatter `Beta`
+* _class_ NSOrderedCollectionChange
+* _class_ NSOrderedCollectionDifference
+* _class_ RelativeDateTimeFormatter `Beta`
+* _class_ NSSecureUnarchiveFromDataTransformer
+* _class_ NSXPCCoder
+* _class_ URLSessionWebSocketTask `Beta`
+* _class_ UnitInformationStorage `Beta`
 
 ### 프로토콜
 
-* protocol ContiguousBytes
-* protocol DataProtocol
-* protocol MutableDataProtocol
-* protocol URLSessionWebSocketDelegate `Beta`
+* _protocol_ ContiguousBytes
+* _protocol_ DataProtocol
+* _protocol_ MutableDataProtocol
+* _protocol_ URLSessionWebSocketDelegate `Beta`
 
 ### 참조 <a id="reference"></a>
 
