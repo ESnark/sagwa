@@ -7,6 +7,8 @@
 * [Foundation](app-frameworks/foundation/README.md)
   * [숫자, 데이터와 기본값](app-frameworks/foundation/numbers-data-and-basic-value.md)
   * [문자열과 텍스트](app-frameworks/foundation/strings-and-text.md)
+  * [컬렉션](app-frameworks/foundation/collections.md)
+  * [날짜와 시간](app-frameworks/foundation/dates-and-times.md)
   * [데이터 포맷](app-frameworks/foundation/data-formatting.md)
   * [작업 관리](app-frameworks/foundation/task-management/README.md)
     * [Operation](app-frameworks/foundation/task-management/operation.md)
