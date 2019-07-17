@@ -5,7 +5,7 @@
 
 ## 개요 <a id="overview"></a>
 
-Foundation 프레임워크는 데이터 저장 및 지속성, 텍스트 처리, 날짜 및 시간 계산, 정렬 및 필터링, 네트워킹을 비롯한 애플리케이션과 프레임워크의 기본 기능 계층을 제공합니다. Foundation에서 정의한 클래스, 프로토콜 및 데이터 유형은 macOS, iOS, watchOS 및 TVOS SDK 전반에서 사용됩니다.
+Foundation 프레임워크는 데이터 저장 및 지속성, 텍스트 처리, 날짜 및 시간 계산, 정렬 및 필터링, 네트워킹을 비롯한 애플리케이션과 프레임워크의 기본 기능 계층을 제공합니다. Foundation에서 정의한 클래스, 프로토콜 및 데이터 유형은 macOS, iOS, watchOS 및 tvOS SDK 전반에서 사용됩니다.
 
 ## 주제 <a id="topics"></a>
 
