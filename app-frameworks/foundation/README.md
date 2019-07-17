@@ -107,15 +107,31 @@ Foundation 프레임워크는 데이터 저장 및 지속성, 텍스트 처리, 
 
   저수준 Unix 기능을 사용하여 파일, 프로세스 및 네트워크 간의 입력 및 출력을 관리합니다.
 
-### Class클래스
+### 구조체 
 
-* class NSSecureUnarchiveFromDataTransformer `Beta`
+* _struct_ NSOrderedCollectionDifferenceCalculationOptions
+
+### 클래스
+
+* class ListFormatter `Beta`
+* class NSOrderedCollectionChange
+* class NSOrderedCollectionDifference
+* class RelativeDateTimeFormatter `Beta`
+* class NSSecureUnarchiveFromDataTransformer
+* class NSXPCCoder
+* class URLSessionWebSocketTask `Beta`
+* class UnitInformationStorage `Beta`
+
+### 프로토콜
+
+* protocol ContiguousBytes
+* protocol DataProtocol
+* protocol MutableDataProtocol
+* protocol URLSessionWebSocketDelegate `Beta`
 
 ### 참조 <a id="reference"></a>
 
-* 파운데이션 열거값 \(enum\)
+* 파운데이션 열거값
 * 파운데이션 상수
-* 파운데이션 데이터 타입
-
-이 문서는 파운데이션 프레임워크에서 사용되는 데이터 타입과 상수를 설명합니다.
+* 파운데이션 데이터 타입 이 문서는 파운데이션 프레임워크에서 사용되는 데이터 타입과 상수를 설명합니다.
 
