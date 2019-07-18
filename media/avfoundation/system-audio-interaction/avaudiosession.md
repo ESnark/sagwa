@@ -288,7 +288,7 @@ Starting with iOS 10, [AVCaptureSession](../../../etc/not-found.md) has changed 
 
 ## 관련 문서
 
-### 상속받은 대상
+### 상속
 
 * NSObject
 

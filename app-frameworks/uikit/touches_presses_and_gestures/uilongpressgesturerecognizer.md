@@ -70,7 +70,7 @@ class UILongPressGestureRecognizer: UIGestureRecognizer
 * [UIKit 제스처 처리](handling_uikit_gestures.md) 제스처 인식기를 사용하여 터치 처리를 단순화하고 일관적인 사용자 환경을 만드세요.
 * [다중 제스처 인식기 조정](coordinating-multiple-gesture-recognizers.md) 동일한 view 내에서 여러 제스처 인식기를 사용하는 방법을 알아보세요.
 * _class_ UIHoverGestureRecognizer `beta` A gesture recognizer that looks for pointer movement over a view.
-* _class_ [UIPanGestureRecognizer](uipangesturerecognizer/) 드래그 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스
+* _class_ [UIPanGestureRecognizer](uipangesturerecognizer/) 드래그 제스처를 인식하는 [UIGestureRecognizer](uigesturerecognizer.md)의 하위 구상 클래스
 * _class_ UIPinchGestureRecognizer pinching 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스
 * _class_ UIScreenEdgePanGestureRecognizer 스크린 가장자리로부터의 드래그 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스
 * _class_ UISwipeGestureRecognizer 하나 이상의 방향으로 스와이프하는 제스처를 인식하는 UIGestureRecognizer의 하위 구상 클래스

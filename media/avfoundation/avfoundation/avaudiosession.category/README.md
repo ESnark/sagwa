@@ -3,7 +3,7 @@
 > 원문 출처  
 > [https://developer.apple.com/documentation/avfoundation/avaudiosession/category](https://developer.apple.com/documentation/avfoundation/avaudiosession/category)
 
-## 선언
+## Declaration
 
 {% tabs %}
 {% tab title="Swift" %}

@@ -13,7 +13,7 @@
 
 제스처 인식기는 이산형과 연속형의 두 가지 타입이 있습니다. **이산 제스처 인식기**는 제스처가 인식된 후 정확히 한 번 Action 메서드를 호출합니다. 초기 인식 기준을 충족하면 **연속 제스처 인식기**가 Action 메서드를 여러번 호출하여 제스처 이벤트의 정보가 변경될 때마다 알려줍니다. 예를 들어 [UIPanGestureRecognizer](../../../etc/not-found.md) 객체는 터치 위치가 변경될 때마다 Action 메서드를 호출합니다.
 
-Interface Builder에는 표준 UIKit 제스처 인식기 각각에 대한 객체가 포함되어 있습니다. 또한 커스텀 [UIGestureRecognizer](../../../etc/not-found.md) 서브클래스를 나타내는데 사용할 수 있는 커스텀 제스처 인식기 객체도 포함됩니다.
+Interface Builder에는 표준 UIKit 제스처 인식기 각각에 대한 객체가 포함되어 있습니다. 또한 커스텀 [UIGestureRecognizer](uigesturerecognizer.md) 서브클래스를 나타내는데 사용할 수 있는 커스텀 제스처 인식기 객체도 포함됩니다.
 
 ## 제스처 인식기 설정하기
 
@@ -68,11 +68,11 @@ Listing 1은 제스처 인식기의 Action 메서드에 대한 일반적인 형�
 
 * [다중 제스처 인식기 조정](coordinating-multiple-gesture-recognizers.md) 동일한 뷰에서 여러 개의 제스처 인식기를 사용하는 방법을 확인합니다.
 * _class_ UIHoverGestureRecognizer `beta` A gesture recognizer that looks for pointer movement over a view.
-* class [UILongPressGestureRecognizer](uilongpressgesturerecognizer.md) 길게 누르기 제스처를 인식하는 [UIGestureRecognizer](../../../etc/not-found.md)의 구상 하위 클래스
-* class UIPanGestureRecognizer 패닝\(드래그\) 제스처를 인식하는 [UIGestureRecognizer](../../../etc/not-found.md)의 구상 하위 클래스
-* class UIPinchGestureRecognizer 두 개의 터치로 꼬집는 제스처를 인식하는 [UIGestureRecognizer](../../../etc/not-found.md)의 구상 하위 클래스
+* class [UILongPressGestureRecognizer](uilongpressgesturerecognizer.md) 길게 누르기 제스처를 인식하는 [UIGestureRecognizer](uigesturerecognizer.md)의 구상 하위 클래스
+* class UIPanGestureRecognizer 패닝\(드래그\) 제스처를 인식하는 [UIGestureRecognizer](uigesturerecognizer.md)의 구상 하위 클래스
+* class UIPinchGestureRecognizer 두 개의 터치로 꼬집는 제스처를 인식하는 [UIGestureRecognizer](uigesturerecognizer.md)의 구상 하위 클래스
 * class UIScreenEdgePanGestureRecognizer 화면 가장자리 근처에서 시작하는 패닝\(드래그\) 제스처를 인식하는 제스처 인식기
-* class UISwipeGestureRecognizer 하나 이상의 방향으로 스와이프하는 제스처를 인식하는 [UIGestureRecognizer](../../../etc/not-found.md)의 구상 하위 클래스
-* class UIRotationGestureRecognizer 두 개의 터치로 회전하는 제스처를 인식하는 [UIGestureRecognizer](../../../etc/not-found.md)의 구상 하위 클래스
-* class UITapGestureRecognizer 싱글탭이나 멀티탭을 인식하는 [UIGestureRecognizer](../../../etc/not-found.md)의 구상 하위 클래스
+* class UISwipeGestureRecognizer 하나 이상의 방향으로 스와이프하는 제스처를 인식하는 [UIGestureRecognizer](uigesturerecognizer.md)의 구상 하위 클래스
+* class UIRotationGestureRecognizer 두 개의 터치로 회전하는 제스처를 인식하는 [UIGestureRecognizer](uigesturerecognizer.md)의 구상 하위 클래스
+* class UITapGestureRecognizer 싱글탭이나 멀티탭을 인식하는 [UIGestureRecognizer](uigesturerecognizer.md)의 구상 하위 클래스
 
