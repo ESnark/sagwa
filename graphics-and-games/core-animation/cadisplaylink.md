@@ -7,6 +7,34 @@ description: 애플리케이션에서 드로잉을 디스플레이의 주사율�
 > 원문 출처  
 > [https://developer.apple.com/documentation/quartzcore/cadisplaylink](https://developer.apple.com/documentation/quartzcore/cadisplaylink)
 
+## Summary
+
+> **SDKs**
+>
+> * iOS 3.1+
+> * tvOS 9.0+
+> * Mac Catalyst 13.0+ `Beta`
+>
+> **Framework**
+>
+> * Core Animation
+
+## Declaration
+
+{% tabs %}
+{% tab title="Swift" %}
+```swift
+class CADisplayLink : NSObject
+```
+{% endtab %}
+
+{% tab title="Objective-C" %}
+```objectivec
+@interface CADisplayLink : NSObject
+```
+{% endtab %}
+{% endtabs %}
+
 ## 개요
 
 애플리케이션은 새로운 디스플레이 링크를 초기화해서 내놓는데, 디스플레이 링크는 화면이 업데이트 될때 타겟 객체와 호출될 Selector를 제공합니다. 디스플레이 루프를 디스플레이와 동기화하기 위해서는 애플리케이션이 [add\(to:forMode:\)](../../etc/not-found.md) 메서드를 사용하여 런 루프에 디스플레이 루프를 추가해야 합니다.

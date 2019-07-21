@@ -7,6 +7,35 @@ description: 좌표공간에 cubic Bezier spline을 그리는 레이어
 > 원문 출처  
 > [https://developer.apple.com/documentation/quartzcore/cashapelayer](https://developer.apple.com/documentation/quartzcore/cashapelayer)
 
+## Summary
+
+> **SDKs**
+>
+> * iOS 3.0+
+> * macOS 10.6+
+> * tvOS 9.0+
+> * Mac Catalyst 13.0+ `Beta`
+>
+> **Framework**
+>
+> * Core Animation
+
+## Declaration
+
+{% tabs %}
+{% tab title="Swift" %}
+```swift
+class CAShapeLayer : CALayer
+```
+{% endtab %}
+
+{% tab title="Objective-C" %}
+```objectivec
+@interface CAShapeLayer : CALayer
+```
+{% endtab %}
+{% endtabs %}
+
 ## 개요
 
 이 Shape는 레이어의 컨텐츠와 첫 번째 하위 레이어 사이에 합성됩니다.

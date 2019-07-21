@@ -7,6 +7,20 @@ description: '변경 가능/변경 불가능 타입의 그래픽 경로: 그래�
 > 원문 출처  
 > [https://developer.apple.com/documentation/coregraphics/cgpath](https://developer.apple.com/documentation/coregraphics/cgpath)
 
+## Summary
+
+> **SDKs**
+>
+> * iOS 2.2+
+> * macOS 10.7+
+> * Mac Catalyst 13.0+ `Beta`
+> * tvOS 9.0+
+> * watchOS 3.0+
+>
+> **Framework**
+>
+> * Core Graphics
+
 ## 주제
 
 ### 그래픽 경로 생성

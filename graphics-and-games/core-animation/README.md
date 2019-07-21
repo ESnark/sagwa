@@ -3,6 +3,15 @@
 > 원문 출처  
 > [https://developer.apple.com/documentation/quartzcore](https://developer.apple.com/documentation/quartzcore)
 
+## Summary
+
+> **SDKs**
+>
+> * iOS 2.0+
+> * macOS 10.3+
+> * tvOS 9.0+
+> * Mac Catalyst 13.0+ `Beta`
+
 ## 개요
 
 Core Animation은 CPU에 부담을 주지 않고 앱 속도를 저하시키지 않으면서 높은 프레임 속도와 부드러운 애니메이션을 제공합니다. 애니메이션의 각 프레임을 그리는데 필요한 대부분의 작업이 알아서 수행됩니다. 시작 지점이나 끝 지점과 같은 애니메이션 매개 변수를 구성하면 Core Animation이 나머지 작업을 수행하고 대부분의 작업을 그래픽 전 하드웨어로 전달하여 렌더링 속도를 높입니다. 자세한 내용은 [Core Animation 프로그래밍 가이드](../../etc/not-found.md)를 참조하십시오.

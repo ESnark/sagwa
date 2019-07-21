@@ -3,6 +3,16 @@
 > 원문 출처  
 > [https://developer.apple.com/documentation/coregraphics](https://developer.apple.com/documentation/coregraphics)
 
+## Summary
+
+> **SDKs**
+>
+> * iOS 2.0+
+> * macOS 10.8+
+> * Mac Catalyst 13.0+ `Beta`
+> * tvOS 9.0+
+> * watchOS 2.0+
+
 ## 개요
 
 Core Graphics 프레임워크는 Quartz 고급 드로잉 엔진을 기반으로 합니다. 이 프레임워크는 저수준의 경량 2D 렌더링을 탁월한 해상도로 출력합니다. 이 프레임워크를 사용하면 경로 기반 그리기, 변환, 색상 관리, 오프스크린 렌더링, 패턴, 그라데이션 및 쉐이딩, 이미지 데이터 관리, 이미지 생성 및 마스킹, PDF 문서의 작성, 표시, 파싱을 처리할 수 있습니다.

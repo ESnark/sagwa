@@ -7,6 +7,35 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 > 원문 출처  
 > [https://developer.apple.com/documentation/quartzcore/calayer](https://developer.apple.com/documentation/quartzcore/calayer)
 
+## Summary
+
+> **SDKs**
+>
+> * iOS 2.0+
+> * macOS 10.5+
+> * tvOS 9.0+
+> * Mac Catalyst 13.0+ `Beta`
+>
+> **Framework**
+>
+> * Core Animation
+
+## Declaration
+
+{% tabs %}
+{% tab title="Swift" %}
+```swift
+class CALayer : NSObject
+```
+{% endtab %}
+
+{% tab title="Objective-C" %}
+```objectivec
+@interface CALayer : NSObject
+```
+{% endtab %}
+{% endtabs %}
+
 ## 개요 <a id="overview"></a>
 
 레이어는 종종 뷰에 대한 백업 저장소를 제공하는데 사용되기도 하지만 컨텐츠를 표시할 뷰 없이도 사용될 수 있습니다. 레이어의의 기본 작업은 개발자가 제공하는 시각적 컨텐츠를 관리하는 것이지만 레이어 자체에는 배경색, 테두리 및 그림자 같은 시각적 속성이 설정되어 있습니다. 시각적 컨텐츠 관리 외에도, 레이어는 해당 컨텐츠를 화면에 표시하는데 사용되는 컨텐츠의 형태\(위치, 크기 및 변환 등\)에 대한 정보도 보유합니다. 레이어 프로퍼티를 수정함으로써 레이어의 컨텐츠나 지오메트리 상의 에니메이션을 시작할 수 있습니다. 레이어 객체는 레이어의 타이밍 정보를 정의하는 [CAMediaTiming](../../etc/not-found.md) 프로토콜을 채택하여 레이어와 애니메이션의 지속 시간과 페이싱을 캡슐화합니다.

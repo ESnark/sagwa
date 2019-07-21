@@ -7,6 +7,35 @@ description: 객체가 CALayer 변경에 의해 트리거 된 액션에 응답�
 > 원문 출처  
 > [https://developer.apple.com/documentation/quartzcore/caaction](https://developer.apple.com/documentation/quartzcore/caaction)
 
+## Summary
+
+> **SDKs**
+>
+> * iOS 2.0+
+> * macOS 10.5+
+> * tvOS 9.0+
+> * Mac Catalyst 13.0+ `Beta`
+>
+> **Framework**
+>
+> * Core Animation
+
+## Declaration
+
+{% tabs %}
+{% tab title="Swift" %}
+```swift
+protocol CAAction
+```
+{% endtab %}
+
+{% tab title="Objective-C" %}
+```objectivec
+@protocol CAAction
+```
+{% endtab %}
+{% endtabs %}
+
 ## 개요 <a id="overview"></a>
 
 Action 식별자\(key path, 외부 action 이름 또는 미리 정의된 작업 식별자\)로 쿼리할 때 레이어는 적절한 action 객체\([CAAction](caaction.md) 프로토콜이 구현되어있어야 함\)를 반환하고 [run\(forKey:object:arguments:\)](../../etc/not-found.md) 메시지를 전송합니다.
