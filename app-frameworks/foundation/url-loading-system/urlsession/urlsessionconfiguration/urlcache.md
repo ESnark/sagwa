@@ -29,7 +29,7 @@ var urlCache: urlCache { get set }
 >
 > * iOS 7.0+
 > * macOS 10.9+
-> * UIKit for Mac 13.0+ `Beta`
+> * Mac Catalyst 13.0+ `Beta`
 > * tvOS 9.0+
 > * watchOS 2.0+
 >
