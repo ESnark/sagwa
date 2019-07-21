@@ -7,6 +7,12 @@ description: 시스템 오디오를 앱에 통합시키세요.
 > 원문 출처  
 > [https://developer.apple.com/documentation/avfoundation/system\_audio\_interaction](https://developer.apple.com/documentation/avfoundation/system_audio_interaction)
 
+## Summary
+
+> **Framework**
+>
+> * AVFoundation
+
 ## 개요
 
 시스템 오디오와 상호작용하려면 AVAudioSession 클래스를 사용해서 다음 작업들을 수행하세요
@@ -21,7 +27,7 @@ description: 시스템 오디오를 앱에 통합시키세요.
 
 ### AudioSession 사용
 
-* _class_ [AVAudioSession](avaudiosession.md) 앱에서 오디오를 사용하는 방식을 시스템에 전달하는 중간 객체
+* _class_ [AVAudioSession](avaudiosession/) 앱에서 오디오를 사용하는 방식을 시스템에 전달하는 중간 객체
 
 ### 권한
 

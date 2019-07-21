@@ -3,6 +3,16 @@
 > 원문 출처  
 > [https://developer.apple.com/documentation/avfoundation](https://developer.apple.com/documentation/avfoundation)
 
+## Summary
+
+> **SDKs**
+>
+> * iOS 2.2+
+> * macOS 10.7+
+> * Mac Catalyst 13.0+ `Beta`
+> * tvOS 9.0+
+> * watchOS 3.0+
+
 ## 개요
 
 AVFoundation 프레임워크는 애플 플랫폼에서 시청각 미디어의 캡처, 처리, 합성, 제어, 가져오기 및 내보내기 작업을 광범위하게 아우르는 네 가지 주요 기술 영역을 결합합니다.
@@ -27,9 +37,12 @@ AVFoundation 프레임워크는 애플 플랫폼에서 시청각 미디어의 �
 
 * 스피치 합성 텍스트를 음성으로 변환합니다.
 
-### 구조체
+### 클래스
 
-* struct AVAudioSessionActivationOptions
+* class AVAudioSinkNode `Beta`
+* class AVAudioSourceNode `Beta`
+* class AVCompositionTrackFormatDescriptionReplacement `Beta`
+* class AVVideoCompositionRenderHint `Beta`
 
 ### Property List Keys
 
@@ -38,9 +51,10 @@ AVFoundation 프레임워크는 애플 플랫폼에서 시청각 미디어의 �
 
 ### 참고
 
+* AVFoundation Structures
 * AVFoundation Enumerations
 * AVFoundation 상수
-* [AVFoundation 자료형](avfoundation/)
+* [AVFoundation 자료형](avfoundation.md)
 
 ## 같이 보기
 

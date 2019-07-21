@@ -28,13 +28,13 @@ class AVAudioSession : NSObject
 > **SDKs**
 >
 > * iOS 3.0+
-> * UIKit for Mac 13.0+ `Beta`
+> * Mac Catalyst 13.0+ `Beta`
 > * tvOS 9.0+
 > * watchOS 2.0+
 >
 > **Framework**
 >
-> * Foundation
+> * AVFoundation
 
 ## 개요
 
@@ -49,7 +49,7 @@ class AVAudioSession : NSObject
 
 기본 오디오 세션으로도 쓸만한 동작방식을 제공하기는 하지만 미디어 재 앱을 제작하기에는 충분하지 않을 수 있습니다. 기본 동작방식을 바꾸기 위해서는 오디오 세션의 카테고리를 설정해야 합니다.
 
-AVFoundation에는 총 일곱가지의 사용가능한 카테고리가 있지만 \([Audio Session Categories and Modes](https://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/AudioSessionCategoriesandModes/AudioSessionCategoriesandModes.html#//apple_ref/doc/uid/TP40007875-CH10)를 참조하세요\) 재생 앱에서 가장 많이 사용되는 것은 플레이백\(playback\)입니다. 이 카테고리는 오디오 재생이 해당 앱의 중심 기능임을 알려줍니다. 여러분의 앱 오디오가 \(iOS에서\) 무음모드로 스위치가 전환되었을 때에도 재생되길 원한다면 이 카테고리를 지정하시면 됩니다. playback 카테고리는 오디오, AirPlay, PIP\(Picture in Picture\) 백그라운드 모드를 사용중일 때에도 앱의 백그라운드 오디오를 재생할 수 있도록 해줍니다. 더 자세한 내용은 [Enabling Background Audio](../../../etc/not-found.md) 문서를 참조하세요.
+AVFoundation에는 총 일곱가지의 사용가능한 카테고리가 있지만 \([Audio Session Categories and Modes](https://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/AudioSessionCategoriesandModes/AudioSessionCategoriesandModes.html#//apple_ref/doc/uid/TP40007875-CH10)를 참조하세요\) 재생 앱에서 가장 많이 사용되는 것은 플레이백\(playback\)입니다. 이 카테고리는 오디오 재생이 해당 앱의 중심 기능임을 알려줍니다. 여러분의 앱 오디오가 \(iOS에서\) 무음모드로 스위치가 전환되었을 때에도 재생되길 원한다면 이 카테고리를 지정하시면 됩니다. playback 카테고리는 오디오, AirPlay, PIP\(Picture in Picture\) 백그라운드 모드를 사용중일 때에도 앱의 백그라운드 오디오를 재생할 수 있도록 해줍니다. 더 자세한 내용은 [Enabling Background Audio](../../../../etc/not-found.md) 문서를 참조하세요.
 
 앱의 오디오 세션을 설정하기 위해서는 AVAudioSession이 사용됩니다. AVAudioSession은 싱글톤 객체로써 오디오 세션 카테고리 및 다른 설정을 수행합니다. 오디오 세션은 앱 생애주기 전체에 걸쳐서 상호작용할 수 있지만 보통은 다음 예시와 같이 앱이 최초 실행될 때 설정됩니다. 
 
@@ -233,7 +233,7 @@ AVAudioSession은 세션 중단, 경로 변경, 미디어 서비스 리셋과 �
 
 Configure your preferred audio input behavior by setting your aggregated I/O preference.
 
-Starting with iOS 10, [AVCaptureSession](../../../etc/not-found.md) has changed its default audio input configuration on iPhones and iPads that support the Live Photos feature. This change allows taking a Live Photo without interrupting background audio playback. Configure your preferred audio input behavior by setting your aggregated I/O preference.
+Starting with iOS 10, [AVCaptureSession](../../../../etc/not-found.md) has changed its default audio input configuration on iPhones and iPads that support the Live Photos feature. This change allows taking a Live Photo without interrupting background audio playback. Configure your preferred audio input behavior by setting your aggregated I/O preference.
 
 * _func_ setAggregatedIOPreference\(AVAudioSession.IOType\)
 
@@ -264,9 +264,9 @@ Starting with iOS 10, [AVCaptureSession](../../../etc/not-found.md) has changed 
 
 ### Type Aliases
 
-* \_\_[_struct_ AVAudioSession.Category](../avfoundation/avaudiosession.category/)
+* \_\_[_struct_ AVAudioSession.Category](avaudiosession.category/)
 * _struct_ AVAudioSession.Location
-* \_\_[_struct_ AVAudioSession.Mode](../avfoundation/avaudiosession.mode.md)
+* \_\_[_struct_ AVAudioSession.Mode](avaudiosession.mode.md)
 * _struct_ AVAudioSession.Orientation
 * _struct_ AVAudioSession.PolarPattern
 * _struct_ AVAudioSession.Port

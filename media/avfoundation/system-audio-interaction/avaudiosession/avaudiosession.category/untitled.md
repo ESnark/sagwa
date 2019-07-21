@@ -38,6 +38,6 @@ const AVAudioSessionCategory AVAudioSessionCategoryMultiRoute;
 {% hint style="warning" %}
 Important
 
-라우트 변경은 멀티 라우트 구성의 일부를 무효화할 수 있습니다. 이 Category를 사용할 때에는 [routeChangeNotification](../../../../etc/not-found.md)을 관찰하도록 등록시키고 필요에 따라서 구성을 업데이트 하는 것이 필수적입니다.
+라우트 변경은 멀티 라우트 구성의 일부를 무효화할 수 있습니다. 이 Category를 사용할 때에는 [routeChangeNotification](../../../../../etc/not-found.md)을 관찰하도록 등록시키고 필요에 따라서 구성을 업데이트 하는 것이 필수적입니다.
 {% endhint %}
 

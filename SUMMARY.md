@@ -88,16 +88,16 @@
 
 * [AVFoundation](media/avfoundation/README.md)
   * [시스템 오디오 상호작용](media/avfoundation/system-audio-interaction/README.md)
-    * [AVAudioSession](media/avfoundation/system-audio-interaction/avaudiosession.md)
-  * [AVFoundation 자료형](media/avfoundation/avfoundation/README.md)
-    * [AVAudioSession.Category](media/avfoundation/avfoundation/avaudiosession.category/README.md)
-      * [ambient](media/avfoundation/avfoundation/avaudiosession.category/ambient.md)
-      * [multiRoute](media/avfoundation/avfoundation/avaudiosession.category/untitled.md)
-      * [playAndRecord](media/avfoundation/avfoundation/avaudiosession.category/playandrecord.md)
-      * [playback](media/avfoundation/avfoundation/avaudiosession.category/playback.md)
-      * [record](media/avfoundation/avfoundation/avaudiosession.category/record.md)
-      * [soloAmbient](media/avfoundation/avfoundation/avaudiosession.category/soloambient.md)
-    * [AVAudioSession.Mode](media/avfoundation/avfoundation/avaudiosession.mode.md)
+    * [AVAudioSession](media/avfoundation/system-audio-interaction/avaudiosession/README.md)
+      * [AVAudioSession.Category](media/avfoundation/system-audio-interaction/avaudiosession/avaudiosession.category/README.md)
+        * [ambient](media/avfoundation/system-audio-interaction/avaudiosession/avaudiosession.category/ambient.md)
+        * [multiRoute](media/avfoundation/system-audio-interaction/avaudiosession/avaudiosession.category/untitled.md)
+        * [playAndRecord](media/avfoundation/system-audio-interaction/avaudiosession/avaudiosession.category/playandrecord.md)
+        * [playback](media/avfoundation/system-audio-interaction/avaudiosession/avaudiosession.category/playback.md)
+        * [record](media/avfoundation/system-audio-interaction/avaudiosession/avaudiosession.category/record.md)
+        * [soloAmbient](media/avfoundation/system-audio-interaction/avaudiosession/avaudiosession.category/soloambient.md)
+      * [AVAudioSession.Mode](media/avfoundation/system-audio-interaction/avaudiosession/avaudiosession.mode.md)
+  * [AVFoundation 자료형](media/avfoundation/avfoundation.md)
 
 ## Documentation Archive
 

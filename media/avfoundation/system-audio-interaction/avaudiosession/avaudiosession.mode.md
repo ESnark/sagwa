@@ -21,8 +21,10 @@ typedef NSString *AVAudioSessionMode;
 > **SDKs**
 >
 > * iOS 12.0+
+> * macOS 10.15+ `Beta`
 > * tvOS 12.0+
 > * watchOS 5.0+
+> * Mac Catalyst 13.0+ `Beta`
 >
 > **Framework**
 >
