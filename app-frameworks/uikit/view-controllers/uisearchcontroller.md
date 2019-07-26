@@ -34,7 +34,7 @@ class UISearchController : UIViewController
 >
 > * UIKit
 
-## 개요
+## 개요 <a id="overview"></a>
 
 Search controller\(검색 컨트롤러\)는 view controller와 함께 사용됩니다. 검색 가능한 컨텐츠가 있는 뷰 컨트롤러가 있다면 UISearchController 객체의 search bar를 뷰 컨트롤러의 인터페이스에 통합시키세요. 사용자가 search bar와 상호작용할때 검색 컨트롤러는 검색결과와 함께 새 뷰 컨트롤러를 보여줍니다.
 
@@ -56,9 +56,9 @@ iOS에 검색 컨트롤러를 구현하는 방법을 알고 싶으시다면 [검
 
 tvOS에서 UISearchContainerViewController에 내장된 검색 컨트롤러를 구현하고 싶으시다면 [UIKit Catalog \(tvOS\): UIKit Control 생성과 커스터마이징](../../../etc/not-found.md) 문서를 읽어보세요.
 
-## 주제
+## 주제 <a id="topics"></a>
 
-### 검색 컨트롤러 초기화
+### 검색 컨트롤러 초기화 <a id="initializing-a-search-controller"></a>
 
 * init\(searchResultsController: UIViewController?\) 지정된 뷰 컨트롤러에 결과를 보여주는 검색 컨트롤러를 초기화하여 반환합니다.
 
@@ -67,7 +67,7 @@ tvOS에서 UISearchContainerViewController에 내장된 검색 컨트롤러를 �
 * _var_ delegate: UISearchControllerDelegate? 검색 컨트롤러의 delegate
 * _protocol_ UISearchControllerDelegate 검색 결과 객체의 delegate 메서드 집합
 
-###  검색 결과 관리
+###  검색 결과 관리 <a id="managing-the-search-results"></a>
 
 * _var_ searchBar: UISearchBar 인터페이스에 설치되는 search bar
 * _var_ searchResultsUpdater: UISearchResultsUpdating?
@@ -77,7 +77,7 @@ tvOS에서 UISearchContainerViewController에 내장된 검색 컨트롤러를 �
 * _var_ searchResultsController: UIViewController? 검색 결과를 보여주는 뷰 컨트롤러
 * _var_ isActive: Bool 검색 인터페이스의 표시 상태
 
-### 검색 인터페이스 설정
+### 검색 인터페이스 설정 <a id="configuring-the-search-interface"></a>
 
 * _var_ obscuresBackgroundDuringPresentation: Bool 검색 중에 표시되어 있는 컨텐츠를 흐릿하게 나타냅니다.
 * ~~_var_ dimsBackgroundDuringPresentation: Bool~~ `Deprecated` 검색 중에 표시되어있는 컨텐츠를 어둡게 나타냅니다.
@@ -95,13 +95,13 @@ tvOS에서 UISearchContainerViewController에 내장된 검색 컨트롤러를 �
 * _var_ automaticallyShowsSearchResultsController: Bool `Beta`
 * _var_ showsSearchResultsController: Bool `Beta`
 
-## 관련 문서 
+## 관련 문서  <a id="relationships"></a>
 
-### 상속
+### 상속 <a id="inherits-from"></a>
 
 * [UIViewController](uiviewcontroller.md)
 
-### 준수하는 프로토콜
+### 준수하는 프로토콜 <a id="conforms-to"></a>
 
 * CVarArg
 * Equatable
@@ -113,9 +113,9 @@ tvOS에서 UISearchContainerViewController에 내장된 검색 컨트롤러를 �
 * UIViewControllerAnimatedTransitioning
 * UIViewControllerTransitioningDelegate
 
-### 같이 보기
+## 같이 보기 <a id="see-also"></a>
 
-### 검색 인터페이스
+### 검색 인터페이스 <a id="search-interface"></a>
 
 * _class_ UISearchContainerViewController 인터페이스상의 검색결과 표시를 관리하는 view controller
 * _class_ UISearchBar 사용자로부터 검색 관련 정보를 받기위한 특수 뷰.
