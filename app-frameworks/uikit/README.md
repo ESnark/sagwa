@@ -40,6 +40,7 @@ View는 화면에 내용을 표시하고 사용자 상호 작용을 용이하게
 * [뷰와 컨트롤](views_and_controls/) 화면에 컨텐츠를 표시하고 해당 컨텐츠에 상호작용을 지정하세요.
 * [View Controllers](view-controllers/) View Controller로 인터페이스를 관리하고 앱 컨텐츠 탐색을 수월하게 만드세요.
 * 뷰 레이아웃 Stack View를 사용해서 인터페이스를 자동으로 배치하고 View를 정교하게 배치해야 하는 경우 자동 레이아웃을 사용하세요.
+* Appearance Customization Add Dark Mode support to your app, customize the appearance of bars, and use appearance proxies to modify your UI.
 * [애니메이션과 햅틱](animation-and-haptics/) 뷰 기반 애니메이션 햅틱을 사용하여 사용자에게 피드백을 제공합니다.
 * 윈도우와 스크린
 

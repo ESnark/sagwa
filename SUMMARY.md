@@ -51,6 +51,7 @@
   * [View Controllers](app-frameworks/uikit/view-controllers/README.md)
     * [UIViewController](app-frameworks/uikit/view-controllers/uiviewcontroller.md)
     * [UITableViewController](app-frameworks/uikit/view-controllers/uitableviewcontroller.md)
+    * [UISearchController](app-frameworks/uikit/view-controllers/uisearchcontroller.md)
   * [애니메이션과 햅틱](app-frameworks/uikit/animation-and-haptics/README.md)
     * [프로퍼티 기반 애니메이션](app-frameworks/uikit/animation-and-haptics/property-based-animations/README.md)
       * [UIViewPropertyAnimator](app-frameworks/uikit/animation-and-haptics/property-based-animations/uiviewpropertyanimator.md)

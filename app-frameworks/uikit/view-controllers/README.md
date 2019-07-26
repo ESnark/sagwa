@@ -54,21 +54,24 @@ UIKit은 특정 유형의 콘텐츠를 탐색하고 관리하기 위한 몇 개�
 ### 검색 인터페이스
 
 * _class_ UISearchContainerViewController 인터페이스상의 검색결과 표시를 관리하는 view controller
-* _class_ UISearchController 검색창과의 상호작용을 기반으로 검색결과 표시를 관리하는 view controller
+* _class_ [UISearchController](uisearchcontroller.md) 검색창과의 상호작용을 기반으로 검색결과 표시를 관리하는 view controller
 * _class_ UISearchBar 사용자로부터 검색 관련 정보를 받기위한 특수 뷰.
 * _protocol_ UISearchResultsUpdating 사용자가 검색창에 입력한 정보를 기반으로 검색결과를 업데이트 할 수 있는 메서드들
+* 검색 컨트롤러를 사용하여 검색가능한 컨텐츠 표시하기 검색가능한 컨텐츠와 테이블 뷰를 사용하여 사용자 인터페이스를 생성하세요
 
 ### 이미지와 비디오
 
 * _class_ UIImagePickerController 사진을 찍고, 동영상을 녹화하고, 사용자의 미디어 라이브러리에서 항목을 선택하기 위한 시스템 인터페이스를 관리하는 view controller
 * _class_ UIVideoEditorController 비디오 프레임을 편집하고 녹화된 동영상을 인코딩하기 위한 시스템 인터페이스를 관리하는 view controller
 
-### 문서 브라우저
+### 디렉토리 접근
 
 * 문서 브라우저를 앱에 추가하기 사용자가 앱 내에서 로컬 또는 원격 문서에 액세스 할수 있도록 하세요
+* 디렉토리 접근기능 제공 Document picker를 사용하여 앱 컨테이너 외부의 디렉토리 컨텐츠에 접근하세요
 * 문서 브라우저 기반의 앱 빌드 문서 브라우저를 사용하여 사용자의 텍스트 파일에 대한 액세스를 제공하세요
 * _class_ UIDocumentBrowserViewController 로컬 디바이스와 클라우드에 저장된 문서를 찾아보고 작업을 수행할 수 있는 view controller
 * _class_ UIDocumentPickerViewController 앱 샌드박스 외부의 문서나 경로에 대한 액세스를 제공하는 view controller
+* Document Browser View Controller에 기반한 앱 개발 다른 클라우드 저장소 공급자의 파일과의 사용자 상호 작용을 관리하는 사용자 지정 문서 파일 형식을 구현합니다.
 
 ### 문서 미리보기
 
@@ -85,6 +88,12 @@ UIKit은 특정 유형의 콘텐츠를 탐색하고 관리하기 위한 몇 개�
 * _protocol_ UIActivityItemSource ActivityViewController가 데이터를 검색하는데 사용하는 메서드들
 * _class_ UIActivity 앱 특화 서비스를 구현하기 위해서 상속하는 추상 클래스
 
+### Font Picker
+
+* _class_ UIFontPickerViewController `Beta`
+* _protocol_ UIFontPickerViewControllerDelegate `Beta`
+* _class_ UIFontPickerViewControllerConfiguration `Beta`
+
 ### 단어 조회
 
 * _class_ UIReferenceLibraryViewController 단어나 용어의 정의를 조회하기 위한 표준 인터페이스를 표시하는 view controller
@@ -95,6 +104,7 @@ UIKit은 특정 유형의 콘텐츠를 탐색하고 관리하기 위한 몇 개�
 
 ### 프레젠테이션 컨트롤러
 
+* Disabling Pulling Down a Sheet Disable the sheet pull-down gesture when dismissal would be destructive.
 * _class_ UIPresentationController 전환 애니메이션과 화면상 view controller의 표시를 관리하는 객체
 
 ### 인터페이스 복원
@@ -109,5 +119,13 @@ UIKit은 특정 유형의 콘텐츠를 탐색하고 관리하기 위한 몇 개�
 * _func_ UIInterfaceOrientationIsPortrait\(UIInterfaceOrientation\) 유저 인터페이스가 현재 세로 방향으로 표시되고 있는지 Boolean값을 반환하는 함수
 * _func_ UIInterfaceOrientationIsLandscape\(UIInterfaceOrientation\) 유저 인터페이스가 현재 세로 방향으로 표시되고 있는지 Boolean값을 반환하는 함수
 
+## 같이 보기
 
+* [뷰와 컨트롤](../views_and_controls/) 화면에 컨텐츠를 표시하고 해당 컨텐츠에 상호작용을 지정하세요.
+* 뷰 레이아웃 Stack View를 사용해서 인터페이스를 자동으로 배치하고 View를 정교하게 배치해야 하는 경우 자동 레이아웃을 사용하세요.
+* Appearance Customization Add Dark Mode support to your app, customize the appearance of bars, and use appearance proxies to modify your UI.
+* [애니메이션과 햅틱](../animation-and-haptics/) 뷰 기반 애니메이션 햅틱을 사용하여 사용자에게 피드백을 제공합니다.
+* 윈도우와 스크린
+
+   뷰 계층 구조 및 기타 컨텐츠를 위한 컨테이너를 제공합니다.
 
