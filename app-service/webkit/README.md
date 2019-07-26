@@ -38,7 +38,7 @@ WebKit의 함수와 메서드들은 앱의 메인 스레드나 main dispatch que
 * _protocol_ WKNavigationDelegate WKNavigationDelegate 프로토콜 메서드는 웹 뷰 네비게이션 요청의 수락, 로딩, 완료 중에 트리거되는 커스텀 동작의 구현을 돕습니다. 
 * _class_ WKProcessPool WKProcessPool 객체는 웹 컨텐츠 프로세스 풀을 나타냅니다.
 * _class_ WKWindowFeatures WKWindowFeatures 객체는 새 웹 뷰를 요청할때 포함된 창에 대한 옵셔널 속성을 지정합니다.
-* _class_ WKWebView 인 앱 브라우저와 같이 인터렉티브 웹 컨텐츠를 표시하는 객체
+* _class_ [WKWebView](wkwebview.md) 인 앱 브라우저와 같이 인터렉티브 웹 컨텐츠를 표시하는 객체
 * _class_ WKWebViewConfiguration 웹 뷰를 초기화하는데 사용되는 프로퍼티 콜렉션
 * _class_ WKPreferences WKPreferences 객체는 웹 뷰에 대한 기본 설정을 캡슐화합니다.
 * _class_ WKWebpagePreferences `Beta`
