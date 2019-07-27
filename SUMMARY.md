@@ -85,10 +85,10 @@
 * [Core Graphics](graphics-and-games/core-graphics/README.md)
   * [CGPath](graphics-and-games/core-graphics/cgpath.md)
 
-## App Service
+## App Services
 
-* [WebKit](app-service/webkit/README.md)
-  * [WKWebView](app-service/webkit/wkwebview.md)
+* [WebKit](app-services/webkit/README.md)
+  * [WKWebView](app-services/webkit/wkwebview.md)
 
 ## Media
 
