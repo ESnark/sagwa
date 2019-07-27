@@ -7,6 +7,36 @@ description: 파일 시스템 내용에 대한 편리한 인터페이스를 제�
 > 원문 출처  
 > [https://developer.apple.com/documentation/foundation/filemanager](https://developer.apple.com/documentation/foundation/filemanager)
 
+## Summary
+
+> **SDKs**
+>
+> * iOS 2.0+
+> * macOS 10.0+
+> * tvOS 9.0+
+> * watchOS 2.0+
+> * Mac Catalyst 13.0+ `Beta`
+>
+> **Framework**
+>
+> * Foundation
+
+## Declaration
+
+{% tabs %}
+{% tab title="Swift" %}
+```swift
+class FileManager : NSObject
+```
+{% endtab %}
+
+{% tab title="Objective-C" %}
+```objectivec
+@interface FileManager : NSObject
+```
+{% endtab %}
+{% endtabs %}
+
 ## 개요
 
 FileManager 객체를 사용하면 파일 시스템의 내용을 검사하고 변경할 수 있습니다. FileManager 클래스는 대부분의 파일 관련 조작 유형에 적합한 공유 파일 관리자 객체에 대한 편리한 액세스를 제공합니다.  
@@ -70,20 +100,14 @@ iOS 5.0 이상 및 MacOS 10.7 이상에서 FileManager는 iCloud에 저장된 �
 
 * _func_ enumerator\(atPath: String\) -&gt; FileManager.DirectoryEnumerator?
 
-  Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified path.
+  지정된 경로의 모든 하위 디렉토리까지 열거를 수행하는 directory enumerator를 반환합니다.
 
-* _class_ FileManager.DirectoryEnumerator
-
-  An NSDirectoryEnumerator object enumerates the contents of a directory, returning the pathnames of all files and directories contained within that directory. These pathnames are relative to the directory.
-
+* _class_ FileManager.DirectoryEnumerator NSDirectoryEnumerator 객체는 디렉토리의 내용을 열거하고 해당 디렉토리에 포함된 모든 파일과 디렉토리의 경로명을 반환합니다. 이 경로명은 디렉토리에 상대적입니다.
 * _func_ mountedVolumeURLs\(includingResourceValuesForKeys: \[URLResourceKey\]?, options: FileManager.VolumeEnumerationOptions = \[\]\) -&gt; \[URL\]?
 
   기기에 마운트 되어 사용가능한 볼륨들의 URL 배열을 반환합니다.
 
-* _func_ subpathsOfDirectory\(atPath: String\) -&gt; \[String\]
-
-  Performs a deep enumeration of the specified directory and returns the paths of all of the contained subdirectories.
-
+* _func_ subpathsOfDirectory\(atPath: String\) -&gt; \[String\] 지정된 디렉토리의 모든 하위 경로의 열거를 수행하고 포함된 모든 하위 디렉토리들의 경로를 반환합니다.
 * _func_ subpaths\(atPath: String\) -&gt; \[String\]?
 
   `atPath:` 문자열 상의 디렉토리에 있는 모든 항목의 경로를 문자열 배열로 반환합니다.
