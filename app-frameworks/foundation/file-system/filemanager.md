@@ -10,9 +10,9 @@ description: 파일 시스템 내용에 대한 편리한 인터페이스를 제�
 ## 개요
 
 FileManager 객체를 사용하면 파일 시스템의 내용을 검사하고 변경할 수 있습니다. FileManager 클래스는 대부분의 파일 관련 조작 유형에 적합한 공유 파일 관리자 객체에 대한 편리한 액세스를 제공합니다.  
-FileManager 객체는 일반적으로 파일 시스템과 상호 작용하는 기본 모드입니다. 파일 및 디렉리를 찾고, 생성하고, 복사하고, 이동할 때 사용합니다. 또한 파일이나 디렉터리에 대한 정보를 가져오거나 일부 속성을 변경할 때도 사용합니다.
+FileManager 객체는 일반적으로 파일 시스템과 상호 작용하는 기본 모드입니다. 파일 및 디렉토리를 찾고, 생성하고, 복사하고, 이동할 때 사용합니다. 또한 파일이나 디렉토리에 대한 정보를 가져오거나 일부 속성을 변경할 때도 사용합니다.
 
-파일 위치를 명시할 때 NSURL 또는 NSString 개체를 사용할 수 있습니다. 경로 정보가 내부에서 보다 효율적인 표현으로 변환될 수 있으므로 일반적으로 파일 시스템 항목을 지정할 때에는NSURL 클래스를 사용하는 것이 좋습니다. 또한 NSURL 객체에서 북마크를 가져올 수 있습니다. 이 북마크 객체는 별칭과 비슷하며 나중에 파일이나 디렉리를 찾는 보다 확실한 방법을 제공합니다.
+파일 위치를 명시할 때 NSURL 또는 NSString 개체를 사용할 수 있습니다. 경로 정보가 내부에서 보다 효율적인 표현으로 변환될 수 있으므로 일반적으로 파일 시스템 항목을 지정할 때에는NSURL 클래스를 사용하는 것이 좋습니다. 또한 NSURL 객체에서 북마크를 가져올 수 있습니다. 이 북마크 객체는 별칭과 비슷하며 나중에 파일이나 디렉토리를 찾는 보다 확실한 방법을 제공합니다.
 
 파일이나 디렉토리를 이동, 복사, 연결 또는 제거하는 경우 delegate를 사용하여 파일 관리자 객체와 함께 해당 작업들을 관리할 수 있습니다. delegate의 역할은 동작을 확인하고 오류가 발생할 때 계속해서 작업을 진행할지 여부를 결정하는 것입니다. macOS 10.7 이상에서는 delegate가 [FileManagerDelegate](../../../etc/not-found.md) 프로토콜을 준수해야 합니다.
 
@@ -30,21 +30,21 @@ iOS 5.0 이상 및 MacOS 10.7 이상에서 FileManager는 iCloud에 저장된 �
 
   프로세스에 대한 공유 파일 관리자 객체를 반환합니다.
 
-### 유저 디렉터리 액세스
+### 유저 디렉토리 액세스
 
 * _var_ temporaryDirectory: URL
 
-  현재 사용자의 임시 디렉리를 반환합니다.
+  현재 사용자의 임시 디렉토리를 반환합니다.
 
 * _var_ homeDirectoryForCurrentUser: URL
 
-  `forUser:` 사용자의 홈 디렉리를 반환합니다.
+  `forUser:` 사용자의 홈 디렉토리를 반환합니다.
 
 * _func_ homeDirectory\(forUser: String\) -&gt; URL?
 
-  `forUser:` 사용자의 홈 디렉리를 반환합니다.
+  `forUser:` 사용자의 홈 디렉토리를 반환합니다.
 
-### 시스템 디렉터리 위치 찾기
+### 시스템 디렉토리 위치 찾기
 
 * _func_ url\(for: FileManager.SearchPathDirectory, in: FileManager.SearchPathDomainMask, appropriateFor: URL?, create: Bool\) -&gt; URL
 
@@ -52,21 +52,21 @@ iOS 5.0 이상 및 MacOS 10.7 이상에서 FileManager는 iCloud에 저장된 �
 
 * _func_ urls\(for: FileManager.SearchPathDirectory, in: FileManager.SearchPathDomainMask\) -&gt; \[URL\]
 
-  `in:` 도메인 상의 `for:` 디렉터리에 대한 URL 배열을 반환합니다.
+  `in:` 도메인 상의 `for:` 디렉토리에 대한 URL 배열을 반환합니다.
 
-### 어플리케이션 그룹 컨테이너 디렉터리 위치
+### 어플리케이션 그룹 컨테이너 디렉토리 위치
 
-* _func_ containerURL\(forSecurityApplicationGroupIdentifier: String\) -&gt; URL? 보안 애플리케이션 그룹 식별자와 \(`forSecurityApplicationGroupIdentifier:`\) 연결된 컨테이너 디렉터리를 반환합니다.
+* _func_ containerURL\(forSecurityApplicationGroupIdentifier: String\) -&gt; URL? 보안 애플리케이션 그룹 식별자와 \(`forSecurityApplicationGroupIdentifier:`\) 연결된 컨테이너 디렉토리를 반환합니다.
 
-### 디렉터리 컨텐츠 찾기
+### 디렉토리 컨텐츠 찾기
 
 * _func_ contentsOfDirectory\(at: URL, includingPropertiesForKeys: \[URLResourceKey\]?, options: FileManager.DirectoryEnumerationOptions = \[\]\) -&gt; \[URL\]
 
-  `at:` 디렉터리에 대한 얕은 검색을 수행하고 포함된 항목에 대한 URL을 반환합니다.
+  `at:` 디렉토리에 대한 얕은 검색을 수행하고 포함된 항목에 대한 URL을 반환합니다.
 
 * _func_ contentsOfDirectory\(atPath: String\) -&gt; \[String\]
 
-  `at:` 디렉리에 대한 얕은 검색을 수행하고 포함된 항목의 경로 문자열을 반환합니다.
+  `at:` 디렉토리에 대한 얕은 검색을 수행하고 포함된 항목의 경로 문자열을 반환합니다.
 
 * _func_ enumerator\(atPath: String\) -&gt; FileManager.DirectoryEnumerator?
 
@@ -86,26 +86,26 @@ iOS 5.0 이상 및 MacOS 10.7 이상에서 FileManager는 iCloud에 저장된 �
 
 * _func_ subpaths\(atPath: String\) -&gt; \[String\]?
 
-  `atPath:` 문자열 상의 디렉리에 있는 모든 항목의 경로를 문자열 배열로 반환합니다.
+  `atPath:` 문자열 상의 디렉토리에 있는 모든 항목의 경로를 문자열 배열로 반환합니다.
 
 ### 항목 생성과 삭제
 
 * _func_ createDirectory\(at: URL, withIntermediateDirectories: Bool, attributes: \[FileAttributeKey : Any\]? = nil\)
 
-  `at:` URL에 `attributes:` 속성을 갖는 디렉리를 생성합니다.
+  `at:` URL에 `attributes:` 속성을 갖는 디렉토리를 생성합니다.
 
 * _func_ createDirectory\(atPath: String, withIntermediateDirectories: Bool, attributes: \[FileAttributeKey : Any\]? = nil\)
 
-  `at:` 문자열 경로에 `attributes:` 속성을 갖는 디렉터리를 생성합니다.
+  `at:` 문자열 경로에 `attributes:` 속성을 갖는 디렉토리를 생성합니다.
 
 * _func_ createFile\(atPath: String, contents: Data?, attributes: \[FileAttributeKey : Any\]? = nil\) -&gt; Bool
 
   `contents:` 컨텐츠와 `attributes:` 속성, `atPath:` 문자열 경로를 갖는 파일을 생성합니다.
 
-* _func_ removeItem\(at: URL\) `at:` URL의 파일이나 디렉리를 삭제합니다.
+* _func_ removeItem\(at: URL\) `at:` URL의 파일이나 디렉토리를 삭제합니다.
 * _func_ removeItem\(atPath: String\)
 
-  `atPath:` 문자열 경로의 파일이나 디렉리를 삭제합니다.
+  `atPath:` 문자열 경로의 파일이나 디렉토리를 삭제합니다.
 
 * _func_ replaceItem\(at: URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions = \[\], resultingItemURL: AutoreleasingUnsafeMutablePointer?\) 데이터 손실이 발생하지 않도록 `at:` URL의 항목 내용을 대체합니다.
 * _func_ trashItem\(at: URL, resultingItemURL: AutoreleasingUnsafeMutablePointer?\)
@@ -119,8 +119,8 @@ iOS 5.0 이상 및 MacOS 10.7 이상에서 FileManager는 iCloud에 저장된 �
   `at:` URL의 파일을 `to:` URL에 새로 동기식 복사합니다.
 
 * _func_ copyItem\(atPath: String, toPath: String\) `at:` 문자열 경로의 파일을 `to:` 경로에  새로 동기식 복사합니다.
-* _func_ moveItem\(at: URL, to: URL\) `at:` URL의 파일이나 디렉리를 `to:` URL에 동기적으로 이동시킵니다.
-* _func_ moveItem\(atPath: String, toPath: String\) `at:` 문자열 경로의 파일이나 디렉리를 `to:` 경로에 동기적으로 이동시킵니다.
+* _func_ moveItem\(at: URL, to: URL\) `at:` URL의 파일이나 디렉토리를 `to:` URL에 동기적으로 이동시킵니다.
+* _func_ moveItem\(atPath: String, toPath: String\) `at:` 문자열 경로의 파일이나 디렉토리를 `to:` 경로에 동기적으로 이동시킵니다.
 
 ### iCloud 기반 항목 관리
 
@@ -174,8 +174,8 @@ iOS 5.0 이상 및 MacOS 10.7 이상에서 FileManager는 iCloud에 저장된 �
 
 ### 파일 액세스 가능성
 
-* _func_ fileExists\(atPath: String\) -&gt; Bool `atPath:`에 파일 또는 디렉리가 있는지 나타내는 Boolean 값을 반환합니다.
-* _func_ fileExists\(atPath: String, isDirectory: UnsafeMutablePointer?\) -&gt; Bool `atPath:`에 파일 또는 디렉터리가 있는지 나타내는 Boolean 값을 반환합니다. `isDirectory:`는 경로가 디렉리인지 일반 파일인지를 묻습니다.
+* _func_ fileExists\(atPath: String\) -&gt; Bool `atPath:`에 파일 또는 디렉토리가 있는지 나타내는 Boolean 값을 반환합니다.
+* _func_ fileExists\(atPath: String, isDirectory: UnsafeMutablePointer?\) -&gt; Bool `atPath:`에 파일 또는 디렉토리가 있는지 나타내는 Boolean 값을 반환합니다. `isDirectory:`는 경로가 디렉토리인지 일반 파일인지를 묻습니다.
 * _func_ isReadableFile\(atPath: String\) -&gt; Bool 호출하는 객체가 `atPath:`의 파일을 읽을 수 있는지 나타내는 Boolean 값을 반환합니다.
 * _func_ isWritableFile\(atPath: String\) -&gt; Bool
 
@@ -197,19 +197,19 @@ iOS 5.0 이상 및 MacOS 10.7 이상에서 FileManager는 iCloud에 저장된 �
 
 * _func_ displayName\(atPath: String\) -&gt; String
 
-  `atPath:` 경로에 있는 파일이나 디렉리의 이름을 반환합니다.
+  `atPath:` 경로에 있는 파일이나 디렉토리의 이름을 반환합니다.
 
 * _func_ attributesOfItem\(atPath: String\) -&gt; \[FileAttributeKey : Any\]
 
   `atPath:` 경로에 있는 항목의 속성을 반환합니다.
 
 * _func_ attributesOfFileSystem\(forPath: String\) -&gt; \[FileAttributeKey : Any\] 지정된 경로가 있는 마운트된 파일 시스템의 속성을 설명하는 딕셔너리를 반환합니다
-* _func_ setAttributes\(\[FileAttributeKey : Any\], ofItemAtPath: String\) `ofItemAtPath:` 경로의 파일 또는 디렉터리의 속성을 설정합니다.
+* _func_ setAttributes\(\[FileAttributeKey : Any\], ofItemAtPath: String\) `ofItemAtPath:` 경로의 파일 또는 디렉토리의 속성을 설정합니다.
 
 ### 파일 내용 가져오고 비교하기
 
 * _func_ contents\(atPath: String\) -&gt; Data? `atPath:` 경로에 있는 파일의 내용을 반환합니다.
-* _func_ contentsEqual\(atPath: String, andPath: String\) -&gt; Bool `atPath:` 와 `andPath:` 경로에 있는 파일 또는 디렉터리의 컨텐츠가 동일한지를 나타내는 Boolean 값을 반환합니다.
+* _func_ contentsEqual\(atPath: String, andPath: String\) -&gt; Bool `atPath:` 와 `andPath:` 경로에 있는 파일 또는 디렉토리의 컨텐츠가 동일한지를 나타내는 Boolean 값을 반환합니다.
 
 ### 항목 간 관계 가져오기
 
@@ -237,15 +237,15 @@ iOS 5.0 이상 및 MacOS 10.7 이상에서 FileManager는 iCloud에 저장된 �
 
   파일 관리자 객체의 delegate
 
-### 현재 디렉터리 관리
+### 현재 디렉토리 관리
 
 * _func_ changeCurrentDirectoryPath\(String\) -&gt; Bool
 
-  현재 작업중인 디렉터리 경로를 지정된 경로로 변경합니다.
+  현재 작업중인 디렉토리 경로를 지정된 경로로 변경합니다.
 
 * _var_ currentDirectoryPath: String
 
-  프로그램의 현재 디렉터리
+  프로그램의 현재 디렉토리
 
 ### Deprecated Methods
 
@@ -265,7 +265,7 @@ iOS 5.0 이상 및 MacOS 10.7 이상에서 FileManager는 iCloud에 저장된 �
 
   [replaceItem\(at:withItemAt:backupItemName:options:resultingItemURL:\)](../../../etc/not-found.md) 메서드에서 대체 동작을 지정하는 상수
 
-* _enum_ FileManager.SearchPathDirectory [urls\(for:in:\)](../../../etc/not-found.md)와 [url\(for:in:appropriateFor:create:\)](../../../etc/not-found.md) 같은 FileManager 메서드에서 다양한 디렉터리의 위치를 나타내는 상수
+* _enum_ FileManager.SearchPathDirectory [urls\(for:in:\)](../../../etc/not-found.md)와 [url\(for:in:appropriateFor:create:\)](../../../etc/not-found.md) 같은 FileManager 메서드에서 다양한 디렉토리의 위치를 나타내는 상수
 * _struct_ FileManager.SearchPathDomainMask 검색 경로 도메인 상수는 [FileManager.SearchPathDirectory](../../../etc/not-found.md) 타입에서 기본 위치를 나타냅니다. 이 상수들은 [urls\(for:in:\)](../../../etc/not-found.md)와 [url\(for:in:appropriateFor:create:\)](../../../etc/not-found.md) 같은 FileManager 메서드에서 사용됩니다.
 * _struct_ FileAttributeKey [속성정보 읽기/쓰기](filemanager.md#getting-and-setting-attributes)에 나열된 메서드들에 쓰이는 딕셔너리의 키
 * _struct_ FileAttributeType
@@ -278,7 +278,7 @@ iOS 5.0 이상 및 MacOS 10.7 이상에서 FileManager는 iCloud에 저장된 �
 
 * _enum_ FileManager.URLRelationship
 
-  디렉터리와 항목의 관계를 나타내는 정수
+  디렉토리와 항목의 관계를 나타내는 정수
 
 * _var_ NSFoundationVersionWithFileManagerResourceForkSupport: Int32
 
@@ -296,21 +296,21 @@ iOS 5.0 이상 및 MacOS 10.7 이상에서 FileManager는 iCloud에 저장된 �
 
 * _func_ NSHomeDirectory\(\) -&gt; String
 
-  플랫폼에 따라 사용자 또는 애플리케이션의 홈 디렉터리 경로를 반환합니다.
+  플랫폼에 따라 사용자 또는 애플리케이션의 홈 디렉토리 경로를 반환합니다.
 
 * _func_ NSHomeDirectoryForUser\(String?\) -&gt; String?
 
   지정된 사용자의 홈 디렉토리에 대한 경로를 반환합니다.
 
 * _func_ NSOpenStepRootDirectory\(\) -&gt; String
-* 사용자 시스템의 루트 디렉터리를 반환합니다
+* 사용자 시스템의 루트 디렉토리를 반환합니다
 * _func_ NSSearchPathForDirectoriesInDomains\(FileManager.SearchPathDirectory, FileManager.SearchPathDomainMask, Bool\) -&gt; \[String\]
 
-  디렉터리 검색 경로 리스트를 생성합니다.
+  디렉토리 검색 경로 리스트를 생성합니다.
 
 * _func_ NSTemporaryDirectory\(\) -&gt; String
 
-  현재 사용자의 임시 디렉터리 경로를 반환합니다.
+  현재 사용자의 임시 디렉토리 경로를 반환합니다.
 
 * _func_ NSUserName\(\) -&gt; String
 
