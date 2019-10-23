@@ -29,11 +29,10 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 ### App Frameworks
 
 * AppKit
-* Bundle Resources `Beta`
+* Bundle Resources
 * [Foundation](app-frameworks/foundation/)
-* Objective-C
 * [Swift](app-frameworks/swift/)
-* SwiftUI `Beta`
+* SwiftUI
 * TVML
 * TVMLKit
 * TVMLKit JS
@@ -60,9 +59,9 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 * Model I/O
 * OpenGL ES
 * PDFKit
-* PencilKit `Beta`
+* PencilKit
 * Quartz
-* RealityKit `Beta`
+* RealityKit
 * ReplayKit
 * SceneKit
 * SpriteKit
@@ -76,7 +75,7 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 * AdSupport
 * App Store Receipts
 * ApplicationServices
-* BackgroundTasks `Beta`
+* BackgroundTasks
 * Business Chat
 * Business Chat REST API
 * CallKit
@@ -84,7 +83,7 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 * ClassKit
 * ClockKit
 * CloudKit
-* Combine `Beta`
+* Combine
 * Contacts
 * ContactsUI
 * Core Data
@@ -111,11 +110,11 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 * Natural Language
 * NewsstandKit
 * NotificationCenter
-* PassKit
+* PassKit \(Apple Pay and Wallet\)
 * PreferencePanes
 * PushKit
 * QuickLook
-* QuickLookThumbnailing `Beta`
+* QuickLookThumbnailing
 * SafariServices
 * SiriKit
 * SMS and Call Reporting
@@ -138,8 +137,8 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 * AVKit
 * Core Audio
 * Core Audio Kit
-* Core Audio Types `Beta`
-* Core Haptics `Beta`
+* Core Audio Types
+* Core Haptics
 * Core Media
 * Core MIDI
 * Core Video
@@ -153,9 +152,9 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 * Professional Video Applications
 * QTKit
 * ScreenSaver
-* SoundAnalysis `Beta`
+* SoundAnalysis
 * VideoToolbox
-* VisionKit `Beta`
+* VisionKit
 
 ### Web
 
