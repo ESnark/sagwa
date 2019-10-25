@@ -9,7 +9,7 @@
 >
 > * iOS 2.0+
 > * macOS 10.8+
-> * Mac Catalyst 13.0+ `Beta`
+> * Mac Catalyst 13.0+
 > * tvOS 9.0+
 > * watchOS 2.0+
 
