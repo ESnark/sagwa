@@ -59,7 +59,7 @@ Core Graphics 프레임워크는 Quartz 고급 드로잉 엔진을 기반으로 
 
 * _class_ CGColor
 
-  A set of components that define a color, with a color space specifying how to interpret them.
+  색을 정의하는 컴포넌트와, 그 해석 방법을 지정하는 색 공간의 집합.
 
 * _class_ CGColorConversionInfo
 
@@ -81,14 +81,8 @@ Core Graphics 프레임워크는 Quartz 고급 드로잉 엔진을 기반으로 
 
 ### Utility and Support Classes
 
-* _class_ CGDataConsumer
-
-  An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer.
-
-* _class_ CGDataProvider
-
-  An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer.
-
+* _class_ CGDataConsumer raw 메모리 버퍼 관리가 필요 없는 데이터 쓰기 작업에 대한 추상화
+* _class_ CGDataProvider raw 메모리 버퍼 관리가 필요 없는 데이터 읽기 작업에 대한 추상화
 * _class_ CGShading
 
   색상 간의 자연스러운 전환을 위한 정의로서, 개발자가 제공하는 커스텀 함수로 제어됩니다. 이 함수는 방사상 또는 축 그라데이션을 채우는 기능을 합니다.
