@@ -98,7 +98,7 @@ WebKit의 함수와 메서드들은 앱의 메인 스레드나 main dispatch que
 
 ### First-party 웹페이지 <a id="first-party-webpages"></a>
 
-* _class_ WKSecurityOrigin WKSecurityOrigin 객체는 호스트명, 프로토콜과 포트 번호롤 구성됩니다. First-party load는 모든 로드 URL이 요청중인 웹사이트와 동일한 security origin을 갖는 것을 의미합니다. First-party 웹페이지들은 스크립트나 데이터베이스와 같은 서로의 리소스에 접근할 수 있습니다.
+* _class_ WKSecurityOrigin WKSecurityOrigin 객체는 호스트명, 프로토콜과 포트 번호로 구성됩니다. First-party load는 모든 로드 URL이 요청중인 웹사이트와 동일한 security origin을 갖는 것을 의미합니다. First-party 웹페이지들은 스크립트나 데이터베이스와 같은 서로의 리소스에 접근할 수 있습니다.
 
 ### Preview
 
