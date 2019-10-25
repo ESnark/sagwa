@@ -83,6 +83,7 @@
   * [CAShapeLayer](graphics-and-games/core-animation/cashapelayer.md)
   * [CADisplayLink](graphics-and-games/core-animation/cadisplaylink.md)
 * [Core Graphics](graphics-and-games/core-graphics/README.md)
+  * [CGFloat](graphics-and-games/core-graphics/cgfloat.md)
   * [CGPath](graphics-and-games/core-graphics/cgpath.md)
 
 ## App Services

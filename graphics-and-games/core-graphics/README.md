@@ -23,7 +23,7 @@ Core Graphics 프레임워크는 Quartz 고급 드로잉 엔진을 기반으로 
 
 ### 기하 데이터 유형
 
-* _struct_ CGFloat
+* _struct_ [CGFloat](cgfloat.md)
 
   Core Graphics 및 연관 프레임워크에서 사용되는 기본 부동소수점 스칼라 타입
 
