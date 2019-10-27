@@ -13,7 +13,7 @@ description: '변경 가능/변경 불가능 타입의 그래픽 경로: 그래�
 >
 > * iOS 2.2+
 > * macOS 10.7+
-> * Mac Catalyst 13.0+ `Beta`
+> * Mac Catalyst 13.0+
 > * tvOS 9.0+
 > * watchOS 3.0+
 >
