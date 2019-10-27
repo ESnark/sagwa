@@ -47,9 +47,7 @@ description: Core Graphics 및 연관 프레임워크에서 사용되는 기본 
 * _typealias_ CGFloat.Stride
 * _typealias_ CGFloat.Exponent 쓰여진 지수를 표현할 수 있는 정수 타입
 * _typealias_ CGFloat.NativeType CGFloat을 저장하는데 사용되는 네이티브 타입으로써 32비트 아키텍쳐에서는 [Float](../../etc/not-found.md), 64비트 아키텍처에서는 [Double](../../etc/not-found.md)입니다.
-* _typealias_ CGFloat.RawSignificand
-
-  An unsigned integer type that can represent the significand of any value.
+* _typealias_ CGFloat.RawSignificand 부호없는 정수형으로써 어떤 값이든지 그 가수를 표현하는데 사용될 수 있습니다.
 
 ### Initializers
 
@@ -191,18 +189,12 @@ description: Core Graphics 및 연관 프레임워크에서 사용되는 기본 
 
   IEEE 754 less-than-or-equal predicate.
 
-* _func_ isTotallyOrdered\(belowOrEqualTo: CGFloat\) -&gt; Bool
-
-  Returns a Boolean value indicating whether this instance should precede or tie positions with the given value in an ascending sort.
-
+* _func_ isTotallyOrdered\(belowOrEqualTo: CGFloat\) -&gt; Bool 오름차순 정렬 시 주어진 값이 인스턴스와 비교하여 앞서거나 동일한 위치에 존재하게 될지를 알려주는 Boolean 값을 반환합니다.
 * _func_ negate\(\)
 
-  Replace self with its additive inverse.
+  인스턴스가 음수면 양수로, 양수면 음수로 값을 바꿉니다.
 
-* _func_ remainder\(dividingBy: CGFloat\) -&gt; CGFloat
-
-  Returns the remainder of this value divided by the given value.
-
+* _func_ remainder\(dividingBy: CGFloat\) -&gt; CGFloat 주어진 값으로 나눈 나머지를 반환합니다.
 * _func_ round\(\) "schoolbook rounding"을 사용하여 이 값을 정수값으로 반올림합니다.
 * _func_ round\(FloatingPointRoundingRule\)
 * _func_ rounded\(\) -&gt; CGFloat
