@@ -61,5 +61,5 @@ UIKit은 디스크 기반 파일에 속한 데이터 구조를 구성하기 위�
 Foundation 프레임워크는 문자열, 숫자, 배열 및 기타 데이터 타입을 나타내는 기본 객체를 정의합니다.  
 [Swift Standard Library](../../etc/not-found.md)는 Foundation 프레임워크에서 사용할 수 있는 많은 타입을 제공합니다.
 
-UIKit은 컨트롤러에 있는 대부분의 객체를 제공하고 앱의 레이어를 표시합니다. 특히, UIKit은 UIView 클래스를 정의합니다. [UIView](views_and_controls/uiview.md) 클래스는 일반적으로 화면에 내용을 표시할 책임이 있습니다. [UIApplication](core-app/uiapplication.md) 객체는 앱의 메인 이벤트 루프를 실행하고 앱의 전반적인 라이프 사이클을 관리합니다.
+UIKit은 컨트롤러에 있는 대부분의 객체를 제공하고 앱의 레이어를 표시합니다. 특히, UIKit은 UIView 클래스를 정의합니다. [UIView](views_and_controls/uiview.md) 클래스는 일반적으로 화면에 내용을 표시할 책임이 있습니다. [UIApplication](app-and-environment/uiapplication.md) 객체는 앱의 메인 이벤트 루프를 실행하고 앱의 전반적인 라이프 사이클을 관리합니다.
 
