@@ -71,7 +71,7 @@ typedef struct {
 * var pointerValue: UnsafeMutableRawPointer? 타입지정되지 않은 포인터를 값으로 반환합니다.
 * var nonretainedObjectValue: Any?
 
-  The value as a non-retained pointer to an object.
+  non-retained 객체를 반환합니다.
 
 ### Working with Range Values
 
@@ -80,7 +80,7 @@ typedef struct {
 
 ### Working with Foundation Geometry Values
 
-* init\(point: NSPoint\) Foundation point 구조체를 포함하는 값 객체를 생성합니다. Creates a new value object containing the specified Foundation point structure.
+* init\(point: NSPoint\) Foundation point 구조체를 포함하는 값 객체를 생성합니다.
 * init\(size: NSSize\) Foundation size
 
   구조체를 포함하는 값 객체를 생성합니다.
@@ -91,7 +91,7 @@ typedef struct {
 
 * var pointValue: NSPoint
 
-  Foundation point 구조체 표현 The Foundation point structure representation of the value.
+  Foundation point 구조체 표현
 
 * var sizeValue: NSSize
 
@@ -123,25 +123,13 @@ typedef struct {
 
   CoreGrapics affine transform 구조체를 포함하는 값 객체를 생성합니다.
 
-* var cgPointValue: CGPoint
-
-  Returns the CoreGraphics point structure representation of the value.
-
-* var cgVectorValue: CGVector
-
-  Returns the CoreGraphics vector structure representation of the value.
-
-* var cgSizeValue: CGSize
-
-  Returns the CoreGraphics size structure representation of the value.
-
-* var cgRectValue: CGRect
-
-  Returns the CoreGraphics rectangle structure representation of the value.
-
+* var cgPointValue: CGPoint CoreGraphics point 구조체 반환합니다.
+* var cgVectorValue: CGVector CoreGraphics vector 구조체를 반환합니다.
+* var cgSizeValue: CGSize CoreGraphics size 구조체를 반환합니다.
+* var cgRectValue: CGRect CoreGraphics rectangle 구조체를 반환합니다.
 * var cgAffineTransformValue: CGAffineTransform
 
-  Returns the CoreGraphics affine transform representation of the value.
+  CoreGraphics affine transform을 반환합니다.
 
 
 
@@ -149,19 +137,16 @@ typedef struct {
 
 * init\(uiEdgeInsets: UIEdgeInsets\)
 
-  UIkit edge inset 구조체를 포함하는 값 객체를 생성합니다.
+  UIKit edge inset 구조체를 포함하는 값 객체를 생성합니다.
 
 * init\(uiOffset: UIOffset\)
 
-  UIkit offset 구조체를 포함하는 값 객체를 생성합니다.
+  UIKit offset 구조체를 포함하는 값 객체를 생성합니다.
 
-* var uiEdgeInsetsValue: UIEdgeInsets
-
-  Returns the UIKit edge insets structure representation of the value.
-
+* var uiEdgeInsetsValue: UIEdgeInsets UIKit edge inset 구조체 반환합니다.
 * var uiOffsetValue: UIOffset
 
-  Returns the UIKit offset structure representation of the value.
+  UIKit offset 구조체를 반환합니다.
 
 ### Working with CoreAnimation Transform Values
 
@@ -169,9 +154,7 @@ typedef struct {
 
   CoreAnimation transform 구조체를 포함하는 값 객체를 생성합니다.
 
-* var caTransform3DValue: CATransform3D
-
-  The CoreAnimation transform structure representation of the value.
+* var caTransform3DValue: CATransform3D CoreAnimation transform 구조체를 반환합니다.
 
 ### Working with Media Time Values
 
@@ -187,17 +170,9 @@ typedef struct {
 
   CoreMedia time mapping 구조체를 포함하는 값 객체를 생성합니다.
 
-* var timeValue: CMTime
-
-  The CoreMedia time structure representation of the value.
-
-* var timeRangeValue: CMTimeRange
-
-  The CoreMedia time range structure representation of the value.
-
-* var timeMappingValue: CMTimeMapping
-
-  The CoreMedia time mapping structure representation of the value.
+* var timeValue: CMTime CoreMedia time 구조체를 반환합니다.
+* var timeRangeValue: CMTimeRange CoreMedia time range 구조체를 반환합니다.
+* var timeMappingValue: CMTimeMapping CoreMedia time mapping 구조체를 반환합니다.
 
 ### Working with Geographic Coordinate Values
 
@@ -209,13 +184,8 @@ typedef struct {
 
   MapKit coordinate span 구조체를 포함하는 값 객체를 생성합니다.
 
-* var mkCoordinateValue: CLLocationCoordinate2D
-
-  The CoreLocation geographic coordinate structure representation of the value.
-
-* var mkCoordinateSpanValue: MKCoordinateSpan
-
-  The MapKit coordinate span structure representation of the value.
+* var mkCoordinateValue: CLLocationCoordinate2D CoreLocation geographic coordinate 구조체를 반환합니다.
+* var mkCoordinateSpanValue: MKCoordinateSpan MapKit coordinate span 구조체를 반환합니다.
 
 ### Working with SceneKit Vector and Matrix Values
 
@@ -231,17 +201,9 @@ typedef struct {
 
   SceneKit 4 x 4 matrix를 포함하는 값 객체를 생성합니다.
 
-* var scnVector3Value: SCNVector3
-
-  The three-element Scene Kit vector representation of the value.
-
-* var scnVector4Value: SCNVector4
-
-  The four-element Scene Kit vector representation of the value.
-
-* var scnMatrix4Value: SCNMatrix4
-
-  The Scene Kit 4 x 4 matrix representation of the value.
+* var scnVector3Value: SCNVector3 three-element Scene Kit vector를 반환합니다.
+* var scnVector4Value: SCNVector4 four-element Scene Kit vector를 반환합니다.
+* var scnMatrix4Value: SCNMatrix4 Scene Kit 4 x 4 matrix를 반환합니다.
 
 ### Comparing Value Objects
 
