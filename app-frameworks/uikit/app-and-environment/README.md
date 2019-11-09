@@ -13,9 +13,9 @@ iOS 13부터는 유저가 앱 UI 인스턴스를 동시에 여러개 생성하�
 
 UIKit은 현재 환경에 대한 세부 정보들을 trait 콜렉션을 사용하여 주고받을 수 있습니다. 이 세부정보들은 기기 설정 조합, 인터페이스 설정, 사용자 설정 등을 반영합니다. 예를 들어 개발자는 현재 뷰, 또는 뷰 컨트롤러에 대해 다크모드가 활성화되었는지 확인하기 위해서 traits를 사용할 수 있습니다. 현재 환경에 따라서 [UIView](../views_and_controls/uiview.md)나 [UIViewController](../view-controllers/uiviewcontroller.md)의 컨텐츠를 커스텀하고자 한다면 해당 UIView, UIViewController 객체의 trait 콜렉션을 참조하세요. 다른 객체에서 trait 변동 노티피케이션을 받고 싶다면 [UITraitEnvironment](../../../etc/not-found.md) 프로토콜을 채택하세요.
 
-## 주제
+## 주제 <a id="topics"></a>
 
-### 라이프 사이클
+### 라이프 사이클 <a id="life-cycle"></a>
 
 * [앱 라이프 사이클 관리하기](managing_your_app_s_life_cycle.md) 앱이 foreground, background 상태에 있을 때 시스템 노티피케이션에 대응하고 시스템과 관련된 중요한 이벤트를 처리하세요.
 * 앱 실행에 대응하기 앱 데이터 구조를 초기화하고 실행시킬 준비를 하세요. 그리고 실행 중에 발생하는 시스템 요청에 대응하세요.
@@ -23,7 +23,7 @@ UIKit은 현재 환경에 대한 세부 정보들을 trait 콜렉션을 사용�
 * _protocol_ UIApplicationDelegate 앱 라이프 타임동안 발생하는 중요한 이벤트에 대해 응답하기 위해서 UIApplication 싱글턴 객체가 호출하는 메서드 집합
 * Scenes 여러 개의 앱 UI 인스턴스를 동시에 관리하고 리소스를 적절한 인스턴스에 분배하세요.
 
-### 기기 환경
+### 기기 환경 <a id="device-environment"></a>
 
 * _class_ UIDevice 현재 기기를 나타냅니다.
 * class UIStatusBarManager 상태바의 구성요소를 설명하는 객체
@@ -53,9 +53,9 @@ UIKit은 현재 환경에 대한 세부 정보들을 trait 콜렉션을 사용�
 
 \_\_
 
-## 같이 보기
+## 같이 보기 <a id="see-also"></a>
 
-### 앱 구조
+### 앱 구조 <a id="app-structure"></a>
 
 * [문서, 데이터와 클립보드](../documents-data-pasteboard.md) 앱의 데이터를 구조화하고 클립보드에서 공유하세요
 * 리소스 관리 메인 실행 파일 외부에 저장된 이미지, 문자열, 스토리 보드 및 nib 파일을 관리하세요

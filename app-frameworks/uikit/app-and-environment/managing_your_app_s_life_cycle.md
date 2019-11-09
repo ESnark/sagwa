@@ -22,7 +22,7 @@ Note
 앱이 scene을 지원한다면 13버전 이상의 iOS는 무조건 scene delegate를 사용할 것입니다. iOS 12 이하의 시스템은 app delegate를 사용합니다
 {% endhint %}
 
-### Scene 기반 라이프 사이클 이벤트에 대응하 <a id="respond-to-scene-based-life-cycle-events"></a>
+### Scene 기반 라이프 사이클 이벤트에 대응하기 <a id="respond-to-scene-based-life-cycle-events"></a>
 
 Scene을 지원하는 앱에서 UIKit은 라이프 사이클 이벤트가 발생할 때마다 각각의 이벤트를 전달합니다. Scene은 기기에서 실행되는 앱 UI의 인스턴스 하나를 의미합니다. 사용자는 각 앱에서 여러개의 scene을 생성할 수 있으며, 각각의 scene을 독립적으로 숨기거나 보이게 할 수 있습니다. 각 scene은 고유의 라이프 사이클을 가지고 있기 때문에 서로 다른 실행 상태에 있을 수 있습니다. 예를 들어 하나의 scene은 foreground에 올라와 있을 때, 나머지 scene들은 background 또는 중지상태일 수가 있습니다.
 
@@ -49,7 +49,7 @@ Scene 전환을 사용하여 다음 작업들을 수행하세요:
 
 
 
-### App 기반 라이프 사이클 이벤트에 대응하기
+### App 기반 라이프 사이클 이벤트에 대응하기 <a id="respond-to-app-based-life-cycle-events"></a>
 
 iOS 12 이하에서는 scene을 지원하지 않으며, UIKit은 모든 라이프 사이클 이벤트를 UIApplicationDelegate 객체를 통해 전달합니다. App delegate는 분리된 스크린에 표시되는 것까지 포함하여 앱의 모든 window를 관리합니다. 결과적으로, 앱 상태 전환은 외부 디스플레이에 표시되는 컨텐츠를 포함하여 앱의 전체 UI에 영향을 줍니다.
 
@@ -132,9 +132,9 @@ iOS 12 이하에서는 scene을 지원하지 않으며, UIKit은 모든 라이�
 
 * [메모리 경고에 응답하기](../../../etc/not-found.md) 시스템에서 요청하면 메모리를 확보합니다.
 
-## 같이 보기 <a id="see_also"></a>
+## 같이 보기 <a id="see-also"></a>
 
-### 라이프 사이클
+### 라이프 사이클 <a id="life-cycle"></a>
 
 * 앱 실행에 대응하기 앱 데이터 구조를 초기화하고 실행시킬 준비를 하세요. 그리고 실행 중에 발생하는 시스템 요청에 대응하세요.
 * _class_ [UIApplication](uiapplication.md) iOS에서 실행되는 앱의 제어와 조정의 중심점
