@@ -49,8 +49,8 @@ class CADisplayLink : NSObject
 
 목록 1은 디스플레이 링크를 만들고 현재 런 루프에 추가하는 방법을 보여줍니다. 디스플레이 링크는 각 화면 업데이트마다 현재 타임스탬프를 표시하는 step 함수를 호출합니다.
 
-{% code-tabs %}
-{% code-tabs-item title="목록1 디스플레이 링크 생성하기" %}
+{% tabs %}
+{% tab title="목록1 디스플레이 링크 생성하기" %}
 ```swift
 func createDisplayLink() {
     let displaylink = CADisplayLink(target: self,
@@ -64,8 +64,8 @@ func step(displaylink: CADisplayLink) {
     print(displaylink.timestamp)
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 CADisplayLink는 서브클래싱되어서는 안됩니다.
 
@@ -79,15 +79,15 @@ CADisplayLink는 서브클래싱되어서는 안됩니다.
 
 목록 2는 targetTimestamp에서 디스플레이 링크의 timestamp를 뺀 값으로 1을 나눠서 실제 프레임률을 계산하는 방법을 보여줍니다.
 
-{% code-tabs %}
-{% code-tabs-item title="목록2 실제 프레임율 계산하기" %}
+{% tabs %}
+{% tab title="목록2 실제 프레임율 계산하기" %}
 ```swift
 // displaylink is a `CADisplayLink`
 
 let actualFramesPerSecond = 1 / (displaylink.targetTimestamp - displaylink.timestamp)
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ## 주제
 

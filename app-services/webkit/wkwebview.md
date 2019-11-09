@@ -22,39 +22,23 @@ description: 인 앱 브라우저와 같이 인터렉티브 웹 컨텐츠를 표
 
 {% tabs %}
 {% tab title="Swift" %}
-{% code-tabs %}
-{% code-tabs-item title="iOS, Mac Catalyst" %}
 ```swift
 class WKWebView : UIView
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="macOS" %}
 ```swift
 class WKWebView : NSView
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 {% endtab %}
 
 {% tab title="Objective-C" %}
-{% code-tabs %}
-{% code-tabs-item title="iOS" %}
 ```objectivec
 @interface WKWebView : UIView
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="macOS" %}
 ```objectivec
 @interface WKWebView : NSView
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 {% endtab %}
 {% endtabs %}
 
@@ -76,8 +60,8 @@ WKWebView 안에서 [httpBody](../../etc/not-found.md) 컨텐츠로 POST 요청�
 
 [init\(frame:configuration:\)](../../etc/not-found.md) 메서드로 새 WKWebView 객체를 생성한 후에는 웹 컨텐츠를 로딩해야 합니다. [loadHTMLString\(\_:baseURL:\)](../../etc/not-found.md) 메서드는 로컬 HTML파일을, [load\(\_:\)](../../etc/not-found.md) 메서드로는 웹 컨텐츠의 로드를 시작할 수 있습니다. [stopLoading\(\)](../../etc/not-found.md) 메서드는 로딩을 멈추게 할 수 있으며 [isLoading](../../etc/not-found.md) 프로퍼티는 웹 뷰가 로딩중인지를 알 수 있습니다. [WKUIDelegate](../../etc/not-found.md) 프로토콜을 준수하는 객체를 delegate 프로퍼티로 지정하여 웹 컨텐츠의 로딩을 추적할 수 있습니다. Listing 1에서 WKWebView를 프로그래밍적으로 생성하는 예시를 확인하세요.
 
-{% code-tabs %}
-{% code-tabs-item title="Listing 1. 프로그래밍적으로 WKWebView 생성" %}
+{% tabs %}
+{% tab title="Listing 1. 프로그래밍적으로 WKWebView 생성" %}
 ```swift
 import UIKit
 import WebKit
@@ -99,8 +83,8 @@ class ViewController: UIViewController, WKUIDelegate {
         webView.load(myRequest)
     }}
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 사용자가 웹페이지 기록의 앞이나 뒤로 이동할 수 있게 하려면 [goBack\(\)](../../etc/not-found.md)과 [goForward\(\)](../../etc/not-found.md) 메서드를 버튼의 액션으로 지정하세요. [canGoBack](../../etc/not-found.md)과 [canGoForward](../../etc/not-found.md) 프로퍼티는 사용자가 해당 방향으로 이동하지 못하게 할 수 있습니다.
 

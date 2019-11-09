@@ -27,13 +27,13 @@ Interface Builder에서 제스처 인식기를 마우스 오른쪽 버튼으로 
 
 Listing 1은 제스처 인식기의 Action 메서드에 대한 일반적인 형식을 보여줍니다. 원하는 경우 특정 제스처 인식기 하위 클래스와 일치하도록 파라미터 유형을 변경할 수 있습니다.
 
-{% code-tabs %}
-{% code-tabs-item title="Listing 1 제스처 인식기 Action 메서드" %}
+{% tabs %}
+{% tab title="Listing 1 제스처 인식기 Action 메서드" %}
 ```swift
 @IBAction func myActionMethod(_ sender: UIGestureRecognizer)
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ## 제스처에 응답하기
 
