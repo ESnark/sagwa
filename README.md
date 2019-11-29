@@ -32,7 +32,7 @@ Swift를 기준으로 작성하고 일단은 UIKit을 우선적으로 작업하�
 * Bundle Resources
 * [Foundation](app-frameworks/foundation/)
 * [Swift](app-frameworks/swift/)
-* SwiftUI
+* [SwiftUI](app-frameworks/swiftui.md)
 * TVML
 * TVMLKit
 * TVMLKit JS
