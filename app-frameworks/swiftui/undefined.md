@@ -27,7 +27,7 @@ modifier는 뷰와 컨트롤에 다음과 같은 용도로 적용될 수 있습�
 * 애니메이션과 transition 커스터마이징
 * 스타일 설정 및 다른 환경변수 지정
 
-뷰와 컨트롤을 사용하는 더 자세한 정보는 Human Interface Guidelines를 참조하세요
+뷰와 컨트롤의 사용방법에 대한 더 자세한 정보는 Human Interface Guidelines를 참조하세요
 
 ## 주제
 
