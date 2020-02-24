@@ -24,14 +24,14 @@ description: '숫자와 날짜, 측정값과 기타 값을 로케일에 맞는 �
 
 ### 날짜와 시간
 
-* class DateFormatter Date를 텍스트 표현과 상호변환하는 Formatter
-* class DateComponentsFormatter \(양적\) 시간의 문자열 표현을 생성하는 Formatter
-* class DateIntervalFormatter 시간 간격의 문자열 표현을 생성하는 Formatter
-* class ISO8610DateFormatter ISO8610 문자열 표현과 Date를 상호변환하는 Formatter
+* _class_ DateFormatter Date를 텍스트 표현과 상호변환하는 Formatter
+* _class_ DateComponentsFormatter \(양적\) 시간의 문자열 표현을 생성하는 Formatter
+* _class_ DateIntervalFormatter 시간 간격의 문자열 표현을 생성하는 Formatter
+* _class_ ISO8610DateFormatter ISO8610 문자열 표현과 Date를 상호변환하는 Formatter
 
 ### 데이터 사이즈
 
-* class ByteCounterFormatter 바이트 카운트 값을 적절한 바이트 수정자\(ex KB, MB, GB 등\)로 지역화 하는 Formatter
+* _class_ ByteCounterFormatter 바이트 카운트 값을 적절한 바이트 수정자\(ex KB, MB, GB 등\)로 지역화 하는 Formatter
 
 ### 수치
 
