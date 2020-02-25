@@ -28,25 +28,29 @@ SwiftUI는 앱 UI를 선언하기 위한 뷰, 컨트롤, 레이아웃 구조를 
 
 SwiftUI의 뷰에 UIKit, AppKit과 WatchKit 프레임워크 객체들을 통합시켜서 플랫폼에 특화된 기능을 활용할 수 있습니다. 또한 접근성 지원을 커스텀하여 앱 인터페이스를 언어별, 국가별, 문화지역별로 로컬라이징할 수도 있습니다.
 
-## 주제
+## 주제 <a id="topics"></a>
 
 ### Essensials
 
 * [SwiftUI로 앱 만드는 방법 배우기](https://developer.apple.com/tutorials/swiftui/tutorials) 튜토리얼을 따라하면서 SwiftUI와 Xcode로 앱 만드는 방법을 배우세요.
 
-### 사용자 인터페이스
+### 사용자 인터페이스 <a id="user-interface"></a>
 
-* [뷰와 컨트롤](undefined.md) 컨텐츠를 화면에 표시하고 사용자 상호 작용을 처리하세요.
-* 뷰 레이아웃과 표현 뷰를 스택에 결합하고 뷰 그룹과 리스트를 동적으로 생성하며 뷰 표현과 계층을 정의하세요
-* 그리기와 애니메이션 색상, 모양, 그림자와 상태에 따른 커스텀 전환 애니메이션으로 뷰를 강화하세요
+* [뷰와 컨트롤](views-and-controls.md) 컨텐츠를 화면에 표시하고 사용자 상호 작용을 처리하세요.
+* [뷰 레이아웃과 표현](view-layout-and-presentation.md) 뷰를 스택에 결합하고 뷰 그룹과 리스트를 동적으로 생성하며 뷰 표현과 계층을 정의하세요
+* [그리기와 애니메이션](drawing-and-animation.md) 색상, 모양, 그림자와 상태에 따른 커스텀 전환 애니메이션으로 뷰를 강화하세요
 * 프레임워크 통합 기존의 앱에 SwiftUI 뷰를 통합시키고 AppKit, UIKit, WatchKit 뷰와 컨트롤러를 SwiftUI 뷰 계층에 내장시키세요
 
-### 데이터와 이벤트
+### 데이터와 이벤트 <a id="data-and-events"></a>
 
 * 상태와 데이터 흐름 앱 모델 내 데이터 흐름과 변경을 제어하고 대응합니다.
 * 제스처 탭, 클릭, 스와이프부터 세부 제스처까지 상호작용을 정의하세요.
 
-### Xcode 프리뷰
+### Xcode 프리뷰 <a id="previews-in-xcode"></a>
 
 * 프리뷰 커스텀 뷰의 동적 대화식 프리뷰를 생성하세요.
+
+### Structures
+
+* struct CompactDatePickerStyle `Beta`
 
