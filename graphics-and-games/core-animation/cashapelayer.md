@@ -14,7 +14,7 @@ description: 좌표공간에 cubic Bezier spline을 그리는 레이어
 > * iOS 3.0+
 > * macOS 10.6+
 > * tvOS 9.0+
-> * Mac Catalyst 13.0+
+> * Mac Catalyst 13.0+ `Beta`
 >
 > **Framework**
 >
