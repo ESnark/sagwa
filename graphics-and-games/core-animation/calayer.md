@@ -14,7 +14,7 @@ description: 이미지 기반 컨텐츠를 관리하고 해당 컨텐츠에 대�
 > * iOS 2.0+
 > * macOS 10.5+
 > * tvOS 9.0+
-> * Mac Catalyst 13.0+ `Beta`
+> * Mac Catalyst 13.0+
 >
 > **Framework**
 >
