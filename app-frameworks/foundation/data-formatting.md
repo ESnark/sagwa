@@ -9,29 +9,18 @@ description: '숫자와 날짜, 측정값과 기타 값을 로케일에 맞는 �
 
 ## 주제
 
-### First Steps
-
-* 스위프트 데이터 타입과 문자열 상호 변환하기 formatter를 사용해서 스위프트 데이터 타입을 문자열 표현으로 바꾸거나 문자열을 데이터로 변환하세요
-
 ### 숫자 및 통화
 
 * _class_ NumberFomatter 숫자값과 텍스트 표현간의 변환을 지원하는 Formatter.
 
 ### 이름
 
-* _class_ PersonNameComponentsFormatter 사람 이름의 컴포넌트를 지역화된 표현으로 제공하는 Formatter.
+* _class_ PersonNameComponentsFormatter  
+  사람 이름의 컴포넌트를 지역화된 표현으로 제공하는 Formatter.
+
+  A formatter that provides localized representations of the components of a person’s name.
+
 * _struct_ PersonNameComponents 개별 부분으로 나누어져, 로케일 포맷을 허용하는 사람 이름입니다.
-
-### 날짜와 시간
-
-* _class_ DateFormatter Date를 텍스트 표현과 상호변환하는 Formatter
-* _class_ DateComponentsFormatter \(양적\) 시간의 문자열 표현을 생성하는 Formatter
-* _class_ DateIntervalFormatter 시간 간격의 문자열 표현을 생성하는 Formatter
-* _class_ ISO8610DateFormatter ISO8610 문자열 표현과 Date를 상호변환하는 Formatter
-
-### 데이터 사이즈
-
-* _class_ ByteCounterFormatter 바이트 카운트 값을 적절한 바이트 수정자\(ex KB, MB, GB 등\)로 지역화 하는 Formatter
 
 ### 수치
 
@@ -41,17 +30,27 @@ description: '숫자와 날짜, 측정값과 기타 값을 로케일에 맞는 �
 
 * _struct_ Locale
 
-  데이터를 포맷화하는데 사용되는 언어적, 문화적, 기술적 컨벤션에 대한 정보
+  Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
 
 ### 커스텀 포맷
 
-* _class_ Formatter 데이터의 텍스트 표현을 생성, 변환, 검증하는 객체의 인터페이스를 선언하는 추상 클래스
+* _class_ Formatter
+
+  An abstract class that declares an interface for objects that create, interpret, and validate the textual representation of values.
 
 ### Deprecated
 
-* _class_ LengthFormatter 길이, 높이와 같은 직선거리 수치를 지역화 된 표현으로 제공하는 Formatter.
-* _class_ MassFormatter 질량과 무게값을 지역화 된 표현으로 제공하는 Formatter.
-* _class_ EnergyFormatter 에너지값을 지역화 된 표현으로 제공하는 Formatter.
+* _class_ LengthFormatter
+
+  A formatter that provides localized descriptions of linear distances, such as length and height measurements.
+
+* _class_ MassFormatter
+
+  A formatter that provides localized descriptions of mass and weight values.
+
+* _class_ EnergyFormatter
+
+  A formatter that provides localized descriptions of energy values.
 
 ## 같이 보기
 

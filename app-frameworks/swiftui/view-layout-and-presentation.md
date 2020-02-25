@@ -28,7 +28,7 @@ description: 뷰를 스택에 결합하고 뷰 그룹과 리스트를 동적으�
 
 * struct HStack 자식 뷰를 수평선에 배치하는 뷰
 * struct VStack 자식 뷰를 수직선에 배치하는 뷰
-* struct ZStack 자식 뷰를 같은 축에 겹쳐서 배치하는 
+* struct ZStack 자식 뷰를 같은 축에 겹쳐서 배치하는 뷰
 
 ### 리스트와 스크롤 뷰
 
