@@ -10,7 +10,7 @@
 > * iOS 2.0+
 > * macOS 10.3+
 > * tvOS 9.0+
-> * Mac Catalyst 13.0+ `Beta`
+> * Mac Catalyst 13.0+
 
 ## 개요
 
@@ -135,16 +135,17 @@ Core Animation은 CPU에 부담을 주지 않고 앱 속도를 저하시키지 �
 
 * _class_ CAMetalLayer
 
-  Metal로 그릴수 있는 풀을 관리하는 레이어
+  Metal이 렌더링 할 수 있는 코어 애니메이션 레이어로써, 일반적으로 화면에 표시됩니다.
 
 * _protocol_ CAMetalDrawable
 
-  Metal로 렌더링되거나 작성될 수 있는 표시 가능한 리소스
+  코어 애니메이션 레이어와 관련되어 Metal이 그릴 수 있게 해줍니다.
 
 * ~~_class_ CAEAGLLayer~~
 
   A layer that supports drawing OpenGL content in iOS and tvOS applications. `Deprecated`
 
+* class CAEDRMetadata 확장 다이나믹 레인지 \(EDR\) 값을 톤 매핑하는 방법을 설명하는 메타 데이터
 * ~~_class_ CAOpenGLLayer~~
 
   A layer that provides a layer suitable for rendering OpenGL content. `Deprecated`
