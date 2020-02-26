@@ -15,21 +15,21 @@ description: 컨텐츠를 화면에 표시하고 사용자 상호 작용을 처�
 
 ## Overview
 
-View와 컨트롤은 앱 UI의 시각적인 블록으로써, 앱 컨텐츠를 화면에 표시하는데 사용됩니다. View는 텍스트, 이미지, 모양, Custom drawing과 이것들이 조합된 구성요소들을 나타낼 수 있습니다. 컨트롤은 플랫폼 및 맥락과 일치하는 일관된 API로 사용자가 상호작용할 수 있게 해줍니다.
+뷰와 컨트롤은 앱 UI의 시각적인 블록으로써, 앱 컨텐츠를 화면에 표시하는데 사용됩니다. 뷰는 텍스트, 이미지, 모양, Custom drawing과 이것들이 조합된 구성요소들을 나타낼 수 있습니다. 컨트롤은 플랫폼 및 맥락과 일치하는 일관된 API로 사용자가 상호작용할 수 있게 해줍니다.
 
-컴바인 View는 시각적 관계와 계층을 지정하기 위해서 컨테이너를 사용합니다. modifers라고 불리는 메서드를 사용하면 화면, 동작, 내장된 View와 앱을 위해 생성된 View의 상호작용성을 커스텀할 수 있습니다.
+컴바인 뷰는 시각적 관계와 계층을 지정하기 위해서 컨테이너를 사용합니다. modifers라고 불리는 메서드를 사용하면 화면, 동작, 내장된 뷰와 앱을 위해 생성된 뷰의 상호작용성을 커스텀할 수 있습니다.
 
-modifier는 View와 컨트롤에 다음과 같은 용도로 적용될 수 있습니다:
+modifier는 뷰와 컨트롤에 다음과 같은 용도로 적용될 수 있습니다:
 
-* View의 크기, 위치와 모양 속성 조정하기
+* 뷰의 크기, 위치와 모양 속성 조정하기
 * 탭, 제스처 등의 사용자 상호작용에 응답하기
 * 드래그 앤 드롭 지원
 * 애니메이션과 transition 커스터마이징
 * 스타일 설정 및 다른 환경변수 지정
 
-View와 컨트롤의 사용방법에 대한 더 자세한 정보는 Human Interface Guidelines를 참조하세요
+뷰와 컨트롤의 사용방법에 대한 더 자세한 정보는 Human Interface Guidelines를 참조하세요
 
-## 주제 <a id="topics"></a>
+## 주제
 
 ### Essentials
 
@@ -39,14 +39,14 @@ View와 컨트롤의 사용방법에 대한 더 자세한 정보는 Human Interf
 
 ### Text
 
-* _struct_ Text 한 줄 이상의 읽기전용 텍스트를 보여주는 View
+* _struct_ Text 한 줄 이상의 읽기전용 텍스트를 보여주는 뷰
 * _struct_ TextField 편집 가능한 텍스트 인터페이스를 보여주는 컨트롤
 * _struct_ SecureField 사용자가 노출되지 않는 텍스트를 입력할 수 있는 컨트롤
 * _struct_ Font 실행환경에 의존적인 폰트
 
 ### Images
 
-* _struct_ Image 실행환경에 의존적인 이미지를 표시하는 View
+* _struct_ Image 실행환경에 의존적인 이미지를 표시하는 뷰
 
 ### Buttons
 
@@ -66,14 +66,14 @@ View와 컨트롤의 사용방법에 대한 더 자세한 정보는 Human Interf
 
 ### Supporting Types
 
-* _struct_ ViewBuilder 클로저로부터 View를 구성해내는 커스텀 파라미터 속성
-* _protocol_ ViewModifier View나 다른 ViewModifier에 적용되는 수정자\(modifier\)로써, 원본 값과 다른 버전을 생성해냅니다.
+* _struct_ ViewBuilder 클로저로부터 뷰를 구성해내는 커스텀 파라미터 속성
+* _protocol_ ViewModifier 뷰나 다른 ViewModifier에 적용되는 수정자\(modifier\)로써, 원본 값과 다른 버전을 생성해냅니다.
 
-## 같이 보기 <a id="see-also"></a>
+## 같이 보기
 
-### 사용자 인터페이스 <a id="user-interface"></a>
+### 사용자 인터페이스
 
-* [뷰 레이아웃과 표현](view-layout-and-presentation.md) 뷰를 스택에 결합하고 뷰 그룹과 리스트를 동적으로 생성하며 뷰 표현과 계층을 정의하세요
-* [그리기와 애니메이션](drawing-and-animation.md) 색상, 모양, 그림자와 상태에 따른 커스텀 전환 애니메이션으로 뷰를 강화하세요
-* [프레임워크 통합](framework-intergration.md) 기존의 앱에 SwiftUI 뷰를 통합시키고 AppKit, UIKit, WatchKit 뷰와 컨트롤러를 SwiftUI 뷰 계층에 내장시키세요
+* 뷰 레이아웃과 표현 뷰를 스택에 결합하고 뷰 그룹과 리스트를 동적으로 생성하며 뷰 표현과 계층을 정의하세요
+* 그리기와 애니메이션 색상, 모양, 그림자와 상태에 따른 커스텀 전환 애니메이션으로 뷰를 강화하세요
+* 프레임워크 통합 기존의 앱에 SwiftUI 뷰를 통합시키고 AppKit, UIKit, WatchKit 뷰와 컨트롤러를 SwiftUI 뷰 계층에 내장시키세요
 

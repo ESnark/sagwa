@@ -76,10 +76,11 @@
       * [UnsafePointer](app-frameworks/swift/swift-standard-library/manual-memory-management/unsafepointer.md)
       * [UnsafeMutableRawBufferPointer](app-frameworks/swift/swift-standard-library/manual-memory-management/unsafemutablerawbufferpointer.md)
 * [SwiftUI](app-frameworks/swiftui/README.md)
-  * [뷰와 컨트롤](app-frameworks/swiftui/views-and-controls.md)
+  * [뷰와 컨트롤](app-frameworks/swiftui/undefined.md)
   * [뷰 레이아웃과 표현](app-frameworks/swiftui/view-layout-and-presentation.md)
   * [그리기와 애니메이션](app-frameworks/swiftui/drawing-and-animation.md)
   * [프레임워크 통합](app-frameworks/swiftui/framework-intergration.md)
+  * [상태와 데이터 흐름](app-frameworks/swiftui/state-and-data-flow.md)
 
 ## Graphics and Games
 

@@ -36,15 +36,15 @@ SwiftUI의 뷰에 UIKit, AppKit과 WatchKit 프레임워크 객체들을 통합�
 
 ### 사용자 인터페이스 <a id="user-interface"></a>
 
-* [뷰와 컨트롤](views-and-controls.md) 컨텐츠를 화면에 표시하고 사용자 상호 작용을 처리하세요.
+* [뷰와 컨트롤](views-and-controls.md) 컨텐츠를 화면에 표시하고 사용자 상호 작용을 처리하세요
 * [뷰 레이아웃과 표현](view-layout-and-presentation.md) 뷰를 스택에 결합하고 뷰 그룹과 리스트를 동적으로 생성하며 뷰 표현과 계층을 정의하세요
 * [그리기와 애니메이션](drawing-and-animation.md) 색상, 모양, 그림자와 상태에 따른 커스텀 전환 애니메이션으로 뷰를 강화하세요
 * [프레임워크 통합](framework-intergration.md) 기존의 앱에 SwiftUI 뷰를 통합시키고 AppKit, UIKit, WatchKit 뷰와 컨트롤러를 SwiftUI 뷰 계층에 내장시키세요
 
 ### 데이터와 이벤트 <a id="data-and-events"></a>
 
-* 상태와 데이터 흐름 앱 모델 내 데이터 흐름과 변경을 제어하고 대응합니다.
-* 제스처 탭, 클릭, 스와이프부터 세부 제스처까지 상호작용을 정의하세요.
+* [상태와 데이터 흐름](state-and-data-flow.md) 앱 모델 내 데이터 흐름과 변경을 제어하고 대응합니다
+* 제스처 탭, 클릭, 스와이프부터 세부 제스처까지 상호작용을 정의하세요
 
 ### Xcode 프리뷰 <a id="previews-in-xcode"></a>
 
