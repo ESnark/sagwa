@@ -19,7 +19,7 @@ State와 Binding은 View를 앱에 내재한 데이터 모델과 연결시킵니
 
 State 멤버 변수를 각 View에 연결하는 Binding을 생성하세요. Binding은 양방향 연결을 제공하여 화면상의 컨트롤로 State를 변경할 수 있습니다. Binding에는 View 간에 값을 전달하는 트랜잭션 기능도 포함되어 있습니다.
 
-## 주제 <a id="topics"></a>
+## Topics
 
 ### Essentials
 
@@ -27,30 +27,30 @@ State 멤버 변수를 각 View에 연결하는 Binding을 생성하세요. Bind
 
 ### Bindings
 
-* _struct_ Binding 값을 변경할 수 있는 관리자
+* struct Binding 값을 변경할 수 있는 관리자
 
 ### Data-Dependent Views
 
-* _struct_ State View가 읽고 모니터 할 수 있는 지속적인 값 
-* _struct_ ObservedObject
-* _struct_ EnvironmentObject 동적 View 속성으로써, 조상 View로부터 제공받아 사용하는 바인딩 가능한 객체이며 언제든지 변경이 일어나면 현재의 View를 무효화합니다.
-* _struct_ FetchRequest
-* _struct_ FetchedResults
-* _protocol_ DynamicProperty View의 외부 속성을 업데이트하는 저장된 변수
+* struct State View가 읽고 모니터 할 수 있는 지속적인 값 
+* struct ObservedObject
+* struct EnvironmentObject 동적 View 속성으로써, 조상 View로부터 제공받아 사용하는 바인딩 가능한 객체이며 언제든지 변경이 일어나면 현재의 View를 무효화합니다.
+* struct FetchRequest
+* struct FetchedResults
+* protocol DynamicProperty View의 외부 속성을 업데이트하는 저장된 변수
 
 ### Environment Values
 
-* _struct_ Environment View의 환경으로부터 읽어오는 동적 View 속성
-* _struct_ EnvironmentValues 환경값의 collection
+* struct Environment View의 환경으로부터 읽어오는 동적 View 속성
+* struct EnvironmentValues 환경값의 collection
 
 ### Preferences
 
-* _protocol_ PreferenceKey View에서 생성된 기명 값
-* _struct_ LocalizedStringKey 문자열 파일이나 문자열 dictionary 파일로부터 문자열을 검색하는데 사용되는 키
+* protocol PreferenceKey View에서 생성된 기명 값
+* struct LocalizedStringKey 문자열 파일이나 문자열 dictionary 파일로부터 문자열을 검색하는데 사용되는 키
 
 ### Transactions
 
-* _struct_ Transaction 현재 State 프로세싱 업데이트의 컨텍스트
+* struct Transaction 현재 State 프로세싱 업데이트의 컨텍스트
 
 ## 같이 보기 <a id="see-also"></a>
 
