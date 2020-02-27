@@ -28,7 +28,7 @@ class AVAudioSession : NSObject
 > **SDKs**
 >
 > * iOS 3.0+
-> * Mac Catalyst 13.0+ `Beta`
+> * Mac Catalyst 13.0+
 > * tvOS 9.0+
 > * watchOS 2.0+
 >
@@ -36,7 +36,7 @@ class AVAudioSession : NSObject
 >
 > * AVFoundation
 
-## 개요
+## 개요 <a id="overview"></a>
 
 오디오 세션은 앱과 운영체제 \(또는 그 아래의 오디오 하드웨어\) 사이의 중간자 역할을 수행합니다. 오디오 세션을 사용하면 앱이 사용하는 오디오의 특성에 대해서 운영체제에 알림으로써 특정 오디오 동작이나 요구되는 하드웨어와의 상호작용을 자세히 설명할 필요가 없어집니다. 이 방식은 이런 오디오 세션의 세부사항 관리를 위임시켜서 운영체제가 사용자의 오디오 경험을 최상으로 관리하도록 합니다.
 
@@ -74,41 +74,41 @@ Note
 카테고리를 설정한 후 언제든지 오디오 세션을 활성화 할 수 있지만 일반적으로는 앱에서 오디오 재생을 시작할 때까지 호출을 연기하는 것이 좋습니다. 호출을 연기함으로써 진행중인 다른 백그라운드 오디오가 너무 일찍 도중에 중단되지 않도록 할 수 있습니다.
 {% endhint %}
 
-## 주제
+## 주제 <a id="topics"></a>
 
-### First Steps
-
-카테고리, 모드 및 선호 장치 세팅을 설정하려면 앱의 싱글톤 오디오 세션 인스턴스에 접근하세요.
+### 오디오 세션 접근 <a id="getting-the-audio-session"></a>
 
 * _class_ _func_ sharedInstance\(\) -&gt; AVAudioSession 공유 오디오 세션 인스턴스를 반환합니다.
 
-### 오디오 세션 설정
-
-오디오 세션의 카테고리, 모드, 옵션을 설정하세요.
+### 오디오 세션 설정 <a id="configuring-the-audio-session"></a>
 
 * _var_ category: AVAudioSession.Category 현재 오디오 세션 카테고리
 * _func_ setCategory\(AVAudioSession.Category\) 현재 오디오 세션 카테고리를 새로 설정합니다.
-* _func_ setCategory\(AVAudioSession.Category, options: AVAudioSession.CategoryOptions\) 오디오 세션 카테고리를 지정된 옵션과 같이 설정합니다.
-* _func_ setCategory\(AVAudioSession.Category, mode: AVAudioSession.Mode, options: AVAudioSession.CategoryOptions\) 오디오 세션을 지정된 카테고리, 모드, 옵션으로 설정합니다.
 * _var_ availableCategories: \[AVAudioSession.Category\] 현재 기기에서 사용가능한 오디오 세션 카테고리
+* _struct_ [AVAudioSession.Category](avaudiosession.category/) 오디오 세션 카테고리 식별자
 * _var_ categoryOptions: AVAudioSession.CategoryOptions 현재 오디오 세션 카테고리와 관련된 옵션 마스크
+* _func_ setCategory\(AVAudioSession.Category, options: AVAudioSession.CategoryOptions\) 오디오 세션 카테고리를 지정된 옵션과 같이 설정합니다.
+* struct AVAudioSession.CategoryOptions 오디오 동작 옵션을 가리키는 상수
 * _var_ mode: AVAudioSession.Mode 현재 오디오 세션 모드
 * _func_ setMode\(AVAudioSession.Mode\)
 
-  현재 오디오 세션 모드를 새로 설정합니다.
+  현재 오디오 세션 모드를 설정합니다.
 
+* _func_ setCategory\(AVAudioSession.Category, mode: AVAudioSession.Mode, options: AVAudioSession.CategoryOptions\) 오디오 세션을 지정된 카테고리, 모드, 옵션으로 설정합니다.
 * _var_ availableModes: \[AVAudioSession.Mode\] 현재 기기에서 사용가능한 오디오 세션 모드
+* _struct_ [AVAudioSession.Mode](avaudiosession.mode.md) 오디오 세션 모드 식별자
+* _var_ routeSharingPolicy: AVAudioSession.RouteSharingPolicy 현재 라우트 공유 정책
+* _func_ setCategory\(AVAudioSession.Category, mode: AVAudioSession.Mode, policy: AVAudioSession.RouteSharingPolicy, options: AVAudioSession.CategoryOptions\) 오디오 세션을 지정된 카테고리, 모드, 라우트 공유 정책, 옵션으로 설정합니다.
+* _enum_ AVAudioSession.RouteSharingPolicy 오디오 세션에 사용 가능한 라우트 공유 정책을 가리킵니다.
 
-### 오디오 세션 활성화
-
-설정된 카테고리와 옵션대로 오디오 세션을 활성화 합니다.
+### 오디오 세션 활성화 <a id="activating-the-audio-session"></a>
 
 * _func_ setActive\(Bool, options: AVAudioSession.SetActiveOptions\) 지정된 옵션을 사용하여 앱의 오디오 세션을 활성화 또는 비활성화합니다.
 * _func_ activate\(options: AVAudioSessionActivationOptions, completionHandler: \(Bool, Error?\) -&gt; Void\)
 
   watchOS의 오디오 세션을 비동기적으로 활성화합니다.
 
-### 녹음 권한 요청
+### 녹음 권한 요청 <a id="requesting-permission-to-record"></a>
 
 오디오 녹음을 위한 권한을 사용자에게 명시적으로 요청하세요.
 
@@ -117,16 +117,19 @@ Note
 * _var_ recordPermission: AVAudioSession.RecordPermission 현재 녹음 권한 상태값
 * _func_ requestRecordPermission\(PermissionBlock\) 사용자에게 오디오 녹음 권한을 요청합니다.
 
-### 다른 오디오에 응답
-
-오디오 재생 방법, 또는 재생 여부를 결정하기 위해서 다른 앱에서 재생하고 있는 백그라운드 오디오가 있는지 확인하세요.
+### 다른 오디오와 믹싱 <a id="mixing-with-other-audio"></a>
 
 * _var_ isOtherAudioPlaying: Bool 다른 앱이 현재 오디오 재생중인지를 나타내는 Boolean 값
 * _var_ secondaryAudioShouldBeSilencedHint: Bool
 
   A Boolean value that indicates whether another application is playing audio.
 
-### 오디오 세션 노티피케이션에 응답
+* _var_ allowHapticsAndSystemSoundsDuringRecording: Bool A Boolean value that indicates whether system sounds and haptics play while recording from audio input.
+* _func_ setAllowHapticsAndSystemSoundsDuringRecording\(Bool\) Sets a Boolean value that indicates whether system sounds and haptics play while recording from audio input.
+* _var_ promptStyle: AVAudioSession.PromptStyle A hint to audio sessions that use voice prompt mode to alter the type of prompts they issue in response to other system audio, such as Siri and phone calls.
+* _enum_ AVAudioSession.PromptStyle Constants that indicate the prompt style to use.
+
+### 오디오 세션 노티피케이션에 응답 <a id="responding-to-audio-session-notifications"></a>
 
 오디오 세션을 활성화 시키기 전에 상태 변화 노티피케이션의 수신을 등록하세요.
 
@@ -148,15 +151,17 @@ AVAudioSession은 세션 중단, 경로 변경, 미디어 서비스 리셋과 �
 오디오 경로\(route\)는 오디오 신호의 전기적인 통로입니다. 기기의 오디오 경로 상태를 점검하고 우선하는 입력/출력 경로를 설정하세요.
 
 * _var_ currentRoute: AVAudioSessionRouteDescription 현재 오디오 입출력 경로를 설명하는 객체
+* _class_ AVAudioSessionRouteDescription 세션의 현재 오디오 경로와 관련된 입출력 포트를 설명하는 객체
 * _var_ isInputAvailable: Bool 오디오 입력 경로의 사용가능 여부를 나타내는 Boolean 값
 * _var_ availableInputs: \[AVAudioSessionPortDescription\]? 라우팅에 사용수 있는 입력 포트의 배열
 * _var_ preferredInput: AVAudioSessionPortDescription? 우선되는 오디오 라우팅 입력 포트
 * _func_ setPreferredInput\(AVAudioSessionPortDescription?\) 우선되는 오디오 라우팅 입력 포트를 설정합니다.
+* _class_ AVAudioSessionPortDescription 포트의 기능과 포트에서 지원하는 하드웨어 채널에 대한 정보
+* _var_ inputDataSource: AVAudioSessionDataSourceDescription? 현재 선택된 입력 데이터 소스
 * _var_ inputDataSources: \[AVAudioSessionDataSourceDescription\]?
 
   현재 오디오 세션 입력 포트로 사용가능한 데이터 소스의 배열
 
-* _var_ inputDataSource: AVAudioSessionDataSourceDescription? 현재 선택된 입력 데이터 소스
 * _func_ setInputDataSource\(AVAudioSessionDataSourceDescription?\) 데이터 소스를 오디오 세션의 입력 포트로 선택합니다.
 * _var_ outputDataSources: \[AVAudioSessionDataSourceDescription\]? 현재 오디오 출력 경로로 사용 가능한 데이터 소스의 배열
 * _var_ outputDataSource: AVAudioSessionDataSourceDescription?
@@ -164,21 +169,12 @@ AVAudioSession은 세션 중단, 경로 변경, 미디어 서비스 리셋과 �
   현재 선택된 출력 데이터 소스
 
 * _func_ setOutputDataSource\(AVAudioSessionDataSourceDescription?\) 오디오 세션의 출력 데이터 소스를 설정합니다.
+* _class_ AVAudioSessionDataSourceDescription 오디오 입출력 데이터 소스를 정의하고 소스의 이름과 위치, 방향 등의 정보를 제공합니다.
 * _func_ overrideOutputAudioPort\(AVAudioSession.PortOverride\)
 
   일시적으로 현재 오디오 경로를 변경합니다.
 
-* _var_ routeSharingPolicy: AVAudioSession.RouteSharingPolicy
-
-  현재 라우팅 정책
-
-* _func_ setCategory\(AVAudioSession.Category, mode: AVAudioSession.Mode, policy: AVAudioSession.RouteSharingPolicy, options: AVAudioSession.CategoryOptions\)
-
-  지정된 카테고리, 모드, 라우트 공유 정책과 옵션으로 세션을 설정합니다.
-
 ### 오디오 채널 작업
-
-현재 오디오 장치에서 사용가능한 오디오 입출력 채널의 갯수를 점검하고 설정합니다.
 
 * _var_ inputNumberOfChannels: Int
 
@@ -239,60 +235,25 @@ Starting with iOS 10, [AVCaptureSession](../../../../etc/not-found.md) has chang
 
   Sets the audio session's aggregated I/O configuration preference.
 
-### 상수
+### 에러 <a id="errors"></a>
 
-* 오디오 세션 카테고리
+* _enum_ AVAudioSession.ErrorCode 오디오 세션 작업 중에 발생할 가능성이 있는 에러 조건을 서술하는 코드
 
-  세션의 카테고리 속성을 설정하는데 사용되는 오디오 세션의 카테고리 식별자
+### 인스턴스 메서드 <a id="instance-methods"></a>
 
-* Audio Session Modes
+* _func_ prepareRouteSelectionForPlayback\(completionHandler: \(Bool, AVAudioSession.RouteSelection\) -&gt; Void\)
 
-  세션의 모드 속성을 설정하는데 사용되는 오디오 세션의 모드 식별자
+### 열거값 <a id="enumerations"></a>
 
-* Audio Session Error Codes
+* _enum_ AVAudioSession.RouteSelection
 
-  AVAudioSession 메서드에서 반환되는 NSError 객체에서 사용되는 에러 코드
+## 관련 문서 <a id="relationships"></a>
 
-* _enum_ AVAudioSession.RouteSharingPolicy 오디오 세션에 가능한 라우트 공유 정책을 나타내는 열거값
-
-### 지원 타입
-
-* _class_ AVAudioSessionChannelDescription 현재 장치의 하드웨어 채널에 대한 설명 정보를 제공합니다.
-* _class_ AVAudioSessionDataSourceDescription 오디오 입출력 데이터 소스를 정의하고 소스의 이름과 위치, 방향 등의 정보를 제공합니다.
-* _class_ AVAudioSessionPortDescription 포트의 기능과 포트에서 지원하는 하드웨어 채널에 대한 정보
-* _class_ AVAudioSessionRouteDescription 세션의 현재 오디오 경로와 관련된 입출력 포트를 관리합니다.
-
-### Type Aliases
-
-* \_\_[_struct_ AVAudioSession.Category](avaudiosession.category/)
-* _struct_ AVAudioSession.Location
-* \_\_[_struct_ AVAudioSession.Mode](avaudiosession.mode.md)
-* _struct_ AVAudioSession.Orientation
-* _struct_ AVAudioSession.PolarPattern
-* _struct_ AVAudioSession.Port
-
-### 인스턴스 속성
-
-* _var_ allowHapticsAndSystemSoundsDuringRecording: Bool `Beta`
-* _var_ promptStyle: AVAudioSession.PromptStyle `Beta`
-
-### 인스턴스 메서드
-
-* _func_ prepareRouteSelectionForPlayback\(completionHandler: \(Bool, AVAudioSession.RouteSelection\) -&gt; Void\) `Beta`
-* _func_ setAllowHapticsAndSystemSoundsDuringRecording\(Bool\) `Beta`
-
-### 열거값
-
-* _enum_ AVAudioSession.RouteSelection `Beta`
-* _enum_ AVAudioSession.PromptStyle
-
-## 관련 문서
-
-### 상속
+### 상속 <a id="inherits-from"></a>
 
 * NSObject
 
-### 준수하는 프로토콜
+### 준수하는 프로토콜 <a id="conforms-to"></a>
 
 * CVarArg
 * Equatable
