@@ -19,7 +19,7 @@ State와 Binding은 View를 앱에 내재한 데이터 모델과 연결시킵니
 
 State 멤버 변수를 각 View에 연결하는 Binding을 생성하세요. Binding은 양방향 연결을 제공하여 화면상의 컨트롤로 State를 변경할 수 있습니다. Binding에는 View 간에 값을 전달하는 트랜잭션 기능도 포함되어 있습니다.
 
-## Topics
+## 주제 <a id="topics"></a>
 
 ### Essentials
 
