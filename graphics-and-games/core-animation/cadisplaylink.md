@@ -13,7 +13,7 @@ description: 애플리케이션에서 드로잉을 디스플레이의 주사율�
 >
 > * iOS 3.1+
 > * tvOS 9.0+
-> * Mac Catalyst 13.0+ `Beta`
+> * Mac Catalyst 13.0+
 >
 > **Framework**
 >

@@ -14,7 +14,7 @@ description: 객체가 CALayer 변경에 의해 트리거 된 액션에 응답�
 > * iOS 2.0+
 > * macOS 10.5+
 > * tvOS 9.0+
-> * Mac Catalyst 13.0+ `Beta`
+> * Mac Catalyst 13.0+
 >
 > **Framework**
 >

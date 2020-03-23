@@ -39,15 +39,10 @@ AVFoundation 프레임워크는 애플 플랫폼에서 시청각 미디어의 �
 
 ### 클래스
 
-* class AVAudioSinkNode `Beta`
-* class AVAudioSourceNode `Beta`
-* class AVCompositionTrackFormatDescriptionReplacement `Beta`
-* class AVVideoCompositionRenderHint `Beta`
-
-### Property List Keys
-
-* Property List Key NSCameraUsageDescription 앱이 장치의 카메라 사용권한을 요청하는 이유를 사용자에게 알려주는 메세지.
-* Property List Key NSMicrophoneUsageDescription 앱이 장치의 마이크 사용권한을 요청하는 이유를 사용자에게 알려주는 메세지.
+* class AVAudioSinkNode
+* class AVAudioSourceNode
+* class AVCompositionTrackFormatDescriptionReplacement
+* class AVVideoCompositionRenderHint
 
 ### 참고
 
