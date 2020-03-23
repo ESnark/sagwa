@@ -69,7 +69,9 @@ Important
 
 ### 준수하는 프로토콜
 
-Equatable, Hashable, RawRepresentable
+* Equatable
+* Hashable
+* RawRepresentable
 
 ## 같이 보기
 
@@ -89,7 +91,6 @@ Equatable, Hashable, RawRepresentable
 
 * _func_ setCategory\(AVAudioSession.Category, mode: AVAudioSession.Mode, options: AVAudioSession.CategoryOptions\) 오디오 세션을 지정된 카테고리, 모드, 옵션으로 설정합니다.
 * _var_ availableModes: \[AVAudioSession.Mode\] 현재 기기에서 사용가능한 오디오 세션 모드
-* _struct_ [AVAudioSession.Mode](avaudiosession.mode.md) 오디오 세션 모드 식별자
 * _var_ routeSharingPolicy: AVAudioSession.RouteSharingPolicy 현재 라우트 공유 정책
 * _func_ setCategory\(AVAudioSession.Category, mode: AVAudioSession.Mode, policy: AVAudioSession.RouteSharingPolicy, options: AVAudioSession.CategoryOptions\) 오디오 세션을 지정된 카테고리, 모드, 라우트 공유 정책, 옵션으로 설정합니다.
 * _enum_ AVAudioSession.RouteSharingPolicy 오디오 세션에 사용 가능한 라우트 공유 정책을 가리킵니다.
