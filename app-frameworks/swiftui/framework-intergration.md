@@ -54,7 +54,7 @@ description: '기존의 앱에 SwiftUI 뷰를 통합시키고 AppKit, UIKit, Wat
 
 ### 사용자 인터페이스 <a id="user-interface"></a>
 
-* [뷰와 컨트롤](views-and-controls.md) 컨텐츠를 화면에 표시하고 사용자 상호 작용을 처리하세요.
+* [뷰와 컨트롤](views-and-controls/) 컨텐츠를 화면에 표시하고 사용자 상호 작용을 처리하세요.
 * [뷰 레이아웃과 표현](view-layout-and-presentation.md) 뷰를 스택에 결합하고 뷰 그룹과 리스트를 동적으로 생성하며 뷰 표현과 계층을 정의하세요
 * [그리기와 애니메이션](drawing-and-animation.md) 색상, 모양, 그림자와 상태에 따른 커스텀 전환 애니메이션으로 뷰를 강화하세요
 
