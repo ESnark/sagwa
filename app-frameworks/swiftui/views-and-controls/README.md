@@ -33,7 +33,7 @@ View와 컨트롤의 사용방법에 대한 더 자세한 정보는 Human Interf
 
 ### Essentials
 
-* _protocol_ View 앱 UI의 일부분을 표시하고 뷰를 구성하는데 사용되는 modifier를 제공하는 타입
+* _protocol_ [View](view.md) 앱 UI의 일부분을 표시하고 뷰를 구성하는데 사용되는 modifier를 제공하는 타입
 * [뷰의 생성과 조합](https://developer.apple.com/tutorials/swiftui/creating-and-combining-views) 이 튜토리얼은 여러분이 좋아하는 장소를 발견하고 공유하는 _Landmarks_라는 iOS 앱을 만들면서 진행됩니다. 여러분은 랜드마크의 상세정보를 보여주는 화면을 구성하는 것부터 시작하게 될 것입니다.
 * [UI 컨트롤로 작업하기](https://developer.apple.com/tutorials/swiftui/working-with-ui-controls) Landmarks 앱에서는 사용자가 프로필을 작성함으로써 개성을 표현할 수 있습니다. 사용자들에게 자기 자신의 프로필을 수정할 수 있는 기능을 제공하기 위해서 여러분들은 편집모드를 추가하고 설정 화면을 디자인하게 될 것입니다.
 

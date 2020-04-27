@@ -96,7 +96,7 @@ Text("Title")
 
 ### 커스텀 뷰 구현
 
-* var body: Self.Body 뷰의 동작과 컨텐츠 **필수.** 기본 구현이 제공됩니다
+* _var_ body: Self.Body 뷰의 동작과 컨텐츠 **필수.** 기본 구현이 제공됩니다
 
 ### 뷰  설정
 
@@ -113,21 +113,21 @@ Text("Title")
 
 ### Xcode에서 Preview 구성하기
 
-* func previewDevice\(PreviewDevice?\) -&gt; View Preview의 장치를 재정의합니다.
-* func previewDisplayName\(String?\) -&gt; View 에디터에서 사용자에게 보여질 이름을 제공합니다.
-* func previewLayout\(PreviewLayout\) -&gt; View Preview 컨테이너의 크기를 재정의합니다.
+* _func_ previewDevice\(PreviewDevice?\) -&gt; View Preview의 장치를 재정의합니다.
+* _func_ previewDisplayName\(String?\) -&gt; View 에디터에서 사용자에게 보여질 이름을 제공합니다.
+* _func_ previewLayout\(PreviewLayout\) -&gt; View Preview 컨테이너의 크기를 재정의합니다.
 
 ### 뷰 식별하기
 
-* func id&lt;ID&gt;\(ID\) -&gt; View 삽입, 삭제가 가능하며 유일하게 식별되는 뷰를 생성합니다.
-* func equatable\(\) -&gt; EquatableView&lt;Self&gt; 새 값이 기존 값과 동일할 때 뷰가 자식뷰를 업데이트 하지 않도록 합니다. Self가 Equatable을 준수할 때 사용가능합니다.
-* associatedtype Body 뷰의 본문을 나타내는 뷰 타입 **필수**
+* _func_ id&lt;ID&gt;\(ID\) -&gt; View 삽입, 삭제가 가능하며 유일하게 식별되는 뷰를 생성합니다.
+* _func_ equatable\(\) -&gt; EquatableView&lt;Self&gt; 새 값이 기존 값과 동일할 때 뷰가 자식뷰를 업데이트 하지 않도록 합니다. Self가 Equatable을 준수할 때 사용가능합니다.
+* _associatedtype_ Body 뷰의 본문을 나타내는 뷰 타입 **필수**
 
 ### 뷰 modifier 구현하기
 
-* func modifier&lt;T&gt;\(T\) -&gt; ModifiedContent&lt;Self, T&gt; Modifier를 뷰에 적용합니다.
-* struct ModifiedContent Modifier가 적용된 값
-* struct EmptyModifier 비어있거나 식별되는 modifier
+* _func_ modifier&lt;T&gt;\(T\) -&gt; ModifiedContent&lt;Self, T&gt; Modifier를 뷰에 적용합니다.
+* _struct_ ModifiedContent Modifier가 적용된 값
+* _struct_ EmptyModifier 비어있거나 식별되는 modifier
 
 
 
