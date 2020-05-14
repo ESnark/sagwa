@@ -12,7 +12,7 @@ description: 앱 UI의 일부분을 표시하고 뷰를 구성하는데 사용�
 > **SDKs**
 >
 > * iOS 13.0+
-> * macOS 10.5+
+> * macOS 10.15+
 > * Mac Catalyst 13.0+
 > * tvOS 13.0+
 > * watchOS 6.0+
@@ -46,15 +46,15 @@ struct MyView: View {
 
 위 예제의 [Text](../../../etc/not-found.md) 인스턴스처럼 SwiftUI에서 제공하는 하나 이상의 기본 뷰를 뷰 계층으로 결합하여 뷰의 body를 조합하세요.
 
-View 프로토콜은 default 구현과 함께 프로토콜 메서드로 정의된 modifier set을 제공합니다. 이 modifier set은 앱 레이아웃 내에서 뷰를 설정하고 위치를 조정하는데 사용됩니다.  
-Modifier는 일반적으로 다른 뷰 내에서 특정하여 호출될 수 있도록 뷰 인스턴스를 감싸는 방식으로 동작합니다. 예를들어, text 뷰에 [opacity\(\_:\)](../../../etc/not-found.md) modifier를 추가함으로써 투명도가 적용된 새로운 뷰를 반환받을 수 있습니다.
+View 프로토콜은 default 구현과 함께 프로토콜 메서드로 정의된 수정자 set을 제공합니다. 이 수정자 셋은 앱 레이아웃 내에서 뷰를 설정하고 위치를 조정하는데 사용됩니다.  
+수정자는 일반적으로 다른 뷰 내에서 특정하여 호출될 수 있도록 뷰 인스턴스를 감싸는 방식으로 동작합니다. 예를들어, text 뷰에 [opacity\(\_:\)](../../../etc/not-found.md) 수정자를 추가함으로써 투명도가 적용된 새로운 뷰를 반환받을 수 있습니다.
 
 ```swift
 Text("Hello, World!")
     .opacity(0.5)  // Display partially transparent text.
 ```
 
-Modifier의 효과는 자식뷰로 전파되어, 자식 뷰에서 명시적으로 오버라이드하지 않는 한 같은 효과가 적용됩니다. 예를 들어, 다른 뷰를 세로로 쌓는 역할만 하는 [VStack](../../../etc/not-found.md)은 자체적으로 표시할 텍스트가 없습니다. 그러므로 [font\(\_:\)](../../../etc/not-found.md) modifier를 스택에 적용하여도 스택 그 자체에는 아무런 효과가 없습니다. 그러나 스택의 자식 뷰에는 적용이 되며, 특정 자식 뷰에서 스택의 modifier를 오버라이드하는 것도 가능합니다:
+수정자의 효과는 자식뷰로 전파되어, 자식 뷰에서 명시적으로 오버라이드하지 않는 한 같은 효과가 적용됩니다. 예를 들어, 다른 뷰를 세로로 쌓는 역할만 하는 [VStack](../../../etc/not-found.md)은 자체적으로 표시할 텍스트가 없습니다. 그러므로 [font\(\_:\)](../../../etc/not-found.md) 수정자를 스택에 적용하여도 스택 그 자체에는 아무런 효과가 없습니다. 그러나 스택의 자식 뷰에는 적용이 되며, 특정 자식 뷰에서 스택의 수정자를 오버라이드하는 것도 가능합니다:
 
 ```swift
 VStack {
@@ -66,7 +66,7 @@ VStack {
 .font(.body)  // 이 스택의 기본 폰트를 설정합니다.
 ```
 
-이전의 결과를 래핑하는 체인 modifier는 흔히 사용됩니다. 예를 들어, 텍스트 뷰에 너비가 지정된 [frame\(width:height:alignment:\)](../../../etc/not-found.md) modifier를 사용해서 레이아웃을 잡은 다음, [border\(\_:width\)](../../../etc/not-found.md) modifier로 윤곽을 그릴 수 있습니다:
+이전의 결과를 래핑하는 수정자 체인은 흔히 사용됩니다. 예를 들어, 텍스트 뷰에 너비가 지정된 [frame\(width:height:alignment:\)](../../../etc/not-found.md) 수정자를 사용해서 레이아웃을 잡은 다음, [border\(\_:width\)](../../../etc/not-found.md) 수정자로 윤곽을 그릴 수 있습니다:
 
 ```swift
 Text("Title")
@@ -74,7 +74,7 @@ Text("Title")
     .border(Color.gray)
 ```
 
-Modifier를 적용하는 순서가 중요합니다. 예를 들어, 위 예제 코드의 border는 frame의 전체 길이에 맞추어 윤곽을 그립니다.
+수정자를 적용하는 순서가 중요합니다. 예를 들어, 위 예제 코드의 border는 frame의 전체 길이에 맞추어 윤곽을 그립니다.
 
 ![](../../../.gitbook/assets/e10bb3d5-87a2-42d3-b992-e85e11740671.png)
 
@@ -125,11 +125,9 @@ Text("Title")
 
 ### 뷰 modifier 구현하기
 
-* _func_ modifier&lt;T&gt;\(T\) -&gt; ModifiedContent&lt;Self, T&gt; Modifier를 뷰에 적용합니다.
-* _struct_ ModifiedContent Modifier가 적용된 값
-* _struct_ EmptyModifier 비어있거나 식별되는 modifier
-
-
+* _func_ modifier&lt;T&gt;\(T\) -&gt; ModifiedContent&lt;Self, T&gt; 수정자를 뷰에 적용합니다.
+* _struct_ ModifiedContent 수정자가 적용된 값
+* _struct_ EmptyModifier 비어있거나 식별되는 수정자
 
 ## 관련 문서
 
