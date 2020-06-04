@@ -161,13 +161,13 @@ Text(LocalizedStringKey(writingImplement))
 ### Conforms To
 
 * Equatable
-* View
+* [View](view.md)
 
 ## 같이 보기 <a id="see-also"></a>
 
 ### Text
 
-* _struct_ TextField 편집 가능한 텍스트 인터페이스를 보여주는 컨트롤
+* _struct_ [TextField](textfield.md) 편집 가능한 텍스트 인터페이스를 보여주는 컨트롤
 * _struct_ SecureField 사용자가 노출되지 않는 텍스트를 입력할 수 있는 컨트롤
 * _struct_ Font 실행환경에 의존적인 폰트
 

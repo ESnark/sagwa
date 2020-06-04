@@ -40,7 +40,7 @@ View와 컨트롤의 사용방법에 대한 더 자세한 정보는 Human Interf
 ### Text
 
 * _struct_ [Text](text.md) 한 줄 이상의 읽기전용 텍스트를 보여주는 View
-* _struct_ TextField 편집 가능한 텍스트 인터페이스를 보여주는 컨트롤
+* _struct_ [TextField](textfield.md) 편집 가능한 텍스트 인터페이스를 보여주는 컨트롤
 * _struct_ SecureField 사용자가 노출되지 않는 텍스트를 입력할 수 있는 컨트롤
 * _struct_ Font 실행환경에 의존적인 폰트
 

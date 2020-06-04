@@ -168,7 +168,9 @@
         &#xBCF4;&#xC5EC;&#xC8FC;&#xB294; &#xAC83;&#xC774; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;.</td>
     </tr>
   </tbody>
-</table>{% hint style="warning" %}
+</table>
+
+{% hint style="warning" %}
 Warning
 
 fork 함수를 사용하여 별도 프로세스를 실행할 때에는 반드시 exec 또는 유사한 함수를 뒤이어 실행해야 합니다. Core Foundation, Cocoa 또는 Core Data 프레임워크에 의존적인 어플리케이션은 곧바로 exec와 같은 함수들을 실행하지 않으면 올바르지 않게 동작할 수 있습니다.
@@ -358,6 +360,8 @@ Lock과 Condition은 아주 일반적인 동시성 디자인 방법이지만 ato
     </tr>
   </tbody>
 </table>
+
+
 
 ## 디자인 팁 <a id="design-tips"></a>
 
