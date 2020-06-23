@@ -47,7 +47,7 @@ Mac Catalyst로 빌드된 맥 앱은 Mac Catalyst에서 사용 가능한 것으�
 
 * 메뉴바와 UI에 메뉴 및 단축키 추가 Mac Catalyst로 만들어진 맥 앱에 메뉴와 단축키를 추가해서 유용한 동작을 빠르게 실행할 수 있도록 합니다.
 * 물리 키보드 입력 처리 사용자가 물리 키보드를 누르고 놓는 동작을 감지합니다.
-* class UIHoverGestureRecognizer 뷰 상의 포인터 움직임을 해석하는 이산 제스처 인식기
+* _class_ UIHoverGestureRecognizer 뷰 상의 포인터 움직임을 해석하는 이산 제스처 인식기
 
 ### User Preferences
 
