@@ -42,6 +42,7 @@
     * [앱 라이프 사이클 관리하기](app-frameworks/uikit/app-and-environment/managing_your_app_s_life_cycle.md)
     * [UIApplication](app-frameworks/uikit/app-and-environment/uiapplication.md)
   * [문서, 데이터와 클립보드](app-frameworks/uikit/documents-data-pasteboard.md)
+  * [Mac Catalyst](app-frameworks/uikit/mac-catalyst.md)
   * [뷰와 컨트롤](app-frameworks/uikit/views_and_controls/README.md)
     * [UIView](app-frameworks/uikit/views_and_controls/uiview.md)
     * [Table Views](app-frameworks/uikit/views_and_controls/table-views/README.md)
