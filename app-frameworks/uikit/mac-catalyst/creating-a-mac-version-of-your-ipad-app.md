@@ -61,5 +61,5 @@ Mac 지원을 활성화하면 Xcode는 프로젝트에 [App Sandbox Entitlement]
 ## 조금 더 맥 앱처럼 <a id="make-your-app-more-like-a-mac-app"></a>
 
 지금까지의 단계를 따라 여러분은 아이패드 앱을 맥에서 실행할 수 있게 되었을 것입니다. 그러나 여러분의 새 앱을 소비자들에게 배포하기 전에 이 앱을 좀더 맥 앱처럼 만들 몇가지 변경이 필요합니다.  
-더 알고 싶으시다면 [아이패드 앱의 맥 최적화](../../../etc/not-found.md) 문서를 보세요.
+더 알고 싶으시다면 [아이패드 앱의 맥 최적화](optimizing-your-ipad-app-for-mac.md) 문서를 보세요.
 

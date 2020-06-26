@@ -34,7 +34,7 @@ Mac Catalyst로 빌드된 맥 앱은 Mac Catalyst에서 사용 가능한 것으�
 ### App Support
 
 * 맥 앱의 User Interface Idiom 선택  Mac Catalyst로 만들어진 Mac 앱에서 iPad UI Idiom과 Mac UI Idiom 중에 하나를 선택하세요
-* 아이패드 앱의 맥 최적화 macOS의 시스템 기능상 장점을 취하면서 여러분의 아이패드 앱을 맥 앱에 가깝게 만들어 보세요.
+* [아이패드 앱의 맥 최적화](optimizing-your-ipad-app-for-mac.md) macOS의 시스템 기능상 장점을 취하면서 여러분의 아이패드 앱을 맥 앱에 가깝게 만들어 보세요.
 
 ### User Interface
 

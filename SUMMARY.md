@@ -44,6 +44,7 @@
   * [문서, 데이터와 클립보드](app-frameworks/uikit/documents-data-pasteboard.md)
   * [Mac Catalyst](app-frameworks/uikit/mac-catalyst/README.md)
     * [iPad 앱을 Mac 버전으로 만들기](app-frameworks/uikit/mac-catalyst/creating-a-mac-version-of-your-ipad-app.md)
+    * [아이패드 앱의 맥 최적화](app-frameworks/uikit/mac-catalyst/optimizing-your-ipad-app-for-mac.md)
   * [뷰와 컨트롤](app-frameworks/uikit/views_and_controls/README.md)
     * [UIView](app-frameworks/uikit/views_and_controls/uiview.md)
     * [Table Views](app-frameworks/uikit/views_and_controls/table-views/README.md)
