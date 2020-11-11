@@ -138,7 +138,7 @@ iOS 12 이하에서는 scene을 지원하지 않으며, UIKit은 모든 라이�
 
 ### 라이프 사이클 <a id="life-cycle"></a>
 
-* 앱 실행에 대응하기 앱 데이터 구조를 초기화하고 실행시킬 준비를 하세요. 그리고 실행 중에 발생하는 시스템 요청에 대응하세요.
+* [앱 실행에 대응하기](responding_to_the_launch_of_your_app.md) 앱 데이터 구조를 초기화하고 실행시킬 준비를 하세요. 그리고 실행 중에 발생하는 시스템 요청에 대응하세요.
 * _class_ [UIApplication](uiapplication.md) iOS에서 실행되는 앱의 제어와 조정의 중심점
 * _protocol_ UIApplicationDelegate 앱 라이프 타임동안 발생하는 중요한 이벤트에 대해 응답하기 위해서 UIApplication 싱글턴 객체가 호출하는 메서드 집합
 * Scenes 여러 개의 앱 UI 인스턴스를 동시에 관리하고 리소스를 적절한 인스턴스에 분배하세요.

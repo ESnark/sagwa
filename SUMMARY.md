@@ -40,6 +40,7 @@
   * [UIKit으로 앱 개발](app-frameworks/uikit/about_app_development_with_uikit.md)
   * [앱과 환경](app-frameworks/uikit/app-and-environment/README.md)
     * [앱 라이프 사이클 관리하기](app-frameworks/uikit/app-and-environment/managing_your_app_s_life_cycle.md)
+    * [앱 실행에 대응하기](app-frameworks/uikit/app-and-environment/responding_to_the_launch_of_your_app.md)
     * [UIApplication](app-frameworks/uikit/app-and-environment/uiapplication.md)
   * [문서, 데이터와 클립보드](app-frameworks/uikit/documents-data-pasteboard.md)
   * [Mac Catalyst](app-frameworks/uikit/mac-catalyst/README.md)

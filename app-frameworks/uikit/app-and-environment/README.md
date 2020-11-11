@@ -18,7 +18,7 @@ UIKit은 현재 환경에 대한 세부 정보들을 trait 콜렉션을 사용�
 ### 라이프 사이클 <a id="life-cycle"></a>
 
 * [앱 라이프 사이클 관리하기](managing_your_app_s_life_cycle.md) 앱이 foreground, background 상태에 있을 때 시스템 노티피케이션에 대응하고 시스템과 관련된 중요한 이벤트를 처리하세요.
-* 앱 실행에 대응하기 앱 데이터 구조를 초기화하고 실행시킬 준비를 하세요. 그리고 실행 중에 발생하는 시스템 요청에 대응하세요.
+* [앱 실행에 대응하기](responding_to_the_launch_of_your_app.md) 앱 데이터 구조를 초기화하고 실행시킬 준비를 하세요. 그리고 실행 중에 발생하는 시스템 요청에 대응하세요.
 * _class_ [UIApplication](uiapplication.md) iOS에서 실행되는 앱의 제어와 조정의 중심점
 * _protocol_ UIApplicationDelegate 앱 라이프 타임동안 발생하는 중요한 이벤트에 대해 응답하기 위해서 UIApplication 싱글턴 객체가 호출하는 메서드 집합
 * Scenes 여러 개의 앱 UI 인스턴스를 동시에 관리하고 리소스를 적절한 인스턴스에 분배하세요.
@@ -32,7 +32,7 @@ UIKit은 현재 환경에 대한 세부 정보들을 trait 콜렉션을 사용�
 
 * Apple TV 디스플레이 모드 변경에 대응하기 기기의 스크린 영역 변동에 따라서 이미지와 리소스를 동적으로 바꾸세요
 * _class_ UITraitCollection 수평 및 수직 사이즈 클래스, 디스플레이 스케일 및 사용자 인터페이스 종류\(phone, pad, tv 등\)와 같은 특성에 의해 정의되는 앱의 iOS 인터페이스 환경.
-* _protocol_ UITraitEnvironment 앱에서 iOS 인터페이스 환경을 사용할 수 있게 해주는 메드 집합
+* _protocol_ UITraitEnvironment 앱에서 iOS 인터페이스 환경을 사용할 수 있게 해주는 메소드 집합
 * _protocol_ UIAdaptivePresentationControllerDelegate Presentation 컨트롤러와 함께 앱의 trait 변화에 대응하는 방법을 결정하는 메서드 집합
 * _protocol_ UIContentContainer 뷰 컨트롤러의 컨텐츠가 크기와 trait 변화에 적응할 수 있도록 돕는 메서드 집합
 
