@@ -5,7 +5,7 @@ description: Mac Catalyst로 아이패드 앱을 macOS로 가져오세요
 # iPad 앱을 Mac 버전으로 만들기
 
 > 원문 출처  
-> [https://developer.apple.com/documentation/uikit/mac\_catalyst/removing\_the\_title\_bar\_in\_your\_mac\_app\_built\_with\_mac\_catalyst](https://developer.apple.com/documentation/uikit/mac_catalyst/removing_the_title_bar_in_your_mac_app_built_with_mac_catalyst)
+> [https://developer.apple.com/documentation/uikit/mac\_catalyst/creating\_a\_mac\_version\_of\_your\_ipad\_app](https://developer.apple.com/documentation/uikit/mac_catalyst/creating_a_mac_version_of_your_ipad_app)
 
 ## Summary
 
