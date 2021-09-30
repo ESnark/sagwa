@@ -102,6 +102,7 @@
 
 ## App Services
 
+* [Combine](app-services/combine.md)
 * [WebKit](app-services/webkit/README.md)
   * [WKWebView](app-services/webkit/wkwebview.md)
 
