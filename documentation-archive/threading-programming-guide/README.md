@@ -20,7 +20,7 @@ Important
 이 문서는 다음 챕터와 부록으로 구성되어 있습니다:
 
 * [About Threaded Programming](about-threaded-programming.md) 문서는 스레드의 개념과 그것이 어플리케이션 디자인에서 하는 역할에 대해 소개합니다.
-* Thread Management 문서는 OS X의 스레딩 기술에 대한 정보와 그것을 어떻게 사용하는지에 대한 정보를 제공합니다.
+* [Thread Management](thread-management.md) 문서는 OS X의 스레딩 기술에 대한 정보와 그것을 어떻게 사용하는지에 대한 정보를 제공합니다.
 * Run Loops 문서는 event-processing 루프를 부차적인 스레드에서 관리하는 방법을 제공합니다.
 * Synchronization 문서는 다중 스레드가 데이터나 프로그램을 손상시키지 않도록 하기 위해 사용하는 도구 및 동기화 이슈에 대해 설명합니다.
 * Thread Safety Summary는 OS X과 iOS의 고유한 스레드 안전성과 핵심 프레임워크에 대한 높은 수준의 요약을 제공합니다.

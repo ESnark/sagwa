@@ -129,6 +129,7 @@
 * [Key-Value Observing 프로그래밍 가이드](documentation-archive/key-value-observing.md)
 * [Threading 프로그래밍 가이드](documentation-archive/threading-programming-guide/README.md)
   * [About Threaded Programming](documentation-archive/threading-programming-guide/about-threaded-programming.md)
+  * [Thread Management](documentation-archive/threading-programming-guide/thread-management.md)
 
 ## ETC
 
