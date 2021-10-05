@@ -9,7 +9,7 @@ description: URL 세션으로부터 데이터 task를 생성하고 데이터를 
 
 ## 개요
 
-원격 서버와 작은 규모의 통신을 할 경우 [URLSessionDataTask](../../../etc/not-found.md) 클래스를 사용해서 response 데이터를 메모리에 저장할 수 있습니다.\(그와 반대로 [URLSessionDownloadTask](../../../etc/not-found.md) 클래스는 데이터를 바로 파일 시스템에 저장합니다.\)  data task는 웹서비스 엔드포인트를 호출하는 일에 적합합니다.
+원격 서버와 작은 규모의 통신을 할 경우 [URLSessionDataTask](../../../etc/not-found.md) 클래스를 사용해서 response 데이터를 메모리에 저장할 수 있습니다.\(그와 반대로 [URLSessionDownloadTask](../../../etc/not-found.md) 클래스는 데이터를 바로 파일 시스템에 저장합니다.\) data task는 웹서비스 엔드포인트를 호출하는 일에 적합합니다.
 
 [URLSession](urlsession/) 인스턴스는 task를 생성하는데 사용됩니다. 여러분의 요구사항이 단순하다면 URLSession 클래스의 [shared](../../../etc/not-found.md) 인스턴스를 사용하는 것이 좋습니다. delegate 콜백으로 전송과정 중에 상호작용을 하길 원한다면 세션을 생성할 때 [URLSessionConfiguration](urlsession/urlsessionconfiguration/) 인스턴스를 사용하고 [URLSessionDelegate](../../../etc/not-found.md) 또는 해당 하위 프로토콜 중 하나를 구현하는 클래스를 전달할 수 있습니다. 세션은 여러개의 task를 만드는데 재사용될 수 있으므로 필요로 하는 configuration마다 세션을 만들어서 프로퍼티로 저장하십시오.
 
@@ -80,7 +80,7 @@ delegate 접근법을 따르려면 URLSession 클래스의 단순한 shared 인�
 
 하나 이상의 delegate 프로토콜을 준수하는 클래스 구현을 선언하십시오\([URLSessionDelegate](../../../etc/not-found.md), [URLSessionTaskDelegate](../../../etc/not-found.md), [URLSessionDataDelegate](../../../etc/not-found.md), [URLSessionDownloadDelegate](../../../etc/not-found.md)\). 그리고 [init\(configuration:delegate:delegateQueue:\)](../../../etc/not-found.md) 초기화 메서드를 통해서 새로운 URL Session 인스턴스를 생성하십시오. 이 초기화 메서드를 통해서 configuration 인스턴스를 커스터마이징 할 수 있습니다. 예를 들어 [waitsForConnectivity](../../../etc/not-found.md)를 true로 설정하는것은 사용가능한 네트워크 연결이 없을때 바로 실패로 처리하는 대신에 적합한 네트워크 연결이 생길때까지 기다리기 때문에 아주 좋은 생각입니다.
 
-  **목록 2. delegate를 사용하는 URLSession 생성**
+**목록 2. delegate를 사용하는 URLSession 생성**
 
 ```swift
 private lazy var session: URLSession = {
