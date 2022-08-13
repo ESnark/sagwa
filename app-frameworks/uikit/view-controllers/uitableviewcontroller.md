@@ -41,7 +41,7 @@ class UITableViewController : UIViewController
 * 스토리보드나 nib 파일에 저장되어 있는 테이블 뷰를 자동으로 로딩해옵니다. 이 테이블 뷰는 [tableView](../../../etc/not-found.md) 프로퍼티를 통해 접근할 수 있습니다.
 * 테이블 뷰의 dataSource와 delegate를 자기 자신\(_self_\)으로 설정합니다.
 * [viewWillAppear\(\_:\)](../../../etc/not-found.md) 메서드를 구현해서 테이블 뷰가 처음 나타날때 자동으로 데이터를 다시 불러옵니다. 테이블 뷰가 보일 때마다 항목이 선택해제되는데 \(요청에 따라서 애니메이션을 비활성화 할 수 있습니다\) [clearsSelectonOnViewWillAppear](../../../etc/not-found.md) 프로퍼티값을 바꿈으로써 이 동작을 바꿀 수 있습니다.
-* [viewDidApear\(\_:\)](../../../etc/not-found.md) 메서드를 구현해서 테이블 뷰가 처음으로 나타날때 스크롤 인디케이터를 깜박입니다.
+* [viewDidAppear\(\_:\)](../../../etc/not-found.md) 메서드를 구현해서 테이블 뷰가 처음으로 나타날때 스크롤 인디케이터를 깜박입니다.
 * [setEditing\(\_:animated\)](../../../etc/not-found.md) 메서드를 구현하여 사용자가 네비게이션 바의 Edit/Done 버튼을 탭하면 자동으로 편집 모드를 토글할 수 있습니다.
 * 스크린에 키보드가 나타나고 사라짐에 따라 테이블 뷰의 크기를 자동으로 조정합니다.
 
@@ -51,7 +51,7 @@ class UITableViewController : UIViewController
 > 설명이 어려운 듯 하여 추가 설명을 간략히 덧붙입니다. 즉 오버라이드를 할 경우 다음과 같이 구현해야 한다는 뜻입니다.
 
 ```swift
-ovrride func loadView() {
+override func loadView() {
     super.loadView()    // 상위 클래스 loadView 호출
     // ...이하 오버라이드할 구현 코드
 }
